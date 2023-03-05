@@ -1,6 +1,6 @@
 package ru.sfedu.model;
 
-public class User {
+public class User implements EntityBean  {
     private String name ;
     private long id;
     private String AccessLevel;
@@ -36,5 +36,10 @@ public class User {
 
     public void setAccessLevel(String accessLevel) {
         AccessLevel = accessLevel;
+    }
+
+    @Override
+    public long getID() {
+        return this.id;
     }
 }
