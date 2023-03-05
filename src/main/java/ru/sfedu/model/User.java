@@ -1,17 +1,24 @@
 package ru.sfedu.model;
 
+import ru.sfedu.Constants;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class User implements EntityBean  {
     private String name ;
     private long id;
-    private String AccessLevel;
+    private SmartHome smartHome;
+    private Constants.AcessLevel accessLevel;
 
     public User() {
     }
 
-    public User(String name, long id, String accessLevel) {
+    public User(String name, long id) {
         this.name = name;
         this.id = id;
-        AccessLevel = accessLevel;
+        this.accessLevel = Constants.AcessLevel.ADMIN;
     }
 
     public String getName() {
@@ -30,16 +37,40 @@ public class User implements EntityBean  {
         this.id = id;
     }
 
-    public String getAccessLevel() {
-        return AccessLevel;
+    public Constants.AcessLevel getAccessLevel() {
+        return accessLevel;
     }
 
-    public void setAccessLevel(String accessLevel) {
-        AccessLevel = accessLevel;
+    public void setAccessLevel(Constants.AcessLevel accessLevel) {
+        this.accessLevel = accessLevel;
+    }
+
+    public SmartHome getSmartHome() {
+        return smartHome;
+    }
+
+    public void setSmartHome(SmartHome smartHome) {
+        this.smartHome = smartHome;
     }
 
     @Override
     public long getID() {
         return this.id;
+    }
+
+    public void addResidentToSmartHome(User user){
+        if(accessLevel.equals(Constants.AcessLevel.ADMIN)){
+            user.setSmartHome(smartHome);
+            user.setAccessLevel(Constants.AcessLevel.RESIDENT);
+        }
+    }
+    public List<Notification> checkSmartHomesNotification(){
+        List<Notification> notifications = new ArrayList<>();
+        smartHome.getDevices().forEach(d->notifications.addAll(d.getNotifications()));
+        return notifications;
+    }
+
+    public void openLock(Lock lock){
+
     }
 }

@@ -1,5 +1,7 @@
 package ru.sfedu.model;
 
+import ru.sfedu.Constants;
+
 public class Termometr extends Sensor {
     private int temperature;
 
@@ -7,7 +9,7 @@ public class Termometr extends Sensor {
     }
 
     public Termometr(long id, String name, int temperature) {
-        super(id, name);
+        super(id, name, Constants.SensorType.TERMOMETR);
         this.temperature = temperature;
     }
 
