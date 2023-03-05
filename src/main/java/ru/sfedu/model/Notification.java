@@ -2,7 +2,7 @@ package ru.sfedu.model;
 
 import java.util.Date;
 
-public class Notification {
+public class Notification implements EntityBean  {
     private long id;
     private String message;
     private Date date;
@@ -39,5 +39,10 @@ public class Notification {
 
     public void setSender(String sender) {
         this.sender = sender;
+    }
+
+    @Override
+    public long getID() {
+        return this.id;
     }
 }

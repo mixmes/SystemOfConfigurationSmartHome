@@ -26,7 +26,7 @@ public interface IDataProvider {
     void deleteLockRecord(Lock lock) throws Exception;
     void saveNotificationRecord(Notification notification) throws Exception;
     Notification getNotificationRecordByID(int id) throws Exception;
-    void deleteNotificationRecord(Notification notification) throws Exception;
+    void updateNotificationRecord(Notification notification) throws Exception;
     void saveSensorRecord(Sensor sensor) throws Exception;
     Sensor getSensorRecordByID(int id) throws Exception;
     void updateSensorRecord(Sensor sensor) throws Exception;

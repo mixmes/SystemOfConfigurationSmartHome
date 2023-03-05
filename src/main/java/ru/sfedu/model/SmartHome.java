@@ -2,7 +2,7 @@ package ru.sfedu.model;
 
 import java.util.List;
 
-public class SmartHome {
+public class SmartHome  implements EntityBean  {
     private long id;
     private String name;
     private List<User> residents;
@@ -48,5 +48,10 @@ public class SmartHome {
 
     public void setDevices(List<Device> devices) {
         this.devices = devices;
+    }
+
+    @Override
+    public long getID() {
+        return this.id;
     }
 }

@@ -1,6 +1,6 @@
 package ru.sfedu.model;
 import java.util.List;
-public class Device {
+public class Device implements EntityBean {
     private long id;
     private String name;
     private Sensor sensor;
@@ -46,5 +46,10 @@ public class Device {
 
     public void setNotifications(List<Notification> notifications) {
         this.notifications = notifications;
+    }
+
+    @Override
+    public long getID() {
+        return this.id;
     }
 }
