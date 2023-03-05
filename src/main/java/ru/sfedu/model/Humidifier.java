@@ -19,4 +19,35 @@ public class Humidifier extends Device{
         this.currentPower = currentPower;
     }
 
+    public int getHumidityForOn() {
+        return humidityForOn;
+    }
+
+    public void setHumidityForOn(int humidityForOn) {
+        this.humidityForOn = humidityForOn;
+    }
+
+    public int getHumidityForOff() {
+        return humidityForOff;
+    }
+
+    public void setHumidityForOff(int humidityForOff) {
+        this.humidityForOff = humidityForOff;
+    }
+
+    public int getMaxPower() {
+        return maxPower;
+    }
+
+    public void setMaxPower(int maxPower) {
+        this.maxPower = maxPower;
+    }
+
+    public int getCurrentPower() {
+        return currentPower;
+    }
+
+    public void setCurrentPower(int currentPower) {
+        this.currentPower = currentPower;
+    }
 }
