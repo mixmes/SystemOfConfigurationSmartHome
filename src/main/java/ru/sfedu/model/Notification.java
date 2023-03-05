@@ -68,4 +68,9 @@ public class Notification implements EntityBean  {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    @Override
+    public String toString(){
+        return date+" "+sender+": "+message+"\n";
+    }
 }

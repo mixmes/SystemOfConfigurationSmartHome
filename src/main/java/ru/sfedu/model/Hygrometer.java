@@ -1,5 +1,7 @@
 package ru.sfedu.model;
 
+import ru.sfedu.Constants;
+
 public class Hygrometer extends Sensor{
     private int humidity;
 
@@ -7,7 +9,7 @@ public class Hygrometer extends Sensor{
     }
 
     public Hygrometer(long id, String name, int humidity) {
-        super(id, name);
+        super(id, name, Constants.SensorType.HYGROMETER);
         this.humidity = humidity;
     }
 

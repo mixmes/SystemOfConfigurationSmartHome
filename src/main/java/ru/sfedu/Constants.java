@@ -13,4 +13,14 @@ public class Constants {
         public static final String SOCKET_XML = "socketXML";
         public static final String TERMOMERT_XML = "termometrXML";
         public static final String USER_XML = "userXML";
+
+        public enum AcessLevel {
+                ADMIN,
+                RESIDENT
+        }
+
+        public enum SensorType{
+                TERMOMETR,
+                HYGROMETER
+        }
  }

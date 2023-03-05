@@ -103,22 +103,28 @@ public class XMLDataProviderTest {
     @Test
     void saveNotificationRecord() throws Exception {
         xmlDataProvider.saveNotificationRecord(tempNotification);
+
         assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getID()));
+
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getID(),Notification.class);
     }
     @Test
     void saveExistingNotificationRecord() throws Exception {
         xmlDataProvider.saveNotificationRecord(lockNotification);
+
         Exception exception = assertThrows(Exception.class,()->{
             xmlDataProvider.saveNotificationRecord(lockNotification);});
         assertEquals(exception.getMessage(),"Notification record with this ID:"+lockNotification.getID()+" already exists");
+
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),lockNotification.getID(), Notification.class);
     }
 
     @Test
     void getNotificationRecordByID() throws Exception {
         xmlDataProvider.saveNotificationRecord(tempNotification);
+
         assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getID()));
+
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getID(), Notification.class);
     }
     @Test
