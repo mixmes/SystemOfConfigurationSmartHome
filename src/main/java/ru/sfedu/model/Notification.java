@@ -3,6 +3,7 @@ package ru.sfedu.model;
 import java.util.Date;
 
 public class Notification {
+    private long id;
     private String message;
     private Date date;
     private String sender;
