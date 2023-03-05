@@ -1,8 +1,15 @@
 package ru.sfedu.services;
 
-import java.util.ArrayList;
+import ru.sfedu.model.Notification;
 
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlSeeAlso(Notification.class)
 public class Wrapper<T> {
+    @XmlElement
+    @XmlElementWrapper
     private ArrayList<T> beans = new ArrayList<>();
 
     public Wrapper() {

@@ -58,7 +58,7 @@ public class XMLDataProvider implements IDataProvider {
             logger.error("There is no record with ID:"+id+" in "+file);
             throw new Exception("There is no record with this id");
         }
-        wrapper.getBeans().remove(teacher.get().getID());
+        wrapper.getBeans().remove(teacher.get());
 
         logger.info("Record with this ID:" + id+" was deleted");
         initDataSource(file, wrapper);
@@ -171,7 +171,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Notification getNotificationRecordByID(int id) throws Exception {
+    public Notification getNotificationRecordByID(long id) throws Exception {
         Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
         Optional<Notification> notification = notifications.getBeans().stream().filter(s->s.getID() == id).findFirst();
         if(!notification.isPresent()){
@@ -188,7 +188,9 @@ public class XMLDataProvider implements IDataProvider {
         if(notifications.getBeans().stream().anyMatch(s->s.getID() == notification.getID())){
             notifications.getBeans().remove(notification);
             notifications.getBeans().add(notification);
+            initDataSource(config.getConfigurationEntry(NOTIFICATION_XML),notifications);
             logger.info("Notification record was updated");
+            logger.debug(getNotificationRecordByID(1).getMessage());
         }
         else {
             logger.error("Notification record with this ID:"+notification.getID()+" wasn't found");
