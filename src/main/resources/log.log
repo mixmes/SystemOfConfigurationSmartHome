@@ -882,3 +882,77 @@
 2023-03-05 21:41:36,100 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-05 21:41:36,110 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 21:41:36,111 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
+2023-03-06 09:01:07,680 INFO r.s.m.User [main] User Иван Иванов Иванович add new device to home Дом Ивановых
+2023-03-06 09:02:07,815 INFO r.s.m.User [main] User Иван Иванов Иванович add new device null to home Дом Ивановых
+2023-03-06 13:06:18,044 INFO r.s.m.User [main] User Иван Иванов Иванович add new device null to home Дом Ивановых
+2023-03-06 13:12:10,898 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 13:12:12,143 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 13:12:19,219 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 13:12:27,520 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:14:00,649 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:14:00,675 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:15:09,602 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:15:09,614 DEBUG r.s.m.User [main] true
+2023-03-06 13:15:09,627 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:15:42,322 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:15:42,335 DEBUG r.s.m.User [main] false
+2023-03-06 13:15:42,348 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:18:26,900 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:18:26,928 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to true
+2023-03-06 13:19:32,182 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:19:32,202 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to true
+2023-03-06 13:20:49,535 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:20:49,561 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to true
+2023-03-06 13:21:05,247 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:21:05,266 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:21:30,719 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:21:30,740 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:22:04,041 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:22:04,064 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:22:40,213 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:22:40,225 INFO r.s.m.User [main] false
+2023-03-06 13:22:40,241 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:27:02,539 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:27:02,569 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:27:21,990 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:27:22,015 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to true
+2023-03-06 13:29:03,951 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:29:03,990 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 13:29:24,963 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок на входной двери to home Дом Ивановых
+2023-03-06 13:29:24,986 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок на входной двери to false
+2023-03-06 14:02:02,555 ERROR r.s.m.User [main] Lock null does not belong to the userИван Иванов Иванович
+2023-03-06 14:05:57,457 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 14:06:14,696 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 14:09:54,200 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогреватель в зале to home Дом Ивановых
+2023-03-06 14:09:54,213 ERROR r.s.m.User [main] Max power+15< transmited power
+2023-03-06 14:10:27,274 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогреватель в зале to home Дом Ивановых
+2023-03-06 14:12:45,168 ERROR r.s.m.User [main] Max power+15< transmited power
+2023-03-06 14:19:01,783 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 14:19:07,185 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 14:19:07,237 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 14:19:07,256 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 14:19:07,266 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 14:19:07,271 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогреватель в зале to home Дом Ивановых
+2023-03-06 14:19:07,284 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 14:19:07,289 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 14:19:07,302 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 14:33:36,734 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогреватель в зале to home Дом Ивановых
+2023-03-06 14:35:28,156 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 14:35:28,180 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 14:42:00,460 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 14:49:46,563 ERROR r.s.m.User [main] Max power+5 < transmited power
+2023-03-06 15:26:36,267 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 15:27:21,627 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 15:27:21,635 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 15:28:08,990 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 15:28:09,037 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 15:28:09,057 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 15:28:09,079 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 15:28:09,086 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 15:28:09,094 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 15:28:09,111 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 15:28:09,114 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 15:28:09,128 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 15:28:09,137 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 15:28:09,153 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 15:28:09,163 ERROR r.s.m.User [main] Max power 5 < transmitted power 10

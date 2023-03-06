@@ -6,17 +6,14 @@ public class Humidifier extends Device{
     private int humidityForOn;
     private int humidityForOff;
     private  int maxPower;
-    private int currentPower;
+    private int currentPower=0;
 
     public Humidifier() {
     }
 
-    public Humidifier(long id, String name, Sensor sensor, List<Notification> notifications, int humidityForOn, int humidityForOff, int maxPower, int currentPower) {
-        super(id, name, sensor, notifications);
-        this.humidityForOn = humidityForOn;
-        this.humidityForOff = humidityForOff;
+    public Humidifier(long id, String name,int maxPower) {
+        super(id, name);
         this.maxPower = maxPower;
-        this.currentPower = currentPower;
     }
 
     public int getHumidityForOn() {

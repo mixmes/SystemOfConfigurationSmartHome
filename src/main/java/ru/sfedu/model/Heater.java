@@ -1,22 +1,16 @@
 package ru.sfedu.model;
 
-import java.util.List;
-
 public class Heater extends Device{
     private int temperatureForOn;
     private int temperatureForOff;
     private int maxPower;
-    private int currentPower;
+    private int currentPower=0;
+    private boolean isOn=false;
 
-    public Heater() {
-    }
 
-    public Heater(long id, String name, Sensor sensor, List<Notification> notifications, int temperatureForOn, int temperatureForOff, int maxPower, int currentPower) {
-        super(id, name, sensor, notifications);
-        this.temperatureForOn = temperatureForOn;
-        this.temperatureForOff = temperatureForOff;
+    public Heater(long id, String name, int maxPower) {
+        super(id, name);
         this.maxPower = maxPower;
-        this.currentPower = currentPower;
     }
 
     public int getTemperatureForOn() {
@@ -49,5 +43,13 @@ public class Heater extends Device{
 
     public void setCurrentPower(int currentPower) {
         this.currentPower = currentPower;
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+
+    public void setOn(boolean on) {
+        isOn = on;
     }
 }

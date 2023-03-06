@@ -1,19 +1,20 @@
 package ru.sfedu.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SmartHome  implements EntityBean  {
     private long id;
     private String name;
-    private List<Device> devices;
+    private List<Device> devices=new ArrayList<>();
 
     public SmartHome() {
     }
 
-    public SmartHome(long id, String name, List<Device> devices) {
+    public SmartHome(long id, String name) {
         this.id = id;
         this.name = name;
-        this.devices = devices;
+
     }
 
     public long getId() {
@@ -44,5 +45,8 @@ public class SmartHome  implements EntityBean  {
     @Override
     public long getID() {
         return this.id;
+    }
+    public void addDevice(Device device){
+        devices.add(device);
     }
 }
