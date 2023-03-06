@@ -15,6 +15,10 @@ public class ConfigurationSmartHomeTest {
     private static Lamp  lamp2FirstHome;
     private static Heater heaterHomeFirst;
     private static Humidifier humidifierHomeFirst;
+    private static Humidifier humidifier2HomeFirst;
+    private static Hygrometer hygrometerHomeFirst;
+    private static Hygrometer hygrometer2HomeFirst;
+    private static Termometr termometrHomeFirst;
 
 
     @BeforeAll
@@ -27,8 +31,15 @@ public class ConfigurationSmartHomeTest {
         lamp2FirstHome = new Lamp(3,"Лампа на кухне",10);
         lockHomeFirst=new Lock(4,"Замок");
         heaterHomeFirst = new Heater(5,"Обогреватель в зале",15);
-        humidifierHomeFirst = new Humidifier(5,"Увлажнитель воздуха",5);
-
+        humidifierHomeFirst = new Humidifier(5,"Увлажнитель воздуха в зале",5);
+        humidifier2HomeFirst=new Humidifier(9,"Увлажнитель воздуха в спальне",5);
+        hygrometerHomeFirst=new Hygrometer(1, "Гигрометр для увлажнителя в зале");
+        hygrometer2HomeFirst=new Hygrometer(1, "Гигрометр для увлажнителя в спальне");
+        termometrHomeFirst=new Termometr(2,"Термометр для обогревателя в зале", 20);
+        heaterHomeFirst.setSensor(termometrHomeFirst);
+        humidifierHomeFirst.setSensor(hygrometerHomeFirst);
+        humidifier2HomeFirst.setSensor(hygrometer2HomeFirst);
+        firstHome.addDevice(humidifier2HomeFirst);
         firstHome.addDevice(humidifierHomeFirst);
         firstHome.addDevice(heaterHomeFirst);
         firstHome.addDevice(lamp2FirstHome);
@@ -75,7 +86,15 @@ public class ConfigurationSmartHomeTest {
             firstHomeAdmin.changeStateLock(new Lock());});
         assertEquals(exception.getMessage(),"Device does not belong to the users home");
     }
-
+    @Test
+    public void testChangeStateHeater() throws Exception{
+       Heater heater= new Heater(6, "Обогревателль в спальне",10);
+        boolean expected = !heater.isState();
+        firstHomeAdmin.addDeviceToSmartHome(heater);
+        firstHomeAdmin.changeStateHeater(heater);
+        boolean actual =((Heater) firstHomeAdmin.getSmartHome().getDevices().get(firstHomeAdmin.getSmartHome().getDevices().indexOf(heater))).isState();
+        assertEquals(expected,actual);
+    }
     @Test
     public void testChangePowerHeater() throws Exception {
         firstHomeAdmin.changeHeatersPower(heaterHomeFirst,10);
@@ -105,6 +124,13 @@ public class ConfigurationSmartHomeTest {
         firstHomeAdmin.addDeviceToSmartHome(socket);
         firstHomeAdmin.changeStateSocket(socket);
         boolean actual =((Socket) firstHomeAdmin.getSmartHome().getDevices().get(firstHomeAdmin.getSmartHome().getDevices().indexOf(socket))).isState();
+        assertEquals(expected,actual);
+    }
+    @Test
+    public void testChangeStateHumidifier() throws Exception {
+        boolean expected =!humidifierHomeFirst.isState();
+        firstHomeAdmin.changeStateHumidifier(humidifierHomeFirst);
+        boolean actual = ((Humidifier)firstHomeAdmin.getSmartHome().getDevices().get(firstHomeAdmin.getSmartHome().getDevices().indexOf(humidifierHomeFirst))).isState();
         assertEquals(expected,actual);
     }
     @Test
@@ -162,5 +188,48 @@ public class ConfigurationSmartHomeTest {
             firstHomeAdmin.changeLampBrightness(lamp2FirstHome,15);
         });
         assertEquals(exception.getMessage(), "Invalid brightness value");
+    }
+
+    @Test
+    public void testHygrometerNotifiesHumidifier() throws Exception {
+        firstHomeAdmin.automateWorkHumidifier(humidifierHomeFirst,40,45);
+        ((Hygrometer)humidifierHomeFirst.getSensor()).notifyHumidifierOfChanges(humidifierHomeFirst, 40);
+        assertTrue(humidifierHomeFirst.isState());
+    }
+    @Test
+    public void testHygrometerNotifiesHumidifierWithoutAutomaticWork() throws Exception {
+        Exception exception = assertThrows(Exception.class, () -> {
+                    ((Hygrometer) humidifier2HomeFirst.getSensor()).notifyHumidifierOfChanges(humidifier2HomeFirst, 40);
+                });
+        assertEquals(exception.getMessage(),"Automatic activation is not set");
+    }
+    @Test
+    public void testHygrometerNotifiesUnattachedHumidifier(){
+        Humidifier humidifier = new Humidifier(1, "Увлажнитель",10);
+        Exception exception = assertThrows(Exception.class, () -> {
+            hygrometerHomeFirst.notifyHumidifierOfChanges(humidifier, 40);
+        });
+        assertEquals(exception.getMessage(),"This device does not have a sensor");
+    }
+    @Test
+    public void testTermometrNotifiesHeater() throws Exception {
+        firstHomeAdmin.automateWorkHeater(heaterHomeFirst,19,21);
+        ((Termometr)heaterHomeFirst.getSensor()).notifyHeaterOfChanges(heaterHomeFirst, 19);
+        assertTrue(heaterHomeFirst.isState());
+    }
+    @Test
+    public void testTermometrNotifiesHeaterWithoutAutomaticWork() throws Exception {
+        Exception exception = assertThrows(Exception.class, () -> {
+            ((Termometr) heaterHomeFirst.getSensor()).notifyHeaterOfChanges(heaterHomeFirst, 19);
+        });
+        assertEquals(exception.getMessage(),"Automatic activation is not set");
+    }
+    @Test
+    public void testTermometrNotifiesUnattachedHeater(){
+        Heater heater = new Heater(1, "Обогреватель",10);
+        Exception exception = assertThrows(Exception.class, () -> {
+            termometrHomeFirst.notifyHeaterOfChanges(heater, 40);
+        });
+        assertEquals(exception.getMessage(),"This device does not have a sensor");
     }
 }

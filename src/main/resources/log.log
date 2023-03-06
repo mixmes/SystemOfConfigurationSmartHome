@@ -956,6 +956,216 @@
 2023-03-06 15:28:09,137 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
 2023-03-06 15:28:09,153 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
 2023-03-06 15:28:09,163 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 20:46:53,399 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 20:52:22,816 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:05:21,859 ERROR r.s.m.Hygrometer [main] Sensor Гигрометр для увлажнителя в зале not connected to the humidifier Увлажнитель
+2023-03-06 21:08:28,104 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:31:24,047 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:32:09,746 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:32:09,765 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:32:28,696 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:32:28,723 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:38:02,265 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:38:02,285 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:38:10,498 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:38:10,531 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:38:10,562 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:38:10,578 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:38:10,588 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 21:38:10,602 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:38:10,608 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:38:10,614 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:38:10,627 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:38:10,649 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:38:10,662 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:38:10,663 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:38:10,676 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 21:38:10,686 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:38:10,692 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:38:10,700 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:38:10,702 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:38:10,710 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:38:10,715 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:41:03,320 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:41:03,350 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:41:03,386 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:41:03,406 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:41:03,417 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 21:41:03,431 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:41:03,438 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:41:03,442 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:41:03,457 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:41:03,465 INFO r.s.m.Heater [main] Heater is off
+2023-03-06 21:41:03,481 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:41:03,501 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:41:03,503 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:41:03,517 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 21:41:03,532 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:41:03,540 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:41:03,551 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:41:03,554 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:41:03,569 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:41:03,579 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:42:32,064 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:42:38,865 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:42:38,893 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:42:38,925 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:42:38,943 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:42:38,952 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 21:42:38,965 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:42:38,971 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:42:38,976 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:42:38,991 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:42:39,001 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:42:39,009 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:42:39,031 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:42:39,033 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:42:39,053 INFO r.s.m.Humidifier [main] Humidifier is off
+2023-03-06 21:42:39,078 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:42:39,086 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:42:39,102 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:42:39,105 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:42:39,119 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:42:39,128 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:47:14,278 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:47:14,315 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:47:14,350 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:47:14,368 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:47:14,380 ERROR r.s.m.User [main] Device Увлажнитель воздуха в спальне does not belong to the home Дом Ивановых
+2023-03-06 21:47:14,407 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:47:14,413 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:47:14,419 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:47:14,431 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:47:14,440 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:47:14,445 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:47:14,460 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:47:14,461 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:47:14,474 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:47:14,479 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:47:14,485 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в спальне does not have sensor
+2023-03-06 21:47:14,493 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:47:14,495 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:47:14,502 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:47:14,508 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:47:49,587 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:47:49,622 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:47:49,657 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:47:49,677 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:47:49,688 INFO r.s.m.Humidifier [main] Humidifier is on
+2023-03-06 21:47:49,715 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:47:49,722 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:47:49,727 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:47:49,743 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:47:49,752 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:47:49,758 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:47:49,779 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:47:49,780 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:47:49,796 INFO r.s.m.Humidifier [main] Humidifier is on
+2023-03-06 21:47:49,811 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:47:49,816 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в спальне does not have sensor
+2023-03-06 21:47:49,825 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:47:49,827 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:47:49,836 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:47:49,841 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:49:11,961 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:49:11,991 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:49:12,022 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:49:12,037 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:49:12,073 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:49:12,080 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:49:12,085 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:49:12,102 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:49:12,111 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:49:12,116 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:49:12,137 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:49:12,139 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:49:12,154 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:49:12,160 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:49:12,169 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в спальне does not have sensor
+2023-03-06 21:49:12,177 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:49:12,179 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:49:12,189 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:49:12,195 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:52:04,608 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:52:04,636 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:52:04,670 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:52:04,689 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:52:04,700 INFO r.s.m.Humidifier [main] Humidifier is on
+2023-03-06 21:52:04,714 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:52:04,721 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:52:04,729 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:52:04,745 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:52:04,758 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:52:04,763 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:52:04,777 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:52:04,779 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:52:04,792 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:52:04,797 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:52:04,803 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:52:04,809 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:52:04,810 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:52:04,819 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:52:04,824 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:52:10,996 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:52:11,031 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:52:11,061 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:52:11,076 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:52:11,088 INFO r.s.m.Humidifier [main] Humidifier is on
+2023-03-06 21:52:11,102 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:52:11,109 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:52:11,115 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:52:11,128 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:52:11,136 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:52:11,141 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:52:11,159 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:52:11,161 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:52:11,173 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:52:11,179 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:52:11,184 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:52:11,193 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:52:11,195 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:52:11,207 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:52:11,214 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:52:16,484 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:52:16,519 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:52:16,555 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:52:16,571 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:52:16,581 INFO r.s.m.Humidifier [main] Humidifier is on
+2023-03-06 21:52:16,595 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:52:16,602 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:52:16,608 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:52:16,622 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:52:16,630 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:52:16,635 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:52:16,652 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:52:16,654 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:52:16,665 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:52:16,670 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:52:16,676 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:52:16,683 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:52:16,685 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:52:16,694 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:52:16,699 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:52:37,118 ERROR r.s.m.User [main] The user does not have enough rights to add userИван Иванов Иванович
+2023-03-06 21:52:37,146 ERROR r.s.m.Heater [main] Heater does not have temperatureOff and temperatureOn
+2023-03-06 21:52:37,180 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Лампа в зале to home Дом Ивановых
+2023-03-06 21:52:37,200 ERROR r.s.m.User [main] Device Лампа на кухне has already added to home Дом Ивановых
+2023-03-06 21:52:37,213 INFO r.s.m.Humidifier [main] Humidifier is on
+2023-03-06 21:52:37,229 ERROR r.s.m.User [main] Max power+15 < transmited power
+2023-03-06 21:52:37,235 ERROR r.s.m.User [main] Device null does not belong to the home Дом Ивановых
+2023-03-06 21:52:37,241 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Обогревателль в спальне to home Дом Ивановых
+2023-03-06 21:52:37,256 INFO r.s.m.User [main] User Иван Иванов Иванович changes heater state Обогревателль в спальне to true
+2023-03-06 21:52:37,265 INFO r.s.m.Heater [main] Heater is on
+2023-03-06 21:52:37,270 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Розетка в спальне to home Дом Ивановых
+2023-03-06 21:52:37,286 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=110 humOff=40
+2023-03-06 21:52:37,288 ERROR r.s.m.User [main] Humidity cannot be higher than 100%. humOn=40 humOff=110
+2023-03-06 21:52:37,302 ERROR r.s.m.Humidifier [main] Humidifier does not have humidityOff and humidityOn
+2023-03-06 21:52:37,308 ERROR r.s.m.User [main] Max brightness 10 < transmitted brightness 15
+2023-03-06 21:52:37,314 ERROR r.s.m.Hygrometer [main] Humidifier Гигрометр для увлажнителя в зале does not have sensor
+2023-03-06 21:52:37,322 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
+2023-03-06 21:52:37,324 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
+2023-03-06 21:52:37,333 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
+2023-03-06 21:52:37,339 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
 2023-03-06 21:21:52,141 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-06 21:22:24,770 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-06 21:23:24,176 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created

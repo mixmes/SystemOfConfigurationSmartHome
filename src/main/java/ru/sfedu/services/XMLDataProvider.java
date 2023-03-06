@@ -151,10 +151,9 @@ public class XMLDataProvider implements IDataProvider {
         if(hygrometers.getBeans().stream().anyMatch(s->s.getId() == hygrometer.getId())){
             hygrometers.getBeans().remove(hygrometer);
             hygrometers.getBeans().add(hygrometer);
-            initDataSource(config.getConfigurationEntry(HYGROMETER_XML),hygrometers);
-            logger.info("Hygrometer record was updated");
-        }
-        else {
+            initDataSource(config.getConfigurationEntry(HYGROMETER_XML), hygrometers);
+            logger.info("Hygrometer");
+        }else{
             logger.error("Hygrometer record with this ID:"+hygrometer.getId()+" wasn't found");
             throw new Exception("Hygrometer record with this ID:"+hygrometer.getId()+" wasn't found");
         }
