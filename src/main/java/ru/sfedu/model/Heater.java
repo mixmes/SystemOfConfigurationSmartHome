@@ -1,7 +1,5 @@
 package ru.sfedu.model;
 
-import java.util.List;
-
 public class Heater extends Device{
     private int temperatureForOn;
     private int temperatureForOff;
@@ -9,8 +7,6 @@ public class Heater extends Device{
     private int currentPower=0;
     private boolean isOn=false;
 
-    public Heater() {
-    }
 
     public Heater(long id, String name, int maxPower) {
         super(id, name);
