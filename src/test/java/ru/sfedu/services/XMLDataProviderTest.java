@@ -1,7 +1,11 @@
 package ru.sfedu.services;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 import ru.sfedu.model.Notification;
+import ru.sfedu.model.Sensor;
+import ru.sfedu.model.Termometr;
 import ru.sfedu.utils.ConfigurationUtil;
 
 import java.util.Date;
@@ -12,12 +16,14 @@ import static ru.sfedu.Constants.*;
 public class XMLDataProviderTest {
     private static XMLDataProvider xmlDataProvider = new XMLDataProvider();
     private static ConfigurationUtil config = new ConfigurationUtil();
-    private static Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
-    private static Notification lockNotification = new Notification(2,"Door is opened",new Date(),"Lock");
-    private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
+    private static Notification tempNotification = new Notification(1,1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
+    private static Notification lockNotification = new Notification(2,2,"Door is opened",new Date(),"Lock");
+    private static Notification socketNotification = new Notification(3,3,"The device is connected",new Date(),"Socket");
+
 
     @Test
     void deleteRecord() {
+
     }
 
     @Test

@@ -13,8 +13,8 @@ public class Heater extends Device{
     private int maxPower;
     @XmlElement(name = "currentPower")
     private int currentPower=0;
-    @XmlElement(name = "isOn")
-    private boolean isOn=false;
+    @XmlElement(name = "state")
+    private boolean state = false;
 
 
     public Heater(long id, String name, int maxPower) {
@@ -54,11 +54,11 @@ public class Heater extends Device{
         this.currentPower = currentPower;
     }
 
-    public boolean isOn() {
-        return isOn;
+    public boolean getState() {
+        return state;
     }
 
-    public void setOn(boolean on) {
-        isOn = on;
+    public void setState(boolean state) {
+        this.state = state;
     }
 }

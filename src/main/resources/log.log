@@ -956,3 +956,7 @@
 2023-03-06 15:28:09,137 INFO r.s.m.User [main] User Иван Иванов Иванович add new device Замок to home Дом Ивановых
 2023-03-06 15:28:09,153 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
 2023-03-06 15:28:09,163 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+2023-03-06 21:21:52,141 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-06 21:22:24,770 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-06 21:23:24,176 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-06 21:23:24,339 INFO r.s.s.XMLDataProviderTest [main] class ru.sfedu.model.Termometr

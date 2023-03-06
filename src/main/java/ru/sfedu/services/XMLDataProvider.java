@@ -72,42 +72,26 @@ public class XMLDataProvider implements IDataProvider {
         Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
         if(devices.getBeans().stream().noneMatch(s->s.getID() == device.getID())){
             devices.getBeans().add(device);
-            initDataSource(config.getConfigurationEntry(DEVICE_XML),devices);
 
-            logger.info("Device record was saved");
-        }
-        else {
-            logger.error("Device record with this ID:"+device.getID()+" already exists");
-            throw new Exception("Device record with this ID:"+device.getID()+" already exists");
         }
     }
 
     @Override
     public Device getDeviceRecordByID(int id) throws Exception {
-        Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
-        Optional<Device> device = devices.getBeans().stream().filter(s->s.getID() == id).findFirst();
-        if(!device.isPresent()){
-            logger.error("Device record with this ID:"+id+" wasn't found");
-            throw new Exception("Device record with this ID:"+id+" wasn't found");
-        }
-        Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
-        device.get().setNotifications(new ArrayList<>(notifications.getBeans().stream().filter(s->
-                s.getDeviceID() == id).collect(Collectors.toList())));
-        return device.get();
+        return null;
     }
 
     @Override
     public void updateDeviceRecord(Device device) throws IOException {
-        Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
-        if(devices.getBeans().stream().noneMatch(s->s.getID() == device.getID())){
-            devices.getBeans().remove(device);
-            devices.getBeans().add(device);
-        }
+
     }
 
     @Override
-    public void saveHeaterRecord(Heater heater) {
+    public void saveHeaterRecord(Heater heater) throws IOException {
+        Wrapper<Humidifier> humidifiers = getAllRecords(config.getConfigurationEntry(HUMIDIFIER_XML));
+        if(humidifiers.getBeans().stream().noneMatch(s->s.getID() == heater.getID())){
 
+        }
     }
 
     @Override
@@ -136,18 +120,40 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void saveHygrometerRecord(Hygrometer hygrometer) {
-
+    public void saveHygrometerRecord(Hygrometer hygrometer) throws Exception {
+        Wrapper<Hygrometer> hygrometers = getAllRecords(config.getConfigurationEntry(HYGROMETER_XML));
+        if(hygrometers.getBeans().stream().noneMatch(s->s.getId() == hygrometer.getId())){
+            hygrometers.getBeans().add(hygrometer);
+            initDataSource(config.getConfigurationEntry(HYGROMETER_XML),hygrometers);
+            logger.info("Hygrometer record was saved");
+        }
+        else {
+            logger.error("Hygrometer record with this ID:"+hygrometer.getId()+" already exists");
+            throw new Exception("Hygrometer record with this ID:"+hygrometer.getId()+" already exists");
+        }
     }
 
     @Override
-    public Hygrometer getHygrometerRecordByID(int id) {
-        return null;
+    public Hygrometer getHygrometerRecordByID(int id) throws Exception {
+        Wrapper<Hygrometer> hygrometers = getAllRecords(config.getConfigurationEntry(HYGROMETER_XML));
+        Optional<Hygrometer> hygrometer = hygrometers.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!hygrometer.isPresent()){
+            logger.error("Hygrometer record with this ID:"+id+" wasn't found");
+            throw new Exception(("Hygrometer record with this ID:"+id+" wasn't found"));
+        }
+        logger.info("Hygrometer record was found");
+        return hygrometer.get();
     }
 
     @Override
     public void updateHygrometerRecord(Hygrometer hygrometer) {
-
+        Wrapper<Hygrometer> hygrometers = getAllRecords(config.getConfigurationEntry(HYGROMETER_XML));
+        if(hygrometers.getBeans().stream().anyMatch(s->s.getId() == hygrometer.getId())){
+            hygrometers.getBeans().remove(hygrometer);
+            hygrometers.getBeans().add(hygrometer);
+            initDataSource(config.getConfigurationEntry(HYGROMETER_XML));
+            logger.info("Hygrometer");
+        }
     }
 
     @Override
@@ -224,7 +230,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void saveSensorRecord(Sensor sensor) {
+    public void saveSensorRecord(Sensor sensor) throws Exception {
 
     }
 
@@ -269,18 +275,44 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void saveTermometrRecord(Termometr termometr) {
-
+    public void saveTermometrRecord(Termometr termometr) throws Exception {
+        Wrapper<Termometr> termometrs = getAllRecords(config.getConfigurationEntry(TERMOMERT_XML));
+        if(termometrs.getBeans().stream().noneMatch(s->s.getId() == termometr.getId())){
+            termometrs.getBeans().add(termometr);
+            initDataSource(config.getConfigurationEntry(TERMOMERT_XML),termometrs);
+            logger.info("Termometr record was saved");
+        }
+        else {
+            logger.error("Termometr record with this ID:"+termometr.getId()+" already exists");
+            throw new Exception("Termometr record with this ID:"+termometr.getId()+" already exists");
+        }
     }
 
     @Override
-    public Termometr getTermometrRecordByID(int id) {
-        return null;
+    public Termometr getTermometrRecordByID(int id) throws Exception {
+        Wrapper<Termometr> termometrs = getAllRecords(config.getConfigurationEntry(TERMOMERT_XML));
+        Optional<Termometr> termometr = termometrs.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!termometr.isPresent()){
+            logger.error("Termometr record with this ID:"+id+" already exists");
+            throw new Exception("Termometr record with this ID:"+id+" already exists");
+        }
+        logger.info("Termometr record was found");
+        return termometr.get();
     }
 
     @Override
-    public void updateTermometrRecord(Termometr termometr) {
-
+    public void updateTermometrRecord(Termometr termometr) throws Exception {
+        Wrapper<Termometr> termometrs = getAllRecords(config.getConfigurationEntry(TERMOMERT_XML));
+        if(termometrs.getBeans().stream().anyMatch(s->s.getId() == termometr.getId())){
+            termometrs.getBeans().remove(termometr);
+            termometrs.getBeans().add(termometr);
+            initDataSource(config.getConfigurationEntry(TERMOMERT_XML),termometrs);
+            logger.info("Termometr record was updated");
+        }
+        else {
+            logger.error("Termometr record with this ID:"+termometr.getId()+" wasn't found");
+            throw new Exception("Termometr record with this ID:"+termometr.getId()+" wasn't found");
+        }
     }
 
     @Override
