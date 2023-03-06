@@ -3,18 +3,16 @@ package ru.sfedu.model;
 import java.util.List;
 
 public class Lamp extends Device{
-    private boolean state;
+    private boolean state=false;
     private int maxBrightness;
-    private int currentBrightness;
+    private int currentBrightness=0;
 
     public Lamp() {
     }
 
-    public Lamp(long id, String name, Sensor sensor, List<Notification> notifications, boolean state, int maxBrightness, int currentBrightness) {
-        super(id, name, sensor, notifications);
-        this.state = state;
+    public Lamp(long id, String name,int maxBrightness) {
+        super(id, name);
         this.maxBrightness = maxBrightness;
-        this.currentBrightness = currentBrightness;
     }
 
     public boolean isState() {

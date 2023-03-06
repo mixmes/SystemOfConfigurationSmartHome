@@ -1,19 +1,18 @@
 package ru.sfedu.model;
+import java.util.ArrayList;
 import java.util.List;
 public class Device implements EntityBean {
     private long id;
     private String name;
     private Sensor sensor;
-    private List<Notification> notifications;
+    private List<Notification> notifications = new ArrayList<>();
 
     public Device() {
     }
 
-    public Device(long id, String name, Sensor sensor, List<Notification> notifications) {
+    public Device(long id, String name) {
         this.id = id;
         this.name = name;
-        this.sensor = sensor;
-        this.notifications = notifications;
     }
 
     public long getId() {

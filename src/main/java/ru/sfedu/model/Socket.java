@@ -3,14 +3,13 @@ package ru.sfedu.model;
 import java.util.List;
 
 public class Socket extends Device {
-    private boolean state;
+    private boolean state=false;
 
     public Socket() {
     }
 
-    public Socket(long id, String name, Sensor sensor, List<Notification> notifications, boolean state) {
-        super(id, name, sensor, notifications);
-        this.state = state;
+    public Socket(long id, String name) {
+        super(id, name);
     }
 
     public boolean isState() {

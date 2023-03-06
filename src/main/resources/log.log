@@ -882,3 +882,5 @@
 2023-03-05 21:41:36,100 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-05 21:41:36,110 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 21:41:36,111 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
+2023-03-06 09:01:07,680 INFO r.s.m.User [main] User Иван Иванов Иванович add new device to home Дом Ивановых
+2023-03-06 09:02:07,815 INFO r.s.m.User [main] User Иван Иванов Иванович add new device null to home Дом Ивановых
