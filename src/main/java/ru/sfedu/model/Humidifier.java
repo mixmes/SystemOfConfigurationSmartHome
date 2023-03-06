@@ -1,11 +1,13 @@
 package ru.sfedu.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.xml.bind.annotation.XmlElement;
-import java.util.List;
-@XmlAccessorType(XmlAccessType.FIELD)
+
 public class Humidifier extends Device{
+    private static final Logger log = LogManager.getLogger(Humidifier.class);
     @XmlElement(name = "humidityForOn")
     private int humidityForOn;
     @XmlElement(name = "humidityForOff")
@@ -14,6 +16,7 @@ public class Humidifier extends Device{
     private  int maxPower;
     @XmlElement(name = "currentPower")
     private int currentPower=0;
+    private boolean state=false;
 
     public Humidifier() {
     }
@@ -53,5 +56,27 @@ public class Humidifier extends Device{
 
     public void setCurrentPower(int currentPower) {
         this.currentPower = currentPower;
+    }
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
+    public void automaticAction() throws Exception {
+        if(humidityForOff==0 && humidityForOn==0){
+            log.error("Humidifier does not have humidityOff and humidityOn");
+            throw new Exception("Automatic activation is not set");
+        }
+        if (((Hygrometer)sensor).getHumidity()==humidityForOff){
+            log.info("Humidifier is off");
+            state = false;
+        }else if (((Hygrometer)sensor).getHumidity()==humidityForOn){
+            log.info("Humidifier is on");
+            state = true;
+        }
     }
 }

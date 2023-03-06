@@ -1,20 +1,11 @@
 package ru.sfedu.model;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.List;
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Device implements EntityBean {
-    @XmlElement(name = "id")
-    private long id;
-    @XmlElement(name = "name")
-    private String name;
-    @XmlTransient
-    private Sensor sensor;
-    @XmlTransient
-    private List<Notification> notifications = new ArrayList<>();
+    protected long id;
+    protected String name;
+    protected Sensor sensor;
+    protected List<Notification> notifications = new ArrayList<>();
 
     public Device() {
     }

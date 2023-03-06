@@ -102,7 +102,12 @@ public class User implements EntityBean  {
         log.info("User "+name+" changes lock state "+l.getName()+" to "+((Lock)getDeviceFromSmartHome(lock)).isState());
 
     }
-
+    public void changeStateHeater(Heater h) throws Exception {
+        Device heater = checkDeviceInSmartHome(h);
+        boolean changesState = !((Heater)getDeviceFromSmartHome(heater)).isState();
+        ((Heater)getDeviceFromSmartHome(heater)).setState(changesState);
+        log.info("User "+name+" changes heater state "+h.getName()+" to "+((Heater)getDeviceFromSmartHome(heater)).isState());
+    }
     public void changeHeatersPower(Heater h, int power) throws Exception {
         Device heater = checkDeviceInSmartHome(h);
         if (h.getMaxPower() >= power) {
@@ -123,6 +128,11 @@ public class User implements EntityBean  {
         boolean changesState = !((Socket)getDeviceFromSmartHome(socket)).isState();
         ((Socket)getDeviceFromSmartHome(socket)).setState(changesState);
 
+    }
+    public void changeStateHumidifier(Humidifier h) throws Exception {
+        Device humidifier = checkDeviceInSmartHome(h);
+        boolean changesState = !((Humidifier)getDeviceFromSmartHome(humidifier)).isState();
+        ((Humidifier)getDeviceFromSmartHome(humidifier)).setState(changesState);
     }
     public void changeHumidifierPower(Humidifier h,int power) throws Exception {
         Device humidifier = checkDeviceInSmartHome(h);
