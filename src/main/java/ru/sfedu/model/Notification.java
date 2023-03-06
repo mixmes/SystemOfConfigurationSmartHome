@@ -10,6 +10,8 @@ import java.util.Objects;
 public class Notification implements EntityBean  {
     @XmlElement(name = "id")
     private long id;
+    @XmlElement(name = "deviceID")
+    private long deviceID;
     @XmlElement(name = "message")
     private String message;
     @XmlElement(name = "date")
@@ -20,11 +22,28 @@ public class Notification implements EntityBean  {
     public Notification() {
     }
 
-    public Notification(long id,String message, Date date, String sender) {
+    public Notification(long id,long deviceID,String message, Date date, String sender) {
         this.id = id;
+        this.deviceID = deviceID;
         this.message = message;
         this.date = date;
         this.sender = sender;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getDeviceID() {
+        return deviceID;
+    }
+
+    public void setDeviceID(long deviceID) {
+        this.deviceID = deviceID;
     }
 
     public String getMessage() {

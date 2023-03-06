@@ -4,16 +4,25 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.Constants;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class User implements EntityBean  {
+    @XmlElement(name = "name")
     private String name ;
+    @XmlElement(name = "id")
     private long id;
+    @XmlTransient
     private SmartHome smartHome;
-    private Constants.AcessLevel accessLevel=Constants.AcessLevel.ADMIN;;
+    @XmlElement(name = "accessLevel")
+    private Constants.AcessLevel accessLevel=Constants.AcessLevel.ADMIN;
+    @XmlTransient
     private Logger log =  LogManager.getLogger(User.class);
 
     public User() {

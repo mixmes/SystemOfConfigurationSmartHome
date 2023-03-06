@@ -2,7 +2,13 @@ package ru.sfedu.model;
 
 import ru.sfedu.Constants;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Hygrometer extends Sensor{
+    @XmlElement(name = "humidity")
     private int humidity;
 
     public Hygrometer() {

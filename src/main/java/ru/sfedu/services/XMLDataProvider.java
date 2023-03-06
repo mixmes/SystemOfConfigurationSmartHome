@@ -10,7 +10,10 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
 import static ru.sfedu.Constants.*;
 
 public class XMLDataProvider implements IDataProvider {
@@ -65,19 +68,41 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void saveDeviceRecord(Device device) throws IOException {
+    public void saveDeviceRecord(Device device) throws Exception {
+        Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
+        if(devices.getBeans().stream().noneMatch(s->s.getID() == device.getID())){
+            devices.getBeans().add(device);
+            initDataSource(config.getConfigurationEntry(DEVICE_XML),devices);
 
-
+            logger.info("Device record was saved");
+        }
+        else {
+            logger.error("Device record with this ID:"+device.getID()+" already exists");
+            throw new Exception("Device record with this ID:"+device.getID()+" already exists");
+        }
     }
 
     @Override
-    public Device getDeviceRecordByID(int id) {
-        return null;
+    public Device getDeviceRecordByID(int id) throws Exception {
+        Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
+        Optional<Device> device = devices.getBeans().stream().filter(s->s.getID() == id).findFirst();
+        if(!device.isPresent()){
+            logger.error("Device record with this ID:"+id+" wasn't found");
+            throw new Exception("Device record with this ID:"+id+" wasn't found");
+        }
+        Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
+        device.get().setNotifications(new ArrayList<>(notifications.getBeans().stream().filter(s->
+                s.getDeviceID() == id).collect(Collectors.toList())));
+        return device.get();
     }
 
     @Override
-    public void updateDeviceRecord(Device device) {
-
+    public void updateDeviceRecord(Device device) throws IOException {
+        Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
+        if(devices.getBeans().stream().noneMatch(s->s.getID() == device.getID())){
+            devices.getBeans().remove(device);
+            devices.getBeans().add(device);
+        }
     }
 
     @Override

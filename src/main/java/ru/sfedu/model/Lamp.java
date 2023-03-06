@@ -1,10 +1,16 @@
 package ru.sfedu.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Lamp extends Device{
+    @XmlElement(name = "state")
     private boolean state=false;
+    @XmlElement(name = "maxBrightness")
     private int maxBrightness;
+    @XmlElement(name = "currentBrightness")
     private int currentBrightness=0;
 
     public Lamp() {

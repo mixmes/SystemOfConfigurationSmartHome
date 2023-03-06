@@ -1,10 +1,19 @@
 package ru.sfedu.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Heater extends Device{
+    @XmlElement(name = "temperatureForOn")
     private int temperatureForOn;
+    @XmlElement(name = "temperatureForOff")
     private int temperatureForOff;
+    @XmlElement(name = "maxPower")
     private int maxPower;
+    @XmlElement(name = "currentPower")
     private int currentPower=0;
+    @XmlElement(name = "isOn")
     private boolean isOn=false;
 
 

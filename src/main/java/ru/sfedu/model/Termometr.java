@@ -2,6 +2,10 @@ package ru.sfedu.model;
 
 import ru.sfedu.Constants;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Termometr extends Sensor {
     private int temperature;
 
