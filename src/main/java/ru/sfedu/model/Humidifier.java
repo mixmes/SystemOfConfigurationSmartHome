@@ -68,15 +68,22 @@ public class Humidifier extends Device{
 
     public void automaticAction() throws Exception {
         if(humidityForOff==0 && humidityForOn==0){
-            log.error("Humidifier does not have humidityOff and humidityOn");
-            throw new Exception("Automatic activation is not set");
+            log.info("Humidifier does not have humidityOff and humidityOn");
+            log.info("Humidifier generate notification");
+            if(((Hygrometer)sensor).getHumidity()<30) {
+                if(!state) this.generateNotification("Humidity too low. You need to switch on the humidifier");
+            }else if(((Termometr)sensor).getTemperature()<25){
+                if(state) this.generateNotification("Humidity too hot. You need to switch off the humidifier");
+            }
         }
         if (((Hygrometer)sensor).getHumidity()==humidityForOff){
             log.info("Humidifier is off");
             state = false;
+            this.generateNotification("The humidity reached "+humidityForOff+"%. Humidifier is off");
         }else if (((Hygrometer)sensor).getHumidity()==humidityForOn){
             log.info("Humidifier is on");
             state = true;
+            this.generateNotification("The humidity reached "+humidityForOn+"%. Humidifier is on");
         }
     }
 }

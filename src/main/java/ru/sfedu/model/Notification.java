@@ -21,10 +21,13 @@ public class Notification implements EntityBean  {
 
     public Notification() {
     }
-
-    public Notification(long id,long deviceID,String message, Date date, String sender) {
+    public Notification(String message, Date date, String sender) {
+        this.message = message;
+        this.date = date;
+        this.sender = sender;
+    }
+    public Notification(long id,String message, Date date, String sender) {
         this.id = id;
-        this.deviceID = deviceID;
         this.message = message;
         this.date = date;
         this.sender = sender;
@@ -90,6 +93,6 @@ public class Notification implements EntityBean  {
 
     @Override
     public String toString(){
-        return date+" "+sender+": "+message+"\n";
+        return date+" "+sender+": "+message;
     }
 }

@@ -23,7 +23,7 @@ public class User implements EntityBean  {
     @XmlElement(name = "accessLevel")
     private Constants.AcessLevel accessLevel=Constants.AcessLevel.ADMIN;
     @XmlTransient
-    private Logger log =  LogManager.getLogger(User.class);
+    private static final Logger log =  LogManager.getLogger(User.class);
 
     public User() {
     }
@@ -79,16 +79,21 @@ public class User implements EntityBean  {
             throw new Exception("This device has already added to the home");
         }
     }
-
-    public void addResidentToSmartHome(User user) throws Exception {
-        if(this.accessLevel==Constants.AcessLevel.ADMIN){
-            user.setSmartHome(smartHome);
-            user.setAccessLevel(Constants.AcessLevel.RESIDENT);
-        }else {
-            log.error("The user does not have enough rights to add user" + user.getName());
-            throw new Exception("Insufficient rights to add residents");
-        }
+    public void deleteDeviceInSmartHome(Device device) throws Exception {
+        checkDeviceInSmartHome(device);
+        smartHome.getDevices().remove(getDeviceFromSmartHome(device));
     }
+    public void addResidentToSmartHome(User user) throws Exception {
+        checkAccessLevel();
+        user.setSmartHome(smartHome);
+        user.setAccessLevel(Constants.AcessLevel.RESIDENT);
+    }
+    public void deleteResidentInSmartHome(User user) throws Exception {
+        checkAccessLevel();
+        user.setSmartHome(null);
+        user.setAccessLevel(Constants.AcessLevel.ADMIN);
+    }
+
     public List<Notification> checkSmartHomesNotification(){
         List<Notification> notifications = new ArrayList<>();
         smartHome.getDevices().forEach(d->notifications.addAll(d.getNotifications()));
@@ -100,6 +105,8 @@ public class User implements EntityBean  {
         boolean changesState = !((Lock)getDeviceFromSmartHome(lock)).isState();
         ((Lock)getDeviceFromSmartHome(lock)).setState(changesState);
         log.info("User "+name+" changes lock state "+l.getName()+" to "+((Lock)getDeviceFromSmartHome(lock)).isState());
+        boolean actualState = ((Lock)getDeviceFromSmartHome(lock)).isState();
+        generateNotificationAboutChangedState(lock,actualState);
 
     }
     public void changeStateHeater(Heater h) throws Exception {
@@ -107,11 +114,14 @@ public class User implements EntityBean  {
         boolean changesState = !((Heater)getDeviceFromSmartHome(heater)).isState();
         ((Heater)getDeviceFromSmartHome(heater)).setState(changesState);
         log.info("User "+name+" changes heater state "+h.getName()+" to "+((Heater)getDeviceFromSmartHome(heater)).isState());
+        boolean actualState = ((Heater)getDeviceFromSmartHome(heater)).isState();
+        generateNotificationAboutChangedState(heater,actualState);
     }
     public void changeHeatersPower(Heater h, int power) throws Exception {
         Device heater = checkDeviceInSmartHome(h);
         if (h.getMaxPower() >= power) {
             ((Heater) getDeviceFromSmartHome(heater)).setCurrentPower(power);
+            generateNotificationAboutChangedPower(heater,power);
         } else {
             log.error("Max power+"+h.getMaxPower()+" < transmited power");
             throw new Exception("Power is higher than allowed");
@@ -119,25 +129,29 @@ public class User implements EntityBean  {
     }
 
     public void automateWorkHeater(Heater h,int tempOn, int tempOff) throws Exception {
-        Device heat = checkDeviceInSmartHome(h);
-        ((Heater)getDeviceFromSmartHome(h)).setTemperatureForOn(tempOn);
-        ((Heater)getDeviceFromSmartHome(h)).setTemperatureForOff(tempOff);
+        Device heater = checkDeviceInSmartHome(h);
+        ((Heater)getDeviceFromSmartHome(heater)).setTemperatureForOn(tempOn);
+        ((Heater)getDeviceFromSmartHome(heater)).setTemperatureForOff(tempOff);
     }
     public void changeStateSocket(Socket s) throws Exception {
         Device socket=checkDeviceInSmartHome(s);
         boolean changesState = !((Socket)getDeviceFromSmartHome(socket)).isState();
         ((Socket)getDeviceFromSmartHome(socket)).setState(changesState);
-
+        boolean actualState = ((Socket)getDeviceFromSmartHome(socket)).isState();
+        generateNotificationAboutChangedState(socket,actualState);
     }
     public void changeStateHumidifier(Humidifier h) throws Exception {
         Device humidifier = checkDeviceInSmartHome(h);
         boolean changesState = !((Humidifier)getDeviceFromSmartHome(humidifier)).isState();
         ((Humidifier)getDeviceFromSmartHome(humidifier)).setState(changesState);
+        boolean actualState = ((Humidifier)getDeviceFromSmartHome(humidifier)).isState();
+        generateNotificationAboutChangedState(humidifier,actualState);
     }
     public void changeHumidifierPower(Humidifier h,int power) throws Exception {
         Device humidifier = checkDeviceInSmartHome(h);
         if(((Humidifier)humidifier).getMaxPower()>=power){
             ((Humidifier)getDeviceFromSmartHome(humidifier)).setCurrentPower(power);
+            generateNotificationAboutChangedPower(humidifier,power);
         }else {
             log.error("Max power "+h.getMaxPower()+" < transmitted power "+power);
             throw new Exception("Power is higher than allowed");
@@ -157,12 +171,15 @@ public class User implements EntityBean  {
         Device lamp = checkDeviceInSmartHome(l);
         boolean changesState = !((Lamp)getDeviceFromSmartHome(lamp)).isState();
         ((Lamp)getDeviceFromSmartHome(lamp)).setState(changesState);
+        boolean actualState = ((Lamp)getDeviceFromSmartHome(lamp)).isState();
+        generateNotificationAboutChangedState(lamp,actualState);
     }
 
     public void changeLampBrightness(Lamp l,int brightness) throws Exception {
         Device lamp = checkDeviceInSmartHome(l);
         if(l.getMaxBrightness()>=brightness){
             ((Lamp)getDeviceFromSmartHome(lamp)).setCurrentBrightness(brightness);
+            generateNotificationAboutChangedPower(lamp,brightness);
         }else{
             log.error("Max brightness "+l.getMaxBrightness()+" < transmitted brightness "+brightness);
             throw new Exception("Invalid brightness value");
@@ -180,5 +197,17 @@ public class User implements EntityBean  {
 
     private Device getDeviceFromSmartHome(Device d){
         return  smartHome.getDevices().get(smartHome.getDevices().indexOf(d));
+    }
+    private void generateNotificationAboutChangedState(Device device, boolean actualState){
+        getDeviceFromSmartHome(device).generateNotification("Changed its state to "+(actualState?"on":"off"));
+    }
+    private void generateNotificationAboutChangedPower(Device device, int power){
+        getDeviceFromSmartHome(device).generateNotification("Changed its power to "+power);
+    }
+    private void checkAccessLevel() throws Exception {
+        if(accessLevel!= Constants.AcessLevel.ADMIN){
+            log.error("The user does not have enough rights to add user");
+            throw new Exception("Insufficient rights to add residents");
+        }
     }
 }

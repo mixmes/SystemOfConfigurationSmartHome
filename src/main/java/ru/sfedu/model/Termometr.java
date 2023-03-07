@@ -6,6 +6,8 @@ import ru.sfedu.Constants;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import java.util.Date;
+import java.util.logging.SimpleFormatter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Termometr extends Sensor {

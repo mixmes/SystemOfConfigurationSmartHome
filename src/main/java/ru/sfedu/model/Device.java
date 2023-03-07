@@ -1,10 +1,12 @@
 package ru.sfedu.model;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 public class Device implements EntityBean {
     protected long id;
     protected String name;
     protected Sensor sensor;
+    protected boolean state;
     protected List<Notification> notifications = new ArrayList<>();
 
     public Device() {
@@ -39,6 +41,14 @@ public class Device implements EntityBean {
         this.sensor = sensor;
     }
 
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
     public List<Notification> getNotifications() {
         return notifications;
     }
@@ -46,9 +56,17 @@ public class Device implements EntityBean {
     public void setNotifications(List<Notification> notifications) {
         this.notifications = notifications;
     }
+    public void addNotification(Notification notification){
+        notifications.add(notification);
+    }
 
     @Override
     public long getID() {
         return this.id;
+    }
+    public void generateNotification(String message){
+        Notification notification = new Notification(message,new Date(),this.getClass().getSimpleName()+". "+name);
+        notification.setDeviceID(id);
+        notifications.add(notification);
     }
 }
