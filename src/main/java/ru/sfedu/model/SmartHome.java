@@ -24,9 +24,6 @@ public class SmartHome  implements EntityBean  {
 
     }
 
-    public long getId() {
-        return id;
-    }
 
     public void setId(long id) {
         this.id = id;
@@ -50,7 +47,7 @@ public class SmartHome  implements EntityBean  {
     }
 
     @Override
-    public long getID() {
+    public long getId() {
         return this.id;
     }
     public void addDevice(Device device){

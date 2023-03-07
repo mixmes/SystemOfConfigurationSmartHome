@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import ru.sfedu.Constants;
 import ru.sfedu.model.*;
 
+import java.util.Date;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ConfigurationSmartHomeTest {
@@ -46,7 +48,7 @@ public class ConfigurationSmartHomeTest {
         firstHomeAdmin.setSmartHome(firstHome);
     }
     @Test
-    public void testAddUserToSmartHome() throws Exception {
+    public void testUserAddResidentToSmartHome() throws Exception {
         firstHomeAdmin.addResidentToSmartHome(firstHomeResident);
         assertEquals(firstHome, firstHomeResident.getSmartHome());
     }
@@ -57,13 +59,30 @@ public class ConfigurationSmartHomeTest {
             firstHomeResident.addResidentToSmartHome(firstHomeAdmin);});
         assertEquals(exception.getMessage(),"Insufficient rights to add residents");
     }
-
+    @Test
+    public void tetsUserDeleteResidentInSmartHome() throws Exception {
+        firstHomeAdmin.deleteResidentInSmartHome(firstHomeResident);
+        assertNotEquals(firstHome,firstHomeResident.getSmartHome());
+        firstHomeAdmin.addResidentToSmartHome(firstHomeResident);
+    }
     @Test
     public void testUserAddsDeviceToSmartHome() throws Exception {
         firstHomeAdmin.addDeviceToSmartHome(lampFirstHome);
         assertTrue(firstHome.getDevices().contains(lampFirstHome));
     }
-
+    @Test
+    public void testUserDeleteDeviceInSmartHome() throws Exception {
+        firstHomeAdmin.deleteDeviceInSmartHome(humidifier2HomeFirst);
+        assertFalse(firstHomeAdmin.getSmartHome().getDevices().contains(humidifier2HomeFirst));
+        firstHomeAdmin.addDeviceToSmartHome(humidifier2HomeFirst);
+    }
+    @Test
+    public void testUserGetAllNotifications() throws Exception {
+        Lamp lamp = new Lamp(1,"Лампа",10);
+        firstHomeAdmin.addDeviceToSmartHome(lamp);
+        firstHomeAdmin.changeStateLamp(lamp);
+        assertTrue(firstHomeAdmin.checkSmartHomesNotification().size()>0);
+    }
     @Test
     public void testAddsExistingDeviceToSmartHome(){
         Exception exception = assertThrows(Exception.class,()-> {
@@ -197,13 +216,6 @@ public class ConfigurationSmartHomeTest {
         assertTrue(humidifierHomeFirst.isState());
     }
     @Test
-    public void testHygrometerNotifiesHumidifierWithoutAutomaticWork() throws Exception {
-        Exception exception = assertThrows(Exception.class, () -> {
-                    ((Hygrometer) humidifier2HomeFirst.getSensor()).notifyHumidifierOfChanges(humidifier2HomeFirst, 40);
-                });
-        assertEquals(exception.getMessage(),"Automatic activation is not set");
-    }
-    @Test
     public void testHygrometerNotifiesUnattachedHumidifier(){
         Humidifier humidifier = new Humidifier(1, "Увлажнитель",10);
         Exception exception = assertThrows(Exception.class, () -> {
@@ -218,18 +230,56 @@ public class ConfigurationSmartHomeTest {
         assertTrue(heaterHomeFirst.isState());
     }
     @Test
-    public void testTermometrNotifiesHeaterWithoutAutomaticWork() throws Exception {
-        Exception exception = assertThrows(Exception.class, () -> {
-            ((Termometr) heaterHomeFirst.getSensor()).notifyHeaterOfChanges(heaterHomeFirst, 19);
-        });
-        assertEquals(exception.getMessage(),"Automatic activation is not set");
-    }
-    @Test
     public void testTermometrNotifiesUnattachedHeater(){
         Heater heater = new Heater(1, "Обогреватель",10);
         Exception exception = assertThrows(Exception.class, () -> {
             termometrHomeFirst.notifyHeaterOfChanges(heater, 40);
         });
         assertEquals(exception.getMessage(),"This device does not have a sensor");
+    }
+    @Test
+    public void testHeaterGenerateNotificationAboutAutomateChangeState() throws Exception {
+        firstHomeAdmin.automateWorkHeater(heaterHomeFirst,19,21);
+        termometrHomeFirst.notifyHeaterOfChanges(heaterHomeFirst,19);
+        assertEquals(heaterHomeFirst.getNotifications().get(0).toString(),new Date()+" Heater. Обогреватель в зале: The temperature reached 21 degrees. Heater is on");
+    }
+    @Test
+    public void testHeaterGenerateNotificationAboutTemperatureChenged() throws Exception {
+        Heater heater = new Heater(1,"Обогреватель",10);
+        Termometr termometr = new Termometr(1,"Термометр для обогревателя",15);
+        heater.setSensor(termometr);
+        termometr.notifyHeaterOfChanges(heater,14);
+        assertEquals(heater.getNotifications().get(0).toString(),new Date()+" Heater. Обогреватель: Temperature too low. You need to switch on the heater");
+    }
+    @Test
+    public void testDevicesNotificationAboutStateChange() throws Exception {
+        Lock lock = new Lock(1, "Замок");
+        Heater heater = new Heater(1,"Обогреватель",10);
+        firstHomeAdmin.addDeviceToSmartHome(heater);
+        firstHomeAdmin.addDeviceToSmartHome(lock);
+        firstHomeAdmin.changeStateLock(lock);
+        firstHomeAdmin.changeStateLamp(lamp2FirstHome);
+        firstHomeAdmin.changeStateHeater(heater);
+        boolean stateLock = lock.isState();
+        boolean stateLamp = lamp2FirstHome.isState();
+        boolean stateHeater = heaterHomeFirst.isState();
+        assertEquals(lock.getNotifications().get(0).toString(),new Date()+" Lock. Замок: Changed its state to "+(stateLock?"on":"off"));
+        assertEquals(lamp2FirstHome.getNotifications().get(0).toString(),new Date()+" Lamp. Лампа на кухне: Changed its state to "+(stateLamp?"on":"off"));
+        assertEquals(heater.getNotifications().get(0).toString(),new Date()+" Heater. Обогреватель: Changed its state to "+(stateHeater?"on":"off"));
+    }
+    @Test
+    public void testDeviceNotificationAboutPowerChange() throws Exception {
+        Heater heater = new Heater(1,"Обогреватель",10);
+        Humidifier humidifier = new Humidifier(1,"Увлажнитель",5);
+        Lamp lamp = new Lamp(1,"Лампа",10);
+        firstHomeAdmin.addDeviceToSmartHome(lamp);
+        firstHomeAdmin.addDeviceToSmartHome(humidifier);
+        firstHomeAdmin.addDeviceToSmartHome(heater);
+        firstHomeAdmin.changeHeatersPower(heater,9);
+        firstHomeAdmin.changeHumidifierPower(humidifier,4);
+        firstHomeAdmin.changeLampBrightness(lamp,6);
+        assertEquals(heater.getNotifications().get(0).toString(),new Date()+" Heater. Обогреватель: Changed its power to 9");
+        assertEquals(humidifier.getNotifications().get(0).toString(),new Date()+" Humidifier. Увлажнитель: Changed its power to 4");
+        assertEquals(lamp.getNotifications().get(0).toString(),new Date()+" Lamp. Лампа: Changed its power to 6");
     }
 }

@@ -8,7 +8,7 @@ public class Sensor {
     protected long id;
     protected String name;
     protected Constants.SensorType sensorType;
-
+    protected long deviceId;
     public Sensor(){
 
     }
@@ -32,6 +32,14 @@ public class Sensor {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public long getDeviceId() {
+        return deviceId;
+    }
+
+    public void setDeviceId(long deviceId) {
+        this.deviceId = deviceId;
     }
 
     @Override

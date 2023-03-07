@@ -20,7 +20,7 @@ public class Heater extends Device{
     @XmlElement(name = "state")
     private boolean state = false;
 
-
+    public Heater(){}
     public Heater(long id, String name, int maxPower) {
         super(id, name);
         this.maxPower = maxPower;
@@ -67,15 +67,23 @@ public class Heater extends Device{
     }
     public void automaticAction() throws Exception {
         if(temperatureForOff==0 && temperatureForOn==0){
-            log.error("Heater does not have temperatureOff and temperatureOn");
-            throw new Exception("Automatic activation is not set");
+            log.info("Heater does not have temperatureOff and temperatureOn");
+            log.info("Heater generate notofocation");
+            if(((Termometr)sensor).getTemperature()<15) {
+                if(!state) this.generateNotification("Temperature too low. You need to switch on the heater");
+            }else if(((Termometr)sensor).getTemperature()<25){
+                if(state) this.generateNotification("Temperature too hot. You need to switch off the heater");
+            }
         }
+
         if (((Termometr)sensor).getTemperature()==temperatureForOff){
             log.info("Heater is off");
             state = false;
+            this.generateNotification("The temperature reached "+temperatureForOff+" degrees. Heater is off");
         }else if (((Termometr)sensor).getTemperature()==temperatureForOn){
             log.info("Heater is on");
             state = true;
+            this.generateNotification("The temperature reached "+temperatureForOff+" degrees. Heater is on");
         }
     }
 }

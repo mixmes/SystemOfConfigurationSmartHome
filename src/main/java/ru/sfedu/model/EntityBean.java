@@ -1,5 +1,5 @@
 package ru.sfedu.model;
 
 public interface EntityBean {
-    public long getID() ;
+    public long getId() ;
 }

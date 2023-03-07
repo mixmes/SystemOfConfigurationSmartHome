@@ -1,11 +1,7 @@
 package ru.sfedu.services;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 import ru.sfedu.model.Notification;
-import ru.sfedu.model.Sensor;
-import ru.sfedu.model.Termometr;
 import ru.sfedu.utils.ConfigurationUtil;
 
 import java.util.Date;
@@ -16,9 +12,9 @@ import static ru.sfedu.Constants.*;
 public class XMLDataProviderTest {
     private static XMLDataProvider xmlDataProvider = new XMLDataProvider();
     private static ConfigurationUtil config = new ConfigurationUtil();
-    private static Notification tempNotification = new Notification(1,1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
-    private static Notification lockNotification = new Notification(2,2,"Door is opened",new Date(),"Lock");
-    private static Notification socketNotification = new Notification(3,3,"The device is connected",new Date(),"Socket");
+    private static Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
+    private static Notification lockNotification = new Notification(2,"Door is opened",new Date(),"Lock");
+    private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
 
 
     @Test
@@ -110,9 +106,9 @@ public class XMLDataProviderTest {
     void saveNotificationRecord() throws Exception {
         xmlDataProvider.saveNotificationRecord(tempNotification);
 
-        assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getID()));
+        assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getId()));
 
-        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getID(),Notification.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getId(),Notification.class);
     }
     @Test
     void saveExistingNotificationRecord() throws Exception {
@@ -120,18 +116,18 @@ public class XMLDataProviderTest {
 
         Exception exception = assertThrows(Exception.class,()->{
             xmlDataProvider.saveNotificationRecord(lockNotification);});
-        assertEquals(exception.getMessage(),"Notification record with this ID:"+lockNotification.getID()+" already exists");
+        assertEquals(exception.getMessage(),"Notification record with this ID:"+lockNotification.getId()+" already exists");
 
-        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),lockNotification.getID(), Notification.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),lockNotification.getId(), Notification.class);
     }
 
     @Test
     void getNotificationRecordByID() throws Exception {
         xmlDataProvider.saveNotificationRecord(tempNotification);
 
-        assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getID()));
+        assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getId()));
 
-        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getID(), Notification.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getId(), Notification.class);
     }
     @Test
     void getNonExistingNotificationRecordByID(){
@@ -147,8 +143,8 @@ public class XMLDataProviderTest {
         tempNotification.setMessage("Temperature too hot. You need to switch on the heater");
         xmlDataProvider.updateNotificationRecord(tempNotification);
         assertEquals("Temperature too hot. You need to switch on the heater",
-                xmlDataProvider.getNotificationRecordByID(tempNotification.getID()).getMessage());
-        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getID(), Notification.class);
+                xmlDataProvider.getNotificationRecordByID(tempNotification.getId()).getMessage());
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getId(), Notification.class);
         tempNotification.setMessage("Temperature too low. You need to switch on the heater");
     }
     @Test
@@ -156,7 +152,7 @@ public class XMLDataProviderTest {
         Exception exception = assertThrows(Exception.class,()->{
             xmlDataProvider.updateNotificationRecord(lockNotification);
         });
-        assertEquals("Notification record with this ID:"+lockNotification.getID()+" wasn't found",exception.getMessage());
+        assertEquals("Notification record with this ID:"+lockNotification.getId()+" wasn't found",exception.getMessage());
     }
     @Test
     void saveSensorRecord() {
