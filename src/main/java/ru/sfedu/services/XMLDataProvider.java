@@ -10,9 +10,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 import static ru.sfedu.Constants.*;
 
@@ -56,7 +54,7 @@ public class XMLDataProvider implements IDataProvider {
     @Override
     public <T extends EntityBean> void deleteRecord(String file, long id, Class<T> tClass) throws Exception {
         Wrapper<T> wrapper = getAllRecords(file);
-        Optional<T> teacher = wrapper.getBeans().stream().filter(t->t.getID()==id).findFirst();
+        Optional<T> teacher = wrapper.getBeans().stream().filter(t->t.getId()==id).findFirst();
         if (!teacher.isPresent()){
             logger.error("There is no record with ID:"+id+" in "+file);
             throw new Exception("There is no record with this id");
@@ -70,14 +68,14 @@ public class XMLDataProvider implements IDataProvider {
     @Override
     public void saveDeviceRecord(Device device) throws Exception {
         Wrapper<Device> devices = getAllRecords(config.getConfigurationEntry(DEVICE_XML));
-        if(devices.getBeans().stream().noneMatch(s->s.getID() == device.getID())){
+        if(devices.getBeans().stream().noneMatch(s->s.getId() == device.getId())){
             devices.getBeans().add(device);
 
         }
     }
 
     @Override
-    public Device getDeviceRecordByID(int id) throws Exception {
+    public Device getDeviceRecordByID(long id) throws Exception {
         return null;
     }
 
@@ -89,13 +87,13 @@ public class XMLDataProvider implements IDataProvider {
     @Override
     public void saveHeaterRecord(Heater heater) throws IOException {
         Wrapper<Humidifier> humidifiers = getAllRecords(config.getConfigurationEntry(HUMIDIFIER_XML));
-        if(humidifiers.getBeans().stream().noneMatch(s->s.getID() == heater.getID())){
+        if(humidifiers.getBeans().stream().noneMatch(s->s.getId() == heater.getId())){
 
         }
     }
 
     @Override
-    public Heater getHeaterRecordByID(int id) {
+    public Heater getHeaterRecordByID(long id) {
         return null;
     }
 
@@ -110,7 +108,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Humidifier getHumidifierRecordByID(int id) {
+    public Humidifier getHumidifierRecordByID(long id) {
         return null;
     }
 
@@ -134,7 +132,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Hygrometer getHygrometerRecordByID(int id) throws Exception {
+    public Hygrometer getHygrometerRecordByID(long id) throws Exception {
         Wrapper<Hygrometer> hygrometers = getAllRecords(config.getConfigurationEntry(HYGROMETER_XML));
         Optional<Hygrometer> hygrometer = hygrometers.getBeans().stream().filter(s->s.getId() == id).findFirst();
         if(!hygrometer.isPresent()){
@@ -165,7 +163,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Lamp getLampRecordByID(int id) {
+    public Lamp getLampRecordByID(long id) {
         return null;
     }
 
@@ -180,7 +178,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Lock getLockRecordByID(int id) {
+    public Lock getLockRecordByID(long id) {
         return null;
     }
 
@@ -192,14 +190,14 @@ public class XMLDataProvider implements IDataProvider {
     @Override
     public void saveNotificationRecord(Notification notification) throws Exception {
         Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
-        if(notifications.getBeans().stream().noneMatch(s->s.getID() == notification.getID())){
+        if(notifications.getBeans().stream().noneMatch(s->s.getId() == notification.getId())){
             notifications.getBeans().add(notification);
             initDataSource(config.getConfigurationEntry(NOTIFICATION_XML),notifications);
             logger.info("Notification record was saved");
         }
         else {
-            logger.error("Notification record with this ID:"+notification.getID()+" already exists");
-            throw new Exception("Notification record with this ID:"+notification.getID()+" already exists");
+            logger.error("Notification record with this ID:"+notification.getId()+" already exists");
+            throw new Exception("Notification record with this ID:"+notification.getId()+" already exists");
 
         }
     }
@@ -207,7 +205,7 @@ public class XMLDataProvider implements IDataProvider {
     @Override
     public Notification getNotificationRecordByID(long id) throws Exception {
         Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
-        Optional<Notification> notification = notifications.getBeans().stream().filter(s->s.getID() == id).findFirst();
+        Optional<Notification> notification = notifications.getBeans().stream().filter(s->s.getId() == id).findFirst();
         if(!notification.isPresent()){
             logger.error("Notification record with this ID:"+id+" wasn't found");
             throw new Exception("Notification record with this ID:"+id+" wasn't found");
@@ -219,7 +217,7 @@ public class XMLDataProvider implements IDataProvider {
     @Override
     public void updateNotificationRecord(Notification notification) throws Exception {
         Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
-        if(notifications.getBeans().stream().anyMatch(s->s.getID() == notification.getID())){
+        if(notifications.getBeans().stream().anyMatch(s->s.getId() == notification.getId())){
             notifications.getBeans().remove(notification);
             notifications.getBeans().add(notification);
             initDataSource(config.getConfigurationEntry(NOTIFICATION_XML),notifications);
@@ -227,8 +225,8 @@ public class XMLDataProvider implements IDataProvider {
             logger.debug(getNotificationRecordByID(1).getMessage());
         }
         else {
-            logger.error("Notification record with this ID:"+notification.getID()+" wasn't found");
-            throw new Exception("Notification record with this ID:"+notification.getID()+" wasn't found");
+            logger.error("Notification record with this ID:"+notification.getId()+" wasn't found");
+            throw new Exception("Notification record with this ID:"+notification.getId()+" wasn't found");
         }
     }
 
@@ -238,7 +236,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Sensor getSensorRecordByID(int id) {
+    public Sensor getSensorRecordByID(long id) {
         return null;
     }
 
@@ -253,7 +251,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public SmartHome getSmartHomeRecordByID(int id) {
+    public SmartHome getSmartHomeRecordByID(long id) {
         return null;
     }
 
@@ -268,7 +266,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Socket getSocketRecordByID(int id) {
+    public Socket getSocketRecordByID(long id) {
         return null;
     }
 
@@ -292,7 +290,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public Termometr getTermometrRecordByID(int id) throws Exception {
+    public Termometr getTermometrRecordByID(long id) throws Exception {
         Wrapper<Termometr> termometrs = getAllRecords(config.getConfigurationEntry(TERMOMERT_XML));
         Optional<Termometr> termometr = termometrs.getBeans().stream().filter(s->s.getId() == id).findFirst();
         if(!termometr.isPresent()){
@@ -301,6 +299,11 @@ public class XMLDataProvider implements IDataProvider {
         }
         logger.info("Termometr record was found");
         return termometr.get();
+    }
+
+    @Override
+    public Termometr getTermometrRecordByHeaterId(long id) {
+        return null;
     }
 
     @Override
@@ -324,7 +327,7 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public User getUserRecordByID(int id) {
+    public User getUserRecordByID(long id) {
         return null;
     }
 

@@ -42,9 +42,6 @@ public class User implements EntityBean  {
         this.name = name;
     }
 
-    public long getId() {
-        return id;
-    }
 
     public void setId(long id) {
         this.id = id;
@@ -67,7 +64,7 @@ public class User implements EntityBean  {
     }
 
     @Override
-    public long getID() {
+    public long getId() {
         return this.id;
     }
     public void addDeviceToSmartHome(Device device) throws Exception {

@@ -6,7 +6,7 @@ public class Device implements EntityBean {
     protected long id;
     protected String name;
     protected Sensor sensor;
-    protected boolean state;
+    protected boolean state=false;
     protected List<Notification> notifications = new ArrayList<>();
 
     public Device() {
@@ -17,9 +17,6 @@ public class Device implements EntityBean {
         this.name = name;
     }
 
-    public long getId() {
-        return id;
-    }
 
     public void setId(long id) {
         this.id = id;
@@ -61,7 +58,7 @@ public class Device implements EntityBean {
     }
 
     @Override
-    public long getID() {
+    public long getId() {
         return this.id;
     }
     public void generateNotification(String message){

@@ -33,9 +33,6 @@ public class Notification implements EntityBean  {
         this.sender = sender;
     }
 
-    public long getId() {
-        return id;
-    }
 
     public void setId(long id) {
         this.id = id;
@@ -74,7 +71,7 @@ public class Notification implements EntityBean  {
     }
 
     @Override
-    public long getID() {
+    public long getId() {
         return this.id;
     }
 
