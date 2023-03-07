@@ -3,6 +3,7 @@ package ru.sfedu.services;
 import ru.sfedu.model.*;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface IDataProvider {
     <T extends EntityBean> void deleteRecord(String file, long id, Class<T> tClass, String[] headers) throws Exception;
@@ -19,6 +20,7 @@ public interface IDataProvider {
     void updateHumidifierRecord(Humidifier humidifier) throws Exception;
     void saveHygrometerRecord(Hygrometer hygrometer) throws Exception;
     Hygrometer getHygrometerRecordByID(long id) throws Exception;
+    Hygrometer getHygrometerRecordByDeviceID(long id) throws Exception;
     void updateHygrometerRecord(Hygrometer hygrometer) throws Exception;
     void saveLampRecord(Lamp lamp) throws Exception;
     Lamp getLampRecordByID(long id) throws Exception;
@@ -28,6 +30,7 @@ public interface IDataProvider {
     void deleteLockRecord(Lock lock) throws Exception;
     void saveNotificationRecord(Notification notification) throws Exception;
     Notification getNotificationRecordByID(long id) throws Exception;
+    List<Notification> getNotificationRecordsByDeviceID(long id) throws Exception;
     void updateNotificationRecord(Notification notification) throws Exception;
     void saveSensorRecord(Sensor sensor) throws Exception;
     Sensor getSensorRecordByID(long id) throws Exception;
@@ -41,7 +44,7 @@ public interface IDataProvider {
     void saveTermometrRecord(Termometr termometr) throws Exception;
     Termometr getTermometrRecordByID(long id) throws Exception;
 
-    Termometr getTermometrRecordByHeaterId(long id) throws IOException;
+    Termometr getTermometrRecordByHeaterId(long id) throws Exception;
 
     void updateTermometrRecord(Termometr termometr) throws Exception;
     void saveUserRecord(User user) throws Exception;
