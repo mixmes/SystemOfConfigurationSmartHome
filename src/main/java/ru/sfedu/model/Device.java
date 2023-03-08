@@ -3,16 +3,15 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-<<<<<<<<< Temporary merge branch 1
-=========
+
 
 @XmlAccessorType(XmlAccessType.FIELD)
->>>>>>>>> Temporary merge branch 2
 public class Device implements EntityBean {
 
     protected long id;
@@ -79,13 +78,13 @@ public class Device implements EntityBean {
     public long getId() {
         return this.id;
     }
-    public void generateNotification(String message){
+    public void generateNotification(String message) throws ParseException {
         Notification notification = new Notification(message,new Date(),this.getClass().getSimpleName()+". "+name);
         notification.setDeviceID(id);
         notifications.add(notification);
     }
 
-<<<<<<<<< Temporary merge branch 1
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -98,7 +97,5 @@ public class Device implements EntityBean {
     public int hashCode() {
         return Objects.hash(id, name, sensor, state, notifications);
     }
-=========
 
->>>>>>>>> Temporary merge branch 2
 }
