@@ -24,7 +24,8 @@ class DataBaseProviderTest {
     private static Lamp lamp = new Lamp(1, "Лампа на кухне", 10);
     private static Notification notificationHeater = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),Heater.class.getSimpleName()+": "+heater.getName());
     private static Notification notificationHumidifier = new Notification(2, "Humidity too low. You need to switch on the humidifier", new Date(), Humidifier.class.getSimpleName()+": "+humidifier.getName());
-
+    private static Lock lock = new Lock(1, "Замок на входной двери");
+    private static Socket socket = new Socket(1,"Розетка на кухне");
     @BeforeAll
     public static void init(){
         heater.setSensor(termometr);
@@ -192,7 +193,7 @@ class DataBaseProviderTest {
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notification.getId());
     }
     @Test
-    public void getNonExistingNotificationRecord(){
+    public void tesGetNonExistingNotificationRecord(){
         Exception exception = assertThrows(Exception.class, ()->{
             dataBaseProvider.getNotificationRecordByID(10);
         });
@@ -203,6 +204,89 @@ class DataBaseProviderTest {
         dataBaseProvider.saveLampRecord(lamp);
         assertEquals(dataBaseProvider.getLampRecordByID(lamp.getId()),lamp);
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE), lamp.getId());
+    }
+    @Test
+    public void testSaveExistingLampRecord() throws Exception {
+        dataBaseProvider.saveLampRecord(lamp);
+        Exception exception = assertThrows(Exception.class, () ->{
+            dataBaseProvider.saveLampRecord(lamp);
+        });
+        assertEquals(exception.getMessage(), "Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE), lamp.getId());
+    }
+    @Test
+    public void testUpdateLampRecord() throws Exception {
+        dataBaseProvider.saveLampRecord(lamp);
+        lamp.setCurrentBrightness(5);
+        dataBaseProvider.updateLampRecord(lamp);
+        assertEquals(dataBaseProvider.getLampRecordByID(lamp.getId()),lamp);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+    }
+    @Test
+    public void testGetNotExistingLampRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getLampRecordByID(10);
+        });
+        assertEquals(exception.getMessage(),"Record not exist" );
+    }
+    @Test
+    public void testSaveLockRecord() throws Exception {
+        dataBaseProvider.saveLockRecord(lock);
+        assertEquals(dataBaseProvider.getLockRecordByID(lock.getId()),lock);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE), lock.getId());
+    }
+    @Test
+    public void testSaveExistingLockRecord() throws Exception {
+        dataBaseProvider.saveLockRecord(lock);
+        Exception exception = assertThrows(Exception.class,()->{
+            dataBaseProvider.saveLockRecord(lock);
+        });
+        assertEquals(exception.getMessage(),"Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE), lock.getId());
+    }
+    @Test
+    public void testUpdateLockRecord() throws Exception {
+        dataBaseProvider.saveLockRecord(lock);
+        lock.setState(true);
+        assertEquals(dataBaseProvider.getLockRecordByID(lock.getId()), lock);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE), lock.getId());
+    }
+    @Test
+    public void testGetNotExistingLockRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getLockRecordByID(10);
+        });
+        assertEquals(exception.getMessage(), "Record not exist");
+    }
+    @Test
+    public void testSaveSocketRecord() throws Exception {
+        dataBaseProvider.saveSocketRecord(socket);
+        assertEquals(dataBaseProvider.getSocketRecordByID(socket.getId()),socket);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE),socket.getId());
+    }
+    @Test
+    public void testSaveExistingSocketRecord() throws Exception {
+        dataBaseProvider.saveSocketRecord(socket);
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.saveSocketRecord(socket);
+        });
+        assertEquals(exception.getMessage(),"Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE),socket.getId());
+    }
+    @Test
+    public void testUpdateSocket() throws Exception {
+        dataBaseProvider.saveSocketRecord(socket);
+        socket.setState(true);
+        dataBaseProvider.updateSocketRecord(socket);
+        assertEquals(dataBaseProvider.getSocketRecordByID(socket.getId()),socket);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE),socket.getId());
+    }
+    @Test
+    public void testGetNotExistingSocket(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getSocketRecordByID(socket.getId());
+        });
+        assertEquals(exception.getMessage(), "Record not exist");
     }
     @AfterAll
     public static void closeConnection(){

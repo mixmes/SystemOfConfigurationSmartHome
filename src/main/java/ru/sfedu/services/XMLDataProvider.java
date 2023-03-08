@@ -338,9 +338,10 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void deleteLockRecord(Lock lock) {
+    public void updateLockRecord(Lock lock) throws Exception {
 
     }
+
 
     @Override
     public void saveNotificationRecord(Notification notification) throws Exception {
