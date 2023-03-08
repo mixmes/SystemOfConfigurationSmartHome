@@ -86,4 +86,18 @@ public class Heater extends Device{
             this.generateNotification("The temperature reached "+temperatureForOff+" degrees. Heater is on");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Heater{" +
+                "temperatureForOn=" + temperatureForOn +
+                ", temperatureForOff=" + temperatureForOff +
+                ", maxPower=" + maxPower +
+                ", currentPower=" + currentPower +
+                ", state=" + state +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", sensor=" + sensor +
+                '}';
+    }
 }

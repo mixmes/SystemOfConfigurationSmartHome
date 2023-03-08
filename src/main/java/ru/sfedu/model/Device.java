@@ -2,6 +2,8 @@ package ru.sfedu.model;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
+
 public class Device implements EntityBean {
     protected long id;
     protected String name;
@@ -36,6 +38,8 @@ public class Device implements EntityBean {
 
     public void setSensor(Sensor sensor) {
         this.sensor = sensor;
+        if(sensor != null) sensor.setDeviceId(id);
+
     }
 
     public boolean isState() {
@@ -65,5 +69,18 @@ public class Device implements EntityBean {
         Notification notification = new Notification(message,new Date(),this.getClass().getSimpleName()+". "+name);
         notification.setDeviceID(id);
         notifications.add(notification);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Device device = (Device) o;
+        return id == device.id && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor) && Objects.equals(notifications, device.notifications);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, sensor, state, notifications);
     }
 }

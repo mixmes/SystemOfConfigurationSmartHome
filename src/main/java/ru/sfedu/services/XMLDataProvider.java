@@ -334,20 +334,6 @@ public class XMLDataProvider implements IDataProvider {
     public void updateDeviceRecord(Device device) throws IOException {
     }
     @Override
-    public void saveSensorRecord(Sensor sensor) throws Exception {
-
-    }
-
-    @Override
-    public Sensor getSensorRecordByID(long id) {
-        return null;
-    }
-
-    @Override
-    public void updateSensorRecord(Sensor sensor) {
-
-    }
-    @Override
     public void saveTermometrRecord(Termometr termometr) throws Exception {
         Wrapper<Termometr> termometrs = getAllRecords(config.getConfigurationEntry(TERMOMERT_XML));
         if(termometrs.getBeans().stream().noneMatch(s->s.getId() == termometr.getId())){

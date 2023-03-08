@@ -1,4 +1,4 @@
-package ru.sfedu.services;
+package ru.sfedu.model;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.sfedu.Constants;
@@ -35,8 +35,8 @@ public class ConfigurationSmartHomeTest {
         heaterHomeFirst = new Heater(5,"Обогреватель в зале",15);
         humidifierHomeFirst = new Humidifier(5,"Увлажнитель воздуха в зале",5);
         humidifier2HomeFirst=new Humidifier(9,"Увлажнитель воздуха в спальне",5);
-        hygrometerHomeFirst=new Hygrometer(1, "Гигрометр для увлажнителя в зале");
-        hygrometer2HomeFirst=new Hygrometer(1, "Гигрометр для увлажнителя в спальне");
+        hygrometerHomeFirst=new Hygrometer(1, "Гигрометр для увлажнителя в зале", 30);
+        hygrometer2HomeFirst=new Hygrometer(1, "Гигрометр для увлажнителя в спальне",30);
         termometrHomeFirst=new Termometr(2,"Термометр для обогревателя в зале", 20);
         heaterHomeFirst.setSensor(termometrHomeFirst);
         humidifierHomeFirst.setSensor(hygrometerHomeFirst);

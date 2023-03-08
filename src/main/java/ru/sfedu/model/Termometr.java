@@ -42,4 +42,14 @@ public class Termometr extends Sensor {
             throw new Exception("Sensor not connected to this humidifier");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Termometr{" +
+                "temperature=" + temperature +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", deviceId=" + deviceId +
+                '}';
+    }
 }
