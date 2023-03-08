@@ -24,6 +24,7 @@ class DataBaseProviderTest {
     private static Lamp lamp = new Lamp(1, "Лампа на кухне", 10);
     private static Notification notificationHeater = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),Heater.class.getSimpleName()+": "+heater.getName());
     private static Notification notificationHumidifier = new Notification(2, "Humidity too low. You need to switch on the humidifier", new Date(), Humidifier.class.getSimpleName()+": "+humidifier.getName());
+
     @BeforeAll
     public static void init(){
         heater.setSensor(termometr);
@@ -196,6 +197,12 @@ class DataBaseProviderTest {
             dataBaseProvider.getNotificationRecordByID(10);
         });
         assertEquals(exception.getMessage(), "Record not exist");
+    }
+    @Test
+    public void testSaveLampRecord() throws Exception {
+        dataBaseProvider.saveLampRecord(lamp);
+        assertEquals(dataBaseProvider.getLampRecordByID(lamp.getId()),lamp);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE), lamp.getId());
     }
     @AfterAll
     public static void closeConnection(){

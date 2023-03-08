@@ -351,7 +351,7 @@ public class DataBaseProvider implements IDataProvider{
     public void saveLampRecord(Lamp lamp) throws Exception {
         String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(LAMP_TABLE)+
                 " (id, name, state, maxBright, currentBright, smartHomeId)" +
-                "VALUES(?, ?, ?, ?, ?, ?)";
+                " VALUES(?, ?, ?, ?, ?, ?)";
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setLong(1, lamp.getId());
             statement.setString(2, lamp.getName());
@@ -372,9 +372,6 @@ public class DataBaseProvider implements IDataProvider{
                 }
             });
             log.info("Lamp record with ID="+lamp.getId()+" was saved");
-        }catch (Exception e){
-            log.error("Lamp record with this ID:"+lamp.getId()+" already exist");
-            throw new Exception("Record already exist");
         }
     }
 
@@ -405,7 +402,16 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void updateLampRecord(Lamp lamp) throws Exception {
-
+        String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(LAMP_TABLE) + " SET name = '" + lamp.getName() +
+                "', state = '" + (lamp.isState()?1:0)+
+                "', maxBright = '" + lamp.getMaxBrightness() +
+                "', currentBright = '" + lamp.getCurrentBrightness() +
+                "', smartHomeId = '" + lamp.getSmartHomeId() +
+                "' WHERE id = "+lamp.getId();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Update lamp with ID = "+lamp.getId());
+        }
     }
 
     @Override
