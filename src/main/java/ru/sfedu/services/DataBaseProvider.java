@@ -7,7 +7,10 @@ import ru.sfedu.utils.ConfigurationUtil;
 
 import java.io.IOException;
 import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.SimpleFormatter;
 
 import static ru.sfedu.Constants.*;
 
@@ -47,26 +50,13 @@ public class DataBaseProvider implements IDataProvider{
     @Override
     public <T extends EntityBean> void deleteRecord(String file, long id, Class<T> tClass) throws Exception {
     }
-    @Override
-    public void saveDeviceRecord(Device device) throws Exception {
 
-    }
-
-    @Override
-    public Device getDeviceRecordByID(long id) throws Exception {
-        return null;
-    }
-
-    @Override
-    public void updateDeviceRecord(Device device) throws Exception {
-
-    }
 
     @Override
     public void saveHeaterRecord(Heater heater) throws Exception {
         String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(HEATER_TABLE)+
-                " (id, name, state, tempForOn, tempForOff, maxPower, currentPower)" +
-                "VALUES(?,?,?,?,?,?,?)";
+                " (id, name, state, tempForOn, tempForOff, maxPower, currentPower, smartHomeId)" +
+                "VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setLong(1, heater.getId());
             statement.setString(2, heater.getName());
@@ -75,11 +65,19 @@ public class DataBaseProvider implements IDataProvider{
             statement.setInt(5, heater.getTemperatureForOff());
             statement.setInt(6, heater.getMaxPower());
             statement.setInt(7, heater.getCurrentPower());
-            log.info("Heater record with ID="+heater.getId()+" was saved");
+            statement.setLong(8, heater.getSmartHomeId());
             if (statement.executeUpdate() == 0) {
                 log.error("Heater record wasn't saved");
                 throw new Exception("Record wasn't save");
             }
+            heater.getNotifications().forEach(n-> {
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    log.error(e);
+                }
+                });
+            log.info("Heater record with ID="+heater.getId()+" was saved");
         }catch (Exception e){
             log.error("Heater record with this ID:"+heater.getId()+" already exist");
             throw new Exception("Record already exist");
@@ -108,8 +106,10 @@ public class DataBaseProvider implements IDataProvider{
                 heater.setTemperatureForOff(resultSet.getInt("tempForOff"));
                 heater.setMaxPower(resultSet.getInt("maxPower"));
                 heater.setCurrentPower(resultSet.getInt("currentPower"));
+                heater.setSmartHomeId(resultSet.getLong("smartHomeId"));
                 log.debug(getTermometrRecordByHeaterId(heater.getId()));
                 heater.setSensor(getTermometrRecordByHeaterId(heater.getId()));
+                heater.setNotifications(getNotificationRecordsByDeviceID(id));
             }
         }
         if(heater.getId() == 0){
@@ -127,11 +127,28 @@ public class DataBaseProvider implements IDataProvider{
                 "', tempForOff = '" + heater.getTemperatureForOff() +
                 "', maxPower = '" + heater.getMaxPower() +
                 "', currentPower = '" +heater.getCurrentPower() +
+                "', smartHomeId = '" + heater.getSmartHomeId() +
                 "' WHERE id = "+heater.getId();
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.executeUpdate();
             log.info("Update heater with ID = "+heater.getId());
         }
+        List<Notification> oldNotifications = getNotificationRecordsByDeviceID(heater.getId());
+        heater.getNotifications().forEach(n -> {
+            if (!oldNotifications.contains(n)) {
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    log.error(e);
+                }
+            }else {
+                try {
+                    updateNotificationRecord(n);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
         if(heater.getSensor()!=null){
             Termometr oldThermometer = getTermometrRecordByHeaterId(heater.getId());
             if(oldThermometer!=null) {
@@ -146,8 +163,8 @@ public class DataBaseProvider implements IDataProvider{
     @Override
     public void saveHumidifierRecord(Humidifier humidifier) throws Exception {
         String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(HUMIDIFIER_TABLE)+
-                " (id, name, state, humOn, humOff, maxPower, currentPower)" +
-                "VALUES(?,?,?,?,?,?,?)";
+                " (id, name, state, humOn, humOff, maxPower, currentPower, smartHomeId)" +
+                "VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setLong(1, humidifier.getId());
             statement.setString(2, humidifier.getName());
@@ -156,11 +173,19 @@ public class DataBaseProvider implements IDataProvider{
             statement.setInt(5, humidifier.getHumidityForOff());
             statement.setInt(6, humidifier.getMaxPower());
             statement.setInt(7, humidifier.getCurrentPower());
-            log.info("Humidifier record with ID="+humidifier.getId()+" was saved");
+            statement.setLong(8, humidifier.getSmartHomeId());
             if (statement.executeUpdate() == 0) {
                 log.error("Humidifier record wasn't saved");
                 throw new Exception("Record wasn't save");
             }
+            humidifier.getNotifications().forEach(n-> {
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    log.error(e);
+                }
+            });
+            log.info("Humidifier record with ID="+humidifier.getId()+" was saved");
         }catch (Exception e){
             log.error("Humidifier record with this ID:"+humidifier.getId()+" already exist");
             throw new Exception("Record already exist");
@@ -190,6 +215,8 @@ public class DataBaseProvider implements IDataProvider{
                 humidifier.setMaxPower(resultSet.getInt("maxPower"));
                 humidifier.setCurrentPower(resultSet.getInt("currentPower"));
                 humidifier.setSensor(getHygrometerRecordByDeviceID(humidifier.getId()));
+                humidifier.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                humidifier.setNotifications(getNotificationRecordsByDeviceID(id));
             }
         }
         if(humidifier.getId() == 0){
@@ -207,11 +234,28 @@ public class DataBaseProvider implements IDataProvider{
                 "', humOff = '" + humidifier.getHumidityForOff() +
                 "', maxPower = '" + humidifier.getMaxPower() +
                 "', currentPower = '" +humidifier.getCurrentPower() +
+                "', smartHomeId = '" + humidifier.getSmartHomeId() +
                 "' WHERE id = "+humidifier.getId();
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.executeUpdate();
             log.info("Update heater with ID = "+humidifier.getId());
         }
+        List<Notification> oldNotifications = getNotificationRecordsByDeviceID(humidifier.getId());
+        humidifier.getNotifications().forEach(n -> {
+            if (!oldNotifications.contains(n)) {
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    log.error(e);
+                }
+            }else {
+                try {
+                    updateNotificationRecord(n);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
         if(humidifier.getSensor()!=null){
             Hygrometer oldHygrometer = getHygrometerRecordByDeviceID(humidifier.getId());
             if(oldHygrometer!=null) {
@@ -247,12 +291,30 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public Hygrometer getHygrometerRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE)+
+                " WHERE id ="+id;
+        Hygrometer hygrometer = new Hygrometer();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                hygrometer.setId(resultSet.getLong("id"));
+                hygrometer.setName(resultSet.getString("name"));
+                hygrometer.setHumidity(resultSet.getInt("humidity"));
+                hygrometer.setDeviceId(resultSet.getLong("deviceId"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(hygrometer.getId() == 0){
+            log.error("Hygrometer not exist");
+            throw new Exception("Record not exist");
+        }
+        return hygrometer;
     }
+
 
     @Override
     public Hygrometer getHygrometerRecordByDeviceID(long id) throws Exception {
-
         String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE)+
                 " WHERE deviceId ="+id;
         Hygrometer hygrometer = new Hygrometer();
@@ -273,12 +335,6 @@ public class DataBaseProvider implements IDataProvider{
         return hygrometer;
     }
 
-        return null;
-    }
-
-    @Override
-    public void updateHygrometerRecord(Hygrometer hygrometer) throws Exception {
-
     @Override
     public void updateHygrometerRecord(Hygrometer hygrometer) throws Exception {
         String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE) + " SET name = '" + hygrometer.getName() +
@@ -293,16 +349,62 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void saveLampRecord(Lamp lamp) throws Exception {
+        String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(LAMP_TABLE)+
+                " (id, name, state, maxBright, currentBright, smartHomeId)" +
+                "VALUES(?, ?, ?, ?, ?, ?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setLong(1, lamp.getId());
+            statement.setString(2, lamp.getName());
+            statement.setBoolean(3, lamp.isState());
+            statement.setInt(4, lamp.getMaxBrightness());
+            statement.setInt(5, lamp.getCurrentBrightness());
+            statement.setLong(6, lamp.getSmartHomeId());
 
+            if (statement.executeUpdate() == 0) {
+                log.error("Lamp record wasn't saved");
+                throw new Exception("Record wasn't save");
+            }
+            lamp.getNotifications().forEach(n->{
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Lamp record with ID="+lamp.getId()+" was saved");
+        }catch (Exception e){
+            log.error("Lamp record with this ID:"+lamp.getId()+" already exist");
+            throw new Exception("Record already exist");
+        }
     }
 
     @Override
     public Lamp getLampRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(LAMP_TABLE)+
+                " WHERE id ="+id;
+        Lamp lamp = new Lamp();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                lamp.setId(resultSet.getLong("id"));
+                lamp.setName(resultSet.getString("name"));
+                lamp.setMaxBrightness(resultSet.getInt("maxBright"));
+                lamp.setCurrentBrightness(resultSet.getInt("currentBright"));
+                lamp.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                lamp.setNotifications(getNotificationRecordsByDeviceID(id));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(lamp.getId() == 0){
+            log.error("Lamp not exist");
+            throw new Exception("Record not exist");
+        }
+        return lamp;
     }
 
     @Override
-    public void deleteLampRecord(Lamp lamp) throws Exception {
+    public void updateLampRecord(Lamp lamp) throws Exception {
 
     }
 
@@ -323,28 +425,90 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void saveNotificationRecord(Notification notification) throws Exception {
-
+        String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE)+
+                " (id, message, date, sender, deviceId)" +
+                "VALUES(?, ?, ?, ?, ?)";
+        java.sql.Timestamp sqlDate = new java.sql.Timestamp(notification.getDate().getTime());
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setLong(1, notification.getId());
+            statement.setString(2, notification.getMessage());
+            statement.setTimestamp(3, sqlDate);
+            statement.setString(4, notification.getSender());
+            statement.setLong(5, notification.getDeviceID());
+            log.info("Heater record with ID="+notification.getId()+" was saved");
+            if (statement.executeUpdate() == 0) {
+                log.error("Heater record wasn't saved");
+                throw new Exception("Record wasn't save");
+            }
+        }catch (Exception e){
+            log.error("Heater record with this ID:"+notification.getId()+" already exist");
+            throw new Exception("Record already exist");
+        }
     }
 
     @Override
     public Notification getNotificationRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE)+
+                " WHERE id ="+id;
+        Notification notification = new Notification();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                notification.setId(resultSet.getLong("id"));
+                notification.setMessage(resultSet.getString("message"));
+                Timestamp timestamp = resultSet.getTimestamp("date");
+                java.util.Date date = timestamp;
+                notification.setDate(date);
+                notification.setSender(resultSet.getString("sender"));
+                notification.setDeviceID(resultSet.getLong("deviceId"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(notification.getId() == 0){
+            log.error("Notification not exist");
+            throw new Exception("Record not exist");
+        }
+        return notification;
     }
 
     @Override
     public List<Notification> getNotificationRecordsByDeviceID(long id) throws Exception {
-        return null;
-
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE)+
+                " WHERE deviceId ="+id;
+        Notification notification = new Notification();
+        List<Notification> notifications = new ArrayList<>();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                notification.setId(resultSet.getLong("id"));
+                notification.setMessage(resultSet.getString("message"));
+                Timestamp timestamp = resultSet.getTimestamp("date");
+                java.util.Date date = timestamp;
+                notification.setDate(date);
+                notification.setSender(resultSet.getString("sender"));
+                notification.setDeviceID(resultSet.getLong("deviceId"));
+                notifications.add(notification);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return notifications;
     }
 
     @Override
     public void updateNotificationRecord(Notification notification) throws Exception {
-
-    }
-
-    @Override
-    public void updateNotificationRecord(Notification notification) throws Exception {
-
+        java.sql.Timestamp sqlDate = new java.sql.Timestamp(notification.getDate().getTime());
+        String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE) + " SET message = '" + notification.getMessage() +
+                "', date = '" + sqlDate +
+                "', sender = '" + notification.getSender() +
+                "', deviceId = '" +notification.getDeviceID() +
+                "' WHERE id = "+notification.getId();
+        try(PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.executeUpdate();
+            log.info("Update notification with ID = " + notification.getId());
+        }
     }
 
 
@@ -402,7 +566,25 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public Termometr getTermometrRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE)+
+                " WHERE id ="+id;
+        Termometr thermometer = new Termometr();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                thermometer.setId(resultSet.getLong("id"));
+                thermometer.setName(resultSet.getString("name"));
+                thermometer.setTemperature(resultSet.getInt("temperature"));
+                thermometer.setDeviceId(resultSet.getLong("deviceId"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(thermometer.getId() == 0){
+            log.error("Thermometer not exist");
+            throw new Exception("Record not exist");
+        }
+        return thermometer;
     }
     @Override
     public Termometr getTermometrRecordByHeaterId(long id) throws IOException {

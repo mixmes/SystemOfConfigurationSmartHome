@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -195,10 +196,10 @@ public class User implements EntityBean  {
     private Device getDeviceFromSmartHome(Device d){
         return  smartHome.getDevices().get(smartHome.getDevices().indexOf(d));
     }
-    private void generateNotificationAboutChangedState(Device device, boolean actualState){
+    private void generateNotificationAboutChangedState(Device device, boolean actualState) throws ParseException {
         getDeviceFromSmartHome(device).generateNotification("Changed its state to "+(actualState?"on":"off"));
     }
-    private void generateNotificationAboutChangedPower(Device device, int power){
+    private void generateNotificationAboutChangedPower(Device device, int power) throws ParseException {
         getDeviceFromSmartHome(device).generateNotification("Changed its power to "+power);
     }
     private void checkAccessLevel() throws Exception {

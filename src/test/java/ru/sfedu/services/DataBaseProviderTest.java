@@ -1,35 +1,43 @@
 package ru.sfedu.services;
 
+import com.mysql.cj.jdbc.ConnectionGroup;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import ru.sfedu.model.Heater;
-import ru.sfedu.model.Humidifier;
-import ru.sfedu.model.Hygrometer;
-import ru.sfedu.model.Termometr;
+import ru.sfedu.model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 
+import java.util.Date;
+
 import static org.junit.jupiter.api.Assertions.*;
-import static ru.sfedu.Constants.HEATER_TABLE;
-import static ru.sfedu.Constants.HUMIDIFIER_TABLE;
+import static ru.sfedu.Constants.*;
 
 class DataBaseProviderTest {
-    private DataBaseProvider dataBaseProvider = new DataBaseProvider();
+    private static DataBaseProvider dataBaseProvider = new DataBaseProvider();
 
     private static Heater heater = new Heater(1, "Обогреватель в спальне",10);
     private static Termometr termometr = new Termometr(1, "Термометр для обогревателя в спальне",20);
     private static Humidifier humidifier = new Humidifier(1,"Увлажнитель воздуха в спальне",5);
     private static Hygrometer hygrometer = new Hygrometer(1, "Гигрометр для увлажнителя в спальне", 30);
-
+    private static Hygrometer hygrometer2 = new Hygrometer(3,"Гигрометер",40);
+    private static Termometr thermometer2 = new Termometr(3, "Термометр",23);
+    private static Lamp lamp = new Lamp(1, "Лампа на кухне", 10);
+    private static Notification notificationHeater = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),Heater.class.getSimpleName()+": "+heater.getName());
+    private static Notification notificationHumidifier = new Notification(2, "Humidity too low. You need to switch on the humidifier", new Date(), Humidifier.class.getSimpleName()+": "+humidifier.getName());
     @BeforeAll
     public static void init(){
         heater.setSensor(termometr);
         humidifier.setSensor(hygrometer);
+        heater.addNotification(notificationHeater);
+        humidifier.addNotification(notificationHumidifier);
     }
     @Test
     public void testSaveHeaterRecord() throws Exception {
         dataBaseProvider.saveHeaterRecord(heater);
         assertEquals(dataBaseProvider.getHeaterRecordByID(heater.getId()), heater);
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE), heater.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE), heater.getSensor().getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notificationHeater.getId());
     }
     @Test
     public void testSaveExistingHeaterRecord() throws Exception {
@@ -39,6 +47,8 @@ class DataBaseProviderTest {
         });
         assertEquals(exception.getMessage(), "Record already exist");
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE), heater.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE), heater.getSensor().getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notificationHeater.getId());
     }
     @Test
     public void testUpdateHeaterRecord() throws Exception {
@@ -48,6 +58,8 @@ class DataBaseProviderTest {
         dataBaseProvider.updateHeaterRecord(heater);
         assertEquals(dataBaseProvider.getHeaterRecordByID(heater.getId()), heater);
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE), heater.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE), heater.getSensor().getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notificationHeater.getId());
     }
     @Test
     public void testGetNotExistingHeaterRecord(){
@@ -61,6 +73,8 @@ class DataBaseProviderTest {
         dataBaseProvider.saveHumidifierRecord(humidifier);
         assertEquals(dataBaseProvider.getHumidifierRecordByID(humidifier.getId()), humidifier);
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HUMIDIFIER_TABLE), humidifier.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE), humidifier.getSensor().getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notificationHumidifier.getId());
     }
     @Test
     public void testSaveExistingHumidifierRecord() throws Exception {
@@ -70,6 +84,8 @@ class DataBaseProviderTest {
         });
         assertEquals(exception.getMessage(), "Record already exist");
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HUMIDIFIER_TABLE), humidifier.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE), humidifier.getSensor().getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notificationHumidifier.getId());
     }
     @Test
     public void testUpdateHumidifierRecord() throws Exception {
@@ -79,5 +95,110 @@ class DataBaseProviderTest {
         dataBaseProvider.updateHumidifierRecord(humidifier);
         assertEquals(dataBaseProvider.getHumidifierRecordByID(humidifier.getId()), humidifier);
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HUMIDIFIER_TABLE), humidifier.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE), humidifier.getSensor().getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notificationHumidifier.getId());
+    }
+    @Test
+    public void testGetNotExistingHumidifierRecord(){
+        Exception exception = assertThrows(Exception.class, () ->{
+            dataBaseProvider.getHumidifierRecordByID(10);
+        });
+        assertEquals(exception.getMessage(),"Record not exist" );
+    }
+    @Test
+    public void testSaveHygrometerRecord() throws Exception {
+        dataBaseProvider.saveHygrometerRecord(hygrometer2);
+        assertEquals(dataBaseProvider.getHygrometerRecordByID(hygrometer2.getId()), hygrometer2);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE), hygrometer2.getId());
+    }
+    @Test
+    public void testSaveExistingHygrometerRecord() throws Exception {
+        dataBaseProvider.saveHygrometerRecord(hygrometer2);
+        Exception exception = assertThrows(Exception.class, () ->{
+            dataBaseProvider.saveHygrometerRecord(hygrometer2);
+        });
+        assertEquals(exception.getMessage(), "Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE), hygrometer2.getId());
+    }
+    @Test
+    public void testUpdateHygrometerRecord() throws Exception {
+        dataBaseProvider.saveHygrometerRecord(hygrometer2);
+        hygrometer2.setHumidity(45);
+        assertEquals(dataBaseProvider.getHygrometerRecordByID(hygrometer2.getId()), hygrometer2);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE), hygrometer2.getId());
+    }
+    @Test
+    public void testGetNotExistingHygrometerRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getHygrometerRecordByID(10);
+        });
+        assertEquals(exception.getMessage(),"Record not exist" );
+    }
+    @Test
+    public void testSaveThermometerRecord() throws Exception {
+        dataBaseProvider.saveTermometrRecord(thermometer2);
+        assertEquals(dataBaseProvider.getTermometrRecordByID(thermometer2.getId()),thermometer2);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE), thermometer2.getId());
+    }
+    @Test
+    public void testSaveExistingThermometerRecord() throws Exception {
+        dataBaseProvider.saveTermometrRecord(thermometer2);
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.saveTermometrRecord(thermometer2);
+        });
+        assertEquals(exception.getMessage(),"Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE), thermometer2.getId());
+    }
+    @Test
+    public void testUpdateThermometerRecord() throws Exception {
+        dataBaseProvider.saveTermometrRecord(thermometer2);
+        thermometer2.setTemperature(21);
+        dataBaseProvider.updateTermometrRecord(thermometer2);
+        assertEquals(dataBaseProvider.getTermometrRecordByID(thermometer2.getId()), thermometer2);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(THERMOMETER_TABLE), thermometer2.getId());
+    }
+    @Test
+    public void testGetNotExistingThermometerRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getTermometrRecordByID(10);
+        });
+        assertEquals(exception.getMessage(), "Record not exist");
+    }
+    @Test
+    public void testSaveNotificationRecord() throws Exception {
+        Notification notification = new Notification(1, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
+        dataBaseProvider.saveNotificationRecord(notification);
+        assertEquals(dataBaseProvider.getNotificationRecordByID(notification.getId()), notification);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notification.getId());
+    }
+    @Test
+    public void testSaveExistingNotificationRecord() throws Exception {
+        Notification notification = new Notification(1, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
+        dataBaseProvider.saveNotificationRecord(notification);
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.saveNotificationRecord(notification);
+        });
+        assertEquals(exception.getMessage(),"Record already exist" );
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notification.getId());
+    }
+    @Test
+    public void testUpdateNotificationRecord() throws Exception {
+        Notification notification = new Notification(1, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
+        dataBaseProvider.saveNotificationRecord(notification);
+        notification.setSender("Lamp: Лампа на кухне");
+        dataBaseProvider.updateNotificationRecord(notification);
+        assertEquals(dataBaseProvider.getNotificationRecordByID(notification.getId()), notification);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(NOTIFICATION_TABLE), notification.getId());
+    }
+    @Test
+    public void getNonExistingNotificationRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getNotificationRecordByID(10);
+        });
+        assertEquals(exception.getMessage(), "Record not exist");
+    }
+    @AfterAll
+    public static void closeConnection(){
+        dataBaseProvider.closeConnection();
     }
 }

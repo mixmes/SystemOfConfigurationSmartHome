@@ -322,9 +322,10 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void deleteLampRecord(Lamp lamp) {
+    public void updateLampRecord(Lamp lamp) throws Exception {
 
     }
+
 
     @Override
     public void saveLockRecord(Lock lock) {
@@ -435,46 +436,6 @@ public class XMLDataProvider implements IDataProvider {
 
     @Override
     public void updateUserRecord(User user) {
-
-    }
-    @Override
-    public void saveDeviceRecord(Device device) throws Exception {
-    }
-
-    @Override
-    public Device getDeviceRecordByID(long id) throws Exception {
-        return null;
-    }
-
-    @Override
-    public void updateDeviceRecord(Device device) throws IOException {
-    }
-    @Override
-
-    public void saveTermometrRecord(Termometr termometr) throws Exception {
-        Wrapper<Termometr> termometrs = getAllRecords(config.getConfigurationEntry(TERMOMERT_XML));
-        if(termometrs.getBeans().stream().noneMatch(s->s.getId() == termometr.getId())){
-            termometrs.getBeans().add(termometr);
-            initDataSource(config.getConfigurationEntry(TERMOMERT_XML),termometrs);
-            log.info("Termometr record was saved");
-        }
-        else {
-            log.error("Termometr record with this ID:"+termometr.getId()+" already exists");
-            throw new Exception("Termometr record with this ID:"+termometr.getId()+" already exists");
-        }
-
-    public void saveSensorRecord(Sensor sensor) throws Exception {
-
-    }
-
-    @Override
-    public Sensor getSensorRecordByID(long id) {
-        return null;
-    }
-
-    @Override
-    public void updateSensorRecord(Sensor sensor) {
-
 
     }
 

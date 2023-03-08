@@ -33,17 +33,18 @@ public class Termometr extends Sensor implements  EntityBean{
         this.temperature = temperature;
     }
     public void notifyHeaterOfChanges(Heater heater, int temperature) throws Exception {
-        if(heater.getSensor() == null){
-            log.error("Heater "+this.name+" does not have sensor");
+        if (heater.getSensor() == null) {
+            log.error("Heater " + this.name + " does not have sensor");
             throw new Exception("This device does not have a sensor");
         }
-        if(heater.getSensor().equals(this)) {
+        if (heater.getSensor().equals(this)) {
             this.temperature = temperature;
             heater.automaticAction();
-        }else{
-            log.error("Termometr "+name+" not connected to the heater"+heater.getName());
+        } else {
+            log.error("Termometr " + name + " not connected to the heater" + heater.getName());
             throw new Exception("Sensor not connected to this humidifier");
         }
+    }
 
 
     @Override
@@ -60,8 +61,4 @@ public class Termometr extends Sensor implements  EntityBean{
     public long getId(){
         return this.id;
     }
-
-
-
-
 }

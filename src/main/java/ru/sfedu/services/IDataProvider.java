@@ -9,9 +9,6 @@ public interface IDataProvider {
     <T extends EntityBean> void deleteRecord(String file, long id, Class<T> tClass, String[] headers) throws Exception;
     <T extends  EntityBean> void deleteRecord(String file, long id, Class<T> tClass) throws Exception;
     void deleteRecord(String table, long id) throws Exception;
-    void saveDeviceRecord(Device device)  throws Exception;
-    Device getDeviceRecordByID(long id)  throws Exception;
-    void updateDeviceRecord(Device device) throws Exception;
     void saveHeaterRecord(Heater heater) throws Exception;
     Heater getHeaterRecordByID(long id) throws Exception;
     void updateHeaterRecord(Heater heater) throws Exception;
@@ -24,7 +21,7 @@ public interface IDataProvider {
     void updateHygrometerRecord(Hygrometer hygrometer) throws Exception;
     void saveLampRecord(Lamp lamp) throws Exception;
     Lamp getLampRecordByID(long id) throws Exception;
-    void deleteLampRecord(Lamp lamp) throws Exception;
+    void updateLampRecord(Lamp lamp) throws Exception;
     void saveLockRecord(Lock lock) throws Exception;
     Lock getLockRecordByID(long id) throws Exception;
     void deleteLockRecord(Lock lock) throws Exception;

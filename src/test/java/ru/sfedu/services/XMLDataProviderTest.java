@@ -22,7 +22,7 @@ public class XMLDataProviderTest {
     private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
     private static Notification hygroNotification = new Notification(4,"Humididty is too high.You need to switch off the humidifier",new Date(),"Hygrometer");
     private static Termometr firstTermometr = new Termometr(1,"Термометр в зале",25);
-    private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале");
+    private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале", 30);
     private static Heater heater = new Heater(1,"Обогреватель в зале",100);
     private static Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
     private static List<Notification> notificationList = new ArrayList<>();

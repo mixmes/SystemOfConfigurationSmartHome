@@ -46,11 +46,13 @@ public class SmartHome  implements EntityBean  {
         this.devices = devices;
     }
 
+
     @Override
     public long getId() {
         return this.id;
     }
     public void addDevice(Device device){
         devices.add(device);
+        device.setSmartHomeId(id);
     }
 }

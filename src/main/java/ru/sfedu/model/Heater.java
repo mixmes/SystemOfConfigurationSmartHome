@@ -90,7 +90,6 @@ public class Heater extends Device{
     }
 
     @Override
-
     public String toString() {
         return "Heater{" +
                 "temperatureForOn=" + temperatureForOn +
@@ -102,7 +101,7 @@ public class Heater extends Device{
                 ", name='" + name + '\'' +
                 ", sensor=" + sensor +
                 '}';
-
+    }
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -113,6 +112,5 @@ public class Heater extends Device{
     @Override
     public int hashCode() {
         return Objects.hash(temperatureForOn, temperatureForOff, maxPower, currentPower, state);
-
     }
 }

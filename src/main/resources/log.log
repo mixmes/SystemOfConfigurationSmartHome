@@ -1490,6 +1490,7 @@
 2023-03-07 11:57:47,096 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
 2023-03-07 11:57:47,102 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
 2023-03-07 11:57:47,106 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
+<<<<<<<<< Temporary merge branch 1
 2023-03-07 20:48:34,598 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-07 20:48:34,651 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
 2023-03-07 20:49:01,586 INFO r.s.s.DataBaseProvider [main] Connect to data base
@@ -1832,7 +1833,7 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key '
 2023-03-08 12:03:16,292 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
 2023-03-08 12:03:16,295 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
 2023-03-08 12:03:16,406 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
-=======
+=========
 2023-03-07 22:19:37,788 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-07 22:19:37,968 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-07 22:19:38,077 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
@@ -2668,10 +2669,7 @@ Class has two properties of the same name "deviceId"
 		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
 	this problem is related to the following location:
 		at protected long ru.sfedu.model.Sensor.deviceId
-		at ru.sfedu.model.Sensor else {
-                log.error("Humidifier record with this ID:"+humidifier.getId()+" wasn't found");
-                throw new Exception("Humidifier record with this ID:"+humidifier.getId()+" wasn't found");
-            }
+		at ru.sfedu.model.Sensor
 		at ru.sfedu.model.Termometr
 		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
 Class has two properties of the same name "id"
@@ -3729,4 +3727,4 @@ Class has two properties of the same name "name"
 2023-03-08 20:41:53,820 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 20:41:53,939 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 20:41:53,943 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:0 wasn't found
-
+>>>>>>>>> Temporary merge branch 2
