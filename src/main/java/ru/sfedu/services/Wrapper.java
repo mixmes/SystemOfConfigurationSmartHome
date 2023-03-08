@@ -1,6 +1,6 @@
 package ru.sfedu.services;
 
-import ru.sfedu.model.Notification;
+import ru.sfedu.model.*;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlSeeAlso(Notification.class)
+@XmlSeeAlso({Notification.class, Termometr.class, Hygrometer.class, Heater.class, Humidifier.class})
 public class Wrapper<T> {
     @XmlElement
     @XmlElementWrapper

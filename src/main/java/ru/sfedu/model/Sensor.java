@@ -2,12 +2,17 @@ package ru.sfedu.model;
 
 import ru.sfedu.Constants;
 
+import javax.xml.bind.annotation.XmlElement;
 import java.util.Objects;
 
 public class Sensor {
+
     protected long id;
+
     protected String name;
+
     protected Constants.SensorType sensorType;
+
     protected long deviceId;
     public Sensor(){
 

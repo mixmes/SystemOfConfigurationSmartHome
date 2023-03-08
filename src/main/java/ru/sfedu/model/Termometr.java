@@ -4,14 +4,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.Constants;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.*;
 import java.util.Date;
+import java.util.Objects;
 import java.util.logging.SimpleFormatter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Termometr extends Sensor {
+@XmlSeeAlso(Sensor.class)
+public class Termometr extends Sensor implements  EntityBean{
+    @XmlTransient
     private static final Logger log = LogManager.getLogger(Termometr.class);
+    @XmlElement(name = "temperature")
     private int temperature;
 
     public Termometr() {
@@ -42,4 +45,12 @@ public class Termometr extends Sensor {
             throw new Exception("Sensor not connected to this humidifier");
         }
     }
+    @Override
+    public long getId(){
+        return this.id;
+    }
+
+
+
+
 }

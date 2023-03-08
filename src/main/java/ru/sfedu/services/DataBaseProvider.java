@@ -7,6 +7,7 @@ import ru.sfedu.utils.ConfigurationUtil;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.List;
 
 import static ru.sfedu.Constants.*;
 
@@ -141,6 +142,11 @@ public class DataBaseProvider implements IDataProvider{
     }
 
     @Override
+    public Hygrometer getHygrometerRecordByDeviceID(long id) throws Exception {
+        return null;
+    }
+
+    @Override
     public void updateHygrometerRecord(Hygrometer hygrometer) throws Exception {
 
     }
@@ -182,6 +188,11 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public Notification getNotificationRecordByID(long id) throws Exception {
+        return null;
+    }
+
+    @Override
+    public List<Notification> getNotificationRecordsByDeviceID(long id) throws Exception {
         return null;
     }
 
