@@ -1832,3 +1832,1297 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key '
 2023-03-08 12:03:16,292 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
 2023-03-08 12:03:16,295 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
 2023-03-08 12:03:16,406 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 12:11:22,973 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:11:23,075 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 12:11:23,203 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:13:18,590 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:13:18,681 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 12:13:18,703 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 12:13:18,814 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:15:10,035 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:15:10,112 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 12:16:51,849 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:16:51,942 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 12:16:52,058 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:18:06,588 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:18:06,670 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 12:21:00,942 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:21:01,246 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 12:21:01,326 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:22:32,560 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:22:32,859 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 12:22:32,912 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:22:44,117 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:22:44,427 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:22:44,450 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:22:52,318 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:22:52,593 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 12:22:52,727 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:22:52,753 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:24:37,391 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:24:37,688 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 12:24:37,714 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 12:24:37,839 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:24:37,862 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:25:57,284 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:25:57,554 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 12:25:57,636 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 12:25:57,787 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 12:25:57,808 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:27:19,506 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:27:19,800 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 12:28:21,631 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 12:28:21,930 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 12:28:21,956 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:33:45,292 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:33:45,581 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 18:33:45,678 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 18:33:45,703 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:38:02,447 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:38:02,700 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 18:38:02,805 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:47:41,578 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:47:41,919 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 18:47:41,986 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 18:47:42,045 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:47:48,446 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:47:48,811 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:49:03,940 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:49:04,370 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 18:49:04,396 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:52:34,823 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:52:35,129 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 18:52:35,475 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 18:52:35,506 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 18:57:46,292 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 18:57:46,580 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 18:57:46,708 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 18:57:46,738 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 18:57:46,824 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 18:57:46,851 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:02:33,298 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:02:33,582 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:02:33,786 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:03:47,597 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:03:48,019 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:03:48,117 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:03:48,146 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:04:17,554 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:04:17,841 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:04:18,207 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:04:18,232 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:04:59,901 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:05:00,167 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:05:00,372 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:05:00,479 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:05:00,501 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:06:22,397 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:06:22,757 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:06:22,780 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:18:33,935 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:18:34,252 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:18:34,269 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:18:41,970 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:18:42,069 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:18:42,093 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:18:42,173 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:18:42,271 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:18:42,305 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:18:42,312 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:42,409 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:42,538 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:18:42,541 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:42,561 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:42,564 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:42,641 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:18:42,741 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:18:42,748 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:18:42,915 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:18:43,008 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:18:43,093 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:18:43,294 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:18:43,391 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:18:43,397 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:18:43,501 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:18:43,504 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:18:43,632 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:18:43,637 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:43,639 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,650 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:43,653 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,660 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:43,663 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,664 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,670 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:43,673 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,680 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:18:43,684 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,685 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:18:43,758 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:18:43,762 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:18:43,866 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:18:43,872 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:18:44,076 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:18:44,169 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:18:44,175 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:2 already exist
+2023-03-08 19:18:44,249 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:18:44,416 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:18:44,511 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:18:44,519 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:18:44,525 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:18:44,528 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:18:44,619 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:18:44,685 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:18:44,694 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:21:52,798 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:21:52,910 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:21:52,927 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:21:53,044 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:21:53,136 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:21:53,148 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:21:53,161 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:21:53,202 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:53,204 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:53,225 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:21:53,461 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:21:53,558 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:21:53,648 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:21:53,744 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:21:53,840 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:21:53,849 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:21:53,935 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:21:53,939 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:21:54,030 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:21:54,037 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:21:54,041 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,051 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:21:54,055 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,066 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:21:54,070 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,071 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,081 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:21:54,085 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,096 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:21:54,100 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,102 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:21:54,171 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:21:54,174 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:21:54,269 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:21:54,274 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:21:54,471 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:21:54,626 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:21:54,700 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:21:54,764 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:21:54,863 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:21:54,926 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:21:54,996 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:21:55,105 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:21:55,205 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:21:55,213 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:21:55,217 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:21:55,364 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:21:55,367 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:21:55,369 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:21:55,457 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:21:55,551 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:21:55,651 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:21:55,790 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:21:55,799 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:24:22,710 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:24:22,811 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:24:22,829 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:24:22,918 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:24:23,004 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:24:23,015 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:24:23,028 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:24:23,067 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:23,069 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:23,091 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:24:23,300 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:24:23,542 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:24:23,615 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:24:23,700 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:24:23,817 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:24:23,825 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:24:23,955 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:24:23,959 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:24:24,037 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:24:24,042 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:24:24,046 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,054 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:24:24,057 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,066 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:24:24,069 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,070 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,078 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:24:24,082 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,089 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:24:24,093 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,094 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:24:24,190 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:24:24,193 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:24:24,281 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:24:24,287 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:24:24,445 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:24:24,567 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:24:24,663 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:24:24,729 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:24:24,821 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:24:24,916 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:24:25,034 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:24:25,173 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:24:25,269 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:24:25,277 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:24:25,282 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:24:25,432 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:24:25,434 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:24:25,436 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:24:25,499 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:24:25,593 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:24:25,664 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:24:25,773 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:24:25,782 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:25:51,950 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:25:52,046 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:25:52,069 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:25:52,216 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:25:52,430 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:25:52,441 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:25:52,452 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:52,490 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:52,493 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:25:52,495 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:52,632 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:25:52,635 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:52,638 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:52,639 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:25:52,640 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:52,643 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:52,719 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:52,817 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:52,885 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:52,892 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:25:53,043 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:25:53,132 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:53,219 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:53,304 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:25:53,449 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:25:53,458 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:25:53,589 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:25:53,593 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:25:53,681 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:25:53,686 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:53,888 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:25:54,008 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:54,012 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,105 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,107 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:54,186 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:54,190 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,295 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,512 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:25:54,800 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:25:54,807 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,810 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:54,831 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,835 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:54,845 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,848 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:54,849 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:25:54,850 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:25:54,852 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:25:55,268 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:25:55,272 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:25:55,347 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:25:55,353 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:25:55,546 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:25:55,618 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:25:55,732 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:25:55,806 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:55,918 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:56,049 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:25:56,134 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:25:56,224 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:25:56,296 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:25:56,304 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:25:56,310 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:25:56,465 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:25:56,467 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:25:56,470 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:25:56,552 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:25:56,614 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:25:56,701 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:25:56,758 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:25:56,767 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:26:24,608 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:26:24,697 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:26:24,714 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:26:24,829 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:26:24,917 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:26:24,928 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:26:24,940 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:25,060 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:25,079 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:25,092 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:26:25,312 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:26:25,422 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:26:25,528 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:26:25,641 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:26:25,779 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:26:25,787 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:26:25,969 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:26:25,973 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:26:26,175 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:26:26,179 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,182 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,187 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,190 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,195 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,198 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,200 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:26:26,201 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,204 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,212 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,215 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,224 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,227 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,228 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:26:26,229 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:26:26,232 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:26:26,521 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:26:26,524 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:26:26,664 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:26:26,671 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:26:26,836 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:26:26,934 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:26:27,011 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:26:27,071 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:26:27,147 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:26:27,206 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:26:27,285 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:26:27,378 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:26:27,462 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:26:27,469 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:26:27,474 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:26:27,596 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:26:27,598 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:26:27,600 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:26:27,656 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:26:27,811 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:26:27,876 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:26:27,968 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:26:27,976 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:27:04,984 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:27:05,092 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:27:05,111 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:27:05,185 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:27:05,269 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:27:05,281 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:27:05,292 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:05,410 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:05,566 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 19:27:05,569 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:27:05,572 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:05,575 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:05,576 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:27:05,577 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:05,580 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:05,649 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:05,762 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:06,064 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:06,071 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:27:06,186 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:27:06,276 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:06,332 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:06,417 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:27:06,502 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:27:06,509 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:27:06,637 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:27:06,641 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:27:06,761 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:27:06,767 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,007 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:27:07,073 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:07,078 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,159 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,161 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:07,240 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:07,244 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,323 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,462 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:27:07,562 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:27:07,568 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,571 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:07,592 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,594 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:07,603 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,606 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:07,607 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:27:07,607 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:27:07,609 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:27:07,676 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:27:07,705 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:27:07,895 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:27:07,899 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:27:08,098 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:27:08,158 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:27:08,218 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:27:08,274 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:08,352 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:08,410 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:27:08,495 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:27:08,577 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:27:08,671 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:27:08,679 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:27:08,684 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:27:08,927 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:27:08,930 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:27:08,933 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:27:09,115 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:27:09,257 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:27:09,334 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:27:09,398 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:27:09,406 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:40:16,414 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:40:16,525 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:40:16,546 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:40:16,631 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:40:16,748 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:40:16,758 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:40:16,770 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:16,874 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:16,976 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 19:40:16,978 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:40:16,983 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:16,987 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:16,988 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:40:16,989 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:16,993 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:17,084 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:17,212 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:17,354 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:17,361 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:40:17,636 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:40:17,731 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:17,813 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:17,885 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:40:18,025 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:40:18,033 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:40:18,120 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:40:18,124 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:40:18,216 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:40:18,221 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,418 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:40:18,474 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,478 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:18,496 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,500 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:18,501 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:40:18,501 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,666 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:40:18,797 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:40:18,803 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,806 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:18,807 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:40:18,813 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 19:40:18,822 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,826 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:18,836 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,840 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:18,841 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:40:18,841 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:40:18,844 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:40:18,980 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:40:18,984 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:40:19,080 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:40:19,086 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:40:19,357 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:40:19,448 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:40:19,516 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:40:19,579 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:19,674 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:19,754 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:40:19,849 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:40:19,955 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:40:20,020 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:40:20,027 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:40:20,032 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:40:20,170 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:40:20,172 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:40:20,174 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:40:20,251 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:40:20,409 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:40:20,507 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:40:20,589 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:40:20,601 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:51:33,598 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:51:33,701 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:51:33,719 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:51:33,801 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:51:33,878 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:51:33,889 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:51:33,902 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:33,989 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:34,066 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 19:51:34,068 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:51:34,070 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:34,073 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:34,074 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:51:34,074 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:34,076 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:34,145 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:34,229 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:34,351 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:34,359 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:51:34,543 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:51:34,715 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:34,821 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:34,931 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:51:35,021 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:51:35,030 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:51:35,131 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:51:35,134 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:51:35,223 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:51:35,229 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,425 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:51:35,475 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,478 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:35,492 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,496 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:35,497 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:51:35,498 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,685 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:51:35,803 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:51:35,807 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,809 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:35,809 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:51:35,813 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 19:51:35,819 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,821 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:35,827 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,830 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:35,830 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:51:35,831 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:51:35,832 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:51:35,918 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:51:35,921 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:51:36,031 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:51:36,037 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:51:36,256 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:51:36,337 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:51:36,448 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:51:36,567 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:36,686 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:36,847 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:51:36,919 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:51:37,021 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:51:37,103 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:51:37,110 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:51:37,115 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:51:37,241 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:51:37,243 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:51:37,245 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:51:37,327 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:51:37,410 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:51:37,487 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:51:37,546 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:51:37,555 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:53:21,192 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:53:21,274 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:53:21,288 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:53:21,393 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:53:21,541 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:53:21,546 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:53:21,551 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:21,655 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:21,764 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 19:53:21,767 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:53:21,770 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:21,774 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:21,775 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:53:21,776 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:21,780 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:21,845 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:21,970 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:22,230 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:22,238 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:53:22,391 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:53:22,486 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:22,567 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:22,739 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:53:22,848 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:53:22,854 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:53:22,960 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:53:22,964 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:53:23,037 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:53:23,041 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,283 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:53:23,325 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,328 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:23,336 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,338 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:23,339 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:53:23,339 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,513 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:53:23,633 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:53:23,637 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,640 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:23,640 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:53:23,644 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 19:53:23,648 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,651 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:23,655 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,658 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:23,658 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:53:23,658 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:53:23,660 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:53:23,765 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:53:23,768 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:53:23,874 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:53:23,880 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:53:24,091 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:53:24,173 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:53:24,258 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:53:24,317 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:24,393 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:24,477 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:53:24,556 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:53:24,636 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:53:24,698 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:53:24,704 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:53:24,709 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:53:24,872 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:53:24,873 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:53:24,876 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:53:24,958 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:53:25,108 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:53:25,186 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:53:25,283 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:53:25,293 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 19:57:57,586 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 19:57:57,671 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 19:57:57,685 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 19:57:57,787 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:57:57,978 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:57:57,987 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 19:57:57,997 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:58,026 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:58,027 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:57:58,029 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:58,090 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 19:57:58,091 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:57:58,094 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:58,097 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:58,098 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:57:58,098 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:58,101 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:58,171 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:57:58,265 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:57:58,392 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:57:58,396 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:57:58,558 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:57:58,663 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:57:58,759 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:57:58,856 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:57:58,954 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:57:58,960 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 19:57:59,062 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:57:59,064 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 19:57:59,153 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:57:59,158 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,368 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 19:57:59,403 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,404 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:59,411 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,425 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:59,426 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:57:59,427 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,655 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 19:57:59,751 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:57:59,755 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,757 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:59,758 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:57:59,761 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 19:57:59,765 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,767 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:59,772 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,774 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:59,775 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 19:57:59,775 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 19:57:59,778 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 19:57:59,854 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:57:59,857 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 19:57:59,921 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:57:59,926 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:58:00,066 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 19:58:00,131 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 19:58:00,224 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:58:00,333 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:58:00,443 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:58:00,537 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:58:00,609 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 19:58:00,780 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 19:58:00,859 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:58:00,866 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 19:58:00,871 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:58:01,063 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 19:58:01,065 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 19:58:01,067 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 19:58:01,192 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 19:58:01,284 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 19:58:01,388 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 19:58:01,501 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 19:58:01,510 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:01:23,048 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:01:23,124 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:01:23,137 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:01:23,281 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:01:23,449 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:01:23,456 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:01:23,462 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:23,573 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:23,671 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 20:01:23,674 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:01:23,677 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:23,681 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:23,692 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:01:23,693 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:23,695 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:23,761 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:23,839 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:23,891 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:23,895 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:01:24,053 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:01:24,147 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:24,276 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:24,381 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:01:24,534 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:01:24,542 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:01:24,684 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:01:24,688 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:01:24,815 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:01:24,820 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,067 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:01:25,117 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,120 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:25,133 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,136 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:25,137 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:01:25,138 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,275 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:01:25,370 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:01:25,374 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,376 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:25,377 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:01:25,381 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 20:01:25,389 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,392 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:25,397 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,398 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:25,399 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:01:25,399 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:01:25,401 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:01:25,489 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:01:25,491 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:01:25,570 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:01:25,575 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:01:25,802 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:01:25,899 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:01:25,993 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:01:26,087 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:26,180 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:26,249 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:01:26,360 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:01:26,466 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:01:26,532 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:01:26,539 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:01:26,542 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:01:26,693 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:01:26,695 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:01:26,697 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:01:26,776 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:01:26,864 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:01:26,966 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:01:27,033 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:01:27,041 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:03:26,135 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:03:26,334 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:03:26,524 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:03:26,596 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:04:47,432 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:04:47,650 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:04:47,873 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:04:47,960 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:07:50,358 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:07:50,579 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:07:50,793 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:07:50,860 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:19:15,510 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:19:15,722 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:19:15,915 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:19:16,035 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:20:31,017 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:20:31,243 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:20:31,479 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:20:31,572 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:22:35,889 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:22:36,098 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:36,487 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:22:36,614 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:36,643 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:22:48,298 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:22:48,395 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:22:48,408 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:22:48,502 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:22:48,589 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:22:48,598 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:22:48,608 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:48,711 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:48,792 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-08 20:22:48,794 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:22:48,797 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:48,800 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:48,801 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:22:48,802 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:48,805 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:48,896 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:48,960 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:49,116 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:49,122 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:22:49,293 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:22:49,408 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:49,595 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:49,806 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:22:49,957 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:22:49,964 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:22:50,100 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:22:50,104 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:22:50,280 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:22:50,286 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:50,552 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:22:50,657 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:50,663 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:50,760 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:50,763 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:50,827 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:50,832 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:50,889 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:51,035 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:22:51,122 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:22:51,128 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:51,131 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:51,133 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:22:51,139 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 20:22:51,156 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:51,159 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:51,170 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:51,173 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:51,174 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:22:51,174 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:22:51,176 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:22:51,249 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:22:51,252 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:22:51,335 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:22:51,340 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:22:51,568 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:22:51,635 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:22:51,699 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:22:51,764 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:51,835 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:51,898 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:22:51,990 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:22:52,083 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:22:52,177 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:22:52,185 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:22:52,189 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:22:52,365 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:22:52,367 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:22:52,370 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:22:52,458 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:22:52,553 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:22:52,686 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:22:52,764 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:22:52,772 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:24:03,960 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:24:04,041 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:24:04,059 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:24:04,137 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:24:04,215 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:24:04,224 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:24:04,231 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:04,299 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:04,531 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:24:04,535 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:04,556 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:04,558 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:24:04,559 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:04,562 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:04,658 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:04,751 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:04,815 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:04,821 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:24:04,980 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:24:05,074 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:05,196 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:05,321 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:24:05,681 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:24:05,688 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:24:05,863 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:24:05,866 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:24:06,027 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:24:06,032 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:06,254 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:24:06,375 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:06,378 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:06,482 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:06,485 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:06,558 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:06,562 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:06,670 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:06,877 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:24:06,989 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:24:06,993 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:06,996 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:06,997 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:24:07,093 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-08 20:24:07,195 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:07,211 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-08 20:24:07,268 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:07,270 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:07,277 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:07,278 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:07,279 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:24:07,279 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:24:07,281 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:24:07,369 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:24:07,372 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:24:07,428 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:24:07,433 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:24:07,580 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:24:07,638 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:24:07,708 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:24:07,787 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:07,846 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:07,901 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:24:08,059 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:24:08,187 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:24:08,264 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:24:08,269 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:24:08,272 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:24:08,400 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:24:08,401 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:24:08,403 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:24:08,466 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:24:08,532 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:24:08,628 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:24:08,722 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:24:08,729 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:26:46,528 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:26:46,624 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:26:46,638 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:26:46,744 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:26:46,911 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:26:46,920 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:26:46,929 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:47,057 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:47,209 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:26:47,213 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:47,235 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:47,237 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:26:47,239 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:47,242 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:47,320 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:47,408 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:47,519 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:47,523 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:26:47,791 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:26:47,914 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:48,096 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:48,254 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:26:48,384 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:26:48,392 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:26:48,488 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:26:48,492 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:26:48,571 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:26:48,576 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:48,726 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:26:48,811 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:48,816 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:48,871 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:48,873 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:48,949 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:48,954 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:49,032 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:49,176 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:26:49,335 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:26:49,340 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:49,343 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:49,344 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:26:49,348 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 2 already exist
+2023-03-08 20:26:49,357 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:49,359 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:49,368 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:49,372 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:49,372 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:26:49,373 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:26:49,375 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:26:49,461 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:26:49,465 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:26:49,551 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:26:49,557 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:26:49,712 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:26:49,802 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:26:49,894 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:26:49,989 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:50,082 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:50,145 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:26:50,244 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:26:50,370 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:26:50,537 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:26:50,544 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:26:50,549 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:26:50,770 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:26:50,772 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:26:50,775 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:26:50,882 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:26:50,959 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:26:51,067 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:26:51,148 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:26:51,158 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:31:10,982 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:31:11,064 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:31:11,081 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:31:11,161 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:31:11,239 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:31:11,248 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:31:11,259 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:11,349 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:11,509 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:31:11,511 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:11,527 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:11,529 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:31:11,530 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:11,532 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:11,594 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:11,676 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:11,832 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:11,837 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:31:12,015 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:31:12,155 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:12,263 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:12,526 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:31:12,652 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:31:12,659 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:31:12,760 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:31:12,764 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:31:12,851 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:31:12,856 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:13,149 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:31:13,259 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:13,264 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:13,371 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:13,374 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:13,484 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:13,490 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:13,634 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:13,783 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:31:13,894 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:31:13,899 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:13,902 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:13,903 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:31:13,999 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-08 20:31:14,094 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:14,116 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-08 20:31:14,159 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:14,161 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:14,167 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:14,169 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:14,169 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:31:14,170 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:31:14,171 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:31:14,290 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:31:14,293 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:31:14,356 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:31:14,360 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:31:14,561 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:31:14,667 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:31:14,758 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:31:14,812 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:14,872 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:14,951 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:31:15,032 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:31:15,116 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:31:15,176 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:31:15,184 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:31:15,189 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:31:15,396 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:31:15,398 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:31:15,401 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:31:15,500 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:31:15,576 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:31:15,667 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:31:15,759 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:31:15,768 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:32:28,029 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:32:28,125 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:32:28,141 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:32:28,210 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:32:28,288 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:32:28,296 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:32:28,305 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:28,392 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:28,530 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:32:28,533 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:28,551 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:32:28,553 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:32:28,555 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:28,558 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:32:28,638 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:28,833 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:29,059 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:29,066 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:32:29,261 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:32:29,358 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:29,452 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:29,521 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:32:29,586 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:32:29,593 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:32:29,677 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:32:29,680 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:32:29,768 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:32:29,772 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:30,091 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:32:30,203 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:30,208 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:30,315 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:30,317 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:32:30,421 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:30,425 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:30,648 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:30,886 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:32:30,997 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:32:31,001 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:31,003 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:32:31,004 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:32:31,155 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-08 20:32:31,221 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:31,239 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-08 20:32:31,325 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:31,408 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:32:31,512 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:31,517 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:31,685 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:31,690 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:31,746 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:32:31,884 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-08 20:32:31,889 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-08 20:32:31,946 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:32,013 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:32:32,093 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:32,175 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:32:32,179 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:32:32,343 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:32:32,347 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:32:32,501 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:32:32,595 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:32:32,694 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:32:32,782 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:32,865 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:32,956 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:32:33,024 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:32:33,117 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:32:33,207 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:32:33,213 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:32:33,217 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:32:33,442 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:32:33,444 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:32:33,447 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:32:33,580 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:32:33,652 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:32:33,728 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:32:33,842 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:32:33,851 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-08 20:37:34,122 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-08 20:37:34,201 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-08 20:37:34,216 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-08 20:37:34,291 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:37:34,368 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:37:34,377 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-08 20:37:34,449 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:34,567 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:34,670 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:37:34,727 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:37:34,798 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:34,993 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:35,074 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:35,170 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-08 20:37:35,268 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:37:35,332 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:37:35,428 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:35,518 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:35,584 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:37:35,675 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:37:35,683 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-08 20:37:35,766 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:37:35,768 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-08 20:37:35,855 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:37:35,858 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:36,139 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 1
+2023-03-08 20:37:36,210 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:36,215 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:36,314 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:36,316 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:37:36,393 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:36,501 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:36,606 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:36,719 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-08 20:37:36,825 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:37:36,828 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:36,830 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-08 20:37:36,831 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:37:36,929 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-08 20:37:37,017 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:37,037 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-08 20:37:37,130 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:37,213 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:37:37,361 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:37,365 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:37,568 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:37,676 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:37,747 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-08 20:37:37,809 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-08 20:37:37,814 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-08 20:37:37,895 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:37,974 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:37:38,042 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:38,105 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:37:38,109 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-08 20:37:38,185 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:37:38,270 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-08 20:37:38,272 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-08 20:37:38,273 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:37:38,274 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:37:38,342 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-08 20:37:38,410 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-08 20:37:38,414 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-08 20:37:38,416 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-08 20:37:38,417 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:37:38,584 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:37:38,680 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:38,792 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:38,883 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:37:38,964 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-08 20:37:39,056 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-08 20:37:39,122 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:37:39,129 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-08 20:37:39,213 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-08 20:37:39,215 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-08 20:37:39,216 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-08 20:37:39,217 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-08 20:37:39,302 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-08 20:37:39,306 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-08 20:37:39,394 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-08 20:37:39,487 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-08 20:37:39,641 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-08 20:37:39,776 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-08 20:37:39,784 INFO r.s.s.DataBaseProvider [main] Connection closed

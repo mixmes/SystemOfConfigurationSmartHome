@@ -1,4 +1,5 @@
 package ru.sfedu.model;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,6 +10,7 @@ public class Device implements EntityBean {
     protected String name;
     protected Sensor sensor;
     protected boolean state=false;
+    protected long smartHomeId;
     protected List<Notification> notifications = new ArrayList<>();
 
     public Device() {
@@ -59,13 +61,22 @@ public class Device implements EntityBean {
     }
     public void addNotification(Notification notification){
         notifications.add(notification);
+        notification.setDeviceID(id);
+    }
+
+    public long getSmartHomeId() {
+        return smartHomeId;
+    }
+
+    public void setSmartHomeId(long smartHomeId) {
+        this.smartHomeId = smartHomeId;
     }
 
     @Override
     public long getId() {
         return this.id;
     }
-    public void generateNotification(String message){
+    public void generateNotification(String message) throws ParseException {
         Notification notification = new Notification(message,new Date(),this.getClass().getSimpleName()+". "+name);
         notification.setDeviceID(id);
         notifications.add(notification);
@@ -76,11 +87,11 @@ public class Device implements EntityBean {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Device device = (Device) o;
-        return id == device.id && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor) && Objects.equals(notifications, device.notifications);
+        return id == device.id && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, sensor, state, notifications);
+        return Objects.hash(id, name, sensor, state);
     }
 }

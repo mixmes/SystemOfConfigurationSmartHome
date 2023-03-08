@@ -1,10 +1,15 @@
 package ru.sfedu.services;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import ru.sfedu.model.Notification;
+import ru.sfedu.model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static ru.sfedu.Constants.*;
@@ -15,7 +20,26 @@ public class XMLDataProviderTest {
     private static Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
     private static Notification lockNotification = new Notification(2,"Door is opened",new Date(),"Lock");
     private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
+    private static Notification hygroNotification = new Notification(4,"Humididty is too high.You need to switch off the humidifier",new Date(),"Hygrometer");
+    private static Termometr firstTermometr = new Termometr(1,"Термометр в зале",25);
+    private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале", 30);
+    private static Heater heater = new Heater(1,"Обогреватель в зале",100);
+    private static Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
+    private static List<Notification> notificationList = new ArrayList<>();
 
+    @BeforeAll
+    static void init(){
+        tempNotification.setDeviceID(1);
+        notificationList = new ArrayList<>(List.of(tempNotification));
+        heater.setNotifications(notificationList);
+        heater.setSensor(firstTermometr);
+
+        hygroNotification.setDeviceID(humidifier.getId());
+        notificationList = new ArrayList<>(List.of(hygroNotification));
+        humidifier.setNotifications(notificationList);
+        humidifier.setSensor(firstHygrometer);
+
+    }
 
     @Test
     void deleteRecord() {
@@ -30,52 +54,219 @@ public class XMLDataProviderTest {
     void testDeleteRecord1() {
     }
 
+
     @Test
-    void saveDeviceRecord() {
+    void saveHeaterRecord() throws Exception {
+        xmlDataProvider.saveHeaterRecord(heater);
+
+        assertEquals(heater,xmlDataProvider.getHeaterRecordByID(heater.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), heater.getSensor().getId(), Termometr.class);
+        heater.getNotifications().stream().filter(s->s.getDeviceID() == heater.getId()).forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingHeaterRecord() throws Exception {
+        xmlDataProvider.saveHeaterRecord(heater);
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveHeaterRecord(heater);});
+        assertEquals("Heater record with this ID:"+heater.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), heater.getSensor().getId(), Termometr.class);
+        heater.getNotifications().stream().filter(s->s.getDeviceID() == heater.getId()).forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateHeaterRecord() throws Exception {
+        xmlDataProvider.saveHeaterRecord(heater);
+        heater.setName("Обогреватель в комнате");
+        xmlDataProvider.updateHeaterRecord(heater);
+
+        assertEquals("Обогреватель в комнате",heater.getName());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(), Heater.class);
+        heater.setName("Обогреватель в зале");
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), heater.getSensor().getId(), Termometr.class);
+        heater.getNotifications().stream().filter(s->s.getDeviceID() == heater.getId()).forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+    }
+    @Test
+    void updateNonExistingHeaterRecord() throws Exception {
+        Heater tempHeater = new Heater();
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.updateHeaterRecord(tempHeater);});
+
+        assertEquals("Heater record with this ID:"+tempHeater.getId()+" wasn't found",exception.getMessage());
     }
 
     @Test
-    void getDeviceRecordByID() {
+    void saveHumidifierRecord() throws Exception {
+        xmlDataProvider.saveHumidifierRecord(humidifier);
+
+        assertEquals(humidifier,xmlDataProvider.getHumidifierRecordByID(humidifier.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HUMIDIFIER_XML), humidifier.getId(), Humidifier.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HYGROMETER_XML), firstHygrometer.getId(), Hygrometer.class);
+        humidifier.getNotifications().stream().filter(s->s.getDeviceID() == humidifier.getId()).forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML), s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+    }
+    @Test
+    void saveExistingHumidifierRecord() throws Exception {
+        xmlDataProvider.saveHumidifierRecord(humidifier);
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveHumidifierRecord(humidifier);});
+        assertEquals("Humidifier record with this ID:"+humidifier.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HUMIDIFIER_XML),humidifier.getId(), Humidifier.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HYGROMETER_XML), firstHygrometer.getId(), Hygrometer.class);
+        humidifier.getNotifications().stream().filter(s->s.getDeviceID() == humidifier.getId()).forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML), s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateHumidifierRecord() throws Exception {
+        xmlDataProvider.saveHumidifierRecord(humidifier);
+        humidifier.setName("Увлажнитель воздуха в ванной");
+        xmlDataProvider.updateHumidifierRecord(humidifier);
+
+        assertEquals("Увлажнитель воздуха в ванной",xmlDataProvider.getHumidifierRecordByID(humidifier.getId()).getName());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HUMIDIFIER_XML),humidifier.getId(), Humidifier.class);
+        humidifier.setName("Увлажнитель воздуха в зале");
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HYGROMETER_XML), firstHygrometer.getId(), Hygrometer.class);
+        humidifier.getNotifications().stream().filter(s->s.getDeviceID() == humidifier.getId()).forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML), s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateNonExistingHumidifierRecord(){
+        Humidifier tempHumidifier = new Humidifier();
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.updateHumidifierRecord(tempHumidifier);
+        });
+
+        assertEquals("Humidifier record with this ID:"+tempHumidifier.getId()+" wasn't found",exception.getMessage());
+    }
+    @Test
+    void saveTermometrRecord() throws Exception {
+        xmlDataProvider.saveTermometrRecord(firstTermometr);
+
+        assertEquals(firstTermometr,xmlDataProvider.getTermometrRecordByID(firstTermometr.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML),firstTermometr.getId(),Termometr.class);
+    }
+    @Test
+    void saveExistingTermometrRecord() throws Exception {
+        xmlDataProvider.saveTermometrRecord(firstTermometr);
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveTermometrRecord(firstTermometr);});
+
+        assertEquals(exception.getMessage(),"Termometr record with this ID:"+firstTermometr.getId()+" already exists");
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML),firstTermometr.getId(),Termometr.class);
     }
 
     @Test
-    void updateDeviceRecord() {
+    void getNonExistingTermometrRecordByID() throws Exception {
+        assertEquals(null,xmlDataProvider.getTermometrRecordByID(0));
     }
 
     @Test
-    void saveHeaterRecord() {
+    void updateTermometrRecord() throws Exception {
+        xmlDataProvider.saveTermometrRecord(firstTermometr);
+        firstTermometr.setName("Термометр в кухне");
+        xmlDataProvider.updateTermometrRecord(firstTermometr);
+
+        assertEquals("Термометр в кухне",xmlDataProvider.getTermometrRecordByID(firstTermometr.getId()).getName());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML),firstTermometr.getId(),Termometr.class);
+        firstTermometr.setName("Термометр в зале");
+
+    }
+    @Test
+    void updateNonExistingTermometrRecord(){
+        Termometr termometr = new Termometr();
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.updateTermometrRecord(termometr);
+        });
+        assertEquals("Termometr record with this ID:"+termometr.getId()+" wasn't found",exception.getMessage());
     }
 
-    @Test
-    void getHeaterRecordByID() {
-    }
 
     @Test
-    void updateHeaterRecord() {
-    }
+    void saveHygrometerRecord() throws Exception {
+        xmlDataProvider.saveHygrometerRecord(firstHygrometer);
 
-    @Test
-    void saveHumidifierRecord() {
-    }
+        assertEquals(firstHygrometer,xmlDataProvider.getHygrometerRecordByID(firstTermometr.getId()));
 
-    @Test
-    void getHumidifierRecordByID() {
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HYGROMETER_XML),firstHygrometer.getId(), Hygrometer.class);
     }
-
     @Test
-    void updateHumidifierRecord() {
+    void saveExistingHygrometerRecord() throws Exception {
+        xmlDataProvider.saveHygrometerRecord(firstHygrometer);
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveHygrometerRecord(firstHygrometer);});
+        assertEquals("Hygrometer record with this ID:"+firstHygrometer.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HYGROMETER_XML), firstHygrometer.getId(), Hygrometer.class);
     }
-
     @Test
-    void saveHygrometerRecord() {
+    void updateHygrometerRecord() throws Exception {
+        xmlDataProvider.saveHygrometerRecord(firstHygrometer);
+        firstHygrometer.setName("Гигрометр в кухне");
+        xmlDataProvider.updateHygrometerRecord(firstHygrometer);
+
+        assertEquals("Гигрометр в кухне",xmlDataProvider.getHygrometerRecordByID(firstTermometr.getId()).getName());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HYGROMETER_XML), firstTermometr.getId(), Hygrometer.class);
+        firstHygrometer.setName("Гигрометр в зале");
     }
-
     @Test
-    void getHygrometerRecordByID() {
-    }
+    void updateNonExistingHygrometerRecord(){
+        Hygrometer hygrometer = new Hygrometer();
 
-    @Test
-    void updateHygrometerRecord() {
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.updateHygrometerRecord(hygrometer);
+        });
+        assertEquals("Hygrometer record with this ID:"+hygrometer.getId()+" wasn't found",exception.getMessage());
     }
 
     @Test
@@ -122,19 +313,8 @@ public class XMLDataProviderTest {
     }
 
     @Test
-    void getNotificationRecordByID() throws Exception {
-        xmlDataProvider.saveNotificationRecord(tempNotification);
-
-        assertEquals(tempNotification,xmlDataProvider.getNotificationRecordByID(tempNotification.getId()));
-
-        xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getId(), Notification.class);
-    }
-    @Test
-    void getNonExistingNotificationRecordByID(){
-        Exception exception = assertThrows(Exception.class,()->{
-            xmlDataProvider.getNotificationRecordByID(0);
-        });
-        assertEquals(exception.getMessage(),"Notification record with this ID:"+0+" wasn't found");
+    void getNonExistingNotificationRecordByID() throws Exception {
+        assertEquals(null,xmlDataProvider.getNotificationRecordByID(0));
     }
 
     @Test
@@ -190,17 +370,6 @@ public class XMLDataProviderTest {
     void updateSocketRecord() {
     }
 
-    @Test
-    void saveTermometrRecord() {
-    }
-
-    @Test
-    void getTermometrRecordByID() {
-    }
-
-    @Test
-    void updateTermometrRecord() {
-    }
 
     @Test
     void saveUserRecord() {

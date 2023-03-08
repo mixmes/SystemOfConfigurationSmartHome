@@ -4,7 +4,7 @@ import ru.sfedu.Constants;
 
 import java.util.Objects;
 
-public class Sensor {
+public class Sensor implements EntityBean{
     protected long id;
     protected String name;
     protected Constants.SensorType sensorType;
