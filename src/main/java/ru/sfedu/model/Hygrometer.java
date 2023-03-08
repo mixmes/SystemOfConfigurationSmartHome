@@ -17,8 +17,9 @@ public class Hygrometer extends Sensor implements EntityBean{
     public Hygrometer() {
     }
 
-    public Hygrometer(long id, String name) {
+    public Hygrometer(long id, String name, int humidity) {
         super(id, name, Constants.SensorType.HYGROMETER);
+        this.humidity = humidity;
     }
 
     public int getHumidity() {

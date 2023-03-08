@@ -44,7 +44,18 @@ public class Termometr extends Sensor implements  EntityBean{
             log.error("Termometr "+name+" not connected to the heater"+heater.getName());
             throw new Exception("Sensor not connected to this humidifier");
         }
+
+
+    @Override
+    public String toString() {
+        return "Termometr{" +
+                "temperature=" + temperature +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", deviceId=" + deviceId +
+                '}';
     }
+
     @Override
     public long getId(){
         return this.id;

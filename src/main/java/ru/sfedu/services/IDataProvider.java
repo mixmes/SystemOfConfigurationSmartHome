@@ -32,9 +32,6 @@ public interface IDataProvider {
     Notification getNotificationRecordByID(long id) throws Exception;
     List<Notification> getNotificationRecordsByDeviceID(long id) throws Exception;
     void updateNotificationRecord(Notification notification) throws Exception;
-    void saveSensorRecord(Sensor sensor) throws Exception;
-    Sensor getSensorRecordByID(long id) throws Exception;
-    void updateSensorRecord(Sensor sensor) throws Exception;
     void saveSmartHomeRecord(SmartHome smartHome) throws Exception;
     SmartHome getSmartHomeRecordByID(long id) throws Exception;
     void updateSmartHomeRecord(SmartHome smartHome) throws Exception;

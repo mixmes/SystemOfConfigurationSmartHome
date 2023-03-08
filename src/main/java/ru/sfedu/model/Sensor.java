@@ -59,4 +59,5 @@ public class Sensor {
     public int hashCode() {
         return Objects.hash(id, name);
     }
+
 }
