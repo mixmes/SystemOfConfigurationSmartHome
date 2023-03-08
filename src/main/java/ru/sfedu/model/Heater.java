@@ -3,11 +3,13 @@ package ru.sfedu.model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.*;
+import java.util.Objects;
+
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlSeeAlso(Device.class)
 public class Heater extends Device{
+    @XmlTransient
     private static final Logger log = LogManager.getLogger(Heater.class);
     @XmlElement(name = "temperatureForOn")
     private int temperatureForOn;
@@ -22,7 +24,7 @@ public class Heater extends Device{
 
     public Heater(){}
     public Heater(long id, String name, int maxPower) {
-        super(id, name);
+        super(id,name);
         this.maxPower = maxPower;
     }
 
@@ -88,6 +90,7 @@ public class Heater extends Device{
     }
 
     @Override
+
     public String toString() {
         return "Heater{" +
                 "temperatureForOn=" + temperatureForOn +
@@ -99,5 +102,17 @@ public class Heater extends Device{
                 ", name='" + name + '\'' +
                 ", sensor=" + sensor +
                 '}';
+
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Heater heater = (Heater) o;
+        return temperatureForOn == heater.temperatureForOn && temperatureForOff == heater.temperatureForOff && maxPower == heater.maxPower && currentPower == heater.currentPower && state == heater.state;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(temperatureForOn, temperatureForOff, maxPower, currentPower, state);
+
     }
 }

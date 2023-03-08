@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.xml.bind.annotation.XmlElement;
+import java.util.Objects;
 
 public class Humidifier extends Device{
     private static final Logger log = LogManager.getLogger(Humidifier.class);
@@ -85,5 +86,18 @@ public class Humidifier extends Device{
             state = true;
             this.generateNotification("The humidity reached "+humidityForOn+"%. Humidifier is on");
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Humidifier that = (Humidifier) o;
+        return humidityForOn == that.humidityForOn && humidityForOff == that.humidityForOff && maxPower == that.maxPower && currentPower == that.currentPower && state == that.state;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(humidityForOn, humidityForOff, maxPower, currentPower, state);
     }
 }

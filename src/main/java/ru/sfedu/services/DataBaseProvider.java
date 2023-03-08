@@ -252,6 +252,7 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public Hygrometer getHygrometerRecordByDeviceID(long id) throws Exception {
+
         String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(HYGROMETER_TABLE)+
                 " WHERE deviceId ="+id;
         Hygrometer hygrometer = new Hygrometer();
@@ -271,6 +272,12 @@ public class DataBaseProvider implements IDataProvider{
         }
         return hygrometer;
     }
+
+        return null;
+    }
+
+    @Override
+    public void updateHygrometerRecord(Hygrometer hygrometer) throws Exception {
 
     @Override
     public void updateHygrometerRecord(Hygrometer hygrometer) throws Exception {
@@ -327,6 +334,12 @@ public class DataBaseProvider implements IDataProvider{
     @Override
     public List<Notification> getNotificationRecordsByDeviceID(long id) throws Exception {
         return null;
+
+    }
+
+    @Override
+    public void updateNotificationRecord(Notification notification) throws Exception {
+
     }
 
     @Override

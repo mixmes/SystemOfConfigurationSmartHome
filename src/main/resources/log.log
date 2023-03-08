@@ -1832,3 +1832,1901 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key '
 2023-03-08 12:03:16,292 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
 2023-03-08 12:03:16,295 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
 2023-03-08 12:03:16,406 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+=======
+2023-03-07 22:19:37,788 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:19:37,968 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:19:38,077 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:19:38,078 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:19:59,148 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:19:59,337 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:19:59,486 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:19:59,487 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:19:59,506 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:19:59,507 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:19:59,513 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:19:59,517 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-07 22:23:19,199 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:23:32,307 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:24:01,411 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:24:01,587 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:24:01,713 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:24:01,714 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:24:01,731 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:24:01,731 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:24:01,738 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:24:01,743 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-07 22:24:34,523 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:24:34,714 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:24:34,847 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:24:34,848 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:24:34,865 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:24:34,866 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:24:34,873 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:24:34,878 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 already exists
+2023-03-07 22:25:22,477 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:25:22,644 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:25:22,768 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:25:22,770 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:25:22,787 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:25:22,787 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:25:22,796 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:25:22,797 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-07 22:25:22,801 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:25:22,808 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:25:22,813 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-07 22:25:22,813 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:27:16,748 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:27:16,909 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:27:17,031 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:27:17,033 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:27:17,050 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:27:17,053 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:27:17,060 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:27:17,064 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 22:28:11,885 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:28:12,058 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:12,191 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:28:12,193 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:28:12,214 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:28:12,217 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:12,225 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:28:12,229 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 22:28:41,936 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:28:42,200 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:42,390 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:28:42,396 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 22:28:42,552 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:28:42,780 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:42,905 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:28:42,909 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 22:28:54,629 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:28:54,806 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:54,931 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:28:54,933 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:28:54,949 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:28:54,952 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:54,962 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:28:54,967 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 22:28:54,969 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:28:54,977 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:28:54,978 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-07 22:28:54,979 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:30:04,302 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:30:04,474 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:30:04,585 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:30:04,590 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 already exists
+2023-03-07 22:31:38,595 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:31:38,763 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:31:38,883 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:31:38,888 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 wasn't found
+2023-03-07 22:37:54,452 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:37:54,633 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:37:54,752 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:37:54,754 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:37:54,772 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:37:54,772 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:37:54,779 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:37:54,781 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:37:54,788 INFO r.s.s.XMLDataProvider [main] Termometr record was updated
+2023-03-07 22:37:54,789 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:37:54,795 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:37:54,800 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-07 22:38:46,158 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:38:46,330 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:38:46,451 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:38:46,453 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:38:46,469 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:38:46,470 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:38:46,476 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:38:46,477 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:38:46,483 INFO r.s.s.XMLDataProvider [main] Termometr record was updated
+2023-03-07 22:38:46,483 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:38:46,490 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:38:46,494 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-07 22:40:01,779 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:40:01,949 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:02,071 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:40:02,073 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:40:02,089 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:40:02,089 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:02,097 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:02,099 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:40:02,104 INFO r.s.s.XMLDataProvider [main] Termometr record was updated
+2023-03-07 22:40:02,104 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:02,110 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:02,114 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-07 22:40:24,607 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:40:24,775 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:24,892 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:40:24,893 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:40:24,909 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:40:24,910 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:24,917 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:24,918 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:40:24,923 INFO r.s.s.XMLDataProvider [main] Termometr record was updated
+2023-03-07 22:40:24,924 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:24,929 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:24,933 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-07 22:40:46,640 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:40:46,810 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:46,939 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:46,943 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 22:40:57,373 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:40:57,569 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:57,685 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:40:57,686 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:40:57,703 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:40:57,704 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:57,710 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:57,711 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:40:57,716 INFO r.s.s.XMLDataProvider [main] Termometr record was updated
+2023-03-07 22:40:57,716 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:40:57,721 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:40:57,725 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-07 22:41:32,688 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:41:32,855 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:41:32,977 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 22:41:32,978 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:41:32,994 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 22:41:32,995 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:41:33,002 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:41:33,004 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:41:33,012 INFO r.s.s.XMLDataProvider [main] Termometr record was updated
+2023-03-07 22:41:33,013 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:41:33,019 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:41:33,020 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-07 22:41:33,023 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:41:33,029 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:41:33,033 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-07 22:41:33,033 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 22:43:35,445 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:43:35,633 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:43:35,753 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:43:35,756 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 wasn't found
+2023-03-07 22:48:42,027 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 22:48:42,199 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:48:42,312 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:48:42,314 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-07 22:48:42,330 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-07 22:48:42,330 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:48:42,339 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:48:42,340 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-07 22:48:42,344 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+2023-03-07 22:48:42,345 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:48:42,350 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:48:42,351 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-07 22:48:42,352 DEBUG r.s.s.XMLDataProvider [main] Temperature too hot. You need to switch on the heater
+2023-03-07 22:48:42,352 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:48:42,358 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:48:42,358 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-07 22:48:42,361 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 22:48:42,366 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 22:48:42,369 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-07 22:48:42,370 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-07 23:08:39,381 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 23:08:39,548 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:08:39,661 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:08:39,665 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 wasn't found
+2023-03-07 23:08:39,666 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-07 23:10:51,593 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 23:10:51,758 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:10:51,861 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:10:51,862 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 23:10:51,878 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 23:10:51,878 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:10:51,884 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:10:51,885 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-07 23:12:08,463 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 23:12:08,623 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:12:08,741 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:12:08,746 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 23:12:56,584 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 23:12:56,751 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:12:56,870 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:12:56,874 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 23:13:10,843 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 23:13:11,028 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:13:11,145 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:13:11,150 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-07 23:13:19,339 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-07 23:13:19,511 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:13:19,633 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-07 23:13:19,635 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-07 23:13:19,650 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-07 23:13:19,651 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-07 23:13:19,658 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-07 23:13:19,663 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-07 23:13:19,663 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-08 10:44:50,052 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 10:44:50,230 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 10:44:50,372 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 10:44:50,377 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-08 10:45:43,877 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 10:45:44,078 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 10:45:44,221 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 10:45:44,226 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 wasn't found
+2023-03-08 10:45:44,227 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-08 10:46:36,718 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 10:46:36,936 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 10:46:37,072 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 10:46:37,078 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 wasn't found
+2023-03-08 10:46:37,079 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-08 11:53:17,000 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 11:53:17,187 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:53:17,330 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 11:53:17,334 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:0 wasn't found
+2023-03-08 11:55:59,375 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 11:55:59,562 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:55:59,692 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 11:55:59,694 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 11:55:59,711 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 11:55:59,712 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:55:59,718 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 11:56:23,001 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 11:56:23,177 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:56:23,305 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 11:56:23,307 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 11:56:23,325 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 11:56:23,326 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:56:23,333 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 11:56:23,335 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 11:56:42,866 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 11:56:43,037 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:56:43,162 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 11:56:43,164 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 11:56:43,183 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 11:56:43,184 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:56:43,191 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 11:56:43,193 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 11:57:22,870 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 11:57:23,057 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:57:23,181 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 11:57:23,182 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 11:57:23,200 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 11:57:23,201 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:57:23,208 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 11:57:23,209 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 11:57:23,212 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 11:57:23,219 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 11:57:23,224 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 11:57:23,224 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:00:26,625 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:00:26,814 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:00:26,941 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:00:26,943 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:00:26,960 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 12:00:26,963 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:00:26,969 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:00:26,973 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:1 already exists
+2023-03-08 12:00:26,974 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:00:26,981 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:00:26,982 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:00:26,983 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:05:46,537 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:05:46,702 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:05:46,847 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:05:46,848 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:05:46,866 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 12:05:46,866 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:05:46,873 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:05:46,874 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:05:46,880 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:05:46,881 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 12:05:46,882 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:05:46,886 INFO r.s.s.XMLDataProvider [main] Hygrometer record was updated
+2023-03-08 12:05:46,887 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:05:46,892 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:05:46,893 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 12:06:09,360 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:06:09,555 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:06:09,677 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:06:09,683 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:1 already exists
+2023-03-08 12:06:15,726 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:06:15,895 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:06:16,023 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:06:16,025 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:06:16,042 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 12:06:16,043 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:06:16,051 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:06:16,052 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:06:16,060 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:06:16,062 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 12:06:16,063 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:06:16,069 INFO r.s.s.XMLDataProvider [main] Hygrometer record was updated
+2023-03-08 12:06:16,069 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:06:16,076 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:06:16,077 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 12:06:16,080 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:06:16,086 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:06:16,091 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:06:16,091 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 12:08:20,136 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:08:20,329 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:08:20,454 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:08:20,455 ERROR r.s.s.XMLDataProvider [main] Hygrometer record was updated
+2023-03-08 12:16:54,715 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:16:54,888 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:16:55,013 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:16:55,014 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:18:05,224 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:18:05,411 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:18:05,504 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:18:05,507 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:20:20,034 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:20:20,232 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:20:20,330 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:20:20,332 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:21:21,979 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:21:22,180 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:21:22,275 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:21:22,277 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:21:45,466 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:21:45,648 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:21:45,741 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+
+2023-03-08 12:21:45,744 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:23:42,574 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:23:42,774 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:23:42,873 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class, ru.sfedu.model.Device.class})
+
+2023-03-08 12:23:42,876 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:24:14,116 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:24:14,298 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:24:14,379 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:24:14,381 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:29:20,001 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:29:20,223 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:29:20,341 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Device.getId()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Device.id
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Device.getName()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Device.name
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "state"
+	this problem is related to the following location:
+		at public boolean ru.sfedu.model.Device.isState()
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected boolean ru.sfedu.model.Device.state
+		at ru.sfedu.model.Device
+		at ru.sfedu.model.Heater
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:29:20,343 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:29:53,333 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:29:53,511 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:29:53,622 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:29:53,625 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:32:47,525 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:32:47,711 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:32:47,824 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:32:47,827 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:32:53,650 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:32:53,828 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:32:53,914 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:32:53,916 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:35:39,804 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:35:39,968 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:35:40,057 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:35:40,059 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:36:14,432 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:36:14,612 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:36:14,717 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor else {
+                log.error("Humidifier record with this ID:"+humidifier.getId()+" wasn't found");
+                throw new Exception("Humidifier record with this ID:"+humidifier.getId()+" wasn't found");
+            }
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:36:14,720 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:38:18,516 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:38:18,683 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:38:18,761 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:38:18,764 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:39:03,999 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:39:04,169 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:39:04,254 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:39:04,256 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:40:42,533 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:40:42,705 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:40:42,793 ERROR r.s.s.XMLDataProvider [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 3 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "deviceId"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getDeviceId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.deviceId
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public long ru.sfedu.model.Sensor.getId()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected long ru.sfedu.model.Sensor.id
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String ru.sfedu.model.Sensor.getName()
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+	this problem is related to the following location:
+		at protected java.lang.String ru.sfedu.model.Sensor.name
+		at ru.sfedu.model.Sensor
+		at ru.sfedu.model.Termometr
+		at @javax.xml.bind.annotation.XmlSeeAlso(value={ru.sfedu.model.Notification.class, ru.sfedu.model.Termometr.class, ru.sfedu.model.Hygrometer.class, ru.sfedu.model.Heater.class})
+
+2023-03-08 12:40:42,795 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:41:59,609 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:41:59,777 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:41:59,914 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:41:59,915 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:41:59,935 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:41:59,936 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:41:59,945 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:41:59,946 INFO r.s.s.XMLDataProvider [main] Termometr record was found
+2023-03-08 12:41:59,949 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:41:59,959 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:41:59,962 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:41:59,963 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:42:23,078 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:42:23,264 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:23,426 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:42:23,428 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:42:23,458 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:23,470 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:42:23,471 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:42:23,479 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:42:23,480 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:23,489 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:42:23,490 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:42:23,498 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 12:42:23,498 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 12:42:23,499 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:23,512 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:42:23,514 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:23,523 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:42:23,528 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 12:42:23,528 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:23,535 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:42:23,536 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 12:42:44,972 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:42:45,151 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:42:45,277 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:42:45,281 ERROR r.s.s.XMLDataProvider [main] Heater record with this ID:1 already exists
+2023-03-08 12:43:22,988 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:43:23,149 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:43:23,267 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:43:23,269 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:43:23,290 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:43:23,299 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:43:23,304 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-08 12:43:36,225 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:43:36,390 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:43:36,516 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:43:36,518 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:43:36,538 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:43:36,547 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:43:36,551 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-08 12:44:28,103 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:44:28,287 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:44:28,421 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:44:28,423 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:44:28,445 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:44:28,454 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:44:28,458 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-08 12:45:06,811 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:45:06,981 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:07,105 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:45:07,107 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:45:07,127 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:07,136 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:45:07,137 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:45:07,145 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:45:07,146 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:07,157 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:45:07,161 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
+2023-03-08 12:45:27,396 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:45:27,592 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:27,726 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:45:27,728 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:45:27,750 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:27,758 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:45:27,759 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:45:27,768 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:45:27,769 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:27,776 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:45:27,777 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:45:27,784 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 12:45:27,785 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 12:45:27,785 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:27,795 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:45:27,796 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:27,805 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:45:27,809 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 12:45:27,809 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:45:27,819 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:45:27,820 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 12:46:09,101 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:46:09,260 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,381 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:46:09,383 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:46:09,403 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,410 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:46:09,412 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:46:09,418 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:46:09,419 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,425 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:46:09,426 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:46:09,433 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 12:46:09,434 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 12:46:09,434 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,444 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:46:09,446 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,454 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:46:09,459 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 12:46:09,460 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,469 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:46:09,471 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 12:46:09,474 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:46:09,481 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:46:09,483 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:46:09,483 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:56:07,918 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:56:08,090 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:08,227 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:08,229 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:56:08,252 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:08,260 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:08,265 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-08 12:56:24,147 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:56:24,336 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,478 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:56:24,480 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:56:24,503 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,514 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:56:24,515 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:56:24,523 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:56:24,524 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,530 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:56:24,531 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:56:24,538 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 12:56:24,539 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 12:56:24,539 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,547 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:24,548 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,555 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:24,559 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 12:56:24,559 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,569 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:24,570 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 12:56:24,573 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,579 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:24,580 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:56:24,581 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:56:24,585 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:56:24,591 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:56:24,591 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:56:24,591 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:57:45,640 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 12:57:45,816 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:45,933 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:45,935 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:57:45,955 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:45,964 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:45,965 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:57:45,974 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 12:57:45,975 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:45,990 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 12:57:45,991 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:57:45,998 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 12:57:45,999 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 12:57:45,999 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:46,009 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:46,011 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:46,020 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:46,024 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 12:57:46,025 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:46,037 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:46,041 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:46,048 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:46,049 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:57:46,050 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 12:57:46,055 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:46,063 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:46,063 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:57:46,064 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 12:57:46,071 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 12:57:46,079 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 12:57:46,080 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 12:57:46,080 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 19:51:41,809 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 19:51:41,978 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,147 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,148 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 19:51:42,172 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,183 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,184 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 19:51:42,193 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 19:51:42,194 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,201 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,202 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 19:51:42,211 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 19:51:42,211 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 19:51:42,215 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,225 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,231 ERROR r.s.s.XMLDataProvider [main] Heater record with this ID:1 already exists
+2023-03-08 19:51:42,234 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,244 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,246 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 19:51:42,247 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 19:51:42,252 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,259 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,260 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 19:51:42,261 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 19:51:42,266 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:51:42,277 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:51:42,277 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 19:51:42,278 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 19:55:44,767 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 19:55:44,961 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,109 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,110 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 19:55:45,130 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,138 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,139 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Termometr.xml
+2023-03-08 19:55:45,146 INFO r.s.s.XMLDataProvider [main] Termometr record was saved
+2023-03-08 19:55:45,147 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,154 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,155 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 19:55:45,161 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 19:55:45,162 INFO r.s.s.XMLDataProvider [main] Heater record was saved
+2023-03-08 19:55:45,162 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,169 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,170 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,176 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,178 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,185 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,188 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 19:55:45,188 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,196 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,198 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 19:55:45,202 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,207 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,208 ERROR r.s.s.XMLDataProvider [main] Termometr record with this ID:1 wasn't found
+2023-03-08 19:55:45,210 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:55:45,216 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:55:45,218 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 19:55:45,218 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Heater.xml
+2023-03-08 19:58:25,343 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 19:58:25,536 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:58:25,669 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:58:25,673 ERROR r.s.s.XMLDataProvider [main] Heater record with this ID:0 wasn't found
+2023-03-08 19:58:49,695 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 19:58:49,877 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 19:58:50,004 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 19:58:50,008 ERROR r.s.s.XMLDataProvider [main] Heater record with this ID:0 wasn't found
+2023-03-08 20:18:27,943 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:18:28,165 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:18:28,332 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:18:28,334 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:18:28,366 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:18:28,379 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:18:28,380 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:18:28,389 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:18:28,390 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:18:28,397 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:18:28,398 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:18:28,405 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:18:28,406 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:18:28,406 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:18:28,413 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:19:52,257 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:19:52,440 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:19:52,599 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:19:52,600 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:19:52,624 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:19:52,634 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:19:52,635 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:19:52,643 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:19:52,644 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:19:52,651 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:19:52,652 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:19:52,662 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:19:52,662 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:19:52,662 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:19:52,671 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:19:52,673 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:19:52,682 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:19:52,685 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:19:52,686 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:19:52,700 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:19:52,701 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
+2023-03-08 20:21:01,894 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:21:02,125 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,318 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:21:02,320 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:21:02,342 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,351 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:21:02,352 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:21:02,358 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:21:02,359 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,366 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:21:02,367 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:21:02,375 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:21:02,375 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:21:02,375 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,384 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:02,386 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,394 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:02,398 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:21:02,399 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,411 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:02,412 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
+2023-03-08 20:21:02,415 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,423 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:02,424 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:21:02,424 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:21:02,430 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:02,437 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:02,438 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:21:02,439 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:21:08,582 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:21:08,780 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:08,916 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:08,918 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:21:08,941 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:08,951 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:08,952 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:21:08,959 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:21:08,960 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:21:08,971 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:21:08,974 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:4 already exists
+2023-03-08 20:22:30,220 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:22:30,404 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,542 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:22:30,544 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:22:30,566 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,574 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:22:30,575 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:22:30,583 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:22:30,584 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,591 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:22:30,592 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:22:30,601 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:22:30,602 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:22:30,602 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,610 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:22:30,612 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,620 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:22:30,624 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:22:30,624 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,635 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:22:30,636 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
+2023-03-08 20:22:30,640 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,650 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:22:30,651 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:22:30,651 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:22:30,656 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:22:30,664 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:22:30,665 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:22:30,665 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:23:19,973 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:23:20,216 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,460 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,463 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:23:20,496 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,507 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,509 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:23:20,518 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:23:20,519 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,535 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:23:20,536 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:23:20,548 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:23:20,549 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:23:20,549 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,559 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,561 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,570 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,576 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:23:20,577 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,590 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,591 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
+2023-03-08 20:23:20,595 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,601 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,602 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:23:20,603 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:23:20,609 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:20,616 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:20,616 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:23:20,616 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:23:37,432 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:23:37,787 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:38,014 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:38,016 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:23:38,053 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:38,067 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:38,069 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:23:38,081 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:23:38,083 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:38,101 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:38,111 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:4 already exists
+2023-03-08 20:23:38,433 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:23:38,643 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:23:38,783 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:23:38,787 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-08 20:24:41,388 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:24:41,613 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,785 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:24:41,787 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:24:41,814 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,822 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:24:41,823 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:24:41,830 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:24:41,831 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,838 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:24:41,839 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:24:41,846 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:24:41,847 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:24:41,847 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,855 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:24:41,857 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,867 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:24:41,872 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:24:41,873 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,884 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:24:41,885 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
+2023-03-08 20:24:41,890 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,897 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:24:41,898 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:24:41,898 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:24:41,902 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:24:41,910 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:24:41,910 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:24:41,911 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:26:03,550 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:26:03,752 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:03,911 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:03,914 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:26:03,936 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:03,948 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:03,949 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:26:03,958 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:26:03,960 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:03,973 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:03,978 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:4 already exists
+2023-03-08 20:26:11,155 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:26:11,356 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,502 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 1; Premature end of file.]
+2023-03-08 20:26:11,503 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:26:11,527 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,536 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:26:11,538 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:26:11,544 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:26:11,545 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,553 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:26:11,554 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:26:11,564 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:26:11,565 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:26:11,565 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,575 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:11,576 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,586 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:11,591 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:26:11,591 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,600 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:11,605 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,611 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:11,613 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:26:11,614 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:26:11,620 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,626 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:11,626 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:26:11,626 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:26:11,631 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:11,638 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:11,638 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 20:26:11,639 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:26:15,013 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:26:15,194 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,320 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,322 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:26:15,341 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,351 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,352 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:26:15,359 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:26:15,359 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,368 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,368 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:26:15,376 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:26:15,376 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:26:15,377 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,386 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,388 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,395 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,399 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:26:15,400 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,408 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,412 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,419 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,420 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:26:15,420 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:26:15,424 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,431 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,431 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:26:15,432 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:26:15,437 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:26:15,443 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:26:15,443 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 20:26:15,443 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:30:06,636 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:30:06,829 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:06,989 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:06,990 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:30:07,015 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:07,027 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:07,028 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:30:07,035 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:30:07,036 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:07,047 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:07,048 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:30:07,057 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:30:07,058 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:30:07,061 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:07,068 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:07,072 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-08 20:30:32,587 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:30:32,814 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:32,975 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:30:32,977 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:30:33,010 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:33,023 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:30:33,024 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:30:33,034 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:30:33,035 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:33,047 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:30:33,049 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:30:33,058 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:30:33,058 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:30:33,062 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:33,076 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:33,085 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-08 20:30:33,089 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:33,105 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:33,107 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:30:33,108 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:30:33,741 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:30:33,984 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:34,124 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:34,125 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:30:34,147 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:34,158 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:34,161 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:1 already exists
+2023-03-08 20:30:44,138 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:30:44,306 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:44,430 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:30:44,432 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:30:44,452 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:44,465 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:30:44,466 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:30:44,473 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:30:44,473 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:44,480 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:30:44,481 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:30:44,488 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:30:44,488 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:30:44,491 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:44,499 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:44,503 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-08 20:30:44,504 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:30:44,512 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:30:44,514 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:30:44,514 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:31:08,949 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:31:09,158 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:09,315 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:09,317 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:31:09,341 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:09,353 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:09,359 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:1 already exists
+2023-03-08 20:31:16,060 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:31:16,244 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,386 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:31:16,388 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:31:16,413 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,424 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:31:16,425 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:31:16,434 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:31:16,435 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,443 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:31:16,444 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:31:16,453 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:31:16,454 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:31:16,458 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,468 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:16,472 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-08 20:31:16,474 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,482 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:16,485 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:31:16,485 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:31:16,491 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,497 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:16,498 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:31:16,498 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:31:16,506 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:16,521 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:16,522 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 20:31:16,522 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:31:19,653 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:31:19,823 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:19,956 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:19,957 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:31:19,982 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:19,991 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:19,992 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:31:19,999 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:31:20,000 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:20,007 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:20,008 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:31:20,016 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:31:20,017 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:31:20,020 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:20,028 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:20,032 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-08 20:31:20,034 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:20,041 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:20,042 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:31:20,043 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:31:20,048 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:20,054 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:31:20,059 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:31:20,068 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:31:20,068 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 20:31:20,069 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:35:31,620 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:35:31,791 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:31,917 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:31,918 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:35:31,940 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:31,951 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:31,953 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:35:31,963 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:35:31,964 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:31,974 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:31,975 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:35:31,983 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:35:31,984 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:35:31,984 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:31,993 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:31,994 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,001 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,003 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,008 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,012 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:35:32,013 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,021 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,022 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:35:32,027 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,032 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,032 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:35:32,033 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,038 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,038 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,044 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,044 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:35:32,044 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,051 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,054 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,064 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,066 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:35:32,066 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:35:32,070 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:35:32,075 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:35:32,083 ERROR r.s.s.XMLDataProvider [main] There is no record with ID:2 in src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:36:29,758 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:36:29,956 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:30,086 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:30,087 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:36:30,109 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:30,118 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:30,123 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:1 already exists
+2023-03-08 20:36:49,451 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:36:49,627 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,752 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:36:49,754 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:36:49,775 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,785 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:36:49,786 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:36:49,795 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:36:49,796 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,804 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:36:49,805 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:36:49,812 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:36:49,813 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:36:49,813 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,821 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,822 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,831 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,833 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,839 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,843 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:36:49,844 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,855 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,856 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:36:49,862 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,871 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,871 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:36:49,871 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,877 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,877 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,884 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,885 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:36:49,885 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,891 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,894 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,904 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,905 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:36:49,906 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:36:49,910 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:36:49,917 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:36:49,922 ERROR r.s.s.XMLDataProvider [main] There is no record with ID:2 in src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:37:55,893 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:37:56,062 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,188 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,189 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:37:56,215 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,231 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:37:56,232 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:37:56,241 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:37:56,242 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,249 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 20:37:56,250 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:37:56,258 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:37:56,258 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:37:56,259 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,267 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,268 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,276 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,277 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,284 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,288 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:37:56,289 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,298 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,299 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:37:56,305 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,311 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,312 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:37:56,312 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,324 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,325 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,334 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,335 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:37:56,335 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,345 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,349 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,363 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,365 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:37:56,365 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:37:56,373 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,381 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,382 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:37:56,383 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:37:56,390 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:37:56,398 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:37:56,399 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 20:37:56,399 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:37:59,834 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:38:00,013 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,126 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,127 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:38:00,146 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,155 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,156 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:38:00,162 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 20:38:00,163 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,169 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,170 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:38:00,177 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 20:38:00,178 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 20:38:00,178 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,185 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,186 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,195 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,197 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,204 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,210 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:38:00,210 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,223 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,225 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:38:00,232 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,239 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,240 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:38:00,240 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,247 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,247 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,254 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,255 ERROR r.s.s.XMLDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-08 20:38:00,255 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,262 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,266 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,279 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,280 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 20:38:00,281 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 20:38:00,288 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,295 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,296 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 20:38:00,296 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:38:00,303 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:38:00,310 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:38:00,310 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 20:38:00,311 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 20:40:21,789 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:40:21,987 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:40:22,105 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:40:36,390 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:40:36,564 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:40:36,689 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:41:49,920 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:41:50,110 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:41:50,233 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:41:50,237 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:0 wasn't found
+2023-03-08 20:41:53,624 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 20:41:53,820 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 20:41:53,939 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 20:41:53,943 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:0 wasn't found
+

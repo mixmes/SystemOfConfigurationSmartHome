@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Hygrometer extends Sensor{
+public class Hygrometer extends Sensor implements EntityBean{
     private static final Logger log = LogManager.getLogger(Hygrometer.class);
     @XmlElement(name="humidity")
     private int humidity;
