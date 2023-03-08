@@ -16,6 +16,7 @@ public class Device implements EntityBean {
 
     protected long id;
     protected long smartHomeId;
+
     protected String name;
     @XmlTransient
     protected Sensor sensor;
@@ -35,6 +36,14 @@ public class Device implements EntityBean {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public long getSmartHomeId() {
+        return smartHomeId;
+    }
+
+    public void setSmartHomeId(long smartHomeId) {
+        this.smartHomeId = smartHomeId;
     }
 
     public String getName() {
@@ -84,20 +93,12 @@ public class Device implements EntityBean {
         notifications.add(notification);
     }
 
-    public long getSmartHomeId() {
-        return smartHomeId;
-    }
-
-    public void setSmartHomeId(long smartHomeId) {
-        this.smartHomeId = smartHomeId;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Device device = (Device) o;
-        return id == device.id && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor) ;
+        return id == device.id && state == device.state && Objects.equals(name, device.name);
     }
 
     @Override
