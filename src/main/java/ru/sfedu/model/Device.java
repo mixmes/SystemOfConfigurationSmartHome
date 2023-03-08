@@ -1,16 +1,28 @@
 package ru.sfedu.model;
-import java.text.ParseException;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
+<<<<<<<<< Temporary merge branch 1
+=========
+
+@XmlAccessorType(XmlAccessType.FIELD)
+>>>>>>>>> Temporary merge branch 2
 public class Device implements EntityBean {
+
     protected long id;
+
     protected String name;
+    @XmlTransient
     protected Sensor sensor;
+
     protected boolean state=false;
-    protected long smartHomeId;
+    @XmlTransient
     protected List<Notification> notifications = new ArrayList<>();
 
     public Device() {
@@ -61,37 +73,32 @@ public class Device implements EntityBean {
     }
     public void addNotification(Notification notification){
         notifications.add(notification);
-        notification.setDeviceID(id);
-    }
-
-    public long getSmartHomeId() {
-        return smartHomeId;
-    }
-
-    public void setSmartHomeId(long smartHomeId) {
-        this.smartHomeId = smartHomeId;
     }
 
     @Override
     public long getId() {
         return this.id;
     }
-    public void generateNotification(String message) throws ParseException {
+    public void generateNotification(String message){
         Notification notification = new Notification(message,new Date(),this.getClass().getSimpleName()+". "+name);
         notification.setDeviceID(id);
         notifications.add(notification);
     }
 
+<<<<<<<<< Temporary merge branch 1
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Device device = (Device) o;
-        return id == device.id && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor);
+        return id == device.id && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor) && Objects.equals(notifications, device.notifications);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, sensor, state);
+        return Objects.hash(id, name, sensor, state, notifications);
     }
+=========
+
+>>>>>>>>> Temporary merge branch 2
 }
