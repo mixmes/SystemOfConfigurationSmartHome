@@ -1,7 +1,6 @@
 package ru.sfedu.services;
 
 import ru.sfedu.model.*;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -25,6 +24,7 @@ public interface IDataProvider {
     void saveLockRecord(Lock lock) throws Exception;
     Lock getLockRecordByID(long id) throws Exception;
     void updateLockRecord(Lock lock) throws Exception;
+
     void saveNotificationRecord(Notification notification) throws Exception;
     Notification getNotificationRecordByID(long id) throws Exception;
     List<Notification> getNotificationRecordsByDeviceID(long id) throws Exception;
