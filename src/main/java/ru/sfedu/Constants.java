@@ -27,7 +27,7 @@ public class Constants {
         public static final String TERMOMERT_XML = "termometrXML";
         public static final String USER_XML = "userXML";
 
-        public enum AcessLevel {
+        public enum AccessLevel {
                 ADMIN,
                 RESIDENT
         }

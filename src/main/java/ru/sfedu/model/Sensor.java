@@ -7,15 +7,14 @@ import java.util.Objects;
 public class Sensor implements EntityBean{
     protected long id;
     protected String name;
-    protected Constants.SensorType sensorType;
+
     protected long deviceId;
     public Sensor(){
 
     }
-    public Sensor(long id, String name, Constants.SensorType type){
+    public Sensor(long id, String name){
         this.id = id;
         this.name = name;
-        sensorType=type;
     }
 
     public long getId() {

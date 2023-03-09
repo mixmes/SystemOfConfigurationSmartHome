@@ -1,4 +1,117 @@
-ion record was updated
+2023-03-05 17:31:00,120 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-05 17:31:00,160 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:31:00,271 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:31:00,272 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:31:00,299 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:31:00,302 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:31:00,307 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 wasn't found
+2023-03-05 17:31:00,311 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:31:00,315 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:31:00,315 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:31:00,320 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:31:00,324 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:31:00,324 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:31:00,336 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:31:00,340 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:31:00,342 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-05 17:31:00,353 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:31:00,357 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:31:00,357 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
+2023-03-05 17:32:16,578 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-05 17:32:16,626 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,739 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:32:16,741 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:32:16,756 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:32:16,756 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,765 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,766 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:32:16,784 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,788 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,789 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+2023-03-05 17:32:16,789 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,793 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,794 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:32:16,798 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,802 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,807 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
+2023-03-05 17:32:16,813 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,819 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,820 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:32:16,826 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:32:16,828 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,834 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,835 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
+2023-03-05 17:32:16,836 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,842 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,844 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-05 17:32:16,845 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:32:16,857 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,864 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,865 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-05 17:32:16,878 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:32:16,884 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:32:16,885 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+2023-03-05 17:33:28,321 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-05 17:33:28,374 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,490 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-05 17:33:28,491 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:33:28,507 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:33:28,508 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,515 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,517 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:33:28,520 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,525 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,529 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-05 17:33:28,529 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:33:28,545 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,550 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,551 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+2023-03-05 17:33:28,551 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,555 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,555 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:33:28,565 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,573 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,574 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
+2023-03-05 17:33:28,580 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,585 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,586 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:33:28,589 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:33:28,591 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,595 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,595 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
+2023-03-05 17:33:28,596 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,600 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,600 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-05 17:33:28,601 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:33:28,611 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,615 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,616 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-05 17:33:28,626 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:33:28,631 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:33:28,631 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+2023-03-05 17:35:02,679 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-05 17:35:02,737 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:35:02,866 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:35:02,871 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
+2023-03-05 17:35:02,894 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:35:02,900 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:35:02,901 INFO r.s.s.XMLDataProvider [main] Notification record was updated
 2023-03-05 17:35:02,901 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-05 17:35:02,906 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 17:35:02,907 INFO r.s.s.XMLDataProvider [main] Notification record was found
@@ -579,7 +692,98 @@ ion record was updated
 2023-03-05 17:50:31,325 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 17:50:31,325 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
 2023-03-05 17:50:31,328 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-otification record was updated
+2023-03-05 17:50:31,329 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:50:31,333 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:50:31,334 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
+2023-03-05 17:50:31,334 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:50:31,337 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:50:31,338 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-05 17:50:31,338 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:50:31,348 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:50:31,351 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:50:31,352 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-05 17:50:31,364 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:50:31,369 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:50:31,369 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
+2023-03-05 17:51:07,622 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-05 17:51:07,675 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,772 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,773 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,787 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:51:07,788 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,795 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,797 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:51:07,800 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,804 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,807 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-05 17:51:07,808 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,824 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,828 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,829 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,831 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:51:07,832 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,837 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,838 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,840 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+2023-03-05 17:51:07,841 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,845 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,845 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:51:07,846 DEBUG r.s.s.XMLDataProvider [main] Temperature too hot. You need to switch on the heater
+2023-03-05 17:51:07,846 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,850 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,850 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:51:07,850 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,854 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,854 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-05 17:51:07,855 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,861 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,865 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,865 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,868 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:51:07,868 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,873 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,874 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:51:07,874 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,878 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,878 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-05 17:51:07,878 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,882 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,885 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,886 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,888 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:51:07,889 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,893 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,893 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
+2023-03-05 17:51:07,894 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,898 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,898 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-05 17:51:07,898 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:07,906 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,909 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,910 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-05 17:51:07,918 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:07,922 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:07,923 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
+2023-03-05 17:51:11,021 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-05 17:51:11,072 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:11,175 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:11,177 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:11,192 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:51:11,192 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:11,199 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:11,200 INFO r.s.s.XMLDataProvider [main] Notification record was found
+2023-03-05 17:51:11,203 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:11,208 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:11,211 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-05 17:51:11,212 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:11,227 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:11,231 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:11,232 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:11,235 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-05 17:51:11,235 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-05 17:51:11,240 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-05 17:51:11,241 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-05 17:51:11,244 INFO r.s.s.XMLDataProvider [main] Notification record was updated
 2023-03-05 17:51:11,244 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-05 17:51:11,249 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 17:51:11,249 INFO r.s.s.XMLDataProvider [main] Notification record was found
@@ -2705,8 +2909,7 @@ Class has two properties of the same name "name"
 2023-03-08 12:45:27,776 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
  - with linked exception:
 [org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-08 12:45:27,777 DEBUG r.s.s.XMLDataProvider [main] update data sour
-ce src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:45:27,777 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
 2023-03-08 12:45:27,784 INFO r.s.s.XMLDataProvider [main] Notification record was saved
 2023-03-08 12:45:27,785 INFO r.s.s.XMLDataProvider [main] Heater record was saved
 2023-03-08 12:45:27,785 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
@@ -3318,8 +3521,7 @@ ce src/main/java/ru/sfedu/xml/Notification.xml
 2023-03-08 20:31:20,048 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 20:31:20,054 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/x
-ml/Hygrometer.xml
+2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
 2023-03-08 20:31:20,059 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 20:31:20,068 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 20:31:20,068 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
@@ -3888,7 +4090,10 @@ ml/Hygrometer.xml
 2023-03-08 22:55:31,864 INFO r.s.s.DataBaseProvider [main] Connection closed
 2023-03-09 14:23:51,160 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-09 14:23:51,528 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
-
+2023-03-09 14:23:51,780 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 14:23:52,007 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 14:23:52,045 INFO r.s.s.DataBaseProvider [main] Connection closed
+=======
 2023-03-08 22:39:26,169 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-08 22:39:26,334 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 22:39:26,476 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
@@ -4349,7 +4554,6 @@ ml/Hygrometer.xml
 2023-03-08 22:56:15,290 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 22:56:15,464 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 22:56:15,469 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:0 wasn't found
-
 
 2023-03-09 17:25:05,046 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-09 17:25:05,304 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
@@ -4837,791 +5041,3 @@ ml/Hygrometer.xml
 2023-03-09 17:53:52,494 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
 2023-03-09 17:53:52,587 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
 2023-03-09 17:53:52,595 INFO r.s.s.DataBaseProvider [main] Connection closed
-
-2023-03-09 16:49:06,455 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:49:06,627 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:49:06,789 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:49:06,791 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:49:06,819 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:49:06,832 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:49:06,834 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:49:06,844 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:49:06,844 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:49:06,845 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:49:06,855 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:49:06,857 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:49:06,874 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:49:06,879 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:50:00,159 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:50:00,424 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:00,606 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:50:00,608 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:50:00,631 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:00,642 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:50:00,643 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:50:00,651 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:50:00,652 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:50:00,653 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:00,663 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:50:00,664 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:00,682 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:50:00,689 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:50:49,895 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:50:50,174 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:50,362 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:50:50,364 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:50:50,398 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:50,411 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:50:50,413 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:50:50,429 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:50:50,429 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:50:50,432 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:50,455 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:50:50,457 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:50:50,486 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:50:50,494 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:51:22,398 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:51:22,604 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:22,786 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:51:22,787 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:51:22,810 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:22,819 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:51:22,820 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:51:22,828 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:51:22,829 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:51:22,829 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:22,840 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:22,842 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:22,855 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:22,860 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:51:37,596 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:51:37,830 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:38,023 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:38,028 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 16:51:46,029 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:51:46,220 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:46,403 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:51:46,405 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:51:46,438 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:46,452 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:51:46,453 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:51:46,462 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:51:46,462 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:51:46,463 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:46,473 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:46,474 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:46,487 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:46,491 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:51:46,496 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:46,503 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:46,504 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 16:51:46,505 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:51:46,513 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:51:46,519 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:51:46,527 ERROR r.s.s.XMLDataProvider [main] There is no record with ID:2 in src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:52:03,316 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:52:03,522 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:03,720 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:52:03,722 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:52:03,761 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:03,777 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:52:03,778 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:52:03,795 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:52:03,796 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:52:03,798 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:03,826 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:52:03,833 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:03,900 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:52:03,909 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:52:03,917 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:03,940 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:52:03,942 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 16:52:03,943 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:52:03,962 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:03,982 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:52:04,012 ERROR r.s.s.XMLDataProvider [main] There is no record with ID:2 in src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:52:30,401 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:52:30,601 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:30,779 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:52:30,781 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:52:30,807 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:30,817 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:52:30,818 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:52:30,827 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:52:30,828 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:52:30,828 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:30,837 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:52:30,839 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:52:30,852 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:52:30,857 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:53:32,605 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:53:32,853 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:53:33,090 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:53:33,093 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 16:53:33,130 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:53:33,143 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 16:53:33,144 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 16:53:33,156 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 16:53:33,157 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 16:53:33,157 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:53:33,169 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:53:33,171 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:53:33,191 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:53:33,197 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:58:04,691 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:58:04,866 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:58:05,029 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:58:05,034 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 16:58:27,224 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:58:27,391 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:58:27,518 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:58:27,520 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:58:27,537 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:58:27,541 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 16:59:27,443 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 16:59:27,635 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:59:27,772 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:59:27,775 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 16:59:27,788 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 16:59:27,792 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 17:00:30,685 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:00:30,873 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:00:31,027 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:00:31,029 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:00:31,051 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:00:31,063 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:00:31,066 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
-2023-03-09 17:00:51,842 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:00:52,018 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:00:52,153 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:00:52,157 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:01:07,748 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:01:07,944 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:01:08,081 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:01:08,082 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:01:08,113 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:01:08,125 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:01:08,126 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:01:08,136 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:01:08,136 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:01:08,137 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:01:08,146 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:01:08,147 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:01:08,157 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:01:08,161 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 17:02:42,413 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:02:42,581 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:02:42,710 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:02:42,712 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:02:42,733 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:02:42,742 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:02:42,743 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:02:42,751 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:02:42,752 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:02:42,784 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:02:42,793 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:02:42,795 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:02:42,805 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:02:42,807 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 17:02:42,808 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:02:42,815 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:02:42,816 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:02:42,825 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:02:42,825 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:2 wasn't found
-2023-03-09 17:05:48,151 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:05:48,319 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:48,443 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:05:48,448 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:05:59,149 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:05:59,320 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:59,442 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:05:59,444 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:05:59,467 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:59,477 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:05:59,479 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:05:59,489 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:05:59,490 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:05:59,522 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:59,530 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:05:59,532 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:59,541 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:05:59,542 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:59,548 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:05:59,549 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:05:59,556 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:07:43,699 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:07:43,884 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:07:44,019 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:07:44,025 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:08:00,981 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:08:01,161 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:08:01,289 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:08:01,291 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:08:01,313 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:08:01,321 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:08:01,322 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:08:01,331 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:08:01,331 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:08:01,362 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:08:01,371 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:08:01,372 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:08:01,383 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:08:01,384 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:08:01,392 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:08:01,392 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:08:01,399 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:14:30,516 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:14:30,681 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:14:30,814 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:14:30,815 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:14:30,839 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:14:30,847 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:14:30,848 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:14:30,855 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:14:30,856 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:14:30,882 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:14:30,889 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:14:30,890 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:14:30,900 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:14:30,901 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:14:30,907 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:14:30,907 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:14:30,914 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:18,514 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:23:18,673 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:18,823 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:18,828 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:23:30,124 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:23:30,295 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:30,419 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:23:30,421 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:23:30,441 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:30,449 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:23:30,450 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:23:30,457 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:23:30,458 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:23:30,487 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:30,495 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:30,496 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:30,507 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:30,508 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:30,514 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:30,515 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:30,522 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:58,371 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:23:58,539 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:23:58,668 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:23:58,672 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:24:06,032 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:24:06,211 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:06,377 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:24:06,379 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:24:06,403 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:06,414 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:24:06,415 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:24:06,422 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:24:06,422 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:24:06,446 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:06,454 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:06,455 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:06,464 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:06,466 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:06,473 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:06,473 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:06,481 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:28,929 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:24:29,086 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:29,217 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:24:29,219 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:24:29,239 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:29,247 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:24:29,248 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:24:29,255 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:24:29,255 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:24:29,285 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:29,293 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:29,294 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:29,304 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:29,305 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:29,311 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:29,312 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:29,322 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:51,869 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:24:52,045 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:24:52,176 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:24:52,180 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:25:01,236 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:25:01,411 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:01,546 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:25:01,547 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:25:01,569 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:01,576 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:25:01,577 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:25:01,584 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:25:01,584 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:25:01,608 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:01,615 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:01,617 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:01,625 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:01,627 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:01,633 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:01,633 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:01,640 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:29,360 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:25:29,543 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:29,670 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:25:29,671 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:25:29,691 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:29,699 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:25:29,700 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:25:29,707 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:25:29,708 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:25:29,734 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:29,742 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:29,744 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:29,754 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:29,755 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:29,762 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:29,763 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:29,771 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,179 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:25:56,339 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,474 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:25:56,476 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:25:56,497 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,505 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:25:56,506 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:25:56,513 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:25:56,514 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:25:56,541 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,549 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,550 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,563 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,564 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,570 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,571 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,577 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,580 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,586 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,588 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:25:56,589 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:25:56,594 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:25:56,600 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:25:56,605 ERROR r.s.s.XMLDataProvider [main] There is no record with ID:2 in src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:26:30,253 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:26:30,429 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,565 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:26:30,567 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:26:30,591 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,603 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:26:30,604 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:26:30,614 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:26:30,615 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:26:30,648 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,655 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:26:30,656 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,665 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:26:30,666 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,676 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:26:30,676 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,687 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:26:30,690 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,696 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:26:30,699 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:26:30,699 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:26:30,704 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:26:30,709 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:26:30,714 ERROR r.s.s.XMLDataProvider [main] There is no record with ID:2 in src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:27:38,822 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:27:38,997 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:27:39,131 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:27:39,133 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:27:39,157 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:27:39,164 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:27:39,165 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:27:39,172 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:27:39,172 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:27:39,197 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:27:39,205 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:27:39,206 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:27:39,215 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:27:39,217 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:27:39,223 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:27:39,223 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:27:39,230 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:10,205 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:28:10,399 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:10,538 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:10,542 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:28:20,033 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:28:20,203 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,330 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:28:20,331 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:28:20,352 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,361 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:28:20,362 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:28:20,369 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:28:20,370 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:28:20,399 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,407 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:20,409 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,420 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:20,421 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,427 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:20,428 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,434 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:20,437 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,443 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:20,445 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:28:20,445 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:28:20,450 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:28:20,457 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:28:20,457 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:28:20,458 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:29:18,176 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:29:18,336 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,462 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,464 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:29:18,485 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,494 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,495 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:29:18,503 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:29:18,504 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:29:18,532 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,540 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,542 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,552 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,553 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,560 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,560 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,568 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,571 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,578 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,580 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:29:18,581 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:29:18,586 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:29:18,593 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:29:18,594 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:29:18,594 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:32:58,389 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:32:58,561 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:32:58,689 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:32:58,690 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:32:58,713 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:32:58,721 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:32:58,723 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:32:58,731 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:32:58,732 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:32:58,736 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:32:58,745 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:32:58,748 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:32:58,750 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:32:58,758 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:32:58,760 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:32:58,760 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:32:58,766 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:32:58,777 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:32:58,778 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:32:58,778 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:35:58,703 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:35:58,871 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:58,988 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:35:58,990 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:35:59,011 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:59,019 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:35:59,020 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:35:59,028 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:35:59,028 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:35:59,028 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:59,036 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:35:59,037 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:59,046 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:35:59,047 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:59,055 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:35:59,056 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:35:59,062 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:35:59,062 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:59,068 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:35:59,068 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:35:59,074 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:36:50,410 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:36:50,576 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,705 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:36:50,707 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:36:50,728 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,736 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:36:50,737 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:36:50,744 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:36:50,745 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:36:50,745 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,753 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:36:50,754 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,761 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:36:50,763 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,772 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:36:50,773 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:36:50,781 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:36:50,782 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,789 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:36:50,790 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:36:50,796 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:50,162 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:40:50,426 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,645 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:40:50,648 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:40:50,672 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:40:50,678 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,690 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:40:50,691 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:40:50,703 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:40:50,703 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:40:50,704 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,715 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:50,716 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,730 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:50,732 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,751 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:50,755 DEBUG r.s.s.XMLDataProvider [main] false 1111111111111111111111111111111111111111
-2023-03-09 17:40:50,756 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:40:50,766 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:40:50,766 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,778 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:50,779 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:50,788 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:50,915 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:40:51,067 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:40:51,072 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:41:03,032 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:41:03,229 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,380 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:41:03,382 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:41:03,405 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,413 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:41:03,414 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:41:03,423 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:41:03,424 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:41:03,424 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,432 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:03,433 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,440 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:03,441 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,450 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:03,452 DEBUG r.s.s.XMLDataProvider [main] false 1111111111111111111111111111111111111111
-2023-03-09 17:41:03,453 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:41:03,459 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:41:03,459 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,465 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:03,466 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:03,472 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:31,957 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:41:32,128 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,246 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:41:32,248 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:41:32,267 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,275 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:41:32,276 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:41:32,283 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:41:32,284 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:41:32,284 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,292 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:32,293 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,301 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:32,302 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,311 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:32,313 DEBUG r.s.s.XMLDataProvider [main] false 1111111111111111111111111111111111111111
-2023-03-09 17:41:32,314 DEBUG r.s.s.XMLDataProvider [main] false 1111111111111111111111111111111111111111
-2023-03-09 17:41:32,314 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:41:32,320 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:41:32,321 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,327 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:41:32,327 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:41:32,334 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:20,140 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:43:20,322 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:20,447 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:20,451 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:2 already exists
-2023-03-09 17:43:26,760 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:43:26,961 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,121 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:43:27,122 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:43:27,147 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,155 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-09 17:43:27,156 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:43:27,164 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:43:27,165 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:43:27,165 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,173 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,174 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,181 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,183 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,194 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,197 DEBUG r.s.s.XMLDataProvider [main] true 1111111111111111111111111111111111111111
-2023-03-09 17:43:27,198 DEBUG r.s.s.XMLDataProvider [main] false 1111111111111111111111111111111111111111
-2023-03-09 17:43:27,199 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:43:27,205 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:43:27,205 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,212 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,213 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,218 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,221 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,227 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,230 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:43:27,231 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:43:27,236 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:27,242 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:27,242 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:43:27,243 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:43:31,322 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:43:31,542 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,674 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,676 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:43:31,696 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,703 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,705 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:43:31,712 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-09 17:43:31,712 INFO r.s.s.XMLDataProvider [main] Lock record was saved
-2023-03-09 17:43:31,713 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,720 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,721 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,727 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,728 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,737 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,739 DEBUG r.s.s.XMLDataProvider [main] true 1111111111111111111111111111111111111111
-2023-03-09 17:43:31,740 DEBUG r.s.s.XMLDataProvider [main] false 1111111111111111111111111111111111111111
-2023-03-09 17:43:31,740 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:43:31,746 INFO r.s.s.XMLDataProvider [main] Lock record was updated
-2023-03-09 17:43:31,746 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,754 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,754 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,760 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,762 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,768 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,771 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:43:31,772 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lock.xml
-2023-03-09 17:43:31,778 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:43:31,784 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:43:31,785 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-09 17:43:31,785 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-09 17:46:19,274 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:46:19,474 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:46:19,613 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:46:19,618 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:0 wasn't found
-2023-03-09 17:46:40,195 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:46:40,370 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:46:40,487 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:46:40,492 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:0 wasn't found
-2023-03-09 17:46:58,341 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:46:58,509 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:46:58,623 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:46:58,627 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:0 wasn't found
-2023-03-09 17:47:06,042 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-09 17:47:06,215 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-

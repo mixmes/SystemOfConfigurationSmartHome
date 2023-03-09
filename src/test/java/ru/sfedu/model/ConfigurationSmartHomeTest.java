@@ -2,7 +2,6 @@ package ru.sfedu.model;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.sfedu.Constants;
-import ru.sfedu.model.*;
 
 import java.util.Date;
 
@@ -25,8 +24,8 @@ public class ConfigurationSmartHomeTest {
 
     @BeforeAll
     public static void init(){
-        firstHomeAdmin=new User(1,"Иван Иванов Иванович", Constants.AcessLevel.ADMIN);
-        firstHomeResident = new User(2, "Ольга Иванова Ивановна", Constants.AcessLevel.RESIDENT);
+        firstHomeAdmin=new User(1,"Иван Иванов Иванович", Constants.AccessLevel.ADMIN);
+        firstHomeResident = new User(2, "Ольга Иванова Ивановна", Constants.AccessLevel.RESIDENT);
         firstHome = new SmartHome(1,"Дом Ивановых");
         lockHomeFirst = new Lock(1,"Замок на входной двери");
         lampFirstHome = new Lamp(2, "Лампа в зале",10);

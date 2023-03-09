@@ -21,7 +21,7 @@ public class Termometr extends Sensor implements  EntityBean{
     }
 
     public Termometr(long id, String name, int temperature) {
-        super(id, name, Constants.SensorType.TERMOMETR);
+        super(id, name);
         this.temperature = temperature;
     }
 

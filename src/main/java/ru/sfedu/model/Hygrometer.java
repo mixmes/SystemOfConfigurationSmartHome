@@ -18,7 +18,7 @@ public class Hygrometer extends Sensor{
     }
 
     public Hygrometer(long id, String name, int humidity) {
-        super(id, name, Constants.SensorType.HYGROMETER);
+        super(id, name);
         this.humidity = humidity;
     }
 

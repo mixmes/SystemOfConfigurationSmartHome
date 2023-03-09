@@ -985,16 +985,60 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void saveUserRecord(User user) throws Exception {
-
+        String sql = "INSERT INTO " + ConfigurationUtil.getConfigurationEntry(USER_TABLE) +
+                " (id, name, accessLevel, smartHomeId)" +
+                "VALUES(?,?,?,?)";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setLong(1, user.getId());
+            statement.setString(2, user.getName());
+            statement.setString(3, user.getAccessLevel().toString());
+            statement.setLong(4, user.getSmartHomeId());
+            if (statement.executeUpdate() == 0) {
+                log.error("User record wasn't saved");
+                throw new Exception("User wasn't save");
+            }
+            log.info("User record with I D= " + user.getId() + " was saved");
+        } catch (Exception e) {
+            log.error("User record with ID = " + user.getId() + " already exist");
+            throw new Exception("Record already exist");
+        }
     }
 
     @Override
     public User getUserRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(USER_TABLE)+
+                " WHERE id ="+id;
+        User user = new User();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                user.setId(resultSet.getLong("id"));
+                user.setName(resultSet.getString("name"));
+                user.setAccessLevel(AccessLevel.valueOf(resultSet.getString("accessLevel")));
+                user.setSmartHomeId(resultSet.getLong("smartHomeId"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(user.getId() == 0){
+            log.error("User not exist");
+            throw new Exception("Record not exist");
+        }
+        if (user.getSmartHomeId() != 0)
+            user.setSmartHome(getSmartHomeRecordByID(user.getSmartHomeId()));
+        return user;
     }
 
     @Override
     public void updateUserRecord(User user) throws Exception {
-
+        String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(USER_TABLE) + " SET name = '" + user.getName() +
+                "' WHERE id = "+user.getId();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Update smart home with ID = "+user.getId());
+        }
+        if(!user.getSmartHome().equals(getSmartHomeRecordByID(user.getSmartHomeId()))){
+            updateSmartHomeRecord(user.getSmartHome());
+        }
     }
 }
