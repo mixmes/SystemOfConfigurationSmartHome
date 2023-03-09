@@ -27,6 +27,7 @@ class DataBaseProviderTest {
     private static Lock lock = new Lock(1, "Замок на входной двери");
     private static Socket socket = new Socket(1,"Розетка на кухне");
     private static SmartHome smartHome = new SmartHome(1,"Дом Ивановых");
+    private static User user = new User(1, "Иван Иванович Иванов", AccessLevel.ADMIN);
     @BeforeAll
     public static void init(){
         heater.setSensor(termometr);
@@ -36,6 +37,7 @@ class DataBaseProviderTest {
         smartHome.addDevice(lamp);
         smartHome.addDevice(lock);
         smartHome.addDevice(heater);
+        user.setSmartHome(smartHome);
     }
     @Test
     public void testSaveHeaterRecord() throws Exception {
@@ -329,6 +331,51 @@ class DataBaseProviderTest {
     public void testGetNotExistingSmartHomeRecord(){
         Exception exception = assertThrows(Exception.class, ()->{
             dataBaseProvider.getSmartHomeRecordByID(10);
+        });
+        assertEquals(exception.getMessage(), "Record not exist");
+    }
+    @Test
+    public void testSaveUserRecord() throws Exception {
+        dataBaseProvider.saveUserRecord(user);
+        dataBaseProvider.saveSmartHomeRecord(user.getSmartHome());
+        assertEquals(dataBaseProvider.getUserRecordByID(user.getId()), user);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(USER_TABLE), user.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE),smartHome.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE),lock.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE),heater.getId());
+    }
+    @Test
+    public void testSaveExistingUserRecord() throws Exception {
+        dataBaseProvider.saveUserRecord(user);
+        dataBaseProvider.saveSmartHomeRecord(user.getSmartHome());
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.saveUserRecord(user);
+        });
+        assertEquals(exception.getMessage(), "Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(USER_TABLE), user.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE),smartHome.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE),lock.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE),heater.getId());
+    }
+    @Test
+    public void testUpdateUserRecord() throws Exception {
+        dataBaseProvider.saveUserRecord(user);
+        dataBaseProvider.saveSmartHomeRecord(user.getSmartHome());
+        user.setName("Иван Иванов");
+        dataBaseProvider.updateUserRecord(user);
+        assertEquals(dataBaseProvider.getUserRecordByID(user.getId()),user);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(USER_TABLE), user.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE),smartHome.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE),lock.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE),heater.getId());
+    }
+    @Test
+    public void testGetNotExistingUserRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getUserRecordByID(10);
         });
         assertEquals(exception.getMessage(), "Record not exist");
     }

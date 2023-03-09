@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlTransient;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -21,15 +22,16 @@ public class User implements EntityBean  {
     private long id;
     @XmlTransient
     private SmartHome smartHome;
+    private long smartHomeId;
     @XmlElement(name = "accessLevel")
-    private Constants.AcessLevel accessLevel=Constants.AcessLevel.ADMIN;
+    private Constants.AccessLevel accessLevel= Constants.AccessLevel.ADMIN;
     @XmlTransient
     private static final Logger log =  LogManager.getLogger(User.class);
 
     public User() {
     }
 
-    public User(long id, String name, Constants.AcessLevel level) {
+    public User(long id, String name, Constants.AccessLevel level) {
         this.name = name;
         this.id = id;
         accessLevel = level;
@@ -48,11 +50,11 @@ public class User implements EntityBean  {
         this.id = id;
     }
 
-    public Constants.AcessLevel getAccessLevel() {
+    public Constants.AccessLevel getAccessLevel() {
         return accessLevel;
     }
 
-    public void setAccessLevel(Constants.AcessLevel accessLevel) {
+    public void setAccessLevel(Constants.AccessLevel accessLevel) {
         this.accessLevel = accessLevel;
     }
 
@@ -60,8 +62,17 @@ public class User implements EntityBean  {
         return smartHome;
     }
 
+    public long getSmartHomeId() {
+        return smartHomeId;
+    }
+
+    public void setSmartHomeId(long smartHomeId) {
+        this.smartHomeId = smartHomeId;
+    }
+
     public void setSmartHome(SmartHome smartHome) {
         this.smartHome = smartHome;
+        smartHomeId = smartHome.getId();
     }
 
     @Override
@@ -84,12 +95,12 @@ public class User implements EntityBean  {
     public void addResidentToSmartHome(User user) throws Exception {
         checkAccessLevel();
         user.setSmartHome(smartHome);
-        user.setAccessLevel(Constants.AcessLevel.RESIDENT);
+        user.setAccessLevel(Constants.AccessLevel.RESIDENT);
     }
     public void deleteResidentInSmartHome(User user) throws Exception {
         checkAccessLevel();
         user.setSmartHome(null);
-        user.setAccessLevel(Constants.AcessLevel.ADMIN);
+        user.setAccessLevel(Constants.AccessLevel.ADMIN);
     }
 
     public List<Notification> checkSmartHomesNotification(){
@@ -203,9 +214,32 @@ public class User implements EntityBean  {
         getDeviceFromSmartHome(device).generateNotification("Changed its power to "+power);
     }
     private void checkAccessLevel() throws Exception {
-        if(accessLevel!= Constants.AcessLevel.ADMIN){
+        if(accessLevel!= Constants.AccessLevel.ADMIN){
             log.error("The user does not have enough rights to add user");
             throw new Exception("Insufficient rights to add residents");
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id && Objects.equals(smartHome, user.smartHome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, smartHome);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", smartHome=" + smartHome +
+                ", accessLevel=" + accessLevel +
+                '}';
     }
 }
