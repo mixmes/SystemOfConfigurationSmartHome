@@ -10,7 +10,6 @@ import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.SimpleFormatter;
 
 import static ru.sfedu.Constants.*;
 
@@ -120,6 +119,36 @@ public class DataBaseProvider implements IDataProvider{
     }
 
     @Override
+    public List<Heater> getHeaterRecordByHomeID(long id) throws Exception {
+        String sql ="SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(HEATER_TABLE)+
+                " WHERE smartHomeId = "+id;
+        List<Heater> heaters = new ArrayList<>();
+        Heater heater = new Heater();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                heater.setId(resultSet.getLong("id"));
+                heater.setName(resultSet.getString("name"));
+                heater.setState(resultSet.getBoolean("state"));
+                heater.setTemperatureForOn(resultSet.getInt("tempForOn"));
+                heater.setTemperatureForOff(resultSet.getInt("tempForOff"));
+                heater.setMaxPower(resultSet.getInt("maxPower"));
+                heater.setCurrentPower(resultSet.getInt("currentPower"));
+                heater.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                log.debug(getTermometrRecordByHeaterId(heater.getId()));
+                heater.setSensor(getTermometrRecordByHeaterId(heater.getId()));
+                heater.setNotifications(getNotificationRecordsByDeviceID(id));
+                heaters.add(heater);
+            }
+        }
+        if(heater.getId() == 0){
+            log.error("Heater not exist");
+        }
+        return heaters;
+    }
+
+
+    @Override
     public void updateHeaterRecord(Heater heater) throws Exception {
         String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(HEATER_TABLE) + " SET name = '" + heater.getName() +
                 "', state = '" + (heater.isState()?1:0) +
@@ -224,6 +253,34 @@ public class DataBaseProvider implements IDataProvider{
             throw new Exception("Record not exist");
         }
         return humidifier;
+    }
+
+    @Override
+    public List<Humidifier> getHumidifierRecordByHomeId(long id) throws Exception {
+        String sql ="SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(HUMIDIFIER_TABLE)+
+                " WHERE smartHomeId = "+id;
+        List<Humidifier> humidifiers = new ArrayList<>();
+        Humidifier humidifier = new Humidifier();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                humidifier.setId(resultSet.getLong("id"));
+                humidifier.setName(resultSet.getString("name"));
+                humidifier.setState(resultSet.getBoolean("state"));
+                humidifier.setHumidityForOn(resultSet.getInt("humOn"));
+                humidifier.setHumidityForOff(resultSet.getInt("humOff"));
+                humidifier.setMaxPower(resultSet.getInt("maxPower"));
+                humidifier.setCurrentPower(resultSet.getInt("currentPower"));
+                humidifier.setSensor(getHygrometerRecordByDeviceID(humidifier.getId()));
+                humidifier.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                humidifier.setNotifications(getNotificationRecordsByDeviceID(id));
+                humidifiers.add(humidifier);
+            }
+        }
+        if(humidifier.getId() == 0){
+            log.error("Humidifier not exist");
+        }
+        return humidifiers;
     }
 
     @Override
@@ -404,6 +461,32 @@ public class DataBaseProvider implements IDataProvider{
     }
 
     @Override
+    public List<Lamp> getLampRecordByHomeId(long id) throws Exception {
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(LAMP_TABLE)+
+                " WHERE smartHomeId ="+id;
+        List<Lamp> lamps = new ArrayList<>();
+        Lamp lamp = new Lamp();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                lamp.setId(resultSet.getLong("id"));
+                lamp.setName(resultSet.getString("name"));
+                lamp.setMaxBrightness(resultSet.getInt("maxBright"));
+                lamp.setCurrentBrightness(resultSet.getInt("currentBright"));
+                lamp.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                lamp.setNotifications(getNotificationRecordsByDeviceID(id));
+                lamps.add(lamp);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(lamp.getId() == 0){
+            log.error("Lamp not exist");
+        }
+        return lamps;
+    }
+
+    @Override
     public void updateLampRecord(Lamp lamp) throws Exception {
         String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(LAMP_TABLE) + " SET name = '" + lamp.getName() +
                 "', state = '" + (lamp.isState()?1:0)+
@@ -467,6 +550,31 @@ public class DataBaseProvider implements IDataProvider{
             throw new Exception("Record not exist");
         }
         return lock;
+    }
+
+    @Override
+    public List<Lock> getLockRecordByHomeId(long id) throws Exception {
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(LOCK_TABLE)+
+                " WHERE id ="+id;
+        List<Lock> locks = new ArrayList<>();
+        Lock lock = new Lock();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                lock.setId(resultSet.getLong("id"));
+                lock.setName(resultSet.getString("name"));
+                lock.setState(resultSet.getBoolean("state"));
+                lock.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                lock.setNotifications(getNotificationRecordsByDeviceID(id));
+                locks.add(lock);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(lock.getId() == 0){
+            log.error("Lock not exist");
+        }
+        return locks;
     }
 
     @Override
@@ -574,19 +682,142 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void saveSmartHomeRecord(SmartHome smartHome) throws Exception {
-
+        String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE)+
+                " (id, name)" +
+                "VALUES(?, ?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setLong(1, smartHome.getId());
+            statement.setString(2, smartHome.getName());
+            if (statement.executeUpdate() == 0) {
+                log.error("SmartHome record wasn't saved");
+                throw new Exception("Record wasn't save");
+            }
+            if(smartHome.getDevices().size()>0){
+                smartHome.getDevices().forEach(d-> {
+                    try {
+                        chooseSaveDeviceMethod(d);
+                    } catch (Exception e) {
+                        log.info("Device already exist");
+                    }
+                });
+            }
+            log.info("SmartHome record with ID="+smartHome.getId()+" was saved");
+        }catch (Exception e){
+            log.error("SmartHome record with this ID:"+smartHome.getId()+" already exist");
+            throw new Exception("Record already exist");
+        }
     }
+
 
     @Override
     public SmartHome getSmartHomeRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE)+
+                " WHERE id ="+id;
+        SmartHome smartHome = new SmartHome();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                smartHome.setId(resultSet.getLong("id"));
+                smartHome.setName(resultSet.getString("name"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(smartHome.getId() == 0){
+            log.error("SmartHome not exist");
+            throw new Exception("Record not exist");
+        }
+        smartHome.setDevices(this.getDevicesBySmartHomeId(smartHome.getId()));
+        return smartHome;
     }
 
     @Override
     public void updateSmartHomeRecord(SmartHome smartHome) throws Exception {
-
+        String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE) + " SET name = '" + smartHome.getName() +
+                "' WHERE id = "+smartHome.getId();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Update smart home with ID = "+smartHome.getId());
+        }
+        List<Device> oldDevices = this.getDevicesBySmartHomeId(smartHome.getId());
+        smartHome.getDevices().forEach(n -> {
+            if (!oldDevices.contains(n)) {
+                try {
+                    chooseSaveDeviceMethod(n);
+                } catch (Exception e) {
+                    log.error(e);
+                }
+            }else {
+                try {
+                    chooseUpdateDeviceMethod(n);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+    }
+    @Override
+    public void chooseSaveDeviceMethod(Device device) throws Exception{
+        switch(device.getClass().getSimpleName()){
+            case "Heater": {
+                saveHeaterRecord((Heater) device);
+                break;
+            }
+            case "Humidifier": {
+                saveHumidifierRecord((Humidifier) device);
+                break;
+            }
+            case "Lamp": {
+                saveLampRecord((Lamp) device);
+                break;
+            }
+            case "Lock": {
+                saveLockRecord((Lock) device);
+                break;
+            }
+            case "Socket": {
+                saveSocketRecord((Socket) device);
+                break;
+            }
+        }
     }
 
+    @Override
+    public void chooseUpdateDeviceMethod(Device device) throws Exception {
+        switch(device.getClass().getSimpleName()){
+            case "Heater": {
+                updateHeaterRecord((Heater) device);
+                break;
+            }
+            case "Humidifier": {
+                updateHumidifierRecord((Humidifier) device);
+                break;
+            }
+            case "Lamp": {
+                updateLampRecord((Lamp) device);
+                break;
+            }
+            case "Lock": {
+                updateLockRecord((Lock) device);
+                break;
+            }
+            case "Socket": {
+                updateSocketRecord((Socket) device);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public List<Device> getDevicesBySmartHomeId(long id) throws Exception{
+        List<Device> devices = new ArrayList<>();
+        devices.addAll(getHeaterRecordByHomeID(id));
+        devices.addAll(getHumidifierRecordByHomeId(id));
+        devices.addAll(getSocketRecordByHomeId(id));
+        devices.addAll(getLampRecordByHomeId(id));
+        devices.addAll(getLockRecordByHomeId(id));
+        return devices;
+    }
     @Override
     public void saveSocketRecord(Socket socket) throws Exception {
         String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE)+
@@ -637,6 +868,31 @@ public class DataBaseProvider implements IDataProvider{
             throw new Exception("Record not exist");
         }
         return socket;
+    }
+
+    @Override
+    public List<Socket> getSocketRecordByHomeId(long id) throws Exception {
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE)+
+                " WHERE id ="+id;
+        List<Socket> sockets = new ArrayList<>();
+        Socket socket = new Socket();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                socket.setId(resultSet.getLong("id"));
+                socket.setName(resultSet.getString("name"));
+                socket.setState(resultSet.getBoolean("state"));
+                socket.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                socket.setNotifications(getNotificationRecordsByDeviceID(id));
+                sockets.add(socket);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(socket.getId() == 0){
+            log.error("Socket not exist");
+        }
+        return sockets;
     }
 
     @Override

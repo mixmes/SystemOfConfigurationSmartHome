@@ -26,12 +26,16 @@ class DataBaseProviderTest {
     private static Notification notificationHumidifier = new Notification(2, "Humidity too low. You need to switch on the humidifier", new Date(), Humidifier.class.getSimpleName()+": "+humidifier.getName());
     private static Lock lock = new Lock(1, "Замок на входной двери");
     private static Socket socket = new Socket(1,"Розетка на кухне");
+    private static SmartHome smartHome = new SmartHome(1,"Дом Ивановых");
     @BeforeAll
     public static void init(){
         heater.setSensor(termometr);
         humidifier.setSensor(hygrometer);
         heater.addNotification(notificationHeater);
         humidifier.addNotification(notificationHumidifier);
+        smartHome.addDevice(lamp);
+        smartHome.addDevice(lock);
+        smartHome.addDevice(heater);
     }
     @Test
     public void testSaveHeaterRecord() throws Exception {
@@ -175,7 +179,7 @@ class DataBaseProviderTest {
     }
     @Test
     public void testSaveExistingNotificationRecord() throws Exception {
-        Notification notification = new Notification(1, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
+        Notification notification = new Notification(12, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
         dataBaseProvider.saveNotificationRecord(notification);
         Exception exception = assertThrows(Exception.class, ()->{
             dataBaseProvider.saveNotificationRecord(notification);
@@ -185,7 +189,7 @@ class DataBaseProviderTest {
     }
     @Test
     public void testUpdateNotificationRecord() throws Exception {
-        Notification notification = new Notification(1, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
+        Notification notification = new Notification(11, "Temperature too low. You need to switch on the heater",new Date(), "Lamp");
         dataBaseProvider.saveNotificationRecord(notification);
         notification.setSender("Lamp: Лампа на кухне");
         dataBaseProvider.updateNotificationRecord(notification);
@@ -248,6 +252,7 @@ class DataBaseProviderTest {
     public void testUpdateLockRecord() throws Exception {
         dataBaseProvider.saveLockRecord(lock);
         lock.setState(true);
+        dataBaseProvider.updateLockRecord(lock);
         assertEquals(dataBaseProvider.getLockRecordByID(lock.getId()), lock);
         dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE), lock.getId());
     }
@@ -285,6 +290,45 @@ class DataBaseProviderTest {
     public void testGetNotExistingSocket(){
         Exception exception = assertThrows(Exception.class, ()->{
             dataBaseProvider.getSocketRecordByID(socket.getId());
+        });
+        assertEquals(exception.getMessage(), "Record not exist");
+    }
+    @Test
+    public void testSaveSmartHomeRecord() throws Exception {
+        dataBaseProvider.saveSmartHomeRecord(smartHome);
+        assertEquals(dataBaseProvider.getSmartHomeRecordByID(smartHome.getId()), smartHome);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE),smartHome.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE),lock.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE),heater.getId());
+    }
+    @Test
+    public void testSaveExistingHomeRecord() throws Exception {
+        dataBaseProvider.saveSmartHomeRecord(smartHome);
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.saveSmartHomeRecord(smartHome);
+        });
+        assertEquals(exception.getMessage(), "Record already exist");
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE),smartHome.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE),lock.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE),heater.getId());
+    }
+    @Test
+    public void testUpdateSmartHomeRecord() throws Exception {
+        dataBaseProvider.saveSmartHomeRecord(smartHome);
+        smartHome.setName("Дом");
+        dataBaseProvider.updateSmartHomeRecord(smartHome);
+        assertEquals(dataBaseProvider.getSmartHomeRecordByID(smartHome.getId()),smartHome);
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(SMART_HOME_TABLE),smartHome.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LOCK_TABLE),lock.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(LAMP_TABLE),lamp.getId());
+        dataBaseProvider.deleteRecord(ConfigurationUtil.getConfigurationEntry(HEATER_TABLE),heater.getId());
+    }
+    @Test
+    public void testGetNotExistingSmartHomeRecord(){
+        Exception exception = assertThrows(Exception.class, ()->{
+            dataBaseProvider.getSmartHomeRecordByID(10);
         });
         assertEquals(exception.getMessage(), "Record not exist");
     }
