@@ -2,6 +2,7 @@ package ru.sfedu.services;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import ru.sfedu.model.*;
 import ru.sfedu.utils.ConfigurationUtil;
 import javax.xml.bind.JAXBContext;
@@ -312,35 +313,110 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public void saveLampRecord(Lamp lamp) {
-
+    public void saveLampRecord(Lamp lamp) throws Exception {
+        Wrapper<Lamp> lamps = getAllRecords(config.getConfigurationEntry(LAMP_XML));
+        if(lamps.getBeans().stream().noneMatch(s->s.getId() == lamp.getId())){
+            lamps.getBeans().add(lamp);
+            initDataSource(config.getConfigurationEntry(LAMP_XML),lamps);
+            lamp.getNotifications().stream().forEach(s-> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Lamp record was saved");
+        }
+        else {
+            log.error("Lamp record with this ID:"+lamp.getId()+" already exists");
+            throw new Exception("Lamp record with this ID:"+lamp.getId()+" already exists");
+        }
     }
 
     @Override
-    public Lamp getLampRecordByID(long id) {
-        return null;
+    public Lamp getLampRecordByID(long id) throws Exception {
+        Wrapper<Lamp> lamps = getAllRecords(config.getConfigurationEntry(LAMP_XML));
+        Optional<Lamp> lamp = lamps.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!lamp.isPresent()){
+            log.error("Lamp record with this ID:"+id+" wasn't found");
+            throw new Exception("Lamp record with this ID:"+id+" wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        lamp.get().setNotifications(notifications);
+
+        return lamp.get();
     }
 
     @Override
     public void updateLampRecord(Lamp lamp) throws Exception {
-
+        Wrapper<Lamp> lamps = getAllRecords(config.getConfigurationEntry(LAMP_XML));
+        if(lamps.getBeans().stream().anyMatch(s->s.getId() == lamp.getId())){
+            Lamp oldLamp = getLampRecordByID(lamp.getId());
+            lamps.getBeans().remove(oldLamp);
+            lamps.getBeans().add(lamp);
+            initDataSource(config.getConfigurationEntry(LAMP_XML),lamps);
+            log.info("Lamp record was updated");
+        }
+        else {
+            log.error("Lamp record with this ID:"+lamp.getId()+" wasn't found");
+            throw new Exception("Lamp record with this ID:"+lamp.getId()+" wasn't found");
+        }
     }
 
-
     @Override
-    public void saveLockRecord(Lock lock) {
-
+    public void saveLockRecord(Lock lock) throws Exception {
+        Wrapper<Lock> locks = getAllRecords(config.getConfigurationEntry(LOCK_XML));
+        if(locks.getBeans().stream().noneMatch(s->s.getId() == lock.getId())){
+            locks.getBeans().add(lock);
+            initDataSource(config.getConfigurationEntry(LOCK_XML),locks);
+            lock.getNotifications().stream().forEach(s-> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Lock record was saved");
+        }
+        else {
+            log.error("Lock record with this ID:"+lock.getId()+" already exists");
+            throw new Exception("Lock record with this ID:"+lock.getId()+" already exists");
+        }
     }
 
     @Override
-    public Lock getLockRecordByID(long id) {
-        return null;
+    public Lock getLockRecordByID(long id) throws Exception {
+        Wrapper<Lock> locks = getAllRecords(config.getConfigurationEntry(LOCK_XML));
+        Optional<Lock> lock = locks.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!lock.isPresent()){
+            log.error("Lock record with this ID:"+id+" wasn't found");
+            throw new Exception("Lock record with this ID:"+id+" wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        lock.get().setNotifications(notifications);
+
+        return lock.get();
+    }
+
+    @Override
+    public void updateLockRecord(Lock lock) throws Exception {
+        Wrapper<Lock> locks =  getAllRecords(config.getConfigurationEntry(LOCK_XML));
+        if(locks.getBeans().stream().anyMatch(s->s.getId() == lock.getId())){
+            Lock oldLock = getLockRecordByID(lock.getId());
+            locks.getBeans().remove(oldLock);
+            locks.getBeans().add(lock);
+            initDataSource(config.getConfigurationEntry(LOCK_XML),locks);
+            log.info("Lock record was updated");
+        }
+        else {
+            log.error("Lock record with this ID:"+lock.getId()+" wasn't found");
+            throw new Exception("Lock record with this ID:"+lock.getId()+" wasn't found");
+        }
     }
 
     @Override
     public void updateLockRecord(Lock lock) throws Exception {
 
-    }
 
 
     @Override
@@ -357,6 +433,7 @@ public class XMLDataProvider implements IDataProvider {
 
         }
     }
+
 
     @Override
     public Notification getNotificationRecordByID(long id) throws Exception {
@@ -378,6 +455,7 @@ public class XMLDataProvider implements IDataProvider {
         return notificationList;
     }
 
+
     @Override
     public void updateNotificationRecord(Notification notification) throws Exception {
         Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
@@ -393,6 +471,7 @@ public class XMLDataProvider implements IDataProvider {
             throw new Exception("Notification record with this ID:"+notification.getId()+" wasn't found");
         }
     }
+
 
 
 
@@ -439,7 +518,5 @@ public class XMLDataProvider implements IDataProvider {
     public void updateUserRecord(User user) {
 
     }
-
-
 
 }

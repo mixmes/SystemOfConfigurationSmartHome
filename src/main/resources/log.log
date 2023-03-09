@@ -1490,7 +1490,7 @@
 2023-03-07 11:57:47,096 INFO r.s.m.User [main] User Иван Иванов Иванович changes lock state Замок to false
 2023-03-07 11:57:47,102 ERROR r.s.m.Termometr [main] Heater Термометр для обогревателя в зале does not have sensor
 2023-03-07 11:57:47,106 ERROR r.s.m.User [main] Max power 5 < transmitted power 10
-<<<<<<<<< Temporary merge branch 1
+
 2023-03-07 20:48:34,598 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-07 20:48:34,651 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
 2023-03-07 20:49:01,586 INFO r.s.s.DataBaseProvider [main] Connect to data base
@@ -3727,7 +3727,7 @@ Class has two properties of the same name "name"
 2023-03-08 20:41:53,820 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 20:41:53,939 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 20:41:53,943 ERROR r.s.s.XMLDataProvider [main] Humidifier record with this ID:0 wasn't found
->>>>>>>>> Temporary merge branch 2
+
 2023-03-08 21:33:21,895 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-08 21:33:21,972 ERROR r.s.s.DataBaseProvider [main] Notification not exist
 2023-03-08 21:33:21,987 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
@@ -3825,6 +3825,7 @@ Class has two properties of the same name "name"
 2023-03-08 22:01:02,067 INFO r.s.s.DataBaseProvider [main] Connection closed
 2023-03-08 22:02:13,127 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-08 22:02:13,446 INFO r.s.s.DataBaseProvider [main] Connection closed
+
 2023-03-08 22:08:00,617 INFO r.s.s.DataBaseProvider [main] Connect to data base
 2023-03-08 22:08:00,894 INFO r.s.s.DataBaseProvider [main] Connection closed
 2023-03-08 22:08:25,566 INFO r.s.s.DataBaseProvider [main] Connect to data base
@@ -4087,3 +4088,465 @@ Class has two properties of the same name "name"
 2023-03-08 22:55:31,790 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
 2023-03-08 22:55:31,856 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
 2023-03-08 22:55:31,864 INFO r.s.s.DataBaseProvider [main] Connection closed
+=======
+2023-03-08 22:39:26,169 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:39:26,334 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:39:26,476 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:39:26,478 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:39:26,501 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:39:26,510 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:39:26,512 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:39:26,522 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:39:26,523 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:39:26,523 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:39:26,532 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:39:26,534 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:39:26,547 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:39:26,552 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:39:46,709 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:39:46,908 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:39:47,063 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:39:47,067 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-08 22:39:59,734 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:39:59,929 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:00,085 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:40:00,087 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:40:00,121 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:00,132 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:40:00,133 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:40:00,143 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:40:00,144 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:40:00,144 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:00,155 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:00,157 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:00,169 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:00,174 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:40:51,252 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:40:51,459 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,611 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:40:51,612 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 22:40:51,636 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,649 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:40:51,650 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 22:40:51,661 INFO r.s.s.XMLDataProvider [main] Hygrometer record was saved
+2023-03-08 22:40:51,662 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,677 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,678 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:40:51,687 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:40:51,687 INFO r.s.s.XMLDataProvider [main] Humidifier record was saved
+2023-03-08 22:40:51,687 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,697 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,698 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,707 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,708 INFO r.s.s.XMLDataProvider [main] Hygrometer record was found
+2023-03-08 22:40:51,708 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,718 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,722 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,731 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,736 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
+2023-03-08 22:40:51,737 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Humidifier.xml
+2023-03-08 22:40:51,744 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,752 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,753 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:40:51,754 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 22:40:51,763 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:40:51,772 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:40:51,773 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
+2023-03-08 22:40:51,773 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:41:14,459 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:41:14,684 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:41:14,827 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:41:14,832 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-08 22:41:25,070 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:41:25,278 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:41:25,432 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:41:25,433 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:41:25,459 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:41:25,468 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:41:25,469 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:41:25,478 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:41:25,479 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:41:25,479 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:41:25,494 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:41:25,495 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:41:25,507 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:41:25,512 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:41:25,517 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:41:25,526 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:41:25,527 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:41:25,528 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:42:13,046 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:42:13,251 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:13,416 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:42:13,418 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:42:13,443 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:13,458 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:42:13,464 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:5 already exists
+2023-03-08 22:42:28,685 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:42:28,864 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:29,001 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:42:29,003 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:42:29,029 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:29,038 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:42:29,040 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:42:29,048 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:42:29,048 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:42:29,049 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:29,058 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:42:29,060 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:29,071 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:42:29,076 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:42:29,079 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:42:29,090 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:42:29,091 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:42:29,092 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:43:51,702 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:43:51,909 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:52,053 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:52,055 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:43:52,081 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:52,098 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:43:52,099 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:43:52,111 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:43:52,111 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:43:52,112 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:52,124 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:52,126 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:52,137 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:52,141 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:43:52,146 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:52,155 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:52,157 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:43:52,157 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:43:52,164 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:52,173 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:52,174 INFO r.s.s.XMLDataProvider [main] Record with this ID:5 was deleted
+2023-03-08 22:43:52,174 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:43:55,859 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:43:56,067 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:56,228 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:56,230 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:43:56,258 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:56,266 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:56,267 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:43:56,275 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:43:56,275 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:43:56,276 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:56,284 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:56,286 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:56,295 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:56,299 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:43:56,302 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:56,309 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:56,310 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:43:56,311 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:43:56,319 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:43:56,326 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:43:56,327 INFO r.s.s.XMLDataProvider [main] Record with this ID:5 was deleted
+2023-03-08 22:43:56,327 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:45:34,417 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:45:34,603 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:34,779 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:34,781 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:45:34,811 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:34,824 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:34,826 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:45:34,836 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:45:34,836 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:45:34,841 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:34,852 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:34,858 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-08 22:45:34,860 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:34,873 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:34,875 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:45:34,876 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:45:34,884 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:34,899 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:34,899 INFO r.s.s.XMLDataProvider [main] Record with this ID:5 was deleted
+2023-03-08 22:45:34,900 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:45:38,896 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:45:39,082 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:39,222 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:39,223 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:45:39,248 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:39,260 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:39,261 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:45:39,270 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:45:39,271 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:45:39,274 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:39,284 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:39,288 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-08 22:45:39,290 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:39,298 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:39,300 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:45:39,300 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:45:39,307 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:45:39,319 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:45:39,320 INFO r.s.s.XMLDataProvider [main] Record with this ID:5 was deleted
+2023-03-08 22:45:39,321 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:48:54,503 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:48:54,693 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,824 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,826 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:48:54,849 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,858 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,859 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:48:54,870 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:48:54,870 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:48:54,871 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,882 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,883 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,891 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,893 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,905 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,908 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:48:54,909 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:48:54,910 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,920 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,921 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:48:54,928 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:48:54,928 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:49:17,302 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:49:17,540 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:17,695 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:17,699 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-08 22:49:24,053 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:49:24,253 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:24,412 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:49:24,413 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:49:24,440 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:24,456 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:24,460 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:5 already exists
+2023-03-08 22:49:35,321 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:49:35,552 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:35,711 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:49:35,713 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:49:35,736 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:35,750 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:35,754 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:5 already exists
+2023-03-08 22:49:46,161 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:49:46,361 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,514 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:49:46,516 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:49:46,542 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,551 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:49:46,553 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:49:46,561 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:49:46,562 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:49:46,562 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,573 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:46,575 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,583 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:46,585 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,596 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:46,600 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:49:46,601 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:49:46,601 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,611 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:46,611 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:49:46,621 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:49:46,621 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:50:49,078 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:50:49,297 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:49,444 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:49,451 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-08 22:50:55,810 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:50:56,003 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,144 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:50:56,146 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:50:56,169 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,181 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:50:56,182 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:50:56,192 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:50:56,193 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:50:56,194 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,205 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,207 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,220 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,226 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:50:56,228 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,235 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,235 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,244 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,244 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,253 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,253 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:50:56,254 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:50:56,254 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,262 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,263 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:50:56,269 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:50:56,270 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:51:21,514 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:51:21,724 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:21,885 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:51:21,887 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:51:21,916 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:21,927 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:51:21,929 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:51:21,939 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:51:21,940 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:51:21,940 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:21,951 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:21,953 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:21,963 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:21,965 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:21,977 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:21,982 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:51:21,984 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:51:21,984 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:21,997 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:21,997 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:22,005 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:22,006 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:51:22,006 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:22,014 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:22,015 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:51:22,022 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:51:22,023 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:05,247 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:53:05,441 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,595 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:53:05,596 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:05,621 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,629 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:53:05,630 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:53:05,639 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:53:05,640 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:53:05,640 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,648 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:05,649 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,658 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:05,659 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,669 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:05,673 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:05,674 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:05,681 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:53:05,681 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,694 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:05,695 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:05,704 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:05,704 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:25,843 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:53:26,044 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,186 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:53:26,188 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:26,211 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,219 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
+2023-03-08 22:53:26,220 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:53:26,228 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:53:26,228 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:53:26,228 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,236 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,237 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,245 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,247 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,259 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,263 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:26,264 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:26,270 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:53:26,271 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,277 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,278 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,284 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,285 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:26,288 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,295 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,296 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:53:26,296 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:26,303 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:26,309 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:26,310 INFO r.s.s.XMLDataProvider [main] Record with this ID:5 was deleted
+2023-03-08 22:53:26,310 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:53:30,108 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:53:30,298 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,441 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,443 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:30,472 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,481 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,482 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:53:30,491 INFO r.s.s.XMLDataProvider [main] Notification record was saved
+2023-03-08 22:53:30,492 INFO r.s.s.XMLDataProvider [main] Lamp record was saved
+2023-03-08 22:53:30,492 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,502 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,503 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,511 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,514 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,525 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,529 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:30,530 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:30,538 INFO r.s.s.XMLDataProvider [main] Lamp record was updated
+2023-03-08 22:53:30,538 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,546 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,546 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,555 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,555 ERROR r.s.s.XMLDataProvider [main] Notification records with this ID:1 wasn't found
+2023-03-08 22:53:30,559 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,571 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,572 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
+2023-03-08 22:53:30,572 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-08 22:53:30,578 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:53:30,585 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:53:30,586 INFO r.s.s.XMLDataProvider [main] Record with this ID:5 was deleted
+2023-03-08 22:53:30,586 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 22:55:13,461 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:55:13,675 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:55:13,825 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:55:13,832 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:0 wasn't found
+2023-03-08 22:55:34,061 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:55:34,268 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:55:34,434 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:55:34,439 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:0 wasn't found
+2023-03-08 22:56:00,136 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:56:00,334 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:56:00,484 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:56:00,489 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:0 wasn't found
+2023-03-08 22:56:15,065 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
+2023-03-08 22:56:15,290 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
+2023-03-08 22:56:15,464 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
+2023-03-08 22:56:15,469 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:0 wasn't found
+

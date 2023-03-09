@@ -24,4 +24,6 @@ public class Lock extends Device{
     public void setState(boolean state) {
         this.state = state;
     }
+    @Override
+    public void setSensor(Sensor sensor){}
 }

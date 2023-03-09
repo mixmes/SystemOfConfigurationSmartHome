@@ -21,10 +21,12 @@ public class XMLDataProviderTest {
     private static Notification lockNotification = new Notification(2,"Door is opened",new Date(),"Lock");
     private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
     private static Notification hygroNotification = new Notification(4,"Humididty is too high.You need to switch off the humidifier",new Date(),"Hygrometer");
+    private static Notification lampNotification = new Notification(5,"Changed its state to on",new Date(),"Lamp");
     private static Termometr firstTermometr = new Termometr(1,"Термометр в зале",25);
-    private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале", 30);
+    private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале",100);
     private static Heater heater = new Heater(1,"Обогреватель в зале",100);
     private static Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
+    private static Lamp lamp = new Lamp(1,"Лампочка в зале",50);
     private static List<Notification> notificationList = new ArrayList<>();
 
     @BeforeAll
@@ -38,6 +40,9 @@ public class XMLDataProviderTest {
         notificationList = new ArrayList<>(List.of(hygroNotification));
         humidifier.setNotifications(notificationList);
         humidifier.setSensor(firstHygrometer);
+
+        notificationList = new ArrayList<>(List.of(lampNotification));
+        lamp.setNotifications(notificationList);
 
     }
 
@@ -270,15 +275,68 @@ public class XMLDataProviderTest {
     }
 
     @Test
-    void saveLampRecord() {
+    void saveLampRecord() throws Exception {
+        xmlDataProvider.saveLampRecord(lamp);
+
+        assertEquals(lamp,xmlDataProvider.getLampRecordByID(lamp.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML), lamp.getId(),Lamp.class);
+        lamp.getNotifications().stream().forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingLampRecord() throws Exception {
+        xmlDataProvider.saveLampRecord(lamp);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.saveLampRecord(lamp);
+        });
+        assertEquals("Lamp record with this ID:"+lamp.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML), lamp.getId(),Lamp.class);
+        lamp.getNotifications().stream().forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Test
-    void getLampRecordByID() {
-    }
+    void updateLampRecord() throws Exception {
+        xmlDataProvider.saveLampRecord(lamp);
+        lamp.setName("Лампочка в ванной");
+        xmlDataProvider.updateLampRecord(lamp);
 
+        assertEquals("Лампочка в ванной",xmlDataProvider.getLampRecordByID(lamp.getId()).getName());
+
+        lamp.setName("Лампочка в зале");
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML), lamp.getId(),Lamp.class);
+        lamp.getNotifications().stream().forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
     @Test
-    void deleteLampRecord() {
+    void updateNonExistingLampRecord(){
+        Lamp tempLamp = new Lamp();
+
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.updateLampRecord(tempLamp);
+        });
+        assertEquals("Lamp record with this ID:"+tempLamp.getId()+" wasn't found",exception.getMessage());
     }
 
     @Test
