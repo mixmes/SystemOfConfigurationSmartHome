@@ -8,8 +8,7 @@ import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Lock extends Device{
-    @XmlElement(name = "state")
-    private boolean state=false;
+
 
     public Lock() {
     }
@@ -30,16 +29,15 @@ public class Lock extends Device{
     public void setSensor(Sensor sensor){}
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        Lock lock = (Lock) o;
-        return state == lock.state;
+    public String toString() {
+        return "Lock{" +
+                "state=" + state +
+                ", id=" + id +
+                ", smartHomeId=" + smartHomeId +
+                ", name='" + name + '\'' +
+                ", sensor=" + sensor +
+                ", notifications=" + notifications +
+                '}';
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), state);
-    }
 }

@@ -18,15 +18,16 @@ public class XMLDataProviderTest {
     private static XMLDataProvider xmlDataProvider = new XMLDataProvider();
     private static ConfigurationUtil config = new ConfigurationUtil();
     private static Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
-    private static Notification lockNotification = new Notification(2,"Door is opened",new Date(),"Lock");
     private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
     private static Notification hygroNotification = new Notification(4,"Humididty is too high.You need to switch off the humidifier",new Date(),"Hygrometer");
     private static Notification lampNotification = new Notification(5,"Changed its state to on",new Date(),"Lamp");
+    private static Notification lockNotification = new Notification(2,"User changed lock state to on",new Date(),"Lock");
     private static Termometr firstTermometr = new Termometr(1,"Термометр в зале",25);
     private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале",100);
     private static Heater heater = new Heater(1,"Обогреватель в зале",100);
     private static Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
     private static Lamp lamp = new Lamp(1,"Лампочка в зале",50);
+    private static Lock lock =  new Lock(2,"Замок на вхожной двери");
     private static List<Notification> notificationList = new ArrayList<>();
 
     @BeforeAll
@@ -43,6 +44,10 @@ public class XMLDataProviderTest {
 
         notificationList = new ArrayList<>(List.of(lampNotification));
         lamp.setNotifications(notificationList);
+
+        lockNotification.setDeviceID(lock.getId());
+        notificationList = new ArrayList<>(List.of(lockNotification));
+        lock.setNotifications(notificationList);
 
     }
 
@@ -340,15 +345,62 @@ public class XMLDataProviderTest {
     }
 
     @Test
-    void saveLockRecord() {
+    void saveLockRecord() throws Exception {
+        xmlDataProvider.saveLockRecord(lock);
+
+        assertEquals(lock, xmlDataProvider.getLockRecordByID(lock.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LOCK_XML),lock.getId(),Lock.class);
+        lock.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingLockRecord() throws Exception {
+        xmlDataProvider.saveLockRecord(lock);
+
+        Exception exception  = assertThrows(Exception.class,()->{xmlDataProvider.saveLockRecord(lock);});
+        assertEquals("Lock record with this ID:"+lock.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LOCK_XML),lock.getId(),Lock.class);
+        lock.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Test
-    void getLockRecordByID() {
-    }
+    void updateLockRecord() throws Exception {
+        xmlDataProvider.saveLockRecord(lock);
+        lock.setName("Замок на сейфе");
+        xmlDataProvider.updateLockRecord(lock);
 
+        assertEquals("Замок на сейфе",xmlDataProvider.getLockRecordByID(lock.getId()).getName());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LOCK_XML),lock.getId(),Lock.class);
+        lock.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lock.setName("Замок на входной двери");
+    }
     @Test
-    void deleteLockRecord() {
+    void updateNonExistingLockRecord(){
+        Lock tempLock = new Lock();
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.updateLockRecord(tempLock);});
+        assertEquals("Lock record with this ID:"+tempLock.getId()+" wasn't found",exception.getMessage());
+
     }
 
     @Test

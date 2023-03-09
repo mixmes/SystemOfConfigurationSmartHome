@@ -106,15 +106,4 @@ public class Device implements EntityBean {
         return Objects.hash(id, name, sensor, state);
     }
 
-    @Override
-    public String toString() {
-        return "Device{" +
-                "id=" + id +
-                ", smartHomeId=" + smartHomeId +
-                ", name='" + name + '\'' +
-                ", sensor=" + sensor +
-                ", state=" + state +
-                ", notifications=" + notifications +
-                '}';
-    }
 }
