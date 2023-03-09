@@ -225,12 +225,12 @@ public class User implements EntityBean  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id && Objects.equals(smartHome, user.smartHome);
+        return id == user.id && smartHomeId == user.smartHomeId && Objects.equals(name, user.name) && accessLevel == user.accessLevel;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, smartHome);
+        return Objects.hash(name, id, smartHomeId, accessLevel);
     }
 
     @Override

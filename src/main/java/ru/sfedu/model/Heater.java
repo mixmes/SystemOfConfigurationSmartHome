@@ -19,8 +19,6 @@ public class Heater extends Device{
     private int maxPower;
     @XmlElement(name = "currentPower")
     private int currentPower=0;
-    @XmlElement(name = "state")
-    private boolean state = false;
 
     public Heater(){}
     public Heater(long id, String name, int maxPower) {

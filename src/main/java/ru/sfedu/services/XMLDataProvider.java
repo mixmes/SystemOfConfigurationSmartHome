@@ -11,6 +11,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -115,10 +116,7 @@ public class XMLDataProvider implements IDataProvider {
         return heater.get();
     }
 
-    @Override
-    public List<Heater> getHeaterRecordByHomeID(long id) throws Exception {
-        return null;
-    }
+
 
     @Override
     public void updateHeaterRecord(Heater heater) throws Exception {
@@ -184,12 +182,6 @@ public class XMLDataProvider implements IDataProvider {
 
         return humidifier.get();
     }
-
-    @Override
-    public List<Humidifier> getHumidifierRecordByHomeId(long id) throws Exception {
-        return null;
-    }
-
     @Override
     public void updateHumidifierRecord(Humidifier humidifier) throws Exception {
         Wrapper<Humidifier> humidifiers = getAllRecords(config.getConfigurationEntry(HUMIDIFIER_XML));
@@ -321,22 +313,49 @@ public class XMLDataProvider implements IDataProvider {
 
     @Override
     public void saveUserRecord(User user) throws Exception {
-
+        Wrapper<User> userWrapper = getAllRecords(config.getConfigurationEntry(USER_XML));
+        if(userWrapper.getBeans().stream().noneMatch(s->s.getId() == user.getId())){
+            userWrapper.getBeans().add(user);
+            initDataSource(config.getConfigurationEntry(USER_XML),userWrapper);
+            saveSmartHomeRecord(user.getSmartHome());
+            initDataSource(config.getConfigurationEntry(USER_XML),userWrapper);
+            log.info("User record was saved");
+        }
+        else {
+            log.error("User record with this ID:"+user.getId()+" already exists");
+            throw new Exception("User record with this ID:"+user.getId()+" already exists");
+        }
     }
 
     @Override
     public User getUserRecordByID(long id) throws Exception {
-        return null;
+        Wrapper<User> userWrapper = getAllRecords(config.getConfigurationEntry(USER_XML));
+        Optional<User> user = userWrapper.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!user.isPresent()){
+            log.error("User record with this ID:"+id+" wasn't found");
+            throw new Exception("User record with this ID:"+id+" wasn't found");
+        }
+        user.get().setSmartHome(getSmartHomeRecordByID(user.get().getSmartHomeId()));
+        return user.get();
     }
 
-    @Override
-    public List<Lamp> getLampRecordByHomeId(long id) throws Exception {
-        return null;
-    }
+
 
     @Override
     public void updateUserRecord(User user) throws Exception {
-
+        Wrapper<User> userWrapper = getAllRecords(config.getConfigurationEntry(USER_XML));
+        if(userWrapper.getBeans().stream().anyMatch(s->s.getId() == user.getId())){
+            User oldUser = getUserRecordByID(user.getId());
+            userWrapper.getBeans().remove(oldUser);
+            userWrapper.getBeans().add(user);
+            initDataSource(config.getConfigurationEntry(USER_XML),userWrapper);
+            updateSmartHomeRecord(user.getSmartHome());
+            log.info("User record was updated");
+        }
+        else {
+            log.error("User record with this ID:"+user.getId()+" wasn't found");
+            throw new Exception("User record with this ID:"+user.getId()+" wasn't found");
+        }
     }
 
     @Override
@@ -423,11 +442,6 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
-    public List<Lock> getLockRecordByHomeId(long id) throws Exception {
-        return null;
-    }
-
-    @Override
     public void updateLockRecord(Lock lock) throws Exception {
         Wrapper<Lock> locks = getAllRecords(config.getConfigurationEntry(LOCK_XML));
         if (locks.getBeans().stream().anyMatch(s -> s.getId() == lock.getId())) {
@@ -488,13 +502,10 @@ public class XMLDataProvider implements IDataProvider {
             log.info("Socket record was updated");
         }
         else {
-            log.error("Socket record was updated");
-            throw new Exception("Socket record was updated");
+            log.error("Socket record with this ID:"+socket.getId()+" wasn't found");
+            throw new Exception("Socket record with this ID:"+socket.getId()+" wasn't found");
         }
     }
-
-
-
 
     @Override
     public void saveNotificationRecord (Notification notification) throws Exception {
@@ -515,6 +526,7 @@ public class XMLDataProvider implements IDataProvider {
         Optional<Notification> notification = notifications.getBeans().stream().filter(s -> s.getId() == id).findFirst();
         if (!notification.isPresent()) {
             log.error("Notification record with this ID:" + id + " wasn't found");
+            return null;
         }
         log.info("Notification record was found");
         return notification.get();
@@ -534,11 +546,11 @@ public class XMLDataProvider implements IDataProvider {
     public void updateNotificationRecord (Notification notification) throws Exception {
         Wrapper<Notification> notifications = getAllRecords(config.getConfigurationEntry(NOTIFICATION_XML));
         if (notifications.getBeans().stream().anyMatch(s -> s.getId() == notification.getId())) {
-            notifications.getBeans().remove(notification);
+            Notification oldNotification = getNotificationRecordByID(notification.getId());
+            notifications.getBeans().remove(oldNotification);
             notifications.getBeans().add(notification);
             initDataSource(config.getConfigurationEntry(NOTIFICATION_XML), notifications);
             log.info("Notification record was updated");
-            log.debug(getNotificationRecordByID(1).getMessage());
         } else {
             log.error("Notification record with this ID:" + notification.getId() + " wasn't found");
             throw new Exception("Notification record with this ID:" + notification.getId() + " wasn't found");
@@ -547,55 +559,229 @@ public class XMLDataProvider implements IDataProvider {
 
     @Override
     public void saveSmartHomeRecord(SmartHome smartHome) throws Exception {
-
+        Wrapper<SmartHome> smartHomeWrapper = getAllRecords(config.getConfigurationEntry(SMART_HOME_XML));
+        if(smartHomeWrapper.getBeans().stream().noneMatch(s->s.getId() == smartHome.getId())){
+            smartHomeWrapper.getBeans().add(smartHome);
+            initDataSource(config.getConfigurationEntry(SMART_HOME_XML),smartHomeWrapper);
+            smartHome.getDevices().stream().forEach(s-> {
+                try {
+                    chooseSaveDeviceMethod(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("SmartHome record was saved");
+        }
+        else {
+            log.error("SmartHome record with this ID:"+smartHome.getId()+" already exists");
+            throw new Exception("SmartHome record with this ID:"+smartHome.getId()+" already exists");
+        }
+    }
+    @Override
+    public void updateSmartHomeRecord(SmartHome smartHome) throws Exception {
+        Wrapper<SmartHome> smartHomeWrapper = getAllRecords(config.getConfigurationEntry(SMART_HOME_XML));
+        if(smartHomeWrapper.getBeans().stream().anyMatch(s->s.getId() == smartHome.getId())){
+            SmartHome oldSmartHome = getSmartHomeRecordByID(smartHome.getId());
+            smartHomeWrapper.getBeans().remove(oldSmartHome);
+            smartHomeWrapper.getBeans().add(smartHome);
+            initDataSource(config.getConfigurationEntry(SMART_HOME_XML),smartHomeWrapper);
+            List<Device> oldDevices = this.getDevicesBySmartHomeId(smartHome.getId());
+            smartHome.getDevices().forEach(n -> {
+                if (!oldDevices.contains(n)) {
+                    try {
+                        chooseSaveDeviceMethod(n);
+                    } catch (Exception e) {
+                        log.error(e);
+                    }
+                }else {
+                    try {
+                        chooseUpdateDeviceMethod(n);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            });
+        }
+        else {
+            log.error("SmartHome record with this ID:"+smartHome.getId()+" wasn't found");
+            throw new Exception("SmartHome record with this ID:"+smartHome.getId()+" wasn't found");
+        }
     }
 
     @Override
     public SmartHome getSmartHomeRecordByID(long id) throws Exception {
-        return null;
+        Wrapper<SmartHome> smartHomeWrapper = getAllRecords(config.getConfigurationEntry(SMART_HOME_XML));
+        Optional<SmartHome> smartHome = smartHomeWrapper.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!smartHome.isPresent()){
+            log.error("SmartHome with this ID:"+id+" wasn't found");
+            throw new Exception("SmartHome with this ID:"+id+" wasn't found");
+        }
+        List<Device> devices = getDevicesBySmartHomeId(id);
+
+        smartHome.get().setDevices(devices);
+
+        return smartHome.get();
     }
 
+    @Override
+    public List<Lamp> getLampRecordByHomeId(long id) throws Exception {
+       Wrapper<Lamp> lampWrapper =  getAllRecords(config.getConfigurationEntry(LAMP_XML));
+       List<Lamp> lamps = lampWrapper.getBeans().stream().filter(s->s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(lamps.isEmpty()){
+            log.error("Lamp records with this smartHome ID:"+id+" wasn't found");
+        }
+       lamps.stream().forEach(s-> {
+           try {
+               s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+           } catch (Exception e) {
+               throw new RuntimeException(e);
+           }
+       });
+       return lamps;
+    }
     @Override
     public List<Socket> getSocketRecordByHomeId(long id) throws Exception {
-        return null;
+        Wrapper<Socket> socketWrapper = getAllRecords(config.getConfigurationEntry(SOCKET_XML));
+        List<Socket> sockets = socketWrapper.getBeans().stream().filter(s->s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(sockets.isEmpty()){
+            log.error("Socket records with this smartHome ID:"+id+" wasn't found");
+        }
+        sockets.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return sockets;
     }
-
     @Override
-    public void updateSmartHomeRecord(SmartHome smartHome) throws Exception {
-
+    public List<Lock> getLockRecordByHomeId(long id) throws Exception {
+        Wrapper<Lock> lockWrapper = getAllRecords(config.getConfigurationEntry(LOCK_XML));
+        List<Lock> locks = lockWrapper.getBeans().stream().filter(s->s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(locks.isEmpty()){
+            log.error("Lock records with this smartHome ID:"+id+" wasn't found");
+        }
+        locks.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return locks;
     }
-
-
     @Override
-    public void chooseSaveDeviceMethod(Device device) throws Exception {
-
+    public List<Heater> getHeaterRecordByHomeID(long id) throws Exception {
+        Wrapper<Heater> heaterWrapper = getAllRecords(config.getConfigurationEntry(HEATER_XML));
+        List<Heater> heaters = heaterWrapper.getBeans().stream().filter(s->s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(heaters.isEmpty()){
+            log.error("Heater records with this smartHome ID:"+id+" wasn't found");
+        }
+        heaters.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        heaters.stream().forEach(s->{
+            try {
+                s.setSensor(getTermometrRecordByHeaterId(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return  heaters;
     }
-
     @Override
-    public void chooseUpdateDeviceMethod(Device device) throws Exception {
-
+    public List<Humidifier> getHumidifierRecordByHomeId(long id) throws Exception {
+        Wrapper<Humidifier> humidifierWrapper = getAllRecords(config.getConfigurationEntry(HUMIDIFIER_XML));
+        List<Humidifier> humidifiers = humidifierWrapper.getBeans().stream().filter(s->s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(humidifiers.isEmpty()){
+            log.error("Humidifier records with this smartHome ID:"+id+" wasn't found");
+        }
+        humidifiers.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        humidifiers.stream().forEach(s-> {
+            try {
+                s.setSensor(getHygrometerRecordByID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return  humidifiers;
     }
 
     @Override
     public List<Device> getDevicesBySmartHomeId(long id) throws Exception {
-        return null;
+        List<Device> devices = new ArrayList<>();
+        devices.addAll(getHeaterRecordByHomeID(id));
+        devices.addAll(getHumidifierRecordByHomeId(id));
+        devices.addAll(getSocketRecordByHomeId(id));
+        devices.addAll(getLampRecordByHomeId(id));
+        devices.addAll(getLockRecordByHomeId(id));
+        return devices;
+    }
+
+
+
+
+    @Override
+    public void chooseSaveDeviceMethod(Device device) throws Exception {
+        switch(device.getClass().getSimpleName()){
+            case "Heater": {
+                saveHeaterRecord((Heater) device);
+                break;
+            }
+            case "Humidifier": {
+                saveHumidifierRecord((Humidifier) device);
+                break;
+            }
+            case "Lamp": {
+                saveLampRecord((Lamp) device);
+                break;
+            }
+            case "Lock": {
+                saveLockRecord((Lock) device);
+                break;
+            }
+            case "Socket": {
+                saveSocketRecord((Socket) device);
+                break;
+            }
+        }
     }
 
     @Override
-    public void saveSocketRecord(Socket socket) throws Exception {
+    public void chooseUpdateDeviceMethod(Device device) throws Exception {
+        switch(device.getClass().getSimpleName()){
+            case "Heater": {
+                updateHeaterRecord((Heater) device);
+                break;
+            }
+            case "Humidifier": {
+                updateHumidifierRecord((Humidifier) device);
+                break;
+            }
+            case "Lamp": {
+                updateLampRecord((Lamp) device);
+                break;
+            }
+            case "Lock": {
+                updateLockRecord((Lock) device);
+                break;
+            }
+            case "Socket": {
+                updateSocketRecord((Socket) device);
+                break;
+            }
+        }
 
     }
-
-    @Override
-    public Socket getSocketRecordByID(long id) throws Exception {
-        return null;
-    }
-
-    @Override
-    public void updateSocketRecord(Socket socket) throws Exception {
-
-    }
-
-
-
 }

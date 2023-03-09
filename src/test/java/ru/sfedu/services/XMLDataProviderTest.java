@@ -28,7 +28,11 @@ public class XMLDataProviderTest {
     private static Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
     private static Lamp lamp = new Lamp(1,"Лампочка в зале",50);
     private static Lock lock =  new Lock(2,"Замок на вхожной двери");
+    private static Socket socket = new Socket(3,"Розетка для чайника");
+    private static SmartHome smartHome = new SmartHome(1,"Дом Максима");
+    private static User user = new User(1,"Максим",AccessLevel.ADMIN);
     private static List<Notification> notificationList = new ArrayList<>();
+    private static List<Device> deviceList = new ArrayList<>();
 
     @BeforeAll
     static void init(){
@@ -48,6 +52,18 @@ public class XMLDataProviderTest {
         lockNotification.setDeviceID(lock.getId());
         notificationList = new ArrayList<>(List.of(lockNotification));
         lock.setNotifications(notificationList);
+
+        socketNotification.setDeviceID(socket.getId());
+        notificationList = new ArrayList<>(List.of(socketNotification));
+        socket.setNotifications(notificationList);
+
+        lamp.setSmartHomeId(smartHome.getId());
+        heater.setSmartHomeId(smartHome.getId());
+        deviceList.add(lamp);
+        deviceList.add(heater);
+        smartHome.setDevices(deviceList);
+
+        user.setSmartHome(smartHome);
 
     }
 
@@ -106,9 +122,8 @@ public class XMLDataProviderTest {
         heater.setName("Обогреватель в комнате");
         xmlDataProvider.updateHeaterRecord(heater);
 
-        assertEquals("Обогреватель в комнате",heater.getName());
+        assertEquals("Обогреватель в комнате",xmlDataProvider.getHeaterRecordByID(heater.getId()).getName());
 
-        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(), Heater.class);
         heater.setName("Обогреватель в зале");
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), heater.getSensor().getId(), Termometr.class);
@@ -402,6 +417,66 @@ public class XMLDataProviderTest {
         assertEquals("Lock record with this ID:"+tempLock.getId()+" wasn't found",exception.getMessage());
 
     }
+    @Test
+    void saveSocketRecord() throws Exception {
+        xmlDataProvider.saveSocketRecord(socket);
+
+        assertEquals(socket,xmlDataProvider.getSocketRecordByID(socket.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_XML),socket.getId(),Socket.class);
+        socket.getNotifications().stream().forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingSocketRecord() throws Exception {
+        xmlDataProvider.saveSocketRecord(socket);
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveSocketRecord(socket);});
+        assertEquals("Socket record with this ID:"+socket.getId()+" already exists",exception.getMessage());
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_XML),socket.getId(),Socket.class);
+        socket.getNotifications().stream().forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+
+    @Test
+    void updateSocketRecord() throws Exception {
+        xmlDataProvider.saveSocketRecord(socket);
+        socket.setName("Розетка для вентилятора");
+        xmlDataProvider.updateSocketRecord(socket);
+
+        assertEquals("Розетка для вентилятора",xmlDataProvider.getSocketRecordByID(socket.getId()).getName());
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_XML),socket.getId(),Socket.class);
+        socket.getNotifications().stream().forEach(s->
+        {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        socket.setName("Розетка для чайника");
+    }
+    @Test
+    void updateNonExistingSocketRecord(){
+            Socket tempSocket = new Socket();
+
+            Exception exception = assertThrows(Exception.class,()->{
+                xmlDataProvider.updateSocketRecord(tempSocket);
+            });
+            assertEquals("Socket record with this ID:"+tempSocket.getId()+" wasn't found",exception.getMessage());
+    }
 
     @Test
     void saveNotificationRecord() throws Exception {
@@ -432,8 +507,10 @@ public class XMLDataProviderTest {
         xmlDataProvider.saveNotificationRecord(tempNotification);
         tempNotification.setMessage("Temperature too hot. You need to switch on the heater");
         xmlDataProvider.updateNotificationRecord(tempNotification);
+
         assertEquals("Temperature too hot. You need to switch on the heater",
                 xmlDataProvider.getNotificationRecordByID(tempNotification.getId()).getMessage());
+
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),tempNotification.getId(), Notification.class);
         tempNotification.setMessage("Temperature too low. You need to switch on the heater");
     }
@@ -444,52 +521,178 @@ public class XMLDataProviderTest {
         });
         assertEquals("Notification record with this ID:"+lockNotification.getId()+" wasn't found",exception.getMessage());
     }
+
     @Test
-    void saveSensorRecord() {
+    void saveSmartHomeRecord() throws Exception {
+        xmlDataProvider.saveSmartHomeRecord(smartHome);
+
+        assertEquals(smartHome,xmlDataProvider.getSmartHomeRecordByID(smartHome.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_XML), smartHome.getId(),SmartHome.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML),lamp.getId(), Lamp.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), firstTermometr.getId(), Termometr.class);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingSmartHomeRecord() throws Exception {
+        xmlDataProvider.saveSmartHomeRecord(smartHome);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.saveSmartHomeRecord(smartHome);
+        });
+        assertEquals("SmartHome record with this ID:"+smartHome.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_XML), smartHome.getId(),SmartHome.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML),lamp.getId(), Lamp.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), firstTermometr.getId(), Termometr.class);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateSmartHomeRecord() throws Exception {
+        xmlDataProvider.saveSmartHomeRecord(smartHome);
+        smartHome.setName("Новый дом Максима");
+        xmlDataProvider.updateSmartHomeRecord(smartHome);
+
+        assertEquals("Новый дом Максима",xmlDataProvider.getSmartHomeRecordByID(smartHome.getId()).getName());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_XML), smartHome.getId(),SmartHome.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML),lamp.getId(), Lamp.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), firstTermometr.getId(), Termometr.class);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        smartHome.setName("Дом Максима");
+    }
+    @Test
+    void updateNonExistingSmartHomeRecord(){
+        SmartHome tempSmartHome = new SmartHome();
+
+        Exception exception = assertThrows(Exception.class,()->{
+            xmlDataProvider.updateSmartHomeRecord(tempSmartHome);
+        });
+        assertEquals("SmartHome record with this ID:"+tempSmartHome.getId()+" wasn't found",exception.getMessage());
     }
 
     @Test
-    void getSensorRecordByID() {
+    void saveUserRecord() throws Exception {
+        xmlDataProvider.saveUserRecord(user);
+
+        assertEquals(user,xmlDataProvider.getUserRecordByID(user.getId()));
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(USER_XML), user.getId(), User.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_XML), smartHome.getId(),SmartHome.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML),lamp.getId(), Lamp.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), firstTermometr.getId(), Termometr.class);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
-
     @Test
-    void updateSensorRecord() {
+    void saveExistingUserRecord() throws Exception {
+        xmlDataProvider.saveUserRecord(user);
+
+        Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveUserRecord(user);});
+        assertEquals("User record with this ID:"+user.getId()+" already exists",exception.getMessage());
+
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(USER_XML), user.getId(), User.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_XML), smartHome.getId(),SmartHome.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML),lamp.getId(), Lamp.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), firstTermometr.getId(), Termometr.class);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
-
     @Test
-    void saveSmartHomeRecord() {
-    }
+    void updateUserRecord() throws Exception {
+        xmlDataProvider.saveUserRecord(user);
+        user.setName("Максимилиан");
+        xmlDataProvider.updateUserRecord(user);
 
-    @Test
-    void getSmartHomeRecordByID() {
-    }
+        assertEquals("Максимилиан",xmlDataProvider.getUserRecordByID(user.getId()).getName());
 
-    @Test
-    void updateSmartHomeRecord() {
-    }
-
-    @Test
-    void saveSocketRecord() {
-    }
-
-    @Test
-    void getSocketRecordByID() {
-    }
-
-    @Test
-    void updateSocketRecord() {
-    }
-
-
-    @Test
-    void saveUserRecord() {
-    }
-
-    @Test
-    void getUserRecordByID() {
-    }
-
-    @Test
-    void updateUserRecord() {
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(USER_XML), user.getId(), User.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_XML), smartHome.getId(),SmartHome.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_XML), heater.getId(),Heater.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_XML),lamp.getId(), Lamp.class);
+        xmlDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), firstTermometr.getId(), Termometr.class);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(),Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                xmlDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_XML),s.getId(), Notification.class);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        user.setName("Максим");
     }
 }

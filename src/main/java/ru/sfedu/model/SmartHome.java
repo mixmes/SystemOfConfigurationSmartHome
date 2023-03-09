@@ -59,24 +59,24 @@ public class SmartHome  implements EntityBean  {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        SmartHome smartHome = (SmartHome) o;
-        return id == smartHome.id;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
-
-    @Override
     public String toString() {
         return "SmartHome{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", devices=" + devices +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SmartHome smartHome = (SmartHome) o;
+        return id == smartHome.id && Objects.equals(name, smartHome.name) ;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
     }
 }

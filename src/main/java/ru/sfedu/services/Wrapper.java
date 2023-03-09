@@ -8,7 +8,7 @@ import java.util.List;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlSeeAlso({Notification.class, Heater.class, Humidifier.class, Hygrometer.class, Lamp.class,Lock.class, Termometr.class})
+@XmlSeeAlso({Notification.class, Heater.class, Humidifier.class, Hygrometer.class, Lamp.class,Lock.class, Termometr.class,Socket.class,User.class,SmartHome.class})
 public class Wrapper<T> {
     @XmlElement
     @XmlElementWrapper
