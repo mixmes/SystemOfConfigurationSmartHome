@@ -1,117 +1,4 @@
-2023-03-05 17:31:00,120 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-05 17:31:00,160 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:31:00,271 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:31:00,272 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:31:00,299 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:31:00,302 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:31:00,307 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 wasn't found
-2023-03-05 17:31:00,311 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:31:00,315 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:31:00,315 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:31:00,320 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:31:00,324 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:31:00,324 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:31:00,336 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:31:00,340 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:31:00,342 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
-2023-03-05 17:31:00,353 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:31:00,357 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:31:00,357 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
-2023-03-05 17:32:16,578 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-05 17:32:16,626 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,739 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:32:16,741 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:32:16,756 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:32:16,756 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,765 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,766 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:32:16,784 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,788 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,789 INFO r.s.s.XMLDataProvider [main] Notification record was updated
-2023-03-05 17:32:16,789 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,793 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,794 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:32:16,798 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,802 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,807 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
-2023-03-05 17:32:16,813 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,819 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,820 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:32:16,826 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:32:16,828 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,834 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,835 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
-2023-03-05 17:32:16,836 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,842 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,844 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-05 17:32:16,845 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:32:16,857 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,864 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,865 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
-2023-03-05 17:32:16,878 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:32:16,884 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:32:16,885 INFO r.s.s.XMLDataProvider [main] Notification record was updated
-2023-03-05 17:33:28,321 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-05 17:33:28,374 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,490 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
- - with linked exception:
-[org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-05 17:33:28,491 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:33:28,507 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:33:28,508 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,515 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,517 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:33:28,520 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,525 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,529 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-05 17:33:28,529 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:33:28,545 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,550 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,551 INFO r.s.s.XMLDataProvider [main] Notification record was updated
-2023-03-05 17:33:28,551 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,555 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,555 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:33:28,565 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,573 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,574 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
-2023-03-05 17:33:28,580 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,585 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,586 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:33:28,589 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:33:28,591 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,595 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,595 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
-2023-03-05 17:33:28,596 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,600 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,600 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-05 17:33:28,601 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:33:28,611 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,615 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,616 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
-2023-03-05 17:33:28,626 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:33:28,631 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:33:28,631 INFO r.s.s.XMLDataProvider [main] Notification record was updated
-2023-03-05 17:35:02,679 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-05 17:35:02,737 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:35:02,866 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:35:02,871 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:1 already exists
-2023-03-05 17:35:02,894 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:35:02,900 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:35:02,901 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+ion record was updated
 2023-03-05 17:35:02,901 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-05 17:35:02,906 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 17:35:02,907 INFO r.s.s.XMLDataProvider [main] Notification record was found
@@ -692,98 +579,7 @@
 2023-03-05 17:50:31,325 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 17:50:31,325 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
 2023-03-05 17:50:31,328 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:50:31,329 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:50:31,333 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:50:31,334 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
-2023-03-05 17:50:31,334 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:50:31,337 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:50:31,338 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-05 17:50:31,338 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:50:31,348 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:50:31,351 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:50:31,352 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
-2023-03-05 17:50:31,364 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:50:31,369 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:50:31,369 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
-2023-03-05 17:51:07,622 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-05 17:51:07,675 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,772 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,773 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,787 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:51:07,788 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,795 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,797 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:51:07,800 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,804 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,807 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-05 17:51:07,808 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,824 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,828 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,829 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,831 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:51:07,832 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,837 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,838 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,840 INFO r.s.s.XMLDataProvider [main] Notification record was updated
-2023-03-05 17:51:07,841 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,845 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,845 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:51:07,846 DEBUG r.s.s.XMLDataProvider [main] Temperature too hot. You need to switch on the heater
-2023-03-05 17:51:07,846 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,850 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,850 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:51:07,850 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,854 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,854 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-05 17:51:07,855 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,861 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,865 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,865 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,868 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:51:07,868 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,873 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,874 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:51:07,874 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,878 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,878 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-05 17:51:07,878 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,882 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,885 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,886 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,888 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:51:07,889 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,893 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,893 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 already exists
-2023-03-05 17:51:07,894 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,898 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,898 INFO r.s.s.XMLDataProvider [main] Record with this ID:2 was deleted
-2023-03-05 17:51:07,898 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:07,906 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,909 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,910 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:0 wasn't found
-2023-03-05 17:51:07,918 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:07,922 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:07,923 ERROR r.s.s.XMLDataProvider [main] Notification record with this ID:2 wasn't found
-2023-03-05 17:51:11,021 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
-2023-03-05 17:51:11,072 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:11,175 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:11,177 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:11,192 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:51:11,192 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:11,199 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:11,200 INFO r.s.s.XMLDataProvider [main] Notification record was found
-2023-03-05 17:51:11,203 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:11,208 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:11,211 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-05 17:51:11,212 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:11,227 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:11,231 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:11,232 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:11,235 INFO r.s.s.XMLDataProvider [main] Notification record was saved
-2023-03-05 17:51:11,235 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-05 17:51:11,240 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-05 17:51:11,241 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
-2023-03-05 17:51:11,244 INFO r.s.s.XMLDataProvider [main] Notification record was updated
+otification record was updated
 2023-03-05 17:51:11,244 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-05 17:51:11,249 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-05 17:51:11,249 INFO r.s.s.XMLDataProvider [main] Notification record was found
@@ -2909,7 +2705,8 @@ Class has two properties of the same name "name"
 2023-03-08 12:45:27,776 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
  - with linked exception:
 [org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.]
-2023-03-08 12:45:27,777 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-08 12:45:27,777 DEBUG r.s.s.XMLDataProvider [main] update data sour
+ce src/main/java/ru/sfedu/xml/Notification.xml
 2023-03-08 12:45:27,784 INFO r.s.s.XMLDataProvider [main] Notification record was saved
 2023-03-08 12:45:27,785 INFO r.s.s.XMLDataProvider [main] Heater record was saved
 2023-03-08 12:45:27,785 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
@@ -3521,7 +3318,8 @@ Class has two properties of the same name "name"
 2023-03-08 20:31:20,048 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 20:31:20,054 INFO r.s.s.XMLDataProvider [main] Record with this ID:1 was deleted
-2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/xml/Hygrometer.xml
+2023-03-08 20:31:20,054 DEBUG r.s.s.XMLDataProvider [main] update data source src/main/java/ru/sfedu/x
+ml/Hygrometer.xml
 2023-03-08 20:31:20,059 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 20:31:20,068 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 20:31:20,068 INFO r.s.s.XMLDataProvider [main] Record with this ID:4 was deleted
@@ -4088,7 +3886,9 @@ Class has two properties of the same name "name"
 2023-03-08 22:55:31,790 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
 2023-03-08 22:55:31,856 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
 2023-03-08 22:55:31,864 INFO r.s.s.DataBaseProvider [main] Connection closed
-=======
+2023-03-09 14:23:51,160 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 14:23:51,528 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+
 2023-03-08 22:39:26,169 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-08 22:39:26,334 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 22:39:26,476 ERROR r.s.s.XMLDataProvider [main] javax.xml.bind.UnmarshalException
@@ -4549,6 +4349,494 @@ Class has two properties of the same name "name"
 2023-03-08 22:56:15,290 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
 2023-03-08 22:56:15,464 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
 2023-03-08 22:56:15,469 ERROR r.s.s.XMLDataProvider [main] Lamp record with this ID:0 wasn't found
+
+
+2023-03-09 17:25:05,046 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:25:05,304 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:25:05,328 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:25:51,696 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:25:51,956 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:25:51,976 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:26:59,950 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:27:00,421 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:27:00,514 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:27:00,613 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:27:00,716 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:27:00,788 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-09 17:27:00,882 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:27:00,975 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:27:01,069 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-09 17:27:01,071 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:27:01,160 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:27:01,195 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:27:01,225 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:28:14,853 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:28:15,148 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:28:15,161 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:28:15,191 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:28:47,537 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:28:47,862 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-09 17:28:47,884 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:28:54,438 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:28:54,862 ERROR r.s.s.DataBaseProvider [main] Lamp record with this ID:1 already exist
+2023-03-09 17:28:54,863 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:28:54,865 ERROR r.s.s.DataBaseProvider [main] Lock record with this ID:1 already exist
+2023-03-09 17:28:54,866 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:28:54,869 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:28:54,870 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:28:54,873 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-09 17:28:54,874 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:28:54,875 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:28:54,911 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:28:54,924 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:28:54,957 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:29:34,876 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:29:35,147 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:29:35,170 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:29:56,863 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:29:57,134 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:29:57,154 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:29:57,184 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:30:21,190 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:30:21,458 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:30:21,478 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:30:42,227 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:30:42,532 ERROR r.s.s.DataBaseProvider [main] Lamp record with this ID:1 already exist
+2023-03-09 17:30:42,533 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:30:42,535 ERROR r.s.s.DataBaseProvider [main] Lock record with this ID:1 already exist
+2023-03-09 17:30:42,536 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:30:42,538 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:30:42,539 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:30:42,542 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-09 17:30:42,542 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:30:42,543 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:30:42,576 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:30:42,591 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:30:42,620 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:31:18,742 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:31:19,001 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:31:19,013 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:31:19,091 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:31:19,113 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:36:38,258 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:36:38,617 ERROR r.s.s.DataBaseProvider [main] Lamp record with this ID:1 already exist
+2023-03-09 17:36:38,618 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:36:38,620 ERROR r.s.s.DataBaseProvider [main] Lock record with this ID:1 already exist
+2023-03-09 17:36:38,621 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:36:38,624 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:36:38,625 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:36:38,627 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:36:38,636 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:36:38,677 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:37:05,358 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:37:05,600 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:37:05,621 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:40:33,210 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:40:33,556 ERROR r.s.s.DataBaseProvider [main] Lamp record with this ID:1 already exist
+2023-03-09 17:40:33,557 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:40:33,559 ERROR r.s.s.DataBaseProvider [main] Lock record with this ID:1 already exist
+2023-03-09 17:40:33,560 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:40:33,563 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:40:33,563 INFO r.s.s.DataBaseProvider [main] Device already exist
+2023-03-09 17:40:33,564 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:40:33,568 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:40:33,650 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:40:33,744 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:40:33,840 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:40:33,932 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:40:33,955 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:40:41,955 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:40:42,215 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-09 17:40:42,230 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:51:31,770 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:51:32,143 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:51:32,266 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:51:32,354 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:51:32,409 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:51:32,410 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:51:32,411 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:51:32,418 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:51:32,419 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:51:32,420 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:51:32,590 INFO r.s.s.DataBaseProvider [main] Update smart home with ID = 1
+2023-03-09 17:51:32,636 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:51:32,646 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:51:32,665 INFO r.s.s.DataBaseProvider [main] Update lamp with ID = 1
+2023-03-09 17:51:32,674 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:51:32,686 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:51:32,689 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:51:32,691 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:51:32,691 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:51:32,696 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 1
+2023-03-09 17:51:32,699 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:51:32,701 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:51:32,703 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-09 17:51:32,703 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:51:32,707 INFO r.s.s.DataBaseProvider [main] Update hygrometer with ID = 1
+2023-03-09 17:51:32,712 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:51:32,721 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:51:32,733 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:51:32,741 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:51:32,782 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:52:34,813 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:52:35,051 INFO r.s.s.DataBaseProvider [main] Update smart home with ID = 1
+2023-03-09 17:52:35,109 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:52:35,116 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:52:35,119 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:52:35,141 INFO r.s.s.DataBaseProvider [main] Update lamp with ID = 1
+2023-03-09 17:52:35,152 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:52:35,168 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:52:35,174 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:35,194 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:35,194 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:35,199 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 1
+2023-03-09 17:52:35,204 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:52:35,209 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:52:35,211 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:52:35,298 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:35,384 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:35,509 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:35,632 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:35,656 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:52:52,237 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:52:52,347 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:52:52,497 INFO r.s.s.DataBaseProvider [main] Update lamp with ID = 1
+2023-03-09 17:52:52,609 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:52,693 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:52:52,773 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:52:52,854 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:52,861 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-09 17:52:52,936 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-09 17:52:53,100 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:52:53,108 ERROR r.s.s.DataBaseProvider [main] SmartHome not exist
+2023-03-09 17:52:53,297 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:52:53,395 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:52:53,492 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:53,531 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:53,533 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:53,535 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:53,538 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:52:53,539 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:53,540 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:52:53,623 INFO r.s.s.DataBaseProvider [main] Update smart home with ID = 1
+2023-03-09 17:52:53,643 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:52:53,651 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:52:53,654 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:52:53,665 INFO r.s.s.DataBaseProvider [main] Update lamp with ID = 1
+2023-03-09 17:52:53,667 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:52:53,691 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:52:53,694 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:53,696 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:53,696 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:53,700 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 1
+2023-03-09 17:52:53,704 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:52:53,708 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:52:53,710 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:52:53,783 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:53,867 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:53,965 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,031 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,040 ERROR r.s.s.DataBaseProvider [main] Lamp not exist
+2023-03-09 17:52:54,048 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-09 17:52:54,055 ERROR r.s.s.DataBaseProvider [main] Lock not exist
+2023-03-09 17:52:54,063 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-09 17:52:54,122 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:54,125 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:54,125 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:54,126 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:54,128 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:52:54,129 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:54,133 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:54,258 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,386 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,449 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,517 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:52:54,520 ERROR r.s.s.DataBaseProvider [main] Lamp record with this ID:1 already exist
+2023-03-09 17:52:54,592 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,687 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:52:54,690 ERROR r.s.s.DataBaseProvider [main] Lock record with this ID:1 already exist
+2023-03-09 17:52:54,783 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:54,937 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:52:55,002 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:52:55,094 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:55,157 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:55,220 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-09 17:52:55,221 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:52:55,224 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:52:55,283 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:55,421 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:55,557 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:55,635 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:55,639 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:52:55,814 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:52:55,925 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:52:56,073 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:56,076 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:56,076 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:56,077 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:56,079 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:52:56,080 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:56,081 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:52:56,088 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:52:56,094 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:52:56,096 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:52:56,187 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:56,315 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:56,424 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:56,531 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:56,685 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:52:56,687 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-09 17:52:56,688 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:56,689 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:52:56,691 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:1 already exist
+2023-03-09 17:52:56,692 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:56,801 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:56,893 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:56,965 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:52:57,036 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-09 17:52:57,146 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:52:57,152 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-09 17:52:57,240 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-09 17:52:57,243 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-09 17:52:57,384 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:52:57,388 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:57,391 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:57,511 INFO r.s.s.DataBaseProvider [main] Socket record with ID=1 was saved
+2023-03-09 17:52:57,625 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:52:57,739 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:57,742 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:57,746 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:57,853 INFO r.s.s.DataBaseProvider [main] Socket record with ID=1 was saved
+2023-03-09 17:52:57,856 ERROR r.s.s.DataBaseProvider [main] Socket record with this ID:1 already exist
+2023-03-09 17:52:57,991 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:58,090 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:58,092 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:58,093 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:58,094 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:58,096 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:52:58,096 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:58,184 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:52:58,186 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:58,189 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:52:58,189 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:58,269 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-09 17:52:58,365 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:58,369 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-09 17:52:58,481 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:58,552 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:52:58,609 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:58,612 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:58,775 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:58,833 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:58,891 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:52:58,974 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-09 17:52:58,977 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-09 17:52:59,120 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:59,187 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:52:59,281 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:52:59,364 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-09 17:52:59,367 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-09 17:52:59,488 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:52:59,584 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:52:59,677 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:52:59,770 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-09 17:52:59,834 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:52:59,837 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:52:59,839 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-09 17:52:59,840 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:52:59,935 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-09 17:53:00,003 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:00,091 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:00,175 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:00,301 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:00,378 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-09 17:53:00,486 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-09 17:53:00,564 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:00,669 INFO r.s.s.DataBaseProvider [main] Socket record with ID=1 was saved
+2023-03-09 17:53:00,744 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:00,750 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:53:00,866 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:53:00,976 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:53:01,067 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-09 17:53:01,071 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-09 17:53:01,152 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:01,242 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:01,372 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:01,557 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-09 17:53:01,701 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:01,793 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:01,885 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:01,971 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:02,080 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:02,088 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-09 17:53:41,758 INFO r.s.s.DataBaseProvider [main] Connect to data base
+2023-03-09 17:53:41,863 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:41,984 INFO r.s.s.DataBaseProvider [main] Update lamp with ID = 1
+2023-03-09 17:53:42,094 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:42,191 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:42,288 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:53:42,385 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:42,395 ERROR r.s.s.DataBaseProvider [main] Thermometer not exist
+2023-03-09 17:53:42,508 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-09 17:53:42,630 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:42,636 ERROR r.s.s.DataBaseProvider [main] SmartHome not exist
+2023-03-09 17:53:42,922 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:42,987 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:43,054 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:43,147 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:43,239 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-09 17:53:43,241 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:53:43,335 INFO r.s.s.DataBaseProvider [main] Update smart home with ID = 1
+2023-03-09 17:53:43,352 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:53:43,357 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:53:43,359 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:53:43,366 INFO r.s.s.DataBaseProvider [main] Update lamp with ID = 1
+2023-03-09 17:53:43,367 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:53:43,379 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:53:43,381 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:43,390 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:53:43,390 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:43,394 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 1
+2023-03-09 17:53:43,398 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:53:43,402 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:53:43,403 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:53:43,524 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:43,584 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:43,676 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:43,753 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:43,759 ERROR r.s.s.DataBaseProvider [main] Lamp not exist
+2023-03-09 17:53:43,764 ERROR r.s.s.DataBaseProvider [main] Notification not exist
+2023-03-09 17:53:43,768 ERROR r.s.s.DataBaseProvider [main] Lock not exist
+2023-03-09 17:53:43,773 ERROR r.s.s.DataBaseProvider [main] Heater not exist
+2023-03-09 17:53:43,847 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:43,849 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:53:43,849 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:43,849 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:43,851 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:53:43,852 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:43,854 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:53:44,011 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:44,120 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:44,228 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:44,340 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:44,343 ERROR r.s.s.DataBaseProvider [main] Lamp record with this ID:1 already exist
+2023-03-09 17:53:44,407 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:44,482 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:44,484 ERROR r.s.s.DataBaseProvider [main] Lock record with this ID:1 already exist
+2023-03-09 17:53:44,579 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:44,779 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:44,887 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:45,030 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:45,164 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:45,267 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 1 was saved
+2023-03-09 17:53:45,268 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:53:45,270 ERROR r.s.s.DataBaseProvider [main] SmartHome record with this ID:1 already exist
+2023-03-09 17:53:45,375 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:45,485 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:45,589 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:45,685 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:45,691 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:53:45,949 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:46,072 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:46,182 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:46,184 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:53:46,185 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:46,186 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:46,188 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:53:46,189 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:46,189 INFO r.s.s.DataBaseProvider [main] SmartHome record with ID=1 was saved
+2023-03-09 17:53:46,196 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=1, name='Термометр для обогревателя в спальне', deviceId=1}
+2023-03-09 17:53:46,203 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:53:46,205 ERROR r.s.s.DataBaseProvider [main] Socket not exist
+2023-03-09 17:53:46,295 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:46,463 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:46,530 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:46,592 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:46,689 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:53:46,783 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:53:46,848 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-09 17:53:46,938 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:46,993 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:47,049 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:47,130 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-09 17:53:47,211 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:47,217 ERROR r.s.s.DataBaseProvider [main] Hygrometer not exist
+2023-03-09 17:53:47,276 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-09 17:53:47,278 ERROR r.s.s.DataBaseProvider [main] Hygrometer record with this ID:3 already exist
+2023-03-09 17:53:47,331 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:47,335 INFO r.s.s.DataBaseProvider [main] Heater record with ID=11 was saved
+2023-03-09 17:53:47,547 INFO r.s.s.DataBaseProvider [main] Update notification with ID = 11
+2023-03-09 17:53:47,647 INFO r.s.s.DataBaseProvider [main] Delete record with id = 11 from table
+2023-03-09 17:53:47,716 INFO r.s.s.DataBaseProvider [main] Socket record with ID=1 was saved
+2023-03-09 17:53:47,781 INFO r.s.s.DataBaseProvider [main] Update lock with ID = 1
+2023-03-09 17:53:47,877 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:47,881 INFO r.s.s.DataBaseProvider [main] Heater record with ID=12 was saved
+2023-03-09 17:53:47,973 INFO r.s.s.DataBaseProvider [main] Heater record with ID=12 was saved
+2023-03-09 17:53:47,974 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:12 already exist
+2023-03-09 17:53:48,070 INFO r.s.s.DataBaseProvider [main] Delete record with id = 12 from table
+2023-03-09 17:53:48,168 INFO r.s.s.DataBaseProvider [main] Socket record with ID=1 was saved
+2023-03-09 17:53:48,170 ERROR r.s.s.DataBaseProvider [main] Socket record with this ID:1 already exist
+2023-03-09 17:53:48,264 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:48,360 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:48,361 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:53:48,362 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:48,362 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:48,363 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 1 already exist
+2023-03-09 17:53:48,364 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:48,456 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:53:48,459 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:48,461 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:1 already exist
+2023-03-09 17:53:48,462 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:48,548 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-09 17:53:48,606 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:48,610 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-09 17:53:48,740 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:48,835 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:48,931 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:48,933 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:49,079 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:49,169 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:49,264 INFO r.s.s.DataBaseProvider [main] Heater record with ID=1 was saved
+2023-03-09 17:53:49,358 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 2 was saved
+2023-03-09 17:53:49,364 DEBUG r.s.s.DataBaseProvider [main] Termometr{temperature=20, id=2, name='Термометр', deviceId=1}
+2023-03-09 17:53:49,449 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:49,510 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:49,584 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:49,669 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-09 17:53:49,673 ERROR r.s.s.DataBaseProvider [main] Thermometer record with ID = 3 already exist
+2023-03-09 17:53:49,763 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:49,879 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:53:50,047 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:53:50,117 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=1 was saved
+2023-03-09 17:53:50,235 INFO r.s.s.DataBaseProvider [main] Update heater with ID = 1
+2023-03-09 17:53:50,238 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:53:50,241 ERROR r.s.s.DataBaseProvider [main] Heater record with this ID:2 already exist
+2023-03-09 17:53:50,241 ERROR r.s.s.DataBaseProvider [main] java.lang.Exception: Record already exist
+2023-03-09 17:53:50,361 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-09 17:53:50,436 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:50,556 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:50,645 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:50,752 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:50,841 INFO r.s.s.DataBaseProvider [main] Thermometer record with I D= 3 was saved
+2023-03-09 17:53:50,954 INFO r.s.s.DataBaseProvider [main] Update thermometer with ID = 3
+2023-03-09 17:53:51,121 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:51,275 INFO r.s.s.DataBaseProvider [main] Socket record with ID=1 was saved
+2023-03-09 17:53:51,351 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:51,356 ERROR r.s.s.DataBaseProvider [main] Humidifier not exist
+2023-03-09 17:53:51,463 INFO r.s.s.DataBaseProvider [main] Heater record with ID=2 was saved
+2023-03-09 17:53:51,566 INFO r.s.s.DataBaseProvider [main] Humidifier record with ID=1 was saved
+2023-03-09 17:53:51,660 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=2 was saved
+2023-03-09 17:53:51,663 ERROR r.s.s.DataBaseProvider [main] Humidifier record with this ID:1 already exist
+2023-03-09 17:53:51,771 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:51,872 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:51,992 INFO r.s.s.DataBaseProvider [main] Delete record with id = 2 from table
+2023-03-09 17:53:52,086 INFO r.s.s.DataBaseProvider [main] Hygrometer record with ID=3 was saved
+2023-03-09 17:53:52,199 INFO r.s.s.DataBaseProvider [main] Delete record with id = 3 from table
+2023-03-09 17:53:52,356 INFO r.s.s.DataBaseProvider [main] Lamp record with ID=1 was saved
+2023-03-09 17:53:52,429 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:52,494 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
+2023-03-09 17:53:52,587 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
+2023-03-09 17:53:52,595 INFO r.s.s.DataBaseProvider [main] Connection closed
 
 2023-03-09 16:49:06,455 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-09 16:49:06,627 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
@@ -5336,5 +5624,4 @@ Class has two properties of the same name "name"
 2023-03-09 17:46:58,627 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:0 wasn't found
 2023-03-09 17:47:06,042 DEBUG r.s.s.XMLDataProvider [main] XMLDataProvider was created
 2023-03-09 17:47:06,215 DEBUG r.s.s.XMLDataProvider [main] Deserializing objects
-2023-03-09 17:47:06,345 DEBUG r.s.s.XMLDataProvider [main] Wrapper was filled:[]
-2023-03-09 17:47:06,350 ERROR r.s.s.XMLDataProvider [main] Lock record with this ID:0 wasn't found
+

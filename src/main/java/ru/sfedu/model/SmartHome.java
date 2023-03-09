@@ -6,6 +6,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SmartHome  implements EntityBean  {
     @XmlElement(name = "id")
@@ -54,5 +56,18 @@ public class SmartHome  implements EntityBean  {
     public void addDevice(Device device){
         devices.add(device);
         device.setSmartHomeId(id);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SmartHome smartHome = (SmartHome) o;
+        return id == smartHome.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

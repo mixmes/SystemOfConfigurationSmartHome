@@ -116,6 +116,11 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
+    public List<Heater> getHeaterRecordByHomeID(long id) throws Exception {
+        return null;
+    }
+
+    @Override
     public void updateHeaterRecord(Heater heater) throws Exception {
         Wrapper<Heater> heaters = getAllRecords(config.getConfigurationEntry(HEATER_XML));
         if (heaters.getBeans().stream().anyMatch(s -> s.getId() == heater.getId())) {
@@ -178,6 +183,11 @@ public class XMLDataProvider implements IDataProvider {
         humidifier.get().setNotifications(notifications);
 
         return humidifier.get();
+    }
+
+    @Override
+    public List<Humidifier> getHumidifierRecordByHomeId(long id) throws Exception {
+        return null;
     }
 
     @Override
@@ -320,6 +330,11 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
+    public List<Lamp> getLampRecordByHomeId(long id) throws Exception {
+        return null;
+    }
+
+    @Override
     public void updateUserRecord(User user) throws Exception {
 
     }
@@ -405,6 +420,11 @@ public class XMLDataProvider implements IDataProvider {
         lock.get().setNotifications(notifications);
 
         return lock.get();
+    }
+
+    @Override
+    public List<Lock> getLockRecordByHomeId(long id) throws Exception {
+        return null;
     }
 
     @Override
@@ -536,7 +556,43 @@ public class XMLDataProvider implements IDataProvider {
     }
 
     @Override
+    public List<Socket> getSocketRecordByHomeId(long id) throws Exception {
+        return null;
+    }
+
+    @Override
     public void updateSmartHomeRecord(SmartHome smartHome) throws Exception {
+
+    }
+
+
+    @Override
+    public void chooseSaveDeviceMethod(Device device) throws Exception {
+
+    }
+
+    @Override
+    public void chooseUpdateDeviceMethod(Device device) throws Exception {
+
+    }
+
+    @Override
+    public List<Device> getDevicesBySmartHomeId(long id) throws Exception {
+        return null;
+    }
+
+    @Override
+    public void saveSocketRecord(Socket socket) throws Exception {
+
+    }
+
+    @Override
+    public Socket getSocketRecordByID(long id) throws Exception {
+        return null;
+    }
+
+    @Override
+    public void updateSocketRecord(Socket socket) throws Exception {
 
     }
 

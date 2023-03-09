@@ -9,6 +9,7 @@ import java.util.Objects;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Lock extends Device{
 
+
     public Lock() {
     }
 
