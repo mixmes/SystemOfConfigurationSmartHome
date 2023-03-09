@@ -441,6 +441,58 @@ public class XMLDataProvider implements IDataProvider {
             throw new Exception("Lock record with this ID:" + lock.getId() + " wasn't found");
         }
     }
+    @Override
+    public void saveSocketRecord(Socket socket) throws Exception {
+        Wrapper<Socket> sockets = getAllRecords(config.getConfigurationEntry(SOCKET_XML));
+        if(sockets.getBeans().stream().noneMatch(s->s.getId() == socket.getId())){
+            sockets.getBeans().add(socket);
+            initDataSource(config.getConfigurationEntry(SOCKET_XML),sockets);
+            socket.getNotifications().stream().forEach(s-> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Socket record was saved");
+        }
+        else {
+            log.error("Socket record with this ID:"+socket.getId()+" already exists");
+            throw new Exception("Socket record with this ID:"+socket.getId()+" already exists");
+        }
+
+    }
+
+    @Override
+    public Socket getSocketRecordByID(long id) throws Exception {
+        Wrapper<Socket> sockets = getAllRecords(config.getConfigurationEntry(SOCKET_XML));
+        Optional<Socket> socket = sockets.getBeans().stream().filter(s->s.getId() == id).findFirst();
+        if(!socket.isPresent()){
+            log.error("Socket record with this ID:"+id+" wasn't found");
+            throw new Exception("Socket record with this ID:"+id+" wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        socket.get().setNotifications(notifications);
+
+        return socket.get();
+    }
+
+    @Override
+    public void updateSocketRecord(Socket socket) throws Exception {
+        Wrapper<Socket> sockets = getAllRecords(config.getConfigurationEntry(SOCKET_XML));
+        if(sockets.getBeans().stream().anyMatch(s->s.getId() == socket.getId())){
+            Socket oldSocket = getSocketRecordByID(socket.getId());
+            sockets.getBeans().remove(oldSocket);
+            sockets.getBeans().add(socket);
+            initDataSource(config.getConfigurationEntry(SOCKET_XML),sockets);
+            log.info("Socket record was updated");
+        }
+        else {
+            log.error("Socket record was updated");
+            throw new Exception("Socket record was updated");
+        }
+    }
+
 
 
 
@@ -513,6 +565,7 @@ public class XMLDataProvider implements IDataProvider {
 
     }
 
+
     @Override
     public void chooseSaveDeviceMethod(Device device) throws Exception {
 
@@ -542,6 +595,7 @@ public class XMLDataProvider implements IDataProvider {
     public void updateSocketRecord(Socket socket) throws Exception {
 
     }
+
 
 
 }

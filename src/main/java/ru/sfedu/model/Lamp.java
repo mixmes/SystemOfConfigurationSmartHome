@@ -8,8 +8,6 @@ import java.util.Objects;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Lamp extends Device{
-    @XmlElement(name = "state")
-    private boolean state=false;
     @XmlElement(name = "maxBrightness")
     private int maxBrightness;
     @XmlElement(name = "currentBrightness")
