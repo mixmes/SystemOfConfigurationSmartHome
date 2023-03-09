@@ -4,10 +4,10 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
+import java.util.Objects;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Lock extends Device{
-    @XmlElement(name = "state")
-    private boolean state=true;
 
     public Lock() {
     }
@@ -26,4 +26,17 @@ public class Lock extends Device{
     }
     @Override
     public void setSensor(Sensor sensor){}
+
+    @Override
+    public String toString() {
+        return "Lock{" +
+                "state=" + state +
+                ", id=" + id +
+                ", smartHomeId=" + smartHomeId +
+                ", name='" + name + '\'' +
+                ", sensor=" + sensor +
+                ", notifications=" + notifications +
+                '}';
+    }
+
 }

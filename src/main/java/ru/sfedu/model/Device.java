@@ -98,12 +98,11 @@ public class Device implements EntityBean {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Device device = (Device) o;
-        return id == device.id && state == device.state && Objects.equals(name, device.name);
+        return id == device.id && smartHomeId == device.smartHomeId && state == device.state && Objects.equals(name, device.name) && Objects.equals(sensor, device.sensor) ;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, sensor, state);
+        return Objects.hash(id, smartHomeId, name, sensor, state);
     }
-
 }
