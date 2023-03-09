@@ -414,6 +414,9 @@ public class XMLDataProvider implements IDataProvider {
         }
     }
 
+    @Override
+    public void updateLockRecord(Lock lock) throws Exception {
+
 
 
     @Override

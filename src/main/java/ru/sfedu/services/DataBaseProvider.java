@@ -372,6 +372,9 @@ public class DataBaseProvider implements IDataProvider{
                 }
             });
             log.info("Lamp record with ID="+lamp.getId()+" was saved");
+        }catch (Exception e){
+            log.error("Lamp record with this ID:"+lamp.getId()+" already exist");
+            throw new Exception("Record already exist");
         }
     }
 
@@ -416,18 +419,68 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void saveLockRecord(Lock lock) throws Exception {
-
+        String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(LOCK_TABLE)+
+                " (id, name, state, smartHomeId)" +
+                " VALUES(?, ?, ?, ?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setLong(1, lock.getId());
+            statement.setString(2, lock.getName());
+            statement.setBoolean(3, lock.isState());
+            statement.setLong(4, lock.getSmartHomeId());
+            if (statement.executeUpdate() == 0) {
+                log.error("Lock record wasn't saved");
+                throw new Exception("Record wasn't save");
+            }
+            lock.getNotifications().forEach(n->{
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Lock record with ID="+lock.getId()+" was saved");
+        }catch (Exception e){
+            log.error("Lock record with this ID:"+lock.getId()+" already exist");
+            throw new Exception("Record already exist");
+        }
     }
 
     @Override
     public Lock getLockRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(LOCK_TABLE)+
+                " WHERE id ="+id;
+        Lock lock = new Lock();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                lock.setId(resultSet.getLong("id"));
+                lock.setName(resultSet.getString("name"));
+                lock.setState(resultSet.getBoolean("state"));
+                lock.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                lock.setNotifications(getNotificationRecordsByDeviceID(id));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(lock.getId() == 0){
+            log.error("Lock not exist");
+            throw new Exception("Record not exist");
+        }
+        return lock;
     }
 
     @Override
-    public void deleteLockRecord(Lock lock) throws Exception {
-
+    public void updateLockRecord(Lock lock) throws Exception {
+        String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(LOCK_TABLE) + " SET name = '" + lock.getName() +
+                "', state = '" + (lock.isState()?1:0)+
+                "', smartHomeId = '" + lock.getSmartHomeId() +
+                "' WHERE id = "+lock.getId();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Update lock with ID = "+lock.getId());
+        }
     }
+
 
     @Override
     public void saveNotificationRecord(Notification notification) throws Exception {
@@ -536,17 +589,66 @@ public class DataBaseProvider implements IDataProvider{
 
     @Override
     public void saveSocketRecord(Socket socket) throws Exception {
-
+        String sql = "INSERT INTO "+ ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE)+
+                " (id, name, state, smartHomeId)" +
+                " VALUES(?, ?, ?, ?)";
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setLong(1, socket.getId());
+            statement.setString(2, socket.getName());
+            statement.setBoolean(3, socket.isState());
+            statement.setLong(4, socket.getSmartHomeId());
+            if (statement.executeUpdate() == 0) {
+                log.error("Socket record wasn't saved");
+                throw new Exception("Record wasn't save");
+            }
+            socket.getNotifications().forEach(n->{
+                try {
+                    saveNotificationRecord(n);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Socket record with ID="+socket.getId()+" was saved");
+        }catch (Exception e){
+            log.error("Socket record with this ID:"+socket.getId()+" already exist");
+            throw new Exception("Record already exist");
+        }
     }
 
     @Override
     public Socket getSocketRecordByID(long id) throws Exception {
-        return null;
+        String sql = "SELECT * FROM "+ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE)+
+                " WHERE id ="+id;
+        Socket socket = new Socket();
+        try(Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery(sql);
+            if(resultSet.next()){
+                socket.setId(resultSet.getLong("id"));
+                socket.setName(resultSet.getString("name"));
+                socket.setState(resultSet.getBoolean("state"));
+                socket.setSmartHomeId(resultSet.getLong("smartHomeId"));
+                socket.setNotifications(getNotificationRecordsByDeviceID(id));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        if(socket.getId() == 0){
+            log.error("Socket not exist");
+            throw new Exception("Record not exist");
+        }
+        return socket;
     }
 
     @Override
     public void updateSocketRecord(Socket socket) throws Exception {
-
+        String sql = "UPDATE " + ConfigurationUtil.getConfigurationEntry(SOCKET_TABLE) + " SET name = '" + socket.getName() +
+                "', state = '" + (socket.isState()?1:0)+
+                "', smartHomeId = '" + socket.getSmartHomeId() +
+                "' WHERE id = "+socket.getId();
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.executeUpdate();
+            log.info("Update lock with ID = "+socket.getId());
+        }
     }
 
     @Override
