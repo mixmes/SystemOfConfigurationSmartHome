@@ -283,22 +283,54 @@ public class CSVDataProvider implements IDataProvider {
 
     @Override
     public void saveTermometrRecord(Termometr termometr) throws Exception {
-
+        List<Termometr> termometrs = getAllRecords(TERMOMETR_HEADERS, Termometr.class,config.getConfigurationEntry(TERMOMETER_CSV));
+        if(termometrs.stream().noneMatch(s->s.getId() == termometr.getId())){
+            termometrs.add(termometr);
+            initDataSource(Termometr.class,TERMOMETR_HEADERS,config.getConfigurationEntry(TERMOMETER_CSV),termometrs);
+            log.info("Termometr record was saved");
+        }
+        else {
+            log.error("Termometr record with this ID:"+termometr.getId()+" already exists");
+            throw new Exception("Termometr record already exists");
+        }
     }
 
     @Override
     public Termometr getTermometrRecordByID(long id) throws Exception {
-        return null;
+        List<Termometr> termometrs = getAllRecords(TERMOMETR_HEADERS, Termometr.class,config.getConfigurationEntry(TERMOMETER_CSV));
+        Optional<Termometr> termometr = termometrs.stream().filter(s->s.getId() == id).findFirst();
+        if(!termometr.isPresent()){
+            log.error("Termometr record with this ID:"+id+ " wasn't found");
+            throw new Exception("Termometr record wasn't found");
+        }
+        return termometr.get();
     }
 
     @Override
     public Termometr getTermometrRecordByHeaterId(long id) throws Exception {
-        return null;
+        List<Termometr> termometrs = getAllRecords(TERMOMETR_HEADERS, Termometr.class,config.getConfigurationEntry(TERMOMETER_CSV));
+        Optional<Termometr> termometr = termometrs.stream().filter(s->s.getDeviceId() == id).findFirst();
+        if(!termometr.isPresent()){
+            log.error("Termometer record with this sensorID"+id+" wasn't found");
+            return null;
+        }
+        return termometr.get();
     }
 
     @Override
     public void updateTermometrRecord(Termometr termometr) throws Exception {
-
+        List<Termometr> termometrs =  getAllRecords(TERMOMETR_HEADERS,Termometr.class,config.getConfigurationEntry(TERMOMETER_CSV));
+        if(termometrs.stream().anyMatch(s->s.getId() == termometr.getId())){
+            Termometr oldTermometr = getTermometrRecordByID(termometr.getDeviceId());
+            termometrs.remove(oldTermometr);
+            termometrs.add(termometr);
+            initDataSource(Termometr.class,TERMOMETR_HEADERS,config.getConfigurationEntry(TERMOMETER_CSV),termometrs);
+            log.info("Termometer record was updated");
+        }
+        else {
+            log.error("Termometer record with this ID:"+termometr.getId()+" wasn't found");
+            throw new Exception("Termometer record wasn't found");
+        }
     }
 
     @Override

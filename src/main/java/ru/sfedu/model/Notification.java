@@ -1,5 +1,7 @@
 package ru.sfedu.model;
 
+import com.opencsv.bean.CsvDate;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -16,6 +18,7 @@ public class Notification implements EntityBean  {
     private long deviceID;
     @XmlElement(name = "message")
     private String message;
+    @CsvDate("dd-MM-yyyy-HH-mm-ss")
     @XmlElement(name = "date")
     private Date date;
     @XmlElement(name = "sender")

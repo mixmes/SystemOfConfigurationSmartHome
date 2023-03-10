@@ -5041,3 +5041,96 @@ Class has two properties of the same name "name"
 2023-03-09 17:53:52,494 INFO r.s.s.DataBaseProvider [main] Lock record with ID=1 was saved
 2023-03-09 17:53:52,587 INFO r.s.s.DataBaseProvider [main] Delete record with id = 1 from table
 2023-03-09 17:53:52,595 INFO r.s.s.DataBaseProvider [main] Connection closed
+2023-03-10 10:42:52,001 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:42:52,005 DEBUG r.s.s.CSVDataProvider [main] ru/sfedu/csv/Notification.csv
+2023-03-10 10:42:52,006 ERROR r.s.s.CSVDataProvider [main] csv file is empty
+2023-03-10 10:42:52,007 INFO r.s.s.CSVDataProvider [main] update ru/sfedu/csv/Notification.csv
+2023-03-10 10:43:54,937 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:43:54,941 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:43:55,022 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 10:43:55,023 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:43:55,045 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:43:55,046 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:43:55,046 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:01,335 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:01,338 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:01,436 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 10:49:01,438 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:01,456 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:49:01,457 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:01,458 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:01,484 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}, Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:01 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:01,488 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:01,489 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:01,506 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}, Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:01 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:01,507 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:05,135 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:05,139 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:05,226 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}]
+2023-03-10 10:49:05,228 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:05,241 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:49:05,241 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:05,241 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:05,260 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}, Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:04 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:05,264 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:05,264 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:05,277 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}, Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:04 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:05,278 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:10,145 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:10,150 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:10,243 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}]
+2023-03-10 10:49:10,244 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:10,255 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:49:10,256 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:10,257 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:10,276 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}, Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:09 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:10,280 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:10,281 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:10,291 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=0, message='', date=null, sender='', deviceId='0'}, Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:09 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:10,292 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:44,410 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:44,414 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:44,499 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 10:49:44,500 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:44,515 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:49:44,515 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:44,516 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:44,553 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:44 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:44,558 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:49:44,558 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:49:44,573 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:49:44 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:49:44,574 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:09,785 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:52:09,789 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:09,870 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 10:52:09,871 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:09,882 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:52:09,885 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:52:09,886 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:09,920 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:52:09 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:52:09,924 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:1 already exists
+2023-03-10 10:52:09,925 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:52:09,926 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:09,937 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:52:09 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:52:09,938 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:23,172 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:52:23,176 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:23,252 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 10:52:23,254 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:23,271 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 10:52:23,275 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:52:23,276 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:23,312 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:52:23 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:52:23,315 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:1 already exists
+2023-03-10 10:52:23,316 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:52:23,317 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:52:23,327 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 10:52:23 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 10:52:23,328 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:56:13,530 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:56:13,534 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:56:13,614 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 10:56:13,619 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-10 10:56:20,686 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 10:56:20,690 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 10:56:20,770 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 10:56:20,774 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:0 wasn't found

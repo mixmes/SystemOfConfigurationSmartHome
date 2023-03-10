@@ -11,9 +11,10 @@ import java.util.Date;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static ru.sfedu.Constants.*;
 
 class CSVDataProviderTest {
-    private static final XMLDataProvider xmlDataProvider = new XMLDataProvider();
+    private static final CSVDataProvider csvDataProvider = new CSVDataProvider();
     private static final ConfigurationUtil config = new ConfigurationUtil();
     private static final Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
     private static final Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
@@ -104,11 +105,39 @@ class CSVDataProviderTest {
     }
 
     @Test
-    void saveNotificationRecord() {
+    void saveNotificationRecord() throws Exception {
+        csvDataProvider.saveNotificationRecord(tempNotification);
+
+        assertEquals(tempNotification,csvDataProvider.getNotificationRecordByID(tempNotification.getId()));
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),tempNotification.getId(),Notification.class,NOTIFICATION_HEADERS);
+    }
+    @Test
+    void saveExistingNotificationRecord() throws Exception {
+        csvDataProvider.saveNotificationRecord(tempNotification);
+
+        Exception exception = assertThrows(Exception.class,()->{csvDataProvider.saveNotificationRecord(tempNotification);});
+        assertEquals("Notification record already exists",exception.getMessage());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),tempNotification.getId(), Notification.class,NOTIFICATION_HEADERS);
     }
 
     @Test
-    void updateNotificationRecord() {
+    void updateNotificationRecord() throws Exception {
+        csvDataProvider.saveNotificationRecord(tempNotification);
+        tempNotification.setMessage("");
+        csvDataProvider.updateNotificationRecord(tempNotification);
+
+        assertEquals("",csvDataProvider.getNotificationRecordByID(tempNotification.getId()));
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),tempNotification.getId(), Notification.class,NOTIFICATION_HEADERS);
+    }
+    @Test
+    void updateNonExistingNotificationRecord(){
+        Notification notification = new Notification();
+
+        Exception exception = assertThrows(Exception.class,()->{csvDataProvider.updateNotificationRecord(notification);});
+        assertEquals("Notification record wasn't found",exception.getMessage());
     }
 
     @Test
