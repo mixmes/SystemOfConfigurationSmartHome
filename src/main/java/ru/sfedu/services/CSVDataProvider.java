@@ -377,22 +377,68 @@ public class CSVDataProvider implements IDataProvider {
 
     @Override
     public void saveLockRecord(Lock lock) throws Exception {
-
+        List<Lock> locks = getAllRecords(LOCK_HEADERS, Lock.class,config.getConfigurationEntry(LOCK_CSV));
+        if (locks.stream().noneMatch(s -> s.getId() == lock.getId())) {
+            locks.add(lock);
+            initDataSource(Lock.class,LOCK_HEADERS,config.getConfigurationEntry(LOCK_CSV), locks);
+            lock.getNotifications().stream().forEach(s -> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Lock record was saved");
+        } else {
+            log.error("Lock record with this ID:" + lock.getId() + " already exists");
+            throw new Exception("Lock record already exists");
+        }
     }
 
     @Override
     public Lock getLockRecordByID(long id) throws Exception {
-        return null;
+        List<Lock> locks = getAllRecords(LOCK_HEADERS, Lock.class,config.getConfigurationEntry(LOCK_CSV));
+        Optional<Lock> lock = locks.stream().filter(s -> s.getId() == id).findFirst();
+        if (!lock.isPresent()) {
+            log.error("Lock record with this ID:" + id + " wasn't found");
+            throw new Exception("Lock record wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        lock.get().setNotifications(notifications);
+
+        return lock.get();
     }
 
     @Override
     public List<Lock> getLockRecordByHomeId(long id) throws Exception {
-        return null;
+        List<Lock> locks = getAllRecords(LOCK_HEADERS, Lock.class,config.getConfigurationEntry(LOCK_CSV)).stream().filter(s->
+                s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(locks.isEmpty()){
+            log.error("Lock records with this smartHome ID:"+id+" wasn't found");
+        }
+        locks.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return locks;
     }
 
     @Override
     public void updateLockRecord(Lock lock) throws Exception {
-
+        List<Lock> locks = getAllRecords(LOCK_HEADERS, Lock.class,config.getConfigurationEntry(LOCK_CSV));
+        if (locks.stream().anyMatch(s -> s.getId() == lock.getId())) {
+            Lock oldLock = getLockRecordByID(lock.getId());
+            locks.remove(oldLock);
+            locks.add(lock);
+            initDataSource(Lock.class,LOCK_HEADERS,config.getConfigurationEntry(LOCK_CSV), locks);
+            log.info("Lock record was updated");
+        } else {
+            log.error("Lock record with this ID:" + lock.getId() + " wasn't found");
+            throw new Exception("Lock record wasn't found");
+        }
     }
 
     @Override

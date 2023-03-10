@@ -301,11 +301,61 @@ class CSVDataProviderTest {
     }
 
     @Test
-    void saveLockRecord() {
+    void saveLockRecord() throws Exception {
+        csvDataProvider.saveLockRecord(lock);
+
+        assertEquals(lock, csvDataProvider.getLockRecordByID(lock.getId()));
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LOCK_CSV),lock.getId(),Lock.class,LOCK_HEADERS);
+        lock.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingLockRecord() throws Exception {
+        csvDataProvider.saveLockRecord(lock);
+
+        Exception exception  = assertThrows(Exception.class,()->{csvDataProvider.saveLockRecord(lock);});
+        assertEquals("Lock record already exists",exception.getMessage());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LOCK_CSV),lock.getId(),Lock.class,LOCK_HEADERS);
+        lock.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Test
-    void updateLockRecord() {
+    void updateLockRecord() throws Exception {
+        csvDataProvider.saveLockRecord(lock);
+        lock.setName("Замок на сейфе");
+        csvDataProvider.updateLockRecord(lock);
+
+        assertEquals("Замок на сейфе",csvDataProvider.getLockRecordByID(lock.getId()).getName());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LOCK_CSV),lock.getId(),Lock.class,LOCK_HEADERS);
+        lock.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateNonExistingLockRecord(){
+        Lock tempLock = new Lock();
+
+        Exception exception = assertThrows(Exception.class,()->{csvDataProvider.updateLockRecord(tempLock);});
+        assertEquals("Lock record wasn't found",exception.getMessage());
+
     }
 
     @Test

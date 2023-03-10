@@ -6395,3 +6395,249 @@ Class has two properties of the same name "name"
 2023-03-10 19:31:26,648 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
 2023-03-10 19:31:26,752 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
 2023-03-10 19:31:26,758 ERROR r.s.s.CSVDataProvider [main] Lamp record with this ID:0 wasn't found
+2023-03-10 19:38:22,589 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:38:22,594 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:38:22,671 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:38:22,673 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/xml/Lock.xml
+2023-03-10 19:38:22,686 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:38:22,687 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:38:22,709 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:38:22,710 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:38:22,717 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:38:22,717 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:38:22,718 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:38:22,718 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:38:22,728 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:38:22,735 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:2 wasn't found
+2023-03-10 19:40:34,623 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:34,628 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:40:34,716 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:40:34,717 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:40:34,737 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:34,737 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:40:34,785 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:38:22 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:40:34,788 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:2 already exists
+2023-03-10 19:40:52,535 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:52,540 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:40:52,621 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:40:52,622 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:40:52,643 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:52,643 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:40:52,665 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:40:52,666 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:40:52,678 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:40:52,679 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:40:52,679 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:52,680 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:40:52,716 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:40:52,717 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:52,718 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:40:52,744 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:40:52 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:40:52,747 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:52,748 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/xml/Lock.xml
+2023-03-10 19:40:52,764 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:40:52,765 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/xml/Lock.xml
+2023-03-10 19:40:52,769 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:40:52,770 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/xml/Notification.xml
+2023-03-10 19:41:03,040 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:03,044 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:41:03,144 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:41:03,148 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:2 already exists
+2023-03-10 19:41:13,283 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:13,287 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:41:13,370 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:41:13,371 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:41:13,393 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:13,394 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:41:13,419 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:41:13,420 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:41:13,430 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:41:13,430 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:41:13,430 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:13,431 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:41:13,463 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:41:13,464 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:13,464 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:41:13,491 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:41:13 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:41:13,495 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:13,495 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/xml/Lock.xml
+2023-03-10 19:41:13,511 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:41:13,516 ERROR r.s.s.CSVDataProvider [main] There is no record with this ID:2 in file src/main/java/ru/sfedu/xml/Lock.xml
+2023-03-10 19:41:54,332 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:41:54,336 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:41:54,435 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:41:54,438 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:2 already exists
+2023-03-10 19:42:32,180 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:32,185 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:32,280 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:32,284 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:2 already exists
+2023-03-10 19:42:38,784 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:38,788 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:38,869 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:38,870 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:38,884 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:38,885 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:38,902 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:38,903 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:38,909 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:42:38,910 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:42:38,910 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:38,910 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:38,938 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:38,940 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:38,941 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:38,973 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:38 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:38,978 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:38,979 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:39,001 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:39,003 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:39,008 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:39,009 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:39,015 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:38 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:39,016 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:42,716 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:42,720 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:42,796 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:42,798 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:42,813 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:42,814 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:42,834 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:42,835 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:42,844 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:42:42,845 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:42:42,845 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:42,845 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:42,878 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:42,879 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:42,880 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:42,911 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:42 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:42,914 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:42,915 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:42,936 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:42,938 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:42,947 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:42,947 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:42,957 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:42 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:42,958 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:48,434 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:48,438 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:48,527 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:48,529 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:48,549 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:48,550 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:48,571 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:48,573 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:48,582 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:42:48,582 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:42:48,585 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:48,586 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:48,620 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:48,622 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:2 already exists
+2023-03-10 19:42:48,623 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:48,624 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:48,633 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:48,635 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:48,641 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:48,641 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:48,679 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:48 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:48,680 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:52,257 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:52,261 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:52,355 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:52,357 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:52,376 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:52,377 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:52,398 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:52,399 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:52,408 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:42:52,409 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:42:52,412 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:52,412 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:52,448 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:52,451 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:2 already exists
+2023-03-10 19:42:52,452 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:52,453 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:52,468 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:52,469 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:52,481 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:52,482 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:52,520 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:52 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:52,520 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:56,088 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,093 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,168 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:56,170 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,187 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,187 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:56,210 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:42:56,211 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:56,220 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:42:56,220 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:42:56,221 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,221 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,260 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:56,262 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,262 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,278 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:42:56,280 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,280 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:56,320 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:55 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:56,321 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,332 INFO r.s.s.CSVDataProvider [main] Lock record was updated
+2023-03-10 19:42:56,332 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,332 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,346 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на сейфе', sensor=null, notifications=[]}]
+2023-03-10 19:42:56,347 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,347 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:56,357 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:55 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:56,360 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,361 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,372 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на сейфе', sensor=null, notifications=[]}]
+2023-03-10 19:42:56,373 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:42:56,382 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:42:56,382 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:42:56,392 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:42:55 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:42:56,393 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:00,315 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,319 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,410 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:43:00,411 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,431 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,431 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:00,459 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:43:00,461 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:00,472 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:43:00,472 INFO r.s.s.CSVDataProvider [main] Lock record was saved
+2023-03-10 19:43:00,473 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,473 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,512 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:43:00,513 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,514 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,525 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на вхожной двери', sensor=null, notifications=[]}]
+2023-03-10 19:43:00,526 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,526 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:00,560 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:43:00 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:43:00,562 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,567 INFO r.s.s.CSVDataProvider [main] Lock record was updated
+2023-03-10 19:43:00,567 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,567 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,575 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на сейфе', sensor=null, notifications=[]}]
+2023-03-10 19:43:00,575 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,575 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:00,582 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:43:00 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:43:00,585 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,585 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,592 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Lock{state=false, id=2, smartHomeId=0, name='Замок на сейфе', sensor=null, notifications=[]}]
+2023-03-10 19:43:00,593 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:00,599 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:00,599 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:00,606 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=2, message='User changed lock state to on', date=Fri Mar 10 19:43:00 MSK 2023, sender='Lock', deviceId='2'}]
+2023-03-10 19:43:00,607 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:43:03,651 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:03,655 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:03,737 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:43:03,742 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:0 wasn't found
+2023-03-10 19:43:06,662 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:43:06,666 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lock.csv
+2023-03-10 19:43:06,753 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:43:06,757 ERROR r.s.s.CSVDataProvider [main] Lock record with this ID:0 wasn't found
