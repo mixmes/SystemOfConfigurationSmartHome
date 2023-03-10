@@ -100,8 +100,10 @@ public class User implements EntityBean  {
     }
     public void deleteResidentInSmartHome(User user) throws Exception {
         checkAccessLevel();
-        user.setSmartHome(null);
-        user.setAccessLevel(Constants.AccessLevel.ADMIN);
+        if (user.getSmartHome().equals(smartHome)) {
+            user.setSmartHome(null);
+            user.setAccessLevel(Constants.AccessLevel.ADMIN);
+        }
     }
 
     public List<Notification> checkSmartHomesNotification(){
