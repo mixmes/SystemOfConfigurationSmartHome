@@ -15,7 +15,6 @@ public class Lock extends Device{
 
     public Lock(long id, String name) {
         super(id, name);
-
     }
 
     public boolean isState() {

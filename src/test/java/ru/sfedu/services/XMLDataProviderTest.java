@@ -15,29 +15,28 @@ import static org.junit.jupiter.api.Assertions.*;
 import static ru.sfedu.Constants.*;
 
 public class XMLDataProviderTest {
-    private static XMLDataProvider xmlDataProvider = new XMLDataProvider();
-    private static ConfigurationUtil config = new ConfigurationUtil();
-    private static Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
-    private static Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
-    private static Notification hygroNotification = new Notification(4,"Humididty is too high.You need to switch off the humidifier",new Date(),"Hygrometer");
-    private static Notification lampNotification = new Notification(5,"Changed its state to on",new Date(),"Lamp");
-    private static Notification lockNotification = new Notification(2,"User changed lock state to on",new Date(),"Lock");
-    private static Termometr firstTermometr = new Termometr(1,"Термометр в зале",25);
-    private static Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале",100);
-    private static Heater heater = new Heater(1,"Обогреватель в зале",100);
-    private static Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
-    private static Lamp lamp = new Lamp(1,"Лампочка в зале",50);
-    private static Lock lock =  new Lock(2,"Замок на вхожной двери");
-    private static Socket socket = new Socket(3,"Розетка для чайника");
-    private static SmartHome smartHome = new SmartHome(1,"Дом Максима");
-    private static User user = new User(1,"Максим",AccessLevel.ADMIN);
-    private static List<Notification> notificationList = new ArrayList<>();
-    private static List<Device> deviceList = new ArrayList<>();
+    private static final XMLDataProvider xmlDataProvider = new XMLDataProvider();
+    private static final ConfigurationUtil config = new ConfigurationUtil();
+    private static final Notification tempNotification = new Notification(1,"Temperature too low. You need to switch on the heater",new Date(),"Termommetr");
+    private static final Notification socketNotification = new Notification(3,"The device is connected",new Date(),"Socket");
+    private static final Notification hygroNotification = new Notification(4,"Humididty is too high.You need to switch off the humidifier",new Date(),"Hygrometer");
+    private static final Notification lampNotification = new Notification(5,"Changed its state to on",new Date(),"Lamp");
+    private static final Notification lockNotification = new Notification(2,"User changed lock state to on",new Date(),"Lock");
+    private static final Termometr firstTermometr = new Termometr(1,"Термометр в зале",25);
+    private static final Hygrometer firstHygrometer = new Hygrometer(1,"Гигрометер в зале",100);
+    private static final Heater heater = new Heater(1,"Обогреватель в зале",100);
+    private static final Humidifier humidifier = new Humidifier(2,"Увлажнитель воздуха в зале",100);
+    private static final Lamp lamp = new Lamp(1,"Лампочка в зале",50);
+    private static final Lock lock =  new Lock(2,"Замок на вхожной двери");
+    private static final Socket socket = new Socket(3,"Розетка для чайника");
+    private static final SmartHome smartHome = new SmartHome(1,"Дом Максима");
+    private static final User user = new User(1,"Максим",AccessLevel.ADMIN);
+    private static final List<Device> deviceList = new ArrayList<>();
 
     @BeforeAll
     static void init(){
         tempNotification.setDeviceID(1);
-        notificationList = new ArrayList<>(List.of(tempNotification));
+        List<Notification> notificationList = new ArrayList<>(List.of(tempNotification));
         heater.setNotifications(notificationList);
         heater.setSensor(firstTermometr);
 

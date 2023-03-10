@@ -22,6 +22,7 @@ public class User implements EntityBean  {
     private long id;
     @XmlTransient
     private SmartHome smartHome;
+    @XmlElement(name = "smartHomeId")
     private long smartHomeId;
     @XmlElement(name = "accessLevel")
     private Constants.AccessLevel accessLevel= Constants.AccessLevel.ADMIN;

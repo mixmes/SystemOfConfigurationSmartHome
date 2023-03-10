@@ -36,6 +36,16 @@ public class Constants {
         public static final String SOCKET_CSV = "socketCSV";
         public static final String TERMOMETER_CSV = "termometerCSV";
         public static final String USER_CSV = "userCSV";
+        public static final String[] HEATER_HEADERS = {"id","smartHomeId","name","state","temperatureForOn","temperatureForOff","maxPower","currentPower"};
+        public static final String[] HUMIDIFIER_HEADERS = {"id","smartHomeId","name","state","humidityForOn","humidityForOff","maxPower","currentPower"};
+        public static final String[] HYGROMETER_HEADERS = {"id","name","deviceId","humidity"};
+        public static final String[] LAMP_HEADERS = {"id","smartHomeId","name","state"};
+        public static final String[] LOCK_HEADERS = {"id","smartHomeId","name","state"};
+        public static final String[] NOTIFICATION_HEADERS = {"id","deviceID","message","date","sender"};
+        public static final String[] SMART_HOME_HEADERS = {"id","name"};
+        public static final String[] SOCKET_HEADERS = {"id","smartHomeId","name","state"};
+        public static final String[] TERMOMETR_HEADERS = {"id","name","deviceId","temperature"};
+        public static final String[] USER_HEADERS = {"id","name","smartHomeId","accessLevel"};
 
 
         public enum AccessLevel {
