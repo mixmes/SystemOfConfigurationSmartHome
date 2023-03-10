@@ -318,7 +318,6 @@ public class XMLDataProvider implements IDataProvider {
             userWrapper.getBeans().add(user);
             initDataSource(config.getConfigurationEntry(USER_XML),userWrapper);
             saveSmartHomeRecord(user.getSmartHome());
-            initDataSource(config.getConfigurationEntry(USER_XML),userWrapper);
             log.info("User record was saved");
         }
         else {
@@ -728,9 +727,6 @@ public class XMLDataProvider implements IDataProvider {
         devices.addAll(getLockRecordByHomeId(id));
         return devices;
     }
-
-
-
 
     @Override
     public void chooseSaveDeviceMethod(Device device) throws Exception {

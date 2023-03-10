@@ -382,9 +382,10 @@ class CSVDataProviderTest {
         tempNotification.setMessage("");
         csvDataProvider.updateNotificationRecord(tempNotification);
 
-        assertEquals("",csvDataProvider.getNotificationRecordByID(tempNotification.getId()));
+        assertEquals("",csvDataProvider.getNotificationRecordByID(tempNotification.getId()).getMessage());
 
         csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),tempNotification.getId(), Notification.class,NOTIFICATION_HEADERS);
+        tempNotification.setMessage("Temperature too low. You need to switch on the heater");
     }
     @Test
     void updateNonExistingNotificationRecord(){
@@ -395,31 +396,156 @@ class CSVDataProviderTest {
     }
 
     @Test
-    void saveSmartHomeRecord() {
+    void saveSmartHomeRecord() throws Exception {
+        csvDataProvider.saveSmartHomeRecord(smartHome);
+
+        assertEquals(smartHome,csvDataProvider.getSmartHomeRecordByID(smartHome.getId()));
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_CSV), smartHome.getId(),SmartHome.class,SMART_HOME_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_CSV), heater.getId(),Heater.class,HEATER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_CSV),lamp.getId(), Lamp.class,LAMP_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMETER_CSV), firstTermometr.getId(), Termometr.class,TERMOMETR_HEADERS);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingSmartHomeRecord() throws Exception {
+        csvDataProvider.saveSmartHomeRecord(smartHome);
+
+        Exception exception = assertThrows(Exception.class,()->{
+            csvDataProvider.saveSmartHomeRecord(smartHome);
+        });
+        assertEquals("SmartHome record already exists",exception.getMessage());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_CSV), smartHome.getId(),SmartHome.class,SMART_HOME_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_CSV), heater.getId(),Heater.class,HEATER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_CSV),lamp.getId(), Lamp.class,LAMP_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMETER_CSV), firstTermometr.getId(), Termometr.class,TERMOMETR_HEADERS);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+
     }
 
     @Test
-    void updateSmartHomeRecord() {
+    void updateSmartHomeRecord() throws Exception {
+        csvDataProvider.saveSmartHomeRecord(smartHome);
+        smartHome.setName("Новый дом Максима");
+        csvDataProvider.updateSmartHomeRecord(smartHome);
+
+        assertEquals("Новый дом Максима",csvDataProvider.getSmartHomeRecordByID(smartHome.getId()).getName());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_CSV), smartHome.getId(),SmartHome.class,SMART_HOME_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_CSV), heater.getId(),Heater.class,HEATER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_CSV),lamp.getId(), Lamp.class,LAMP_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMETER_CSV), firstTermometr.getId(), Termometr.class,TERMOMETR_HEADERS);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateNonExistingSmartHomeRecord(){
+        SmartHome tempSmartHome = new SmartHome();
+
+        Exception exception = assertThrows(Exception.class,()->{
+            csvDataProvider.updateSmartHomeRecord(tempSmartHome);
+        });
+        assertEquals("SmartHome record wasn't found",exception.getMessage());
+    }
+    @Test
+    void saveSocketRecord() throws Exception {
+        csvDataProvider.saveSocketRecord(socket);
+
+        assertEquals(socket,csvDataProvider.getSocketRecordByID(socket.getId()));
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_CSV),socket.getId(),Socket.class,SOCKET_HEADERS);
+        socket.getNotifications().stream().forEach(s->
+        {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void saveExistingSocketRecord() throws Exception {
+        csvDataProvider.saveSocketRecord(socket);
+
+        Exception exception = assertThrows(Exception.class,()->{csvDataProvider.saveSocketRecord(socket);});
+        assertEquals("Socket record already exists",exception.getMessage());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_CSV),socket.getId(),Socket.class,SOCKET_HEADERS);
+        socket.getNotifications().stream().forEach(s->
+        {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     @Test
-    void chooseSaveDeviceMethod() {
-    }
+    void updateSocketRecord() throws Exception {
+        csvDataProvider.saveSocketRecord(socket);
+        socket.setName("Розетка для вентилятора");
+        csvDataProvider.updateSocketRecord(socket);
 
-    @Test
-    void chooseUpdateDeviceMethod() {
-    }
+        assertEquals("Розетка для вентилятора",csvDataProvider.getSocketRecordByID(socket.getId()).getName());
 
-    @Test
-    void getDevicesBySmartHomeId() {
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_CSV),socket.getId(),Socket.class,SOCKET_HEADERS);
+        socket.getNotifications().stream().forEach(s->
+        {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
-
     @Test
-    void saveSocketRecord() {
-    }
+    void updateNonExistingSocketRecord(){
+        Socket tempSocket = new Socket();
 
-    @Test
-    void updateSocketRecord() {
+        Exception exception = assertThrows(Exception.class,()->{
+            csvDataProvider.updateSocketRecord(tempSocket);
+        });
+        assertEquals("Socket record wasn't found",exception.getMessage());
     }
 
     @Test
@@ -460,14 +586,94 @@ class CSVDataProviderTest {
         assertEquals("Termometr record wasn't found",exception.getMessage());
     }
     @Test
-    void saveUserRecord() {
-    }
+    void saveUserRecord() throws Exception {
+        csvDataProvider.saveUserRecord(user);
 
-    @Test
-    void getUserRecordByID() {
-    }
+        assertEquals(user,csvDataProvider.getUserRecordByID(user.getId()));
 
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(USER_CSV), user.getId(), User.class,USER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_CSV), smartHome.getId(),SmartHome.class,SMART_HOME_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_CSV), heater.getId(),Heater.class,HEATER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_CSV),lamp.getId(), Lamp.class,LAMP_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMETER_CSV), firstTermometr.getId(), Termometr.class,TERMOMETR_HEADERS);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
     @Test
-    void updateUserRecord() {
+    void saveExistingUserRecord() throws Exception {
+        csvDataProvider.saveUserRecord(user);
+
+        Exception exception = assertThrows(Exception.class,()->{csvDataProvider.saveUserRecord(user);});
+        assertEquals("User record already exists",exception.getMessage());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(USER_CSV), user.getId(), User.class,USER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_CSV), smartHome.getId(),SmartHome.class,SMART_HOME_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_CSV), heater.getId(),Heater.class,HEATER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_CSV),lamp.getId(), Lamp.class,LAMP_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMETER_CSV), firstTermometr.getId(), Termometr.class,TERMOMETR_HEADERS);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+    @Test
+    void updateUserRecord() throws Exception {
+        csvDataProvider.saveUserRecord(user);
+        user.setName("Максимилиан");
+        csvDataProvider.updateUserRecord(user);
+
+        assertEquals("Максимилиан",csvDataProvider.getUserRecordByID(user.getId()).getName());
+
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(USER_CSV), user.getId(), User.class,USER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(SMART_HOME_CSV), smartHome.getId(),SmartHome.class,SMART_HOME_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(HEATER_CSV), heater.getId(),Heater.class,HEATER_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(LAMP_CSV),lamp.getId(), Lamp.class,LAMP_HEADERS);
+        csvDataProvider.deleteRecord(config.getConfigurationEntry(TERMOMETER_CSV), firstTermometr.getId(), Termometr.class,TERMOMETR_HEADERS);
+        heater.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(),Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        lamp.getNotifications().stream().forEach(s-> {
+            try {
+                csvDataProvider.deleteRecord(config.getConfigurationEntry(NOTIFICATION_CSV),s.getId(), Notification.class,NOTIFICATION_HEADERS);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        user.setName("Максим");
+    }
+    @Test
+    void updateNonExistingUserRecord(){
+        User tempUser = new User();
+
+        Exception exception = assertThrows(Exception.class,()->{
+            csvDataProvider.updateUserRecord(tempUser);
+        });
+        assertEquals("User record wasn't found",exception.getMessage());
     }
 }

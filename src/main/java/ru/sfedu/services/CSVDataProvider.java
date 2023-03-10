@@ -494,52 +494,200 @@ public class CSVDataProvider implements IDataProvider {
 
     @Override
     public void saveSmartHomeRecord(SmartHome smartHome) throws Exception {
-
+        List<SmartHome> smartHomes = getAllRecords(SMART_HOME_HEADERS,SmartHome.class,config.getConfigurationEntry(SMART_HOME_CSV));
+        if(smartHomes.stream().noneMatch(s->s.getId() == smartHome.getId())){
+            smartHomes.add(smartHome);
+            initDataSource(SmartHome.class,SMART_HOME_HEADERS,config.getConfigurationEntry(SMART_HOME_CSV),smartHomes);
+            smartHome.getDevices().stream().forEach(s-> {
+                try {
+                    chooseSaveDeviceMethod(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("SmartHome record was saved");
+        }
+        else {
+            log.error("SmartHome record with this ID:"+smartHome.getId()+" already exists");
+            throw new Exception("SmartHome record already exists");
+        }
     }
 
     @Override
     public SmartHome getSmartHomeRecordByID(long id) throws Exception {
-        return null;
+        List<SmartHome> smartHomes = getAllRecords(SMART_HOME_HEADERS,SmartHome.class,config.getConfigurationEntry(SMART_HOME_CSV));
+        Optional<SmartHome> smartHome = smartHomes.stream().filter(s->s.getId() == id).findFirst();
+        if(!smartHome.isPresent()){
+            log.error("SmartHome with this ID:"+id+" wasn't found");
+            throw new Exception("SmartHome record wasn't found");
+        }
+        List<Device> devices = getDevicesBySmartHomeId(id);
+        smartHome.get().setDevices(devices);
+
+        return smartHome.get();
     }
 
     @Override
     public void updateSmartHomeRecord(SmartHome smartHome) throws Exception {
-
+        List<SmartHome> smartHomes = getAllRecords(SMART_HOME_HEADERS,SmartHome.class,config.getConfigurationEntry(SMART_HOME_CSV));
+        if(smartHomes.stream().anyMatch(s->s.getId() == smartHome.getId())){
+            SmartHome oldSmartHome = getSmartHomeRecordByID(smartHome.getId());
+            smartHomes.remove(oldSmartHome);
+            smartHomes.add(smartHome);
+            initDataSource(SmartHome.class,SMART_HOME_HEADERS,config.getConfigurationEntry(SMART_HOME_CSV),smartHomes);
+            List<Device> oldDevices = this.getDevicesBySmartHomeId(smartHome.getId());
+            smartHome.getDevices().forEach(n -> {
+                if (!oldDevices.contains(n)) {
+                    try {
+                        chooseSaveDeviceMethod(n);
+                    } catch (Exception e) {
+                        log.error(e);
+                    }
+                }else {
+                    try {
+                        chooseUpdateDeviceMethod(n);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            });
+        }
+        else {
+            log.error("SmartHome record with this ID:"+smartHome.getId()+" wasn't found");
+            throw new Exception("SmartHome record wasn't found");
+        }
     }
 
     @Override
     public void chooseSaveDeviceMethod(Device device) throws Exception {
-
+        switch(device.getClass().getSimpleName()){
+            case "Heater": {
+                saveHeaterRecord((Heater) device);
+                break;
+            }
+            case "Humidifier": {
+                saveHumidifierRecord((Humidifier) device);
+                break;
+            }
+            case "Lamp": {
+                saveLampRecord((Lamp) device);
+                break;
+            }
+            case "Lock": {
+                saveLockRecord((Lock) device);
+                break;
+            }
+            case "Socket": {
+                saveSocketRecord((Socket) device);
+                break;
+            }
+        }
     }
 
     @Override
     public void chooseUpdateDeviceMethod(Device device) throws Exception {
-
+        switch(device.getClass().getSimpleName()){
+            case "Heater": {
+                updateHeaterRecord((Heater) device);
+                break;
+            }
+            case "Humidifier": {
+                updateHumidifierRecord((Humidifier) device);
+                break;
+            }
+            case "Lamp": {
+                updateLampRecord((Lamp) device);
+                break;
+            }
+            case "Lock": {
+                updateLockRecord((Lock) device);
+                break;
+            }
+            case "Socket": {
+                updateSocketRecord((Socket) device);
+                break;
+            }
+        }
     }
 
     @Override
     public List<Device> getDevicesBySmartHomeId(long id) throws Exception {
-        return null;
+        List<Device> devices = new ArrayList<>();
+        devices.addAll(getHeaterRecordByHomeID(id));
+        devices.addAll(getHumidifierRecordByHomeId(id));
+        devices.addAll(getSocketRecordByHomeId(id));
+        devices.addAll(getLampRecordByHomeId(id));
+        devices.addAll(getLockRecordByHomeId(id));
+        return devices;
     }
 
     @Override
     public void saveSocketRecord(Socket socket) throws Exception {
+        List<Socket> sockets = getAllRecords(SOCKET_HEADERS,Socket.class,config.getConfigurationEntry(SOCKET_CSV));
+        if(sockets.stream().noneMatch(s->s.getId() == socket.getId())){
+            sockets.add(socket);
+            initDataSource(Socket.class,SOCKET_HEADERS,config.getConfigurationEntry(SOCKET_CSV),sockets);
+            socket.getNotifications().stream().forEach(s-> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Socket record was saved");
+        }
+        else {
+            log.error("Socket record with this ID:"+socket.getId()+" already exists");
+            throw new Exception("Socket record already exists");
+        }
 
     }
 
     @Override
     public Socket getSocketRecordByID(long id) throws Exception {
-        return null;
+        List<Socket> sockets = getAllRecords(SOCKET_HEADERS,Socket.class,config.getConfigurationEntry(SOCKET_CSV));
+        Optional<Socket> socket = sockets.stream().filter(s->s.getId() == id).findFirst();
+        if(!socket.isPresent()){
+            log.error("Socket record with this ID:"+id+" wasn't found");
+            throw new Exception("Socket record wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        socket.get().setNotifications(notifications);
+
+        return socket.get();
     }
 
     @Override
     public List<Socket> getSocketRecordByHomeId(long id) throws Exception {
-        return null;
+        List<Socket> sockets = getAllRecords(SOCKET_HEADERS,Socket.class,config.getConfigurationEntry(SOCKET_CSV)).stream().filter(s->
+                s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(sockets.isEmpty()){
+            log.error("Socket records with this smartHome ID:"+id+" wasn't found");
+        }
+        sockets.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return sockets;
     }
 
     @Override
     public void updateSocketRecord(Socket socket) throws Exception {
-
+        List<Socket> sockets = getAllRecords(SOCKET_HEADERS,Socket.class,config.getConfigurationEntry(SOCKET_CSV));
+        if(sockets.stream().anyMatch(s->s.getId() == socket.getId())){
+            Socket oldSocket = getSocketRecordByID(socket.getId());
+            sockets.remove(oldSocket);
+            sockets.add(socket);
+            initDataSource(Socket.class,SOCKET_HEADERS,config.getConfigurationEntry(SOCKET_CSV),sockets);
+            log.info("Socket record was updated");
+        }
+        else {
+            log.error("Socket record with this ID:"+socket.getId()+" wasn't found");
+            throw new Exception("Socket record wasn't found");
+        }
     }
 
     @Override
@@ -596,16 +744,46 @@ public class CSVDataProvider implements IDataProvider {
 
     @Override
     public void saveUserRecord(User user) throws Exception {
+        List<User> users = getAllRecords(USER_HEADERS,User.class,config.getConfigurationEntry(USER_CSV));
+        if(users.stream().noneMatch(s->s.getId() == user.getId())){
+            users.add(user);
+            initDataSource(User.class,USER_HEADERS,config.getConfigurationEntry(USER_CSV),users);
+            saveSmartHomeRecord(user.getSmartHome());
+            log.info("User record was saved");
+        }
+        else {
+            log.error("User record with this ID:"+user.getId()+" already exists");
+            throw new Exception("User record already exists");
+        }
 
     }
 
     @Override
     public User getUserRecordByID(long id) throws Exception {
-        return null;
+        List<User> users = getAllRecords(USER_HEADERS,User.class,config.getConfigurationEntry(USER_CSV));
+        Optional<User> user = users.stream().filter(s->s.getId() == id).findFirst();
+        if(!user.isPresent()){
+            log.error("User record with this ID:"+id+" wasn't found");
+            throw new Exception("User record wasn't found");
+        }
+        user.get().setSmartHome(getSmartHomeRecordByID(user.get().getSmartHomeId()));
+        return user.get();
     }
 
     @Override
     public void updateUserRecord(User user) throws Exception {
-
+        List<User> users = getAllRecords(USER_HEADERS,User.class,config.getConfigurationEntry(USER_CSV));
+        if(users.stream().anyMatch(s->s.getId() == user.getId())){
+            User oldUser = getUserRecordByID(user.getId());
+            users.remove(oldUser);
+            users.add(user);
+            initDataSource(User.class,USER_HEADERS,config.getConfigurationEntry(USER_CSV),users);
+            updateSmartHomeRecord(user.getSmartHome());
+            log.info("User record was updated");
+        }
+        else {
+            log.error("User record with this ID:"+user.getId()+" wasn't found");
+            throw new Exception("User record wasn't found");
+        }
     }
 }

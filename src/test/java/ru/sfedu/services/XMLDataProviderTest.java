@@ -438,6 +438,7 @@ public class XMLDataProviderTest {
 
         Exception exception = assertThrows(Exception.class,()->{xmlDataProvider.saveSocketRecord(socket);});
         assertEquals("Socket record with this ID:"+socket.getId()+" already exists",exception.getMessage());
+
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_XML),socket.getId(),Socket.class);
         socket.getNotifications().stream().forEach(s->
         {
@@ -456,6 +457,7 @@ public class XMLDataProviderTest {
         xmlDataProvider.updateSocketRecord(socket);
 
         assertEquals("Розетка для вентилятора",xmlDataProvider.getSocketRecordByID(socket.getId()).getName());
+
         xmlDataProvider.deleteRecord(config.getConfigurationEntry(SOCKET_XML),socket.getId(),Socket.class);
         socket.getNotifications().stream().forEach(s->
         {
