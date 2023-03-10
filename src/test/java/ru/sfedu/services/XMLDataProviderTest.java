@@ -66,18 +66,6 @@ public class XMLDataProviderTest {
 
     }
 
-    @Test
-    void deleteRecord() {
-
-    }
-
-    @Test
-    void testDeleteRecord() {
-    }
-
-    @Test
-    void testDeleteRecord1() {
-    }
 
 
     @Test
