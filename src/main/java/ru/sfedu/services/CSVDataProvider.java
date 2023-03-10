@@ -82,82 +82,297 @@ public class CSVDataProvider implements IDataProvider {
 
     @Override
     public void saveHeaterRecord(Heater heater) throws Exception {
-
+        List<Heater> heaters =  getAllRecords(HEATER_HEADERS,Heater.class,config.getConfigurationEntry(HEATER_CSV));
+        if(heaters.stream().noneMatch(s->s.getId() == heater.getId())){
+            heaters.add(heater);
+            initDataSource(Heater.class,HEATER_HEADERS,config.getConfigurationEntry(HEATER_CSV),heaters);
+            saveTermometrRecord((Termometr) heater.getSensor());
+            heater.getNotifications().forEach(s-> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Heater record was saved");
+        }
+        else {
+            log.error("Heater record with this ID:"+heater.getId()+" already exists");
+            throw new Exception("Heater record already exists");
+        }
     }
 
     @Override
     public Heater getHeaterRecordByID(long id) throws Exception {
-        return null;
+        List<Heater> heaters = getAllRecords(HEATER_HEADERS, Heater.class,config.getConfigurationEntry(HEATER_CSV));
+        Optional<Heater> heater = heaters.stream().filter(s->s.getId() == id).findFirst();
+        if(!heater.isPresent()){
+            log.error("Heater record with this ID:"+id+" wasn't found");
+            throw new Exception("Heater record wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        heater.get().setNotifications(notifications);
+        heater.get().setSensor(getTermometrRecordByHeaterId(id));
+
+        return heater.get();
     }
 
     @Override
     public List<Heater> getHeaterRecordByHomeID(long id) throws Exception {
-        return null;
+        List<Heater> heaters = getAllRecords(HEATER_HEADERS,Heater.class,config.getConfigurationEntry(HEATER_CSV)).stream().filter(s->
+                s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(heaters.isEmpty()){
+            log.error("Heter record with this smartHome ID:"+id+" wasn't found");
+        }
+        heaters.stream().forEach(s-> {
+            try {
+                s.setSensor(getTermometrRecordByHeaterId(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        heaters.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return heaters;
     }
 
     @Override
     public void updateHeaterRecord(Heater heater) throws Exception {
-
+        List<Heater> heaters = getAllRecords(HEATER_HEADERS, Heater.class,config.getConfigurationEntry(HEATER_CSV));
+        if(heaters.stream().anyMatch(s->s.getId() == heater.getId())){
+            Heater oldHeater = getHeaterRecordByID(heater.getId());
+            heaters.remove(oldHeater);
+            heaters.add(heater);
+            initDataSource(Heater.class,HEATER_HEADERS,config.getConfigurationEntry(HEATER_CSV),heaters);
+            if (heater.getSensor() != null) {
+                Termometr oldTermometr = getTermometrRecordByHeaterId(heater.getId());
+                if (oldTermometr != null) {
+                    if (oldTermometr.getId() != heater.getSensor().getId()) {
+                        deleteRecord(config.getConfigurationEntry(TERMOMERT_XML), oldTermometr.getId(), Termometr.class);
+                        saveTermometrRecord((Termometr) heater.getSensor());
+                    } else {
+                        updateTermometrRecord((Termometr) heater.getSensor());
+                    }
+                }
+            }
+        }
+        else {
+            log.error("Heater record with thid ID:"+heater.getId()+" wasn't found");
+            throw new Exception("Heater record wasn't found");
+        }
     }
 
     @Override
     public void saveHumidifierRecord(Humidifier humidifier) throws Exception {
-
+        List<Humidifier> humidifiers = getAllRecords(HUMIDIFIER_HEADERS,Humidifier.class,config.getConfigurationEntry(HUMIDIFIER_CSV));
+        if(humidifiers.stream().noneMatch(s->s.getId() == humidifier.getId())){
+            humidifiers.add(humidifier);
+            initDataSource(Humidifier.class,HUMIDIFIER_HEADERS,config.getConfigurationEntry(HUMIDIFIER_CSV),humidifiers);
+            Hygrometer hygrometer = (Hygrometer) humidifier.getSensor();
+            saveHygrometerRecord(hygrometer);
+            if (!humidifier.getNotifications().isEmpty()) {
+                humidifier.getNotifications().stream().forEach(s -> {
+                    try {
+                        saveNotificationRecord(s);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                });
+            }
+            log.info("Humidifier record was saved");
+        } else {
+            log.error("Humidifier record with this ID:" + humidifier.getId() + " already exists");
+            throw new Exception("Humidifier record already exists");
+        }
     }
 
     @Override
     public Humidifier getHumidifierRecordByID(long id) throws Exception {
-        return null;
+        List<Humidifier> humidifiers = getAllRecords(HUMIDIFIER_HEADERS,Humidifier.class,config.getConfigurationEntry(HUMIDIFIER_CSV));
+        Optional<Humidifier> humidifier = humidifiers.stream().filter(s -> s.getId() == id).findFirst();
+        if (!humidifier.isPresent()) {
+            log.error("Humidifier record with this ID:" + id + " wasn't found");
+            throw new Exception("Humidifier record wasn't found");
+        }
+        Hygrometer hygrometer = getHygrometerRecordByDeviceID(id);
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        humidifier.get().setSensor(hygrometer);
+        humidifier.get().setNotifications(notifications);
+
+        return humidifier.get();
     }
 
     @Override
     public List<Humidifier> getHumidifierRecordByHomeId(long id) throws Exception {
-        return null;
+        List<Humidifier> humidifiers = getAllRecords(HUMIDIFIER_HEADERS,Humidifier.class,config.getConfigurationEntry(HUMIDIFIER_CSV)).stream().filter(s->
+                s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(humidifiers.isEmpty()){
+            log.error("Humidifier records with this smartHome ID:"+id+" wasn't found");
+        }
+        humidifiers.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        humidifiers.stream().forEach(s-> {
+            try {
+                s.setSensor(getHygrometerRecordByID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return  humidifiers;
     }
 
     @Override
     public void updateHumidifierRecord(Humidifier humidifier) throws Exception {
+        List<Humidifier> humidifiers = getAllRecords(HUMIDIFIER_HEADERS,Humidifier.class,config.getConfigurationEntry(HUMIDIFIER_CSV));
+        if (humidifiers.stream().anyMatch(s -> s.getId() == humidifier.getId())) {
+            Humidifier oldHumidifier = getHumidifierRecordByID(humidifier.getId());
+            humidifiers.remove(oldHumidifier);
+            humidifiers.add(humidifier);
+            initDataSource(Humidifier.class,HUMIDIFIER_HEADERS,config.getConfigurationEntry(HUMIDIFIER_CSV),humidifiers);
+            if (humidifier.getSensor() != null) {
+                Hygrometer oldHygrometer = getHygrometerRecordByDeviceID(humidifier.getId());
+                if (oldHygrometer != null) {
+                    if (oldHygrometer.getId() != humidifier.getSensor().getId()) {
+                        deleteRecord(config.getConfigurationEntry(HYGROMETER_XML), oldHygrometer.getId(), Hygrometer.class);
+                        saveHygrometerRecord((Hygrometer) humidifier.getSensor());
+                    } else {
+                        updateHygrometerRecord((Hygrometer) humidifier.getSensor());
+                    }
+                }
+            }
+        } else {
+            log.error("Humidifier record with this ID:" + humidifier.getId() + " wasn't found");
+            throw new Exception("Humidifier record wasn't found");
+        }
 
     }
 
     @Override
     public void saveHygrometerRecord(Hygrometer hygrometer) throws Exception {
-
+        List<Hygrometer> hygrometers = getAllRecords(HYGROMETER_HEADERS,Hygrometer.class,config.getConfigurationEntry(HYGROMETER_CSV));
+        if(hygrometers.stream().noneMatch(s->s.getId() == hygrometer.getId())){
+            hygrometers.add(hygrometer);
+            initDataSource(Hygrometer.class,HYGROMETER_HEADERS,config.getConfigurationEntry(HYGROMETER_CSV),hygrometers);
+            log.info("Hygrometer record was saved");
+        }
+        else {
+            log.error("Hygrometer record with thid ID:"+hygrometer.getId()+" already exists");
+            throw new Exception("Hygrometer record already exists");
+        }
     }
 
     @Override
     public Hygrometer getHygrometerRecordByID(long id) throws Exception {
-        return null;
+        List<Hygrometer> hygrometers = getAllRecords(HYGROMETER_HEADERS, Hygrometer.class,config.getConfigurationEntry(HYGROMETER_CSV));
+        Optional<Hygrometer> hygrometer = hygrometers.stream().filter(s->s.getId() == id).findFirst();
+        if(!hygrometer.isPresent()){
+            log.error("Hygrometer record with this ID:"+id+" wasn't found");
+            throw new Exception("Hygrometer record wasn't found");
+        }
+        return hygrometer.get();
     }
 
     @Override
     public Hygrometer getHygrometerRecordByDeviceID(long id) throws Exception {
-        return null;
+        List<Hygrometer> hygrometers  = getAllRecords(HYGROMETER_HEADERS, Hygrometer.class,config.getConfigurationEntry(HYGROMETER_CSV));
+        Optional<Hygrometer> hygrometer = hygrometers.stream().filter(s->s.getId() == id).findFirst();
+        if(!hygrometer.isPresent()){
+            log.error("Hygrometer record with this ID:"+id+" wasn't found");
+            return null;
+        }
+        return hygrometer.get();
     }
 
     @Override
     public void updateHygrometerRecord(Hygrometer hygrometer) throws Exception {
-
+        List<Hygrometer> hygrometers = getAllRecords(HYGROMETER_HEADERS,Hygrometer.class,config.getConfigurationEntry(HYGROMETER_CSV));
+        if(hygrometers.stream().anyMatch(s->s.getId() == hygrometer.getId())){
+            Hygrometer oldHygrometer = getHygrometerRecordByDeviceID(hygrometer.getId());
+            hygrometers.remove(oldHygrometer);
+            hygrometers.add(hygrometer);
+            initDataSource(Hygrometer.class,HYGROMETER_HEADERS,config.getConfigurationEntry(HYGROMETER_CSV),hygrometers);
+            log.info("Hygrometer record was updated");
+        }
+        else {
+            log.error("Hygrometer record with this ID:"+hygrometer.getId()+" wasn't found");
+            throw new Exception("Hygrometer record wasn't found");
+        }
     }
 
     @Override
     public void saveLampRecord(Lamp lamp) throws Exception {
-
+        List<Lamp> lamps = getAllRecords(LAMP_HEADERS,Lamp.class,config.getConfigurationEntry(LAMP_CSV));
+        if (lamps.stream().noneMatch(s -> s.getId() == lamp.getId())) {
+            lamps.add(lamp);
+            initDataSource(Lamp.class,LAMP_HEADERS,config.getConfigurationEntry(LAMP_CSV), lamps);
+            lamp.getNotifications().stream().forEach(s -> {
+                try {
+                    saveNotificationRecord(s);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            log.info("Lamp record was saved");
+        } else {
+            log.error("Lamp record with this ID:" + lamp.getId() + " already exists");
+            throw new Exception("Lamp record already exists");
+        }
     }
 
     @Override
     public Lamp getLampRecordByID(long id) throws Exception {
-        return null;
+        List<Lamp> lamps = getAllRecords(LAMP_HEADERS,Lamp.class,config.getConfigurationEntry(LAMP_CSV));
+        Optional<Lamp> lamp = lamps.stream().filter(s -> s.getId() == id).findFirst();
+        if (!lamp.isPresent()) {
+            log.error("Lamp record with this ID:" + id + " wasn't found");
+            throw new Exception("Lamp record wasn't found");
+        }
+        List<Notification> notifications = getNotificationRecordsByDeviceID(id);
+        lamp.get().setNotifications(notifications);
+
+        return lamp.get();
     }
 
     @Override
     public List<Lamp> getLampRecordByHomeId(long id) throws Exception {
-        return null;
+        List<Lamp> lamps = getAllRecords(LAMP_HEADERS,Lamp.class,config.getConfigurationEntry(LAMP_CSV)).stream().filter(s->
+                s.getSmartHomeId() == id).collect(Collectors.toList());
+        if(lamps.isEmpty()){
+            log.error("Lamp records with this smartHome ID:"+id+" wasn't found");
+        }
+        lamps.stream().forEach(s-> {
+            try {
+                s.setNotifications(getNotificationRecordsByDeviceID(s.getId()));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
+        return lamps;
     }
 
     @Override
     public void updateLampRecord(Lamp lamp) throws Exception {
-
+        List<Lamp> lamps = getAllRecords(LAMP_HEADERS,Lamp.class,config.getConfigurationEntry(LAMP_CSV));
+        if (lamps.stream().anyMatch(s -> s.getId() == lamp.getId())) {
+            Lamp oldLamp = getLampRecordByID(lamp.getId());
+            lamps.remove(oldLamp);
+            lamps.add(lamp);
+            initDataSource(Lamp.class,LAMP_HEADERS,config.getConfigurationEntry(LAMP_CSV), lamps);
+            log.info("Lamp record was updated");
+        } else {
+            log.error("Lamp record with this ID:" + lamp.getId() + " wasn't found");
+            throw new Exception("Lamp record wasn't found");
+        }
     }
 
     @Override
@@ -321,7 +536,7 @@ public class CSVDataProvider implements IDataProvider {
     public void updateTermometrRecord(Termometr termometr) throws Exception {
         List<Termometr> termometrs =  getAllRecords(TERMOMETR_HEADERS,Termometr.class,config.getConfigurationEntry(TERMOMETER_CSV));
         if(termometrs.stream().anyMatch(s->s.getId() == termometr.getId())){
-            Termometr oldTermometr = getTermometrRecordByID(termometr.getDeviceId());
+            Termometr oldTermometr = getTermometrRecordByID(termometr.getId());
             termometrs.remove(oldTermometr);
             termometrs.add(termometr);
             initDataSource(Termometr.class,TERMOMETR_HEADERS,config.getConfigurationEntry(TERMOMETER_CSV),termometrs);
@@ -329,7 +544,7 @@ public class CSVDataProvider implements IDataProvider {
         }
         else {
             log.error("Termometer record with this ID:"+termometr.getId()+" wasn't found");
-            throw new Exception("Termometer record wasn't found");
+            throw new Exception("Termometr record wasn't found");
         }
     }
 

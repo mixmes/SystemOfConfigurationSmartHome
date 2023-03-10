@@ -47,17 +47,5 @@ public class Lamp extends Device{
     @Override
     public void setSensor(Sensor sensor){}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        Lamp lamp = (Lamp) o;
-        return state == lamp.state && maxBrightness == lamp.maxBrightness && currentBrightness == lamp.currentBrightness;
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), state, maxBrightness, currentBrightness);
-    }
 }

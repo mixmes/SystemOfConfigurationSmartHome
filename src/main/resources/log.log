@@ -5134,3 +5134,1264 @@ Class has two properties of the same name "name"
 2023-03-10 10:56:20,690 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
 2023-03-10 10:56:20,770 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
 2023-03-10 10:56:20,774 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:0 wasn't found
+2023-03-10 16:31:10,817 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:31:10,821 DEBUG r.s.s.CSVDataProvider [main] ru/sfedu/csv/Termometer.csv
+2023-03-10 16:31:10,823 ERROR r.s.s.CSVDataProvider [main] csv file is empty
+2023-03-10 16:31:10,824 INFO r.s.s.CSVDataProvider [main] update ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:11,671 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:32:11,676 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:11,769 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 16:32:11,770 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:11,785 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 16:32:11,786 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:32:11,786 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:11,812 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:32:11,816 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:32:11,817 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:11,831 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:32:11,832 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:16,263 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:32:16,268 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:16,354 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 16:32:16,355 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:16,368 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 16:32:16,368 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:32:16,369 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:16,393 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:32:16,397 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:32:16,398 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:32:16,408 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:32:16,409 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:33:58,540 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:33:58,544 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:33:58,617 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 16:33:58,618 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:33:58,631 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 16:33:58,634 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:33:58,635 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:33:58,657 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:33:58,660 ERROR r.s.s.CSVDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-10 16:33:58,662 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:33:58,662 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:33:58,674 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:33:58,676 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:34:02,673 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:34:02,677 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:34:02,758 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 16:34:02,760 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:34:02,775 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 16:34:02,779 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:34:02,779 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:34:02,806 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:34:02,808 ERROR r.s.s.CSVDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-10 16:34:02,810 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 16:34:02,810 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 16:34:02,825 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 16:34:02,827 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,104 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:08:58,108 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,183 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:08:58,185 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,200 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:08:58,201 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:08:58,201 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,229 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:08:58,230 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:08:58,230 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,246 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:08:58,248 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,259 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 18:08:58,259 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:08:58,260 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,274 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:08:58,278 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:08:58,278 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:08:58,292 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:08:58,293 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:03,996 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:09:04,001 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,089 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:09:04,091 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,104 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:09:04,105 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:09:04,105 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,131 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:09:04,131 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:09:04,132 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,145 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:09:04,147 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,157 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 18:09:04,157 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:09:04,158 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,172 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:09:04,175 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:09:04,176 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:09:04,190 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:09:04,191 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:10:20,988 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:10:20,992 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:10:21,073 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:10:21,078 ERROR r.s.s.CSVDataProvider [main] Termometer record with this ID:0 wasn't found
+2023-03-10 18:10:35,108 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:10:35,112 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:10:35,197 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:10:35,201 ERROR r.s.s.CSVDataProvider [main] Termometer record with this ID:0 wasn't found
+2023-03-10 18:10:54,258 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:10:54,264 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:10:54,378 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:10:54,383 ERROR r.s.s.CSVDataProvider [main] Termometer record with this ID:0 wasn't found
+2023-03-10 18:24:18,837 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:24:18,842 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:18,843 ERROR r.s.s.CSVDataProvider [main] csv file is empty
+2023-03-10 18:24:18,844 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:18,918 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:24:18,918 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:24:18,918 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:18,946 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:24:18,950 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:24:18,950 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:18,961 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:24:18,962 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:22,544 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:24:22,548 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:22,626 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:24:22,627 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:22,643 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:24:22,643 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:24:22,644 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:22,664 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:24:22,669 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:24:22,670 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:24:22,689 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:24:22,690 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:46,250 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:25:46,254 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:46,331 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:25:46,333 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:46,348 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:25:46,352 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:25:46,352 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:46,371 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:25:46,375 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with thid ID:1 already exists
+2023-03-10 18:25:46,377 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:25:46,377 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:46,392 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:25:46,394 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:50,300 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:25:50,305 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:50,386 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:25:50,387 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:50,406 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:25:50,410 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:25:50,411 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:50,432 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:25:50,436 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with thid ID:1 already exists
+2023-03-10 18:25:50,437 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:25:50,438 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:25:50,449 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@7b70ad19]
+2023-03-10 18:25:50,451 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,360 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:27:51,364 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,436 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:27:51,438 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,457 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:27:51,458 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:27:51,458 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,478 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:27:51,479 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:27:51,479 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,492 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:27:51,496 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:1 wasn't found
+2023-03-10 18:27:51,497 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,506 INFO r.s.s.CSVDataProvider [main] Hygrometer record was updated
+2023-03-10 18:27:51,507 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:27:51,507 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:27:51,520 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e, ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:29:18,535 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:29:18,539 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/model/Hygrometer.csv
+2023-03-10 18:29:18,631 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e, ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:29:18,636 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with thid ID:1 already exists
+2023-03-10 18:30:33,605 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:30:33,609 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:30:33,685 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:30:33,686 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:30:33,700 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:30:33,700 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:30:33,701 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:30:33,718 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:30:33,719 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:30:33,720 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:30:33,732 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:30:33,737 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:1 wasn't found
+2023-03-10 18:30:33,737 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:30:33,745 INFO r.s.s.CSVDataProvider [main] Hygrometer record was updated
+2023-03-10 18:30:33,746 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:30:33,746 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:30:33,757 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e, ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:31:47,786 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:31:47,791 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:31:47,885 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e, ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:31:47,891 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with thid ID:1 already exists
+2023-03-10 18:32:46,571 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:32:46,576 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:32:46,656 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:32:46,657 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:32:46,673 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:32:46,673 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:32:46,674 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:32:46,693 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:32:46,695 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:32:46,695 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:32:46,709 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:32:46,714 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:1 wasn't found
+2023-03-10 18:32:46,715 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:32:46,729 INFO r.s.s.CSVDataProvider [main] Hygrometer record was updated
+2023-03-10 18:32:46,730 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:32:46,730 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:32:46,747 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e, ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:34:47,277 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:47,282 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,359 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:34:47,362 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,380 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:34:47,381 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:47,381 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,408 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:34:47,409 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:47,410 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,423 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:34:47,425 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,432 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 18:34:47,433 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:47,433 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,441 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:34:47,444 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:47,445 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:47,452 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:34:47,453 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,508 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:51,513 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,592 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:34:51,593 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,609 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:34:51,610 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:51,610 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,639 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:34:51,640 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:51,641 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,656 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:34:51,658 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,668 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 18:34:51,669 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:51,669 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,684 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:34:51,688 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:34:51,688 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:34:51,702 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в комнате', deviceId=1}]
+2023-03-10 18:34:51,703 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:35:52,013 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:52,017 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,097 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:35:52,099 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,116 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:35:52,117 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:52,117 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,136 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:35:52,137 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:52,137 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,152 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:35:52,155 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,167 INFO r.s.s.CSVDataProvider [main] Hygrometer record was updated
+2023-03-10 18:35:52,167 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:52,168 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,182 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:35:52,186 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:52,187 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:52,197 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:35:52,198 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,828 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:55,833 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,922 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:35:55,924 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,941 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 18:35:55,942 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:55,942 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,959 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:35:55,960 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:55,960 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,974 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 18:35:55,976 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,983 INFO r.s.s.CSVDataProvider [main] Hygrometer record was updated
+2023-03-10 18:35:55,984 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:55,984 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:55,994 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:35:55,997 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:35:55,998 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:35:56,005 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@c9baecd3]
+2023-03-10 18:35:56,006 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:37:22,296 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:37:22,301 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:37:22,379 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:37:22,383 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:0 wasn't found
+2023-03-10 18:37:26,444 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:37:26,448 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 18:37:26,532 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:37:26,537 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:0 wasn't found
+2023-03-10 18:52:15,273 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:15,278 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:52:15,367 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:52:15,369 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:52:15,385 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:15,385 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:52:15,394 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:52:15,395 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:52:15,402 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:52:15,404 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:15,404 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:52:15,426 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:52:15,427 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:52:15,434 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 18:52:15,435 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 18:52:15,435 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:15,436 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:52:15,480 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:52:15,482 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:15,482 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:52:15,501 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:52:15 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:52:15,502 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:15,502 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:52:15,513 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:52:19,101 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:52:19,105 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:52:19,220 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:52:19,224 ERROR r.s.s.CSVDataProvider [main] Heater record with this ID:1 already exists
+2023-03-10 18:53:53,419 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:53:53,423 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:53:53,514 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:53:53,515 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:53:53,539 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:53:53,539 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:53:53,565 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:53:53,568 ERROR r.s.s.CSVDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-10 18:54:16,938 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:16,943 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:17,036 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:54:17,037 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:17,056 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:17,057 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:54:17,078 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=0, id=0, name='null', deviceId=0}]
+2023-03-10 18:54:17,079 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:54:17,085 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:54:17,086 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:17,087 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:54:17,101 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:54:17,102 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:54:17,107 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 18:54:17,108 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 18:54:17,108 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:17,108 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:17,149 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:54:17,151 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:17,151 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:54:17,171 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:54:16 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:54:17,172 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:17,172 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:54:17,179 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=0, id=0, name='', deviceId=0}, Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:54:21,459 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:21,465 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:21,574 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:54:21,579 ERROR r.s.s.CSVDataProvider [main] Heater record with this ID:1 already exists
+2023-03-10 18:54:40,945 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:40,949 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:41,039 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:54:41,040 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:41,063 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:41,064 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:54:41,076 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:54:41,078 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:54:41,086 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:54:41,087 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:41,088 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:54:41,108 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:54:41,109 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:54:41,115 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 18:54:41,115 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 18:54:41,116 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:41,116 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:54:41,164 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:54:41,166 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:41,166 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:54:41,191 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:54:40 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:54:41,193 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:54:41,193 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:54:41,207 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:56:04,012 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:04,017 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:56:04,110 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:56:04,112 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:56:04,140 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:04,141 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:56:04,156 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:56:04,157 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:56:04,167 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:56:04,168 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:04,169 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:56:04,186 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:56:04,187 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:56:04,196 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 18:56:04,196 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 18:56:04,196 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:04,196 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:56:04,248 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:56:04,249 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:04,250 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:56:04,275 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:56:03 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:56:04,276 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:04,276 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:56:04,288 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:56:07,297 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:56:07,301 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:56:07,420 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:56:07,425 ERROR r.s.s.CSVDataProvider [main] Heater record with this ID:1 already exists
+2023-03-10 18:57:12,771 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:57:12,775 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:57:12,866 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:57:12,867 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:57:12,894 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:57:12,894 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:57:12,919 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:57:12,922 ERROR r.s.s.CSVDataProvider [main] Termometr record with this ID:1 already exists
+2023-03-10 18:59:08,449 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,454 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:08,546 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:59:08,548 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:08,575 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,575 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:08,590 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:59:08,591 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:08,601 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:59:08,602 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,602 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:08,621 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:59:08,623 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:08,631 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 18:59:08,632 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 18:59:08,632 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,633 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:08,684 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:59:08,686 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,687 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:08,716 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:59:08 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:59:08,717 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,718 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:08,735 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:59:08,739 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,740 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:08,754 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:59:08,755 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:08,765 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,766 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:08,775 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:59:08,775 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:08,782 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:08,782 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:08,798 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:59:08 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:59:08,798 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:11,753 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:11,757 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:11,848 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:59:11,850 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:11,876 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:11,877 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:11,893 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:59:11,895 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:11,909 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 18:59:11,910 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:11,910 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:11,933 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 18:59:11,935 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:11,946 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 18:59:11,947 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 18:59:11,947 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:11,948 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:12,007 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:59:12,009 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:12,010 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:12,033 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:59:11 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:59:12,034 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:12,035 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:12,046 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:59:12,050 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:12,050 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:12,064 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 18:59:12,065 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 18:59:12,074 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:12,075 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:12,082 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 18:59:12,083 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 18:59:12,088 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 18:59:12,089 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 18:59:12,101 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 18:59:11 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 18:59:12,102 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:26,112 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,117 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:26,212 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:00:26,213 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:26,238 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,239 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:26,251 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:00:26,252 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:26,262 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 19:00:26,263 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,264 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:26,282 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:00:26,283 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:26,290 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:00:26,291 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 19:00:26,293 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,294 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:26,339 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:00:26,342 ERROR r.s.s.CSVDataProvider [main] Heater record with this ID:1 already exists
+2023-03-10 19:00:26,344 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,344 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:26,357 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:00:26,359 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:26,368 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,369 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:26,383 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:00:26,383 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:26,389 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:26,390 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:26,413 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:00:25 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:00:26,414 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:30,463 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,468 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:30,582 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:00:30,584 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:30,614 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,614 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:30,630 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:00:30,632 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:30,643 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 19:00:30,644 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,644 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:30,669 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:00:30,670 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:30,677 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:00:30,678 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 19:00:30,681 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,681 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:30,734 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:00:30,738 ERROR r.s.s.CSVDataProvider [main] Heater record with this ID:1 already exists
+2023-03-10 19:00:30,739 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,740 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:30,750 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:00:30,752 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:00:30,759 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,759 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:30,771 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:00:30,774 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:00:30,779 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:00:30,779 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:00:30,794 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:00:30 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:00:30,794 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:04,387 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,392 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:04,477 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:04,478 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:04,498 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,499 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,510 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:04,511 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,519 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 19:02:04,520 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,520 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:04,539 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:04,541 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:04,546 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:02:04,546 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 19:02:04,546 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,547 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:04,587 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:02:04,588 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,588 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:04,603 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:02:04,606 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,607 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:04,622 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:04 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:04,624 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,624 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,634 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:04,635 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:04,642 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,642 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,647 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:04,648 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,648 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,655 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:04,656 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,656 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,663 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:04,664 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,677 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 19:02:04,677 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,678 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:04,685 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в комнате', sensor=null}]
+2023-03-10 19:02:04,686 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,686 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:04,692 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:04 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:04,693 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:04,693 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:04,698 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,548 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,552 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,651 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:22,653 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,675 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,675 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,686 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:22,687 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,694 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 19:02:22,695 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,695 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:22,713 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:22,714 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:22,720 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:02:22,721 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 19:02:22,721 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,721 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,764 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:02:22,766 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,766 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,774 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:02:22,776 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,777 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:22,798 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:22 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:22,799 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,800 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,812 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,813 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,818 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,819 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,825 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,826 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,826 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,833 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,833 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,834 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,848 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,849 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,852 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 19:02:22,853 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,853 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,860 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в комнате', sensor=null}]
+2023-03-10 19:02:22,861 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,861 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:22,868 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:22 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:22,868 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,869 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,874 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,878 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,878 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,886 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в комнате', sensor=null}]
+2023-03-10 19:02:22,887 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:22,892 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,893 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,901 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:22,901 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:22,905 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:22,905 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:22,911 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:22 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:22,911 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:26,344 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,348 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,442 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:26,443 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,463 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,463 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,475 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:26,476 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,482 INFO r.s.s.CSVDataProvider [main] Termometr record was saved
+2023-03-10 19:02:26,483 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,484 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:26,502 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:02:26,504 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:26,510 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:02:26,511 INFO r.s.s.CSVDataProvider [main] Heater record was saved
+2023-03-10 19:02:26,512 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,512 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,568 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:02:26,569 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,570 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,582 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в зале', sensor=null}]
+2023-03-10 19:02:26,584 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,585 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:26,609 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:26 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:26,610 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,611 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,624 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:26,626 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,632 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,633 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,640 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:26,641 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,641 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,648 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:26,649 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,649 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,664 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:26,665 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,668 INFO r.s.s.CSVDataProvider [main] Termometer record was updated
+2023-03-10 19:02:26,668 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,668 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,678 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в комнате', sensor=null}]
+2023-03-10 19:02:26,678 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,678 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:26,683 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:26 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:26,684 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,684 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,690 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:26,693 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,694 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,701 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Heater{temperatureForOn=0, temperatureForOff=0, maxPower=100, currentPower=0, state=false, id=1, name='Обогреватель в комнате', sensor=null}]
+2023-03-10 19:02:26,702 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:02:26,708 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,708 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,719 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Termometr{temperature=25, id=1, name='Термометр в зале', deviceId=1}]
+2023-03-10 19:02:26,719 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Termometer.csv
+2023-03-10 19:02:26,723 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:02:26,723 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:02:26,728 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=1, message='Temperature too low. You need to switch on the heater', date=Fri Mar 10 19:02:26 MSK 2023, sender='Termommetr', deviceId='1'}]
+2023-03-10 19:02:26,729 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:04:05,604 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:04:05,609 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:04:05,700 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:05:15,873 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:05:15,876 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:05:15,967 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:05:15,973 ERROR r.s.s.CSVDataProvider [main] Heater record with thid ID:0 wasn't found
+2023-03-10 19:05:19,218 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:05:19,223 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Heater.csv
+2023-03-10 19:05:19,334 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:05:19,339 ERROR r.s.s.CSVDataProvider [main] Heater record with thid ID:0 wasn't found
+2023-03-10 19:15:34,577 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:34,581 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:15:34,680 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:15:34,682 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:15:34,708 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:34,709 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:15:34,722 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:15:34,723 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:15:34,733 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:15:34,734 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:34,734 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:15:34,753 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:15:34,754 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:15:34,764 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:15:34,764 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:15:34,764 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:34,765 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:15:34,796 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:15:34,798 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:34,799 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:15:34,807 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:15:34,811 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:15:34,812 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:34,812 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:15:34,839 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:15:34 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:15:38,274 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:15:38,279 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:15:38,373 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:15:38,378 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-10 19:17:07,697 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,701 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:07,800 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:07,802 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:07,834 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,835 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:07,850 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:07,852 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:07,861 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:07,862 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,862 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:07,879 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:07,880 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:07,885 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:07,885 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:07,886 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,886 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:07,918 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:07,920 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,920 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:07,926 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:07,929 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:07,930 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,930 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:07,951 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:07 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:07,954 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,955 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:07,965 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:07,967 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:07,975 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,975 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:07,982 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:07,982 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:07,986 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:07,986 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:07,998 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:07 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:07,999 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:11,271 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,275 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:11,376 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:11,378 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:11,410 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,411 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:11,425 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:11,426 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:11,438 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:11,439 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,440 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:11,457 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:11,458 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:11,463 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:11,463 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:11,463 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,464 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:11,495 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:11,497 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,497 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:11,505 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:11,509 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:11,510 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,510 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:11,530 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:11 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:11,534 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,534 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:11,543 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:11,544 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:11,550 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,550 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:11,556 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:11,557 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:11,561 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:11,561 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:11,573 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:11 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:11,573 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:16,251 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:16,255 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:16,347 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:16,348 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:16,368 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:16,368 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:16,377 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:16,378 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:16,384 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:16,385 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:16,385 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:16,400 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:16,400 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:16,405 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:16,406 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:16,408 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:16,409 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:16,441 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:16,445 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-10 19:17:42,204 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,210 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:42,307 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:42,308 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:42,335 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,336 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:42,348 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:42,349 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:42,360 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:42,361 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,361 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:42,378 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:42,380 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:42,384 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:42,384 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:42,387 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,387 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:42,418 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:42,421 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-10 19:17:42,423 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,423 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:42,432 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:42,433 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:42,439 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,439 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:42,444 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:42,444 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:42,448 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:42,448 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:42,474 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:42 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:42,475 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:45,869 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:45,874 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:45,963 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:45,964 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:45,980 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:45,981 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:45,991 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:45,992 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:45,999 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:46,000 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:46,001 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:46,018 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:46,019 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:46,025 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:46,026 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:46,029 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:46,029 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:46,063 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:46,067 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:2 already exists
+2023-03-10 19:17:46,069 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:46,069 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:46,079 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:46,081 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:46,087 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:46,088 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:46,094 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:46,094 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:46,098 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:46,098 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:46,121 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:45 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:46,122 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:53,712 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,718 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:53,810 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:53,813 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:53,833 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,834 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:53,845 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:53,846 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:53,853 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:53,854 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,854 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:53,873 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:53,874 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:53,879 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:53,879 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:53,879 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,880 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:53,908 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:53,909 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,909 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:53,919 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:53,921 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,922 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:53,928 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:53,932 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:53,932 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,932 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:53,952 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:53 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:53,954 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:53,962 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,962 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:53,969 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:53,970 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:53,970 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,970 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:53,991 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@6ea8c3a5]
+2023-03-10 19:17:53,991 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:53,991 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:53,998 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:53,999 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:53,999 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:54,000 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:54,008 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:53 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:54,011 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:54,012 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:54,022 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@6ea8c3a5]
+2023-03-10 19:17:54,023 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:54,029 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:54,029 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:54,034 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:54,035 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:54,037 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:54,038 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:54,043 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:53 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:54,044 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:57,622 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,626 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,724 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:57,726 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,763 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,764 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,781 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:57,783 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,794 INFO r.s.s.CSVDataProvider [main] Hygrometer record was saved
+2023-03-10 19:17:57,796 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,796 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:57,816 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:17:57,817 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:57,826 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:17:57,826 INFO r.s.s.CSVDataProvider [main] Humidifier record was saved
+2023-03-10 19:17:57,826 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,826 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,864 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:57,865 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,866 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,875 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@e8ffe07f]
+2023-03-10 19:17:57,877 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,878 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,883 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:57,888 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:57,889 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,889 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:57,905 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:57 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:57,906 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,914 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,914 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,919 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:57,920 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:57,920 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,920 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,929 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@6ea8c3a5]
+2023-03-10 19:17:57,929 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,930 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,943 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:57,943 ERROR r.s.s.CSVDataProvider [main] Hygrometer record with this ID:2 wasn't found
+2023-03-10 19:17:57,943 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,943 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:57,950 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:57 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:57,953 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,953 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,962 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Humidifier@6ea8c3a5]
+2023-03-10 19:17:57,963 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:17:57,972 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,972 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,978 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Hygrometer@a4b7137e]
+2023-03-10 19:17:57,979 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Hygrometer.csv
+2023-03-10 19:17:57,982 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:17:57,983 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:17:57,989 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=4, message='Humididty is too high.You need to switch off the humidifier', date=Fri Mar 10 19:17:57 MSK 2023, sender='Hygrometer', deviceId='2'}]
+2023-03-10 19:17:57,990 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:18:05,525 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:18:05,529 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:18:05,637 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:18:05,643 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:0 wasn't found
+2023-03-10 19:20:09,947 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:20:09,952 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:20:10,052 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:20:10,057 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:0 wasn't found
+2023-03-10 19:20:13,631 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:20:13,636 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Humidifier.csv
+2023-03-10 19:20:13,729 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:20:13,734 ERROR r.s.s.CSVDataProvider [main] Humidifier record with this ID:0 wasn't found
+2023-03-10 19:26:30,147 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:26:30,152 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:26:30,248 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:26:30,250 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/xml/Lamp.xml
+2023-03-10 19:26:30,273 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:26:30,274 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:26:30,296 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:26:30,297 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:26:30,307 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:26:30,308 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:26:30,308 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:26:30,308 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:26:30,329 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:26:30,335 ERROR r.s.s.CSVDataProvider [main] Lamp record with this ID:1 wasn't found
+2023-03-10 19:27:55,058 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:27:55,062 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:27:55,152 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:27:55,154 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:27:55,175 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:27:55,175 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:27:55,217 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:26:29 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:27:55,220 ERROR r.s.s.CSVDataProvider [main] Notification record with this ID:5 already exists
+2023-03-10 19:28:08,335 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:08,339 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:08,419 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:28:08,420 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:08,440 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:08,440 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:08,458 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:28:08,459 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:08,464 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:28:08,464 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:28:08,465 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:08,465 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:08,481 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@5d621f97]
+2023-03-10 19:28:08,483 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:08,484 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:08,518 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:28:08 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:28:08,521 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:28:54,987 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:54,991 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:55,077 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:28:55,078 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:55,099 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:55,099 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:55,118 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:28:55,119 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:55,130 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:28:55,131 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:28:55,132 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:55,132 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:55,159 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:28:55,161 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:55,161 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:55,193 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:28:54 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:28:55,196 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:28:55,199 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:55,199 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:55,223 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:28:55,224 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:55,229 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:55,229 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:55,236 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 19:28:55,237 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:59,402 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:59,406 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:59,497 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:28:59,499 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:59,521 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:59,522 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:59,539 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:28:59,541 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:59,551 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:28:59,552 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:28:59,552 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:59,553 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:59,573 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:28:59,574 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:59,575 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:59,595 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:28:59 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:28:59,597 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:28:59,601 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:59,601 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:59,623 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:28:59,624 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:28:59,629 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:28:59,629 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:28:59,637 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 19:28:59,637 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:24,020 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:24,024 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:24,117 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:29:24,119 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:24,142 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:24,143 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:24,163 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:29:24,164 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:24,174 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:29:24,175 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:29:24,178 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:24,178 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:24,203 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:29:24,209 ERROR r.s.s.CSVDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-10 19:29:24,210 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:24,211 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:24,224 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:29:24,226 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:24,243 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:24,243 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:24,258 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 19:29:24,258 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:29,740 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:29,744 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:29,897 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:29:29,900 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:29,947 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:29,949 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:29,992 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:29:29,993 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:30,002 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:29:30,002 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:29:30,006 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:30,007 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:30,027 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:29:30,032 ERROR r.s.s.CSVDataProvider [main] Lamp record with this ID:1 already exists
+2023-03-10 19:29:30,034 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:30,034 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:30,058 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:29:30,060 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:29:30,066 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:29:30,066 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:29:30,082 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 19:29:30,083 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:41,853 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:41,858 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:41,939 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:30:41,940 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:41,960 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:41,961 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:41,981 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:30:41,982 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:41,991 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:30:41,992 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:30:41,993 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:41,993 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:42,019 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:30:42,019 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:42,020 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:42,037 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:30:42,039 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:42,039 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:42,078 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:30:41 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:30:42,081 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:30:42,082 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:42,088 INFO r.s.s.CSVDataProvider [main] Lamp record was updated
+2023-03-10 19:30:42,088 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:42,089 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:42,096 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@3e727285]
+2023-03-10 19:30:42,096 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:42,097 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:42,104 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:30:41 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:30:42,105 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:30:42,109 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:42,110 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:42,120 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@3e727285]
+2023-03-10 19:30:42,121 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:42,129 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:42,129 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:42,136 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 19:30:42,137 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:45,956 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:45,961 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,054 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:30:46,056 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,078 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,079 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:46,100 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:30:46,102 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:46,112 INFO r.s.s.CSVDataProvider [main] Notification record was saved
+2023-03-10 19:30:46,112 INFO r.s.s.CSVDataProvider [main] Lamp record was saved
+2023-03-10 19:30:46,112 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,113 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,136 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:30:46,138 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,138 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,156 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@a327531f]
+2023-03-10 19:30:46,158 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,159 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:46,192 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:30:45 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:30:46,195 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:30:46,196 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,209 INFO r.s.s.CSVDataProvider [main] Lamp record was updated
+2023-03-10 19:30:46,209 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,209 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,220 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@3e727285]
+2023-03-10 19:30:46,220 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,220 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:46,226 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='Changed its state to on', date=Fri Mar 10 19:30:45 MSK 2023, sender='Lamp', deviceId='0'}]
+2023-03-10 19:30:46,227 ERROR r.s.s.CSVDataProvider [main] Notification records with this deviceID1 wasn't found
+2023-03-10 19:30:46,229 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,229 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,237 DEBUG r.s.s.CSVDataProvider [main] records initialization:[ru.sfedu.model.Lamp@3e727285]
+2023-03-10 19:30:46,239 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:30:46,244 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:30:46,244 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:30:46,251 DEBUG r.s.s.CSVDataProvider [main] records initialization:[Notification{id=5, message='null', date=null, sender='null', deviceId='0'}]
+2023-03-10 19:30:46,251 INFO r.s.s.CSVDataProvider [main] update src/main/java/ru/sfedu/csv/Notification.csv
+2023-03-10 19:31:22,815 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:31:22,819 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:31:22,914 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:31:22,919 ERROR r.s.s.CSVDataProvider [main] Lamp record with this ID:0 wasn't found
+2023-03-10 19:31:26,643 DEBUG r.s.s.CSVDataProvider [main] deserialize object...
+2023-03-10 19:31:26,648 DEBUG r.s.s.CSVDataProvider [main] src/main/java/ru/sfedu/csv/Lamp.csv
+2023-03-10 19:31:26,752 DEBUG r.s.s.CSVDataProvider [main] records initialization:[]
+2023-03-10 19:31:26,758 ERROR r.s.s.CSVDataProvider [main] Lamp record with this ID:0 wasn't found

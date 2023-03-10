@@ -7,9 +7,11 @@ import ru.sfedu.Constants;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Hygrometer extends Sensor{
+    @XmlTransient
     private static final Logger log = LogManager.getLogger(Hygrometer.class);
     @XmlElement(name="humidity")
     private int humidity;
